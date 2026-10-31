@@ -6,10 +6,10 @@ Typeset the formulas on OEIS sequence pages (`https://oeis.org/Annnnnn`) in Fire
 
 ## Pieces
 
-| File | Runs in | Does |
-|---|---|---|
+| File                       | Runs in       | Does                                                                                                                                                          |
+| -------------------------- | ------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | `dist/oeisTypeset.user.js` | Violentmonkey | Finds math in NAME, COMMENTS and FORMULA lines, converts OEIS notation to LaTeX, renders it to MathML with [Temml](https://temml.org), swaps it into the page |
-| `oeisTypeset.user.css` | Stylus | All visual decisions: section spacing, text face for lines with math, math font, A-number links in formulas, the source toggle |
+| `oeisTypeset.user.css`     | Stylus        | All visual decisions: section spacing, text face for lines with math, math font, A-number links in formulas, the source toggle                                |
 
 CSS alone cannot typeset a formula. Turning `Sum_{k=0..n}` into a summation needs a parser, and only a script can run one. The script adds structure and class names; the stylesheet decides how everything looks.
 
@@ -46,7 +46,7 @@ The notation is specified by the [OEIS Style Sheet](https://oeis.org/wiki/Style_
 
 ## Develop
 
-```
+```shell
 npm install
 npm test                       # regression tests
 npm run build                  # writes dist/oeisTypeset.user.js and test/preview/*.html
