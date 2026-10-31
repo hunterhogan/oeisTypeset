@@ -1,0 +1,165 @@
+/* ==UserStyle==
+@name           oeisTypeset
+@namespace      github.com/hunterhogan/oeisTypeset
+@version        0.1.0
+@description    Typography for OEIS sequence pages, built around typeset formulas (pair with oeisTypeset.user.js).
+@author         Hunter Hogan
+@preprocessor   default
+@var select fractionStyle "Fractions inside fractions" ["normal:Full size (easier to read)*", "compact:Shrink (TeX default)"]
+==/UserStyle== */
+
+@-moz-document regexp("https://oeis\\.org/A\\d{6}(?:[?#].*)?") {
+
+	/* ---------------------------------------------------------------- tokens */
+	:root {
+		--oeisTypeset-text: Cambria, "STIX Two Text", Georgia, serif;
+		--oeisTypeset-math: "Cambria Math", "STIX Two Math", "Latin Modern Math", math;
+		--oeisTypeset-mono: Consolas, Menlo, "DejaVu Sans Mono", monospace;
+		--oeisTypeset-ink: #1a1a1a;
+		--oeisTypeset-muted: #6b6b76;
+		--oeisTypeset-rule: #d8d8e0;
+		--oeisTypeset-link: #1a4fa0;
+		--oeisTypeset-gapSection: 1.1rem;
+		--oeisTypeset-gapEntry: 0.35rem;
+	}
+
+	/* ---------------------------------------------------------------- page */
+	body {
+		color: var(--oeisTypeset-ink);
+	}
+
+	/* The site sets every field in a 0.83rem monospace with pre-wrap. Monospace lines keep
+	   the site's font, line-height, and zero gap: each row of an ASCII diagram is its own
+	   div.sectline, and any added spacing would pull the rows apart. */
+	div.seqdata {
+		line-height: 1.5;
+	}
+
+	/* ---------------------------------------------------------------- header block */
+	div.seqhead {
+		padding: 0.4rem 0;
+		align-items: baseline;
+	}
+	div.seqnum {
+		font-family: var(--oeisTypeset-mono);
+		font-weight: bold;
+		padding-left: 0.5rem;
+	}
+	div.seqname {
+		font-family: var(--oeisTypeset-text);
+		font-size: 1.08rem;
+		line-height: 1.5;
+	}
+	div.seqdatabox {
+		margin: 0.5rem 0 var(--oeisTypeset-gapSection);
+	}
+	div.seqdatalinks {
+		margin-top: 0.3rem;
+		color: var(--oeisTypeset-muted);
+	}
+
+	/* ---------------------------------------------------------------- sections
+	   One signal for grouping: space. A section is separated from the next by a gap
+	   larger than the gap between its own entries; the label sits in a fixed column. */
+	div.section {
+		margin-top: var(--oeisTypeset-gapSection);
+	}
+	div.sectname {
+		flex: 0 0 7.5rem;
+		box-sizing: border-box;
+		padding: 0.2rem 1rem 0 0;
+		text-align: right;
+		font-family: var(--oeisTypeset-text);
+		font-size: 0.72rem;
+		letter-spacing: 0.06em;
+		color: var(--oeisTypeset-muted);
+	}
+	div.sectbody {
+		flex: 1 1 auto;
+		min-width: 0;
+		padding: 0;
+	}
+	/* Entries set as prose are separated; monospace runs stay contiguous. */
+	div.sectline.oeisTypeset-prose + div.sectline,
+	div.sectline + div.sectline.oeisTypeset-prose {
+		margin-top: var(--oeisTypeset-gapEntry);
+	}
+
+	/* ---------------------------------------------------------------- lines with math
+	   Set in a text face that matches the math face. Lines whose spacing is layout keep
+	   the monospace font; the script marks those .oeisTypeset-verbatim. */
+	div.sectline.oeisTypeset-prose,
+	div.seqname.oeisTypeset-prose {
+		font-family: var(--oeisTypeset-text);
+		font-size: 1rem;
+		line-height: 1.6;
+		overflow-x: auto;
+		overflow-y: hidden;
+	}
+	/* The site's hanging indent is margin-left + negative text-indent; with overflow-x set,
+	   the outdented first characters would be clipped, so the indent moves into padding. */
+	div.sectline.oeisTypeset-prose {
+		margin-left: 0;
+		padding-left: 1rem;
+		padding-bottom: 0.1rem;
+	}
+
+	math {
+		font-family: var(--oeisTypeset-math);
+		font-size: 1.06em;
+		text-indent: 0;
+		white-space: normal;
+		font-feature-settings: "dtls" off;
+	}
+
+	/* MathML shrinks a fraction inside a fraction one step per level. Full size keeps
+	   nested sums and continued fractions legible at the cost of height. */
+	.oeisTypeset-rendered mfrac > * {
+		math-style: /*[[fractionStyle]]*/;
+	}
+
+	.oeisTypeset-chunk {
+		white-space: nowrap;
+	}
+
+	/* A-numbers inside rendered math behave like the site's links. */
+	.oeisTypeset-rendered [data-anumber] {
+		color: var(--oeisTypeset-link);
+		cursor: pointer;
+		text-decoration: underline;
+		text-decoration-thickness: 1px;
+		text-underline-offset: 2px;
+	}
+
+	/* ---------------------------------------------------------------- source toggle */
+	.oeisTypeset-source {
+		display: none;
+		font-family: var(--oeisTypeset-mono);
+		font-size: 0.83rem;
+	}
+	html.oeisTypeset-showSource .oeisTypeset-source,
+	div.section.oeisTypeset-showSource .oeisTypeset-source {
+		display: inline;
+	}
+	html.oeisTypeset-showSource .oeisTypeset-rendered,
+	div.section.oeisTypeset-showSource .oeisTypeset-rendered {
+		display: none;
+	}
+	div.section.oeisTypeset-section > div.sectname {
+		cursor: pointer;
+	}
+	div.section.oeisTypeset-showSource > div.sectname {
+		text-decoration: underline dotted;
+	}
+
+	/* ---------------------------------------------------------------- narrow screens */
+	@media (max-width: 666px) {
+		div.sectname {
+			flex: auto;
+			text-align: left;
+			padding: 0;
+			text-decoration: none;
+			font-weight: normal;
+		}
+	}
+}

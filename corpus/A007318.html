@@ -1,0 +1,1187 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<html>
+  
+  <head>
+  
+  <link rel="stylesheet" href="/styles.css?v=20260927">
+  <meta name="format-detection" content="telephone=no">
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name=viewport content="width=device-width, initial-scale=1">
+  <meta name="keywords" content="OEIS,integer sequences,Sloane" />
+  
+  
+  
+  <title>A007318 - OEIS</title>
+  <link rel="search" type="application/opensearchdescription+xml" title="OEIS" href="/oeis.xml">
+  
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg?v=20260826">
+  <link rel="icon" sizes="16x16 32x32 48x48" href="/favicon.ico?v=20260826">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png?v=20260826">
+  <script>
+  var myURL = "\/A007318"
+  function redir() {
+      var host = document.location.hostname;
+      if(host != "oeis.org" && host != "edit.oeis.org" && host != "127.0.0.1" && !/^([0-9.]+)$/.test(host) && host != "localhost" && host != "edit.localhost" && host != "localhost.localdomain") {
+          document.location = "https"+":"+"//"+"oeis"+".org/" + myURL;
+      }
+  }
+  function sf() {
+      if(document.location.pathname == "/" && document.f) document.f.q.focus();
+  }
+  </script>
+  </head>
+  <body bgcolor=#ffffff onload="redir();sf()"><a href="https://oeis.org/cdn-cgi/content?id=TQ1S8KTyZrgA6004dRwTXmCrdt6UkFjpO8YVtQyBHPM-1793432865.205624-1.2.1.1-Ikz43n7YDSxD89pwY5ZhA.ypZnHoR2YRAmYZjASqNTwFjvbsK8SxuuZ3QTzajeRO" aria-hidden="true" rel="nofollow noopener" style="display: none !important; visibility: hidden !important"></a>
+    <div class=loginbar>
+      <div class=login>
+      
+        <a href="/login?redirect=%2FA007318" rel="nofollow">login</a>
+      
+      </div>
+    </div>
+
+    <div class=center><div class=top>
+    <center>
+    <div class=donors>
+    The OEIS is supported by <a href="http://oeisf.org/#DONATE">the many generous donors to the OEIS Foundation</a>.
+    </div>
+
+    <div class=banner>
+    <a href="/"><picture>
+
+    <source media="(min-width: 830px)" srcset="/oeis-400k-banner.png 1x" width="918" height="129">
+    <img class=banner border="0" width="540" height="129" src="/oeis-400k-banner.png" srcset="/oeis-400k-banner.png 1x" alt="A007318 - OEIS">
+    </picture></a>
+    </div>
+
+    
+    
+    
+    <div class="motdbox" style="justify-content: center;">
+        <div class="motd">
+            <p><a href="https://oeis.org/wiki/A400K_Winners">Winners in the A400K Celebration</a></p>
+        </div>
+        
+    </div>
+    
+    </center>
+    </div></div>
+
+    <div class=center><div class=pagebody>
+      
+    
+    <div class=searchbarcenter>
+        <form name=f action="/search" method="GET">
+            <div class=searchbargreet>
+                <div class=searchbar>
+                    <div class=searchq>
+                        <input class=searchbox maxLength=1024 name=q value="" title="Search Query">
+                        
+                        
+                        
+                        
+                    </div>
+                    <div class=searchsubmit>
+                        <input type=submit value="Search" name=go>
+                    </div>
+                    <div class=hints>
+                        <span class=hints><a href="/hints.html">Hints</a></span>
+                    </div>
+                </div>
+                <div class=searchgreet>
+                    (Greetings from <a href="/welcome">The On-Line Encyclopedia of Integer Sequences</a>!)
+                </div>
+            </div>
+        </form>
+    </div>
+
+    <div class=sequence>
+        <div class=space1></div>
+        <div class=line></div>
+        
+        <div class=seqhead>
+            <div class=seqnumname>
+                <div class=seqnum>
+                    
+                        A007318
+                    
+                </div>
+                <div class=seqname>
+                    Pascal's triangle read by rows: C(n,k) = binomial(n,k) = n!/(k!*(n-k)!), 0 &lt;= k &lt;= n.
+                    <br><font size=-1>(Formerly M0082)</font>
+                </div>
+            </div>
+            <div class=scorerefs>
+                        
+                        2201
+            </div>
+        </div>
+        
+            
+    
+    
+    <div>
+        <div class=seqdatabox>
+            <div class=seqdata>1, 1, 1, 1, 2, 1, 1, 3, 3, 1, 1, 4, 6, 4, 1, 1, 5, 10, 10, 5, 1, 1, 6, 15, 20, 15, 6, 1, 1, 7, 21, 35, 35, 21, 7, 1, 1, 8, 28, 56, 70, 56, 28, 8, 1, 1, 9, 36, 84, 126, 126, 84, 36, 9, 1, 1, 10, 45, 120, 210, 252, 210, 120, 45, 10, 1, 1, 11, 55, 165, 330, 462, 462, 330, 165, 55, 11, 1</div>
+            
+                <div class=seqdatalinks>
+                (<a href="/A007318/list">list</a>;
+                
+                    <a href="/A007318/table">table</a>;
+                
+                
+                
+                    <a href="/A007318/graph">graph</a>;
+                
+                <a rel=nofollow href="/search?q=A007318+-id:A007318">refs</a>;
+                <a href="/A007318/listen">listen</a>;
+                <a rel=nofollow href="/history?seq=A007318">history</a>;
+                
+                <a href="/search?q=id:A007318&fmt=text">text</a>;
+                <a href="/A007318/internal">internal format</a>)
+                </div>
+            
+        </div>
+    </div>
+    <div class=entry>
+        
+            
+        
+            
+        
+            
+        
+            
+                 
+                 
+                 
+                 
+                     <div class=section>
+                         <div class=sectname>OFFSET</div>
+                         <div class=sectbody>
+                             
+                                 <div class=sectline>0,5</div>
+                             
+                         </div>
+                     </div>
+                 
+            
+        
+            
+                 
+                 
+                 
+                 
+                     <div class=section>
+                         <div class=sectname>COMMENTS</div>
+                         <div class=sectbody>
+                             
+                                 <div class=sectline>A. W. F. Edwards writes: &quot;It [the triangle] was first written down long before 1654, the year in which Blaise Pascal wrote his Traité du triangle arithmétique, but it was this work that brought together all the different aspects of the numbers for the first time. In it Pascal developed the properties of the number as a piece of pure mathematics ... and then, in a series of appendices, showed how these properties were relevant to the study of the figurate numbers, to the theory of combinations, to the expansion of binomial expressions, and to the solution of an important problem in the theory of probability.&quot; (A. W. F. Edwards, Pascal's Arithmetical Triangle, Johns Hopkins University Press (2002), p. xiii)</div>
+                             
+                                 <div class=sectline>Edwards reports that the naming of the triangle after Pascal was done first by Montmort in 1708 as the &quot;Table de M. Pascal pour les combinaisons&quot; and then by De Moivre in 1730 as the &quot;Triangulum Arithmeticum PASCALANIUM&quot;. (Edwards, p. xiv)</div>
+                             
+                                 <div class=sectline>In China, Yang Hui in 1261 listed the coefficients of (a+b)^n up to n=6, crediting the expansion to Chia Hsein's Shih-so suan-shu circa 1100. Another prominent early use was in Chu Shih-Chieh's Precious Mirror of the Four Elements in 1303. (Edwards, p. 51)</div>
+                             
+                                 <div class=sectline>In Persia, Al-Karaji discovered the binomial triangle &quot;some time soon after 1007&quot;, and Al-Samawal published it in the Al-bahir some time before 1180. (Edwards, p. 52)</div>
+                             
+                                 <div class=sectline>In India, Halayuda's commentary (circa 900) on Pingala's treatise on syllabic combinations (circa 200 B.C.E.) contains a clear description of the additive computation of the triangle. (Amulya Kumar Bag, Binomial Theorem in Ancient India, p. 72)</div>
+                             
+                                 <div class=sectline>Also in India, the multiplicative formula for C(n,k) was known to Mahavira in 850 and restated by Bhaskara in 1150. (Edwards, p. 27)</div>
+                             
+                                 <div class=sectline>In Italy, Tartaglia published the triangle in his General trattato (1556), and Cardano published it in his Opus novum (1570). (Edwards, p. 39, 44) - <a href="/wiki/User:Russ_Cox">Russ Cox</a>, Mar 29 2022</div>
+                             
+                                 <div class=sectline>Also sometimes called Omar Khayyam's triangle.</div>
+                             
+                                 <div class=sectline>Also sometimes called Yang Hui's triangle.</div>
+                             
+                                 <div class=sectline>C(n,k) = number of k-element subsets of an n-element set.</div>
+                             
+                                 <div class=sectline>Row n gives coefficients in expansion of (1+x)^n.</div>
+                             
+                                 <div class=sectline>Binomial(n+k-1,n-1) is the number of ways of placing k indistinguishable balls into n boxes (the &quot;bars and stars&quot; argument - see Feller).</div>
+                             
+                                 <div class=sectline>Binomial(n-1,k-1) is the number of compositions (ordered partitions) of n with k summands.</div>
+                             
+                                 <div class=sectline>Binomial(n+k-1,k-1) is the number of weak compositions (ordered weak partitions) of n into exactly k summands. - <a href="/wiki/User:Juergen_Will">Juergen Will</a>, Jan 23 2016</div>
+                             
+                                 <div class=sectline>Binomial(n,k) is the number of lattice paths from (0,0) to (n,k) using steps (1,0) and (1,1). - <a href="/wiki/User:Joerg_Arndt">Joerg Arndt</a>, Jul 01 2011</div>
+                             
+                                 <div class=sectline>If thought of as an infinite lower triangular matrix, inverse begins:</div>
+                             
+                                 <div class=sectline>  +1</div>
+                             
+                                 <div class=sectline>  -1 +1</div>
+                             
+                                 <div class=sectline>  +1 -2 +1</div>
+                             
+                                 <div class=sectline>  -1 +3 -3 +1</div>
+                             
+                                 <div class=sectline>  +1 -4 +6 -4 +1</div>
+                             
+                                 <div class=sectline>All 2^n palindromic binomial coefficients starting after the <a href="/A006516" title="a(n) = 2^(n-1)*(2^n - 1), n &gt;= 0.">A006516</a>(n)-th entry are odd. - <a href="/wiki/User:Lekraj_Beedassy">Lekraj Beedassy</a>, May 20 2003</div>
+                             
+                                 <div class=sectline>Binomial(n+k-1,n-1) is the number of standard tableaux of shape (n,1^k). - <a href="/wiki/User:Emeric_Deutsch">Emeric Deutsch</a>, May 13 2004</div>
+                             
+                                 <div class=sectline>Can be viewed as an array, read by antidiagonals, where the entries in the first row and column are all 1's and A(i,j) = A(i-1,j) + A(i,j-1) for all other entries. The determinant of each of its n X n subarrays starting at (0,0) is 1. - <a href="/wiki/User:Gerald_McGarvey">Gerald McGarvey</a>, Aug 17 2004</div>
+                             
+                                 <div class=sectline>Also the lower triangular readout of the exponential of a matrix whose entry {j+1,j} equals j+1 (and all other entries are zero). - Joseph Biberstine (jrbibers(AT)indiana.edu), May 26 2006</div>
+                             
+                                 <div class=sectline>Binomial(n-3,k-1) counts the permutations in S_n which have zero occurrences of the pattern 231 and one occurrence of the pattern 132 and k descents. Binomial(n-3,k-1) also counts the permutations in S_n which have zero occurrences of the pattern 231 and one occurrence of the pattern 213 and k descents. - David Hoek (david.hok(AT)telia.com), Feb 28 2007</div>
+                             
+                                 <div class=sectline>Inverse of <a href="/A130595" title="Triangle read by rows: lower triangular matrix which is inverse to Pascal's triangle (A007318) regarded as a lower triangula...">A130595</a> (as an infinite lower triangular matrix). - <a href="/wiki/User:Philippe_Deléham">Philippe Deléham</a>, Aug 21 2007</div>
+                             
+                                 <div class=sectline>Consider integer lists LL of lists L of the form LL = [m#L] = [m#[k#2]] (where '#' means 'times') like LL(m=3,k=3) = [[2,2,2],[2,2,2],[2,2,2]]. The number of the integer list partitions of LL(m,k) is equal to binomial(m+k,k) if multiple partitions like [[1,1],[2],[2]] and [[2],[2],[1,1]] and [[2],[1,1],[2]] are counted only once. For the example, we find 4*5*6/3! = 20 = binomial(6,3). - <a href="/wiki/User:Thomas_Wieder">Thomas Wieder</a>, Oct 03 2007</div>
+                             
+                                 <div class=sectline>The infinitesimal generator for Pascal's triangle and its inverse is <a href="/A132440" title="Infinitesimal Pascal matrix: generator (lower triangular matrix representation) of the Pascal matrix, the classical operator...">A132440</a>. - <a href="/wiki/User:Tom_Copeland">Tom Copeland</a>, Nov 15 2007</div>
+                             
+                                 <div class=sectline>Row n&gt;=2 gives the number of k-digit (k&gt;0) base n numbers with strictly decreasing digits; e.g., row 10 for <a href="/A009995" title="Numbers with digits in strictly decreasing order. From the Macaulay expansion of n.">A009995</a>. Similarly, row n-1&gt;=2 gives the number of k-digit (k&gt;1) base n numbers with strictly increasing digits; see <a href="/A009993" title="Numbers whose decimal digits are in strictly increasing order.">A009993</a> and compare <a href="/A118629" title="Number of n-digit integers with decimal digits in increasing order.">A118629</a>. - <a href="/wiki/User:Rick_L._Shepherd">Rick L. Shepherd</a>, Nov 25 2007</div>
+                             
+                                 <div class=sectline>From Lee Naish (lee(AT)cs.mu.oz.au), Mar 07 2008: (Start)</div>
+                             
+                                 <div class=sectline>Binomial(n+k-1, k) is the number of ways a sequence of length k can be partitioned into n subsequences (see the Naish link).</div>
+                             
+                                 <div class=sectline>Binomial(n+k-1, k) is also the number of n- (or fewer) digit numbers written in radix at least k whose digits sum to k. For example, in decimal, there are binomial(3+3-1,3)=10 3-digit numbers whose digits sum to 3 (see <a href="/A052217" title="Numbers whose sum of digits is 3.">A052217</a>) and also binomial(4+2-1,2)=10 4-digit numbers whose digits sum to 2 (see <a href="/A052216" title="Sums of two powers of 10.">A052216</a>). This relationship can be used to generate the numbers of sequences <a href="/A052216" title="Sums of two powers of 10.">A052216</a> to <a href="/A052224" title="Numbers whose sum of digits is 10.">A052224</a> (and further sequences using radix greater than 10). (End)</div>
+                             
+                                 <div class=sectline>From <a href="/wiki/User:Milan_Janjic">Milan Janjic</a>, May 07 2008: (Start)</div>
+                             
+                                 <div class=sectline>Denote by sigma_k(x_1,x_2,...,x_n) the elementary symmetric polynomials. Then:</div>
+                             
+                                 <div class=sectline>Binomial(2n+1,2k+1) = sigma_{n-k}(x_1,x_2,...,x_n), where x_i = tan^2(i*Pi/(2n+1)), (i=1,2,...,n).</div>
+                             
+                                 <div class=sectline>Binomial(2n,2k+1) = 2n*sigma_{n-1-k}(x_1,x_2,...,x_{n-1}), where x_i = tan^2(i*Pi/(2n)), (i=1,2,...,n-1).</div>
+                             
+                                 <div class=sectline>Binomial(2n,2k) = sigma_{n-k}(x_1,x_2,...,x_n), where x_i = tan^2((2i-1)Pi/(4n)), (i=1,2,...,n).</div>
+                             
+                                 <div class=sectline>Binomial(2n+1,2k) = (2n+1)sigma_{n-k}(x_1,x_2,...,x_n), where x_i = tan^2((2i-1)Pi/(4n+2)), (i=1,2,...,n). (End)</div>
+                             
+                                 <div class=sectline>Given matrices R and S with R(n,k) = binomial(n,k)*r(n-k) and S(n,k) = binomial(n,k)*s(n-k), then R*S = T where T(n,k) = binomial(n,k)*[r(.)+s(.)]^(n-k), umbrally. And, the e.g.f.s for the row polynomials of R, S and T are, respectively, exp(x*t)*exp[r(.)*x], exp(x*t)*exp[s(.)*x] and exp(x*t)*exp[r(.)*x]*exp[s(.)*x] = exp{[t+r(.)+s(.)]*x}. The row polynomials are essentially Appell polynomials. See <a href="/A132382" title="Lower triangular array T(n,k) generator for group of arrays related to A001147 and A102625.">A132382</a> for an example. - <a href="/wiki/User:Tom_Copeland">Tom Copeland</a>, Aug 21 2008</div>
+                             
+                                 <div class=sectline>As the rectangle R(m,n) = binomial(m+n-2,m-1), the weight array W (defined generally at <a href="/A144112" title="Weight array W={w(i,j)} of the natural number array A000027.">A144112</a>) of R is essentially R itself, in the sense that if row 1 and column 1 of W=<a href="/A144225" title="Bordered Pascal's triangle in rectangular format.">A144225</a> are deleted, the remaining array is R. - <a href="/wiki/User:Clark_Kimberling">Clark Kimberling</a>, Sep 15 2008</div>
+                             
+                                 <div class=sectline>If <a href="/A007318" title="Pascal's triangle read by rows: C(n,k) = binomial(n,k) = n!/(k!*(n-k)!), 0 &lt;= k &lt;= n.">A007318</a> = M as an infinite lower triangular matrix, M^n gives <a href="/A130595" title="Triangle read by rows: lower triangular matrix which is inverse to Pascal's triangle (A007318) regarded as a lower triangula...">A130595</a>, <a href="/A023531" title="a(n) = 1 if n is of the form m(m+3)/2, otherwise 0.">A023531</a>, <a href="/A007318" title="Pascal's triangle read by rows: C(n,k) = binomial(n,k) = n!/(k!*(n-k)!), 0 &lt;= k &lt;= n.">A007318</a>, <a href="/A038207" title="Triangle whose (i,j)-th entry is binomial(i,j)*2^(i-j).">A038207</a>, <a href="/A027465" title="Cube of lower triangular normalized binomial matrix.">A027465</a>, <a href="/A038231" title="Triangle whose (i,j)-th entry is binomial(i,j)*4^(i-j).">A038231</a>, <a href="/A038243" title="Triangle whose (i,j)-th entry is 5^(i-j)*binomial(i,j).">A038243</a>, <a href="/A038255" title="Triangle whose (i,j)-th entry is binomial(i,j)*6^(i-j).">A038255</a>, <a href="/A027466" title="Triangle whose (i,j)-th entry is binomial(i,j)*7^(i-j).">A027466</a>, <a href="/A038279" title="Triangle whose (i,j)-th entry is binomial(i,j)*8^(i-j)*1^j.">A038279</a>, <a href="/A038291" title="Triangle whose (i,j)-th entry is binomial(i,j)*9^(i-j)*1^j.">A038291</a>, <a href="/A038303" title="Triangle whose (i,j)-th entry is binomial(i,j)*10^(i-j)*1^j.">A038303</a>, <a href="/A038315" title="Triangle whose (i,j)-th entry is binomial(i,j)*11^(i-j)*1^j.">A038315</a>, <a href="/A038327" title="Triangle whose (i,j)-th entry is binomial(i,j)*12^(i-j)*1^j.">A038327</a>, <a href="/A133371" title="Triangle read by rows: T(i,j) is the number of i-permutations of 14 objects a,b,c,d,e,f,g,h,i,j,k,l,m,n, with repetition all...">A133371</a>, <a href="/A147716" title="Triangle of coefficients in expansion of (14 + x)^n.">A147716</a>, <a href="/A027467" title="Triangle whose (n,k)-th entry is 15^(n-k)*binomial(n,k).">A027467</a> for n=-1,0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15 respectively. - <a href="/wiki/User:Philippe_Deléham">Philippe Deléham</a>, Nov 11 2008</div>
+                             
+                                 <div class=sectline>The coefficients of the polynomials with e.g.f. exp(x*t)*(cosh(t)+sinh(t)). - <a href="/wiki/User:Peter_Luschny">Peter Luschny</a>, Jul 09 2009</div>
+                             
+                                 <div class=sectline>The triangle or chess sums, see <a href="/A180662" title="The Golden Triangle: T(n,k) = A001654(k) for n&gt;=0 and 0&lt;=k&lt;=n.">A180662</a> for their definitions, link Pascal's triangle with twenty different sequences, see the crossrefs. All sums come in pairs due to the symmetrical nature of this triangle. The knight sums Kn14 - Kn110 have been added. It is remarkable that all knight sums are related to the Fibonacci numbers, i.e., <a href="/A000045" title="Fibonacci numbers: F(n) = F(n-1) + F(n-2) with F(0) = 0 and F(1) = 1.">A000045</a>, but none of the others. - <a href="/wiki/User:Johannes_W._Meijer">Johannes W. Meijer</a>, Sep 22 2010</div>
+                             
+                                 <div class=sectline>Binomial(n,k) is also the number of ways to distribute n+1 balls into k+1 urns so that each urn gets at least one ball. See example in the example section below. - <a href="/wiki/User:Dennis_P._Walsh">Dennis P. Walsh</a>, Jan 29 2011</div>
+                             
+                                 <div class=sectline>Binomial(n,k) is the number of increasing functions from {1,...,k} to {1,...,n} since there are binomial(n,k) ways to choose the k distinct, ordered elements of the range from the codomain {1,...,n}. See example in the example section below. - <a href="/wiki/User:Dennis_P._Walsh">Dennis P. Walsh</a>, Apr 07 2011</div>
+                             
+                                 <div class=sectline>Central binomial coefficients: T(2*n,n) = <a href="/A000984" title="Central binomial coefficients: binomial(2*n,n) = (2*n)!/(n!)^2.">A000984</a>(n), T(n, floor(n/2)) = <a href="/A001405" title="a(n) = binomial(n, floor(n/2)).">A001405</a>(n). - <a href="/wiki/User:Reinhard_Zumkeller">Reinhard Zumkeller</a>, Nov 09 2011</div>
+                             
+                                 <div class=sectline>Binomial(n,k) is the number of subsets of {1,...,n+1} with k+1 as median element. To see this, note that Sum_{j=0..min(k,n-k)}binomial(k,j)*binomial(n-k,j) = binomial(n,k). See example in Example section below. - <a href="/wiki/User:Dennis_P._Walsh">Dennis P. Walsh</a>, Dec 15 2011</div>
+                             
+                                 <div class=sectline>This is the coordinator triangle for the lattice Z^n, see Conway-Sloane, 1997. - <a href="/wiki/User:N._J._A._Sloane">N. J. A. Sloane</a>, Jan 17 2012</div>
+                             
+                                 <div class=sectline>One of three infinite families of integral factorial ratio sequences of height 1 (see Bober, Theorem 1.2). The other two are <a href="/A046521" title="Array T(i,j) = binomial(-1/2-i,j)*(-4)^j, i,j &gt;= 0 read by antidiagonals going down.">A046521</a> and <a href="/A068555" title="Triangle read by rows in which row n contains (2i)!*(2j)!/(i!*j!*(i+j)!) for i + j = n, i = 0..n.">A068555</a>. For real r &gt;= 0, C_r(n,k) := floor(r*n)!/(floor(r*k)!*floor(r*(n-k))!) is integral. See <a href="/A211226" title="Triangular array: T(n,k) = f(n)/(f(k)*f(n-k)), where f(n) = (floor(n/2))!.">A211226</a> for the case r = 1/2. - <a href="/wiki/User:Peter_Bala">Peter Bala</a>, Apr 10 2012</div>
+                             
+                                 <div class=sectline>Define a finite triangle T(m,k) with n rows such that T(m,0) = 1 is the left column, T(m,m) = binomial(n-1,m) is the right column, and the other entries are T(m,k) = T(m-1,k-1) + T(m-1,k) as in Pascal's triangle. The sum of all entries in T (there are <a href="/A000217" title="Triangular numbers: a(n) = binomial(n+1,2) = n*(n+1)/2 = 0 + 1 + 2 + ... + n.">A000217</a>(n) elements) is 3^(n-1). - <a href="/wiki/User:J._M._Bergot">J. M. Bergot</a>, Oct 01 2012</div>
+                             
+                                 <div class=sectline>The lower triangular Pascal matrix serves as a representation of the operator exp(RLR) in a basis composed of a sequence of polynomials p_n(x) characterized by ladder operators defined by R p_n(x) = p_(n+1)(x) and L p_n(x) = n p_(n-1)(x). See <a href="/A132440" title="Infinitesimal Pascal matrix: generator (lower triangular matrix representation) of the Pascal matrix, the classical operator...">A132440</a>, <a href="/A218272" title="Infinitesimal generator for transpose of the Pascal matrix A007318 (as upper triangular matrices).">A218272</a>, <a href="/A218234" title="Infinitesimal generator for padded Pascal matrix A097805 (as lower triangular matrices).">A218234</a>, <a href="/A097805" title="Number of compositions of n with k parts, T(n, k) = binomial(n-1, k-1) for n, k &gt;= 1 and T(n, 0) = 0^n, triangle read by row...">A097805</a>, and <a href="/A038207" title="Triangle whose (i,j)-th entry is binomial(i,j)*2^(i-j).">A038207</a>. The transposed and padded Pascal matrices can be associated to the special linear group SL2. - <a href="/wiki/User:Tom_Copeland">Tom Copeland</a>, Oct 25 2012</div>
+                             
+                                 <div class=sectline>See <a href="/A193242" title="a(n) = (C(n, floor(n/2)) + 2)^n for n &gt;= 0.">A193242</a>. - <a href="/wiki/User:Alexander_R._Povolotsky">Alexander R. Povolotsky</a>, Feb 05 2013</div>
+                             
+                                 <div class=sectline>A permutation p_1...p_n of the set {1,...,n} has a descent at position i if p_i &gt; p_(i+1). Let S(n) denote the subset of permutations p_1...p_n of {1,...,n} such that p_(i+1) - p_i &lt;= 1 for i = 1,...,n-1. Then binomial(n,k) gives the number of permutations in S(n+1) with k descents. Alternatively, binomial(n,k) gives the number of permutations in S(n+1) with k+1 increasing runs. - <a href="/wiki/User:Peter_Bala">Peter Bala</a>, Mar 24 2013</div>
+                             
+                                 <div class=sectline>Sum_{n=&gt;0} binomial(n,k)/n! = e/k!, where e = exp(1), while allowing n &lt; k where binomial(n,k) = 0. Also Sum_{n&gt;=0} binomial(n+k-1,k)/n! = e * <a href="/A000262" title="Number of &quot;sets of lists&quot;: number of partitions of {1,...,n} into any number of lists, where a list means an ordered subset.">A000262</a>(k)/k!, and for k&gt;=1 equals e * <a href="/A067764" title="Numerators of the coefficients in exp(x/(1-x)) power series.">A067764</a>(k)/<a href="/A067653" title="Denominators of the coefficients in exp(x/(1-x)) power series.">A067653</a>(k). - <a href="/wiki/User:Richard_R._Forberg">Richard R. Forberg</a>, Jan 01 2014</div>
+                             
+                                 <div class=sectline>The square n X n submatrix (first n rows and n columns) of the Pascal matrix P(x) defined in the formulas below when multiplying on the left the Vandermonde matrix V(x_1,...,x_n) (with ones in the first row) translates the matrix to V(x_1+x,...,x_n+x) while leaving the determinant invariant. - <a href="/wiki/User:Tom_Copeland">Tom Copeland</a>, May 19 2014</div>
+                             
+                                 <div class=sectline>For k&gt;=2, n&gt;=k,  k/((k/(k-1) - Sum_{n=k..m} 1/binomial(n,k))) = m!/((m-k+1)!*(k-2)!). Note: k/(k-1) is the infinite sum. See <a href="/A000217" title="Triangular numbers: a(n) = binomial(n+1,2) = n*(n+1)/2 = 0 + 1 + 2 + ... + n.">A000217</a>, <a href="/A000292" title="Tetrahedral (or triangular pyramidal) numbers: a(n) = C(n+2,3) = n*(n+1)*(n+2)/6.">A000292</a>, <a href="/A000332" title="Binomial coefficient binomial(n,4) = n*(n-1)*(n-2)*(n-3)/24.">A000332</a> for examples. - <a href="/wiki/User:Richard_R._Forberg">Richard R. Forberg</a>, Aug 12 2014</div>
+                             
+                                 <div class=sectline>Let G_(2n) be the subgroup of the symmetric group S_(2n) defined by G_(2n) = {p in S_(2n) | p(i) = i (mod n) for i = 1,2,...,2n}. G_(2n) has order 2^n. Binomial(n,k) gives the number of permutations in G_(2n) having n + k cycles. Cf. <a href="/A130534" title="Triangle T(n,k), 0 &lt;= k &lt;= n, read by rows, giving coefficients of the polynomial (x+1)(x+2)...(x+n), expanded in increasing...">A130534</a> and <a href="/A246117" title="Number of parity preserving permutations of the set {1,2,...,n} with exactly k cycles.">A246117</a>. - <a href="/wiki/User:Peter_Bala">Peter Bala</a>, Aug 15 2014</div>
+                             
+                                 <div class=sectline>C(n,k) = the number of Dyck paths of semilength n+1, with k+1 &quot;u&quot;'s in odd numbered positions and k+1 returns to the x axis. Example: {U = u in odd position and _ = return to x axis} binomial(3,0)=1 (Uudududd_); binomial(3,1)=3 [(Uududd_Ud_), (Ud_Uududd_), (Uudd_Uudd_)]; binomial(3,2)=3 [(Ud_Ud_Uudd_), (Uudd_Ud_Ud_), (Ud_Uudd_Ud_)]; binomial(3,3)=1 (Ud_Ud_Ud_Ud_). - <a href="/wiki/User:Roger_Ford">Roger Ford</a>, Nov 05 2014</div>
+                             
+                                 <div class=sectline>From <a href="/wiki/User:Daniel_Forgues">Daniel Forgues</a>, Mar 12 2015: (Start)</div>
+                             
+                                 <div class=sectline>The binomial coefficients binomial(n,k) give the number of individuals of the k-th generation after n population doublings. For each doubling of population, each individual's clone has its generation index incremented by 1, and thus goes to the next row. Just tally up each row from 0 to 2^n - 1 to get the binomial coefficients.</div>
+                             
+                                 <div class=sectline>       0   1       3               7                              15</div>
+                             
+                                 <div class=sectline>    0: O | . | .   . | .   .   .   . | .   .   .   .   .   .   .   . |</div>
+                             
+                                 <div class=sectline>    1:   | O | O   . | O   .   .   . | O   .   .   .   .   .   .   . |</div>
+                             
+                                 <div class=sectline>    2:   |   |     O |     O   O   . |     O   O   .   O   .   .   . |</div>
+                             
+                                 <div class=sectline>    3:   |   |       |             O |             O       O   O   . |</div>
+                             
+                                 <div class=sectline>    4:   |   |       |               |                             O |</div>
+                             
+                                 <div class=sectline>This is a fractal process: to get the pattern from 0 to 2^n - 1, append a shifted down (by one row) copy of the pattern from 0 to 2^(n-1) - 1 to the right of the pattern from 0 to 2^(n-1) - 1. (Inspired by the &quot;binomial heap&quot; data structure.)</div>
+                             
+                                 <div class=sectline>Sequence of generation indices: 1's-counting sequence: number of 1's in binary expansion of n (or the binary weight of n) (see <a href="/A000120" title="Ones-counting sequence: number of 1's in binary expansion of n (or the binary weight of n).">A000120</a>):</div>
+                             
+                                 <div class=sectline>  {0, 1, 1, 2, 1, 2, 2, 3, 1, 2, 2, 3, 2, 3, 3, 4, ...}</div>
+                             
+                                 <div class=sectline>Binary expansion of 0 to 15:</div>
+                             
+                                 <div class=sectline>  0   1   10   11  100  101  110  111 1000 1001 1010 1011 1100 1101 1111</div>
+                             
+                                 <div class=sectline>(End)</div>
+                             
+                                 <div class=sectline><a href="/A258993" title="Triangle read by rows: T(n,k) = binomial(n+k,n-k), k = 0..n-1.">A258993</a>(n,k) = T(n+k,n-k), n &gt; 0. - <a href="/wiki/User:Reinhard_Zumkeller">Reinhard Zumkeller</a>, Jun 22 2015</div>
+                             
+                                 <div class=sectline>T(n,k) is the number of set partitions w of [n+1] that avoid 1/2/3 with rb(w)=k. The same holds for ls(w)=k, where avoidance is in the sense of Klazar and ls,rb defined by Wachs and White.</div>
+                             
+                                 <div class=sectline>Satisfies Benford's law [Diaconis, 1977] - <a href="/wiki/User:N._J._A._Sloane">N. J. A. Sloane</a>, Feb 09 2017</div>
+                             
+                                 <div class=sectline>Let {A(n)} be a set with exactly n identical elements, with {A(0)} being the empty set E. Let {A(n,k)} be the k-th iteration of {A(n)}, with {A(n,0)} = {A(n)}. {A(n,1)} = The set of all the subsets of A{(n)}, including {A(n)} and E. {A(n,k)} = The set of all subsets of {A(n,k-1)}, including all of the elements of {A(n,k-1)}. Let A(n,k) be the number of elements in {A(n,k)}. Then A(n,k) = C(n+k,k), with each successive iteration replicating the members of the k-th diagonal of Pascal's Triangle. See examples. - <a href="/wiki/User:Gregory_L._Simay">Gregory L. Simay</a>, Aug 06 2018</div>
+                             
+                                 <div class=sectline>From <a href="/wiki/User:Lara_Pudwell">Lara Pudwell</a>, Dec 19 2018: (Start)</div>
+                             
+                                 <div class=sectline>Binomial(n-1,k) is also the number of permutations avoiding both 213 and 312 with k ascents.</div>
+                             
+                                 <div class=sectline>Binomial(n-1,k) is also the number of permutations avoiding both 132 and 213 with k ascents. (End)</div>
+                             
+                                 <div class=sectline>Binomial(n,k) is the dimension of the k-th exterior power of a vector space of dimension n. - <a href="/wiki/User:Stefano_Spezia">Stefano Spezia</a>, Dec 22 2018</div>
+                             
+                                 <div class=sectline>C(n,k-1) is the number of unoriented colorings of the facets (or vertices) of an n-dimensional simplex using exactly k colors. Each chiral pair is counted as one when enumerating unoriented arrangements. - <a href="/wiki/User:Robert_A._Russell">Robert A. Russell</a>, Oct 20 2020</div>
+                             
+                                 <div class=sectline>From Dilcher and Stolarsky: &quot;Two of the most ubiquitous objects in mathematics are the sequence of prime numbers and the binomial coefficients (and thus Pascal's triangle). A connection between the two is given by a well-known characterization of the prime numbers: Consider the entries in the k-th row of Pascal's triangle, without the initial and final entries. They are all divisible by k if and only if k is a prime.&quot; - <a href="/wiki/User:Tom_Copeland">Tom Copeland</a>, May 17 2021</div>
+                             
+                                 <div class=sectline>Named &quot;Table de M. Pascal pour les combinaisons&quot; by Pierre Remond de Montmort (1708) after the French mathematician, physicist and philosopher Blaise Pascal (1623-1662). - <a href="/wiki/User:Amiram_Eldar">Amiram Eldar</a>, Jun 11 2021</div>
+                             
+                                 <div class=sectline>Consider the n-th diagonal of the triangle as a sequence b(n) with n starting at 0. From it form a new sequence by leaving the 0th term as is, and thereafter considering all compositions of n, taking the product of b(i) over the respective numbers i in each composition, adding terms corresponding to compositions with an even number of parts subtracting terms corresponding to compositions with an odd number of parts. Then the n-th row of the triangle is obtained, with every second term multiplied by -1, followed by infinitely many zeros. For sequences starting with 1, this operation is a special case of a self-inverse operation, and therefore the converse is true. - <a href="/wiki/User:Thomas_Anton">Thomas Anton</a>, Jul 05 2021</div>
+                             
+                                 <div class=sectline>C(n,k) is the number of vertices in an n-dimensional unit hypercube, at an L1 distance of k (or: with a shortest path of k 1d-edges) from a given vertex. - <a href="/wiki/User:Eitan_Y._Levine">Eitan Y. Levine</a>, May 01 2023</div>
+                             
+                                 <div class=sectline>C(n+k-1,k-1) is the number of vertices at an L1 distance from a given vertex in an infinite-dimensional box, which has k sides of length 2^m for each m &gt;= 0. Equivalently, given a set of tokens containing k distinguishable tokens with value 2^m for each m &gt;= 0, C(n+k-1,k-1) is the number of subsets of tokens with a total value of n. - <a href="/wiki/User:Eitan_Y._Levine">Eitan Y. Levine</a>, Jun 11 2023</div>
+                             
+                                 <div class=sectline>Numbers in the k-th column, i.e., numbers of the form C(n,k) for n &gt;= k, are known as k-simplex numbers. - <a href="/wiki/User:Pontus_von_Brömssen">Pontus von Brömssen</a>, Jun 26 2023</div>
+                             
+                                 <div class=sectline>Let r(k) be the k-th row and c(k) the k-th column. Denote convolution by * and repeated convolution by ^. Then r(k)*r(m)=r(k+m) and c(k)*c(m)=c(k+m+1). This is because r(k) = r(1) ^ k and c(k) = c(0) ^ k+1. - <a href="/wiki/User:Eitan_Y._Levine">Eitan Y. Levine</a>, Jul 23 2023</div>
+                             
+                                 <div class=sectline>Number of permutations of length n avoiding simultaneously the patterns 231 and 312(resp., 213 and 231; 213 and 312) with k descents (equivalently, with k ascents). An ascent (resp., descent) in a permutation a(1)a(2)...a(n) is position i such that a(i)&lt;a(i+1) (resp., a(i)&gt;a(i+1)). - <a href="/wiki/User:Tian_Han">Tian Han</a>, Nov 25 2023</div>
+                             
+                                 <div class=sectline>C(n,k) are generalized binomial coefficients of order m=0. Calculated by the formula C(n,k) = Sum_{i=0..n-k} binomial(n+1, n-k-i)*Stirling2(i+ m+ 1, i+1) *(-1)^i, where m = 0 for n&gt;= 0, 0 &lt;= k &lt;= n. - <a href="/wiki/User:Igor_Victorovich_Statsenko">Igor Victorovich Statsenko</a>, Feb 26 2023</div>
+                             
+                                 <div class=sectline>The Akiyama-Tanigawa algorithm applied to the diagonals, binomial(n+k,k), yields the powers of n. - <a href="/wiki/User:Shel_Kaphan">Shel Kaphan</a>, May 03 2024</div>
+                             
+                                 <div class=sectline>C(n,k) is the number of n-bit binary strings having Hamming weight k. - <a href="/wiki/User:Paolo_Xausa">Paolo Xausa</a>, Feb 20 2026</div>
+                             
+                         </div>
+                     </div>
+                 
+            
+        
+            
+                 
+                 
+                 
+                 
+                     <div class=section>
+                         <div class=sectname>REFERENCES</div>
+                         <div class=sectbody>
+                             
+                                 <div class=sectline>M. Abramowitz and I. A. Stegun, eds., Handbook of Mathematical Functions, National Bureau of Standards Applied Math. Series 55, 1964 (and various reprintings), p. 828.</div>
+                             
+                                 <div class=sectline>Amulya Kumar Bag, Binomial theorem in ancient India, Indian Journal of History of Science, vol. 1 (1966), pp. 68-74.</div>
+                             
+                                 <div class=sectline>Arthur T. Benjamin and Jennifer Quinn, Proofs that really count: the art of combinatorial proof, M.A.A. 2003, p. 63ff.</div>
+                             
+                                 <div class=sectline>Kenneth P. Bogart, Introductory Combinatorics, Harcourt Academic Press, 2000. See pp. 31-33.</div>
+                             
+                                 <div class=sectline>Miklos Bona, Introduction to Enumerative and Analytic Combinatorics, CRC Press, 2025, pp. 17-18, 25-30.</div>
+                             
+                                 <div class=sectline>Boris A. Bondarenko, Generalized Pascal Triangles and Pyramids (in Russian), FAN, Tashkent, 1990, ISBN 5-648-00738-8.</div>
+                             
+                                 <div class=sectline>Louis Comtet, Advanced Combinatorics, Reidel, 1974, p. 306.</div>
+                             
+                                 <div class=sectline>John H. Conway and Richard K. Guy, The Book of Numbers, New York: Springer-Verlag, 1996. See pp. 68-74.</div>
+                             
+                                 <div class=sectline>Paul Curtz, Intégration numérique des systèmes différentiels à conditions initiales, Centre de Calcul Scientifique de l'Armement, Arcueil, 1969.</div>
+                             
+                                 <div class=sectline>A. W. F. Edwards, Pascal's Arithmetical Triangle, 2002.</div>
+                             
+                                 <div class=sectline>William Feller, An Introduction to Probability Theory and Its Application, Vol. 1, 2nd ed. New York: Wiley, p. 36, 1968.</div>
+                             
+                                 <div class=sectline>Răzvan Gelca and Titu Andreescu, Putnam and Beyond, Springer 2007, pp. 304-305.</div>
+                             
+                                 <div class=sectline>Ronald L. Graham, Donald E. Knuth, and Oren Patashnik, Concrete Mathematics. Addison-Wesley, Reading, MA, 2nd. ed., 1994, p. 155.</div>
+                             
+                                 <div class=sectline>Jan Gullberg, Mathematics from the Birth of Numbers, W. W. Norton &amp; Co., NY &amp; London, 1997, §4.4 Powers and Roots, pp. 140-141.</div>
+                             
+                                 <div class=sectline>David Hök, Parvisa mönster i permutationer [Swedish], 2007.</div>
+                             
+                                 <div class=sectline>Donald E. Knuth, The Art of Computer Programming, Vol. 1, 2nd ed., p. 52.</div>
+                             
+                                 <div class=sectline>Sergei K. Lando, Lecture on Generating Functions, Amer. Math. Soc., Providence, R.I., 2003, pp. 60-61.</div>
+                             
+                                 <div class=sectline>Blaise Pascal, Traité du triangle arithmétique, avec quelques autres petits traitez sur la mesme matière, Desprez, Paris, 1665.</div>
+                             
+                                 <div class=sectline>Clifford A. Pickover, A Passion for Mathematics, Wiley, 2005; see p. 71.</div>
+                             
+                                 <div class=sectline>Alfred S. Posamentier, Math Charmers, Tantalizing Tidbits for the Mind, Prometheus Books, NY, 2003, pages 271-275.</div>
+                             
+                                 <div class=sectline>A. P. Prudnikov, Yu. A. Brychkov, and O. I. Marichev, &quot;Integrals and Series&quot;, Volume 1: &quot;Elementary Functions&quot;, Chapter 4: &quot;Finite Sums&quot;, New York, Gordon and Breach Science Publishers, 1986-1992.</div>
+                             
+                                 <div class=sectline>John Riordan, An Introduction to Combinatorial Analysis, Wiley, 1958, p. 6.</div>
+                             
+                                 <div class=sectline>John Riordan, Combinatorial Identities, Wiley, 1968, p. 2.</div>
+                             
+                                 <div class=sectline>Robert Sedgewick and Philippe Flajolet, An Introduction to the Analysis of Algorithms, Addison-Wesley, Reading, MA, 1996, p. 143.</div>
+                             
+                                 <div class=sectline>N. J. A. Sloane and Simon Plouffe, The Encyclopedia of Integer Sequences, Academic Press, 1995 (includes this sequence).</div>
+                             
+                                 <div class=sectline>Jerome Spanier and Keith B. Oldham, &quot;Atlas of Functions&quot;, Hemisphere Publishing Corp., 1987, chapter 6, pages 43-52.</div>
+                             
+                                 <div class=sectline>James J. Tattersall, Elementary Number Theory in Nine Chapters, Cambridge University Press, 1999, pages 13, 30-33.</div>
+                             
+                                 <div class=sectline>David Wells, The Penguin Dictionary of Curious and Interesting Numbers, Penguin Books, 1987, pp. 115-118.</div>
+                             
+                                 <div class=sectline>Douglas B. West, Combinatorial Mathematics, Cambridge, 2021, p. 25.</div>
+                             
+                         </div>
+                     </div>
+                 
+            
+        
+            
+                 
+                 
+                 
+                     
+                 
+                 
+                     <div class=section>
+                         <div class=sectname>LINKS</div>
+                         <div class=sectbody>
+                             
+                                 <div class=sectline>N. J. A. Sloane, <a href="/A007318/b007318.txt">First 141 rows of Pascal's triangle, formatted as a simple linear sequence: (n, a(n)), n=0..10152.</a></div>
+                             
+                                 <div class=sectline>M. Abramowitz and I. A. Stegun, eds., <a href="https://www.convertit.com/Go/ConvertIt/Reference/AMS55.ASP">Handbook of Mathematical Functions</a>, National Bureau of Standards, Applied Math. Series 55, Tenth Printing, 1972.</div>
+                             
+                                 <div class=sectline>Tewodros Amdeberhan, Moa Apagodu, and Doron Zeilberger, <a href="https://arxiv.org/abs/1507.07660">Wilf's &quot;Snake Oil&quot; Method Proves an Identity in The Motzkin Triangle</a>, arXiv:1507.07660 [math.CO], 2015.</div>
+                             
+                                 <div class=sectline>Said Amrouche and Hacène Belbachir, <a href="https://arxiv.org/abs/2001.11665">Asymmetric extension of Pascal-Dellanoy triangles</a>, arXiv:2001.11665 [math.CO], 2020.</div>
+                             
+                                 <div class=sectline>Shaun V. Ault and Charles Kicey, <a href="https://doi.org/10.1016/j.disc.2014.05.020">Counting paths in corridors using circular Pascal arrays</a>, Disc. Math. 332(6) (2014), 45-54.</div>
+                             
+                                 <div class=sectline>Mohammad K. Azarian, <a href="https://www.m-hikari.com/ijcms/ijcms-2012/37-40-2012/azarianIJCMS37-40-2012.pdf">Fibonacci Identities as Binomial Sums</a>, Int'l J. Contemp. Math. Sci. 7(38) (2012), 1871-1876.</div>
+                             
+                                 <div class=sectline>Mohammad K. Azarian, <a href="https://www.m-hikari.com/ijcms/ijcms-2012/41-44-2012/azarianIJCMS41-44-2012.pdf">Fibonacci Identities as Binomial Sums II</a>, Int'l J. Contemp. Math. Sci. 7(42) (2012), 2053-2059.</div>
+                             
+                                 <div class=sectline>Amulya Kumar Bag, <a href="http://repository.ias.ac.in/70374/">Binomial theorem in ancient India</a>, Indian J. History Sci. 1 (1966), 68-74.</div>
+                             
+                                 <div class=sectline>Armen G. Bagdasaryan and Ovidiu Bagdasar, <a href="https://doi.org/10.1016/j.endm.2018.05.012">On some results concerning generalized arithmetic triangles</a>, Elect. Notes Disc. Math. 67 (2018), 71-77.</div>
+                             
+                                 <div class=sectline>Peter Bala, <a href="/A007318/a007318.pdf">A combinatorial interpretation for the binomial coefficients</a>, 2013.</div>
+                             
+                                 <div class=sectline>Cyril Banderier and Donatella Merlini, <a href="http://www-igm.univ-mlv.fr/~fpsac/FPSAC02/ARTICLES/Banderier.pdf">Lattice paths with an infinite set of jumps</a>, Proc. 14th Int'l Conf. Formal Power Series and Algeb. Combin., Melbourne, Australia. 2002.</div>
+                             
+                                 <div class=sectline>J. Fernando Barbero G., Jesús Salas, and Eduardo J. S. Villaseñor, <a href="https://arxiv.org/abs/1307.2010">Bivariate Generating Functions for a Class of Linear Recurrences. I. General Structure</a>, arXiv:1307.2010 [math.CO], 2013.</div>
+                             
+                                 <div class=sectline>Paul Barry, <a href="https://cs.uwaterloo.ca/journals/JIS/VOL9/Barry/barry91.html">On Integer-Sequence-Based Constructions of Generalized Pascal Triangles</a>, J. Int. Seq. 9 (2006), Art. 06.2.4.</div>
+                             
+                                 <div class=sectline>Paul Barry, <a href="https://cs.uwaterloo.ca/journals/JIS/VOL12/Barry4/barry64.html">Symmetric Third-Order Recurring Sequences, Chebyshev Polynomials, and Riordan Arrays </a>, J. Int. Seq. 12 (2009) Art. 09.8.6.</div>
+                             
+                                 <div class=sectline>Paul Barry, <a href="https://arxiv.org/abs/1105.3043">Eulerian polynomials as moments, via exponential Riordan arrays</a>, arXiv:1105.3043 [math.CO], 2011.</div>
+                             
+                                 <div class=sectline>Paul Barry, <a href="https://arxiv.org/abs/1105.3044">Combinatorial polynomials as moments, Hankel transforms and exponential Riordan arrays</a>, arXiv:1105.3044 [math.CO], 2011.</div>
+                             
+                                 <div class=sectline>Paul Barry, <a href="https://cs.uwaterloo.ca/journals/JIS/VOL14/Barry3/barry132.html">On the Central Coefficients of Bell Matrices</a>, J. Int. Seq. 14 (2011) Art. 11.4.3. See example 2.</div>
+                             
+                                 <div class=sectline>Paul Barry, <a href="https://cs.uwaterloo.ca/journals/JIS/VOL15/Barry4/bern2.html">Riordan-Bernstein Polynomials, Hankel Transforms and Somos Sequences</a>, J. Int. Seq. 15 (2012), Art. 12.8.2.</div>
+                             
+                                 <div class=sectline>Paul Barry, <a href="https://cs.uwaterloo.ca/journals/JIS/VOL16/Barry1/barry242.html">On the Central Coefficients of Riordan Matrices</a>, J. Int. Seq. 16 (2013), Art. 13.5.1.</div>
+                             
+                                 <div class=sectline>Paul Barry, <a href="https://cs.uwaterloo.ca/journals/JIS/VOL16/Barry2/barry231.html">A Note on a Family of Generalized Pascal Matrices Defined by Riordan Arrays</a>, J. Int. Seq. 16 (2013), Art. 13.5.4.</div>
+                             
+                                 <div class=sectline>Paul Barry, <a href="https://cs.uwaterloo.ca/journals/JIS/VOL16/Barry3/barry252.html">On the Inverses of a Family of Pascal-Like Matrices Defined by Riordan Arrays</a>, J. Int. Seq. 16 (2013), Art. 13.5.6.</div>
+                             
+                                 <div class=sectline>Paul Barry, <a href="https://doi.org/10.1155/2013/657806">On the Connection Coefficients of the Chebyshev-Boubaker polynomials</a>, Sci. World J. 2013 (2013), Art. 657806, 10 pp.</div>
+                             
+                                 <div class=sectline>Paul Barry, <a href="https://cs.uwaterloo.ca/journals/JIS/VOL16/Barry4/barry271.html">General Eulerian Polynomials as Moments Using Exponential Riordan Arrays</a>, J. Int. Seq. 16 (2013), Art. 13.9.6.</div>
+                             
+                                 <div class=sectline>Paul Barry, <a href="https://doi.org/10.1016/j.laa.2015.10.032">Riordan arrays, generalized Narayana triangles, and series reversion</a>, Linear Algeb. Appl. 491 (2016), 343-385.</div>
+                             
+                                 <div class=sectline>Paul Barry, <a href="https://arxiv.org/abs/1804.05027">The Gamma-Vectors of Pascal-like Triangles Defined by Riordan Arrays</a>, arXiv:1804.05027 [math.CO], 2018.</div>
+                             
+                                 <div class=sectline>Paul Barry, <a href="https://arxiv.org/abs/1805.02274">On the f-Matrices of Pascal-like Triangles Defined by Riordan Arrays</a>, arXiv:1805.02274 [math.CO], 2018.</div>
+                             
+                                 <div class=sectline>Paul Barry, <a href="https://cs.uwaterloo.ca/journals/JIS/VOL22/Barry1/barry411.html">The Central Coefficients of a Family of Pascal-like Triangles and Colored Lattice Paths</a>, J. Int. Seq. 22 (2019), Art. 19.1.3.</div>
+                             
+                                 <div class=sectline>Paul Barry, <a href="https://arxiv.org/abs/1906.06373">On the halves of a Riordan array and their antecedents</a>, arXiv:1906.06373 [math.CO], 2019.</div>
+                             
+                                 <div class=sectline>Paul Barry, <a href="https://arxiv.org/abs/1906.01328">On the r-shifted central triangles of a Riordan array</a>, arXiv:1906.01328 [math.CO], 2019.</div>
+                             
+                                 <div class=sectline>Paul Barry, <a href="https://cs.uwaterloo.ca/journals/JIS/VOL22/Barry3/barry422.html">Generalized Catalan Numbers Associated with a Family of Pascal-like Triangles</a>, J. Int. Seq. 22 (2019), Art. 19.5.8.</div>
+                             
+                                 <div class=sectline>Paul Barry, <a href="https://arxiv.org/abs/1912.01124">A Note on Riordan Arrays with Catalan Halves</a>, arXiv:1912.01124 [math.CO], 2019.</div>
+                             
+                                 <div class=sectline>Paul Barry, <a href="https://arxiv.org/abs/1912.11845">Chebyshev moments and Riordan involutions</a>, arXiv:1912.11845 [math.CO], 2019.</div>
+                             
+                                 <div class=sectline>Paul Barry, <a href="https://arxiv.org/abs/2001.08799">Characterizations of the Borel triangle and Borel polynomials</a>, arXiv:2001.08799 [math.CO], 2020.</div>
+                             
+                                 <div class=sectline>Paul Barry, <a href="https://arxiv.org/abs/2004.04577">On a Central Transform of Integer Sequences</a>, arXiv:2004.04577 [math.CO], 2020.</div>
+                             
+                                 <div class=sectline>Paul Barry, <a href="https://doi.org/10.3390/math13020242">Extensions of Riordan Arrays and Their Applications</a>, Mathematics 13(2) (2025), Art. 242. See p. 13.</div>
+                             
+                                 <div class=sectline>Paul Barry, <a href="https://arxiv.org/abs/2504.09719">Notes on Riordan arrays and lattice paths</a>, arXiv:2504.09719 [math.CO], 2025. See p. 2.</div>
+                             
+                                 <div class=sectline>Paul Barry and Aoife Hennessy, <a href="https://cs.uwaterloo.ca/journals/JIS/VOL15/Barry1/barry202.html">Four-term Recurrences, Orthogonal Polynomials and Riordan Arrays</a>, J. Int. Seq. 15 (2012), Art. 12.4.2.</div>
+                             
+                                 <div class=sectline>Jonathan W. Bober, <a href="https://arxiv.org/abs/0709.1977">Factorial ratios, hypergeometric series, and a family of step functions</a>, arXiv:0709.1977v1 [math.NT], See also <a href="https://doi.org/10.1112/jlms/jdn078">J. London Math. Soc.</a> 79(2) (2009), 422-444.</div>
+                             
+                                 <div class=sectline>Boris A. Bondarenko, <a href="https://www.fq.math.ca/pascal.html">Generalized Pascal Triangles and Pyramids</a>, English translation published by Fibonacci Association, Santa Clara Univ., Santa Clara, CA (1993). See p. 4.</div>
+                             
+                                 <div class=sectline>Michael Bukata, Ryan Kulwicki, Nicholas Lewandowski, Lara Pudwell, Jacob Roth and Teresa Wheeland, <a href="https://arxiv.org/abs/1812.07112">Distributions of Statistics over Pattern-Avoiding Permutations</a>, arXiv preprint arXiv:1812.07112 [math.CO], 2018.</div>
+                             
+                                 <div class=sectline>Douglas Butler, <a href="https://web.archive.org/web/20190326010337/http://www.tsm-resources.com/alists/pasc.html">Pascal's Triangle</a>.</div>
+                             
+                                 <div class=sectline>Isabel Cação, Helmuth R. Malonek, Maria Irene Falcão, and Graça Tomaz, <a href="https://cs.uwaterloo.ca/journals/JIS/VOL26/Falcao/falcao5.html">Intrinsic Properties of a Non-Symmetric Number Triangle</a>, J. Int. Seq. 26 (2023), Art. 23.4.8.</div>
+                             
+                                 <div class=sectline>Naiomi T. Cameron and Asamoah Nkwanta, <a href="https://cs.uwaterloo.ca/journals/JIS/VOL8/Cameron/cameron46.html">On Some (Pseudo) Involutions in the Riordan Group</a>, J. Int. Seq. 8 (2005), Art. 05.3.7.</div>
+                             
+                                 <div class=sectline>Dario T. de Castro, <a href="https://math.colgate.edu/~integers/w61/w61.pdf">p-adic Order of Positive Integers via Binomial Coefficients</a>, Integers 22 (2022), Paper A61.</div>
+                             
+                                 <div class=sectline>Ji Young Choi, <a href="https://cs.uwaterloo.ca/journals/JIS/VOL22/Choi/choi15.html">Digit Sums Generalizing Binomial Coefficients</a>, J. Int. Seq. 22 (2019), Art. 19.8.3.</div>
+                             
+                                 <div class=sectline>Cristian Cobeli and Alexandru Zaharescu, <a href="https://rms.unibuc.ro/bulletin/pdf/56-1/PromenadePascalPart1.pdf">Promenade around Pascal Triangle - Number Motives</a>, Bull. Math. Soc. Sci. Math. Roumanie, Tome 56(104) No. 1 (2013), pp. 73-98.</div>
+                             
+                                 <div class=sectline>CombOS - Combinatorial Object Server, <a href="https://combos.org/comb.html">Generate combinations</a>.</div>
+                             
+                                 <div class=sectline>J. H. Conway and N. J. A. Sloane, <a href="http://citeseerx.ist.psu.edu/pdf/f097dc2b7ab879b1f15f52f188faa5243271f982">Low-dimensional lattices. VII Coordination sequences</a>, Proc. R. Soc. Lond. A, 453(1966) (1997), 2369-2389.</div>
+                             
+                                 <div class=sectline>Tom Copeland, <a href="https://tcjpn.wordpress.com/2012/11/29/infinigens-the-pascal-pyramid-and-the-witt-and-virasoro-algebras/">Infinigens, the Pascal Triangle, and the Witt and Virasoro Algebras</a>, Shadows of Simplicity (blog), 29 Nov 2012.</div>
+                             
+                                 <div class=sectline>Persi Diaconis, <a href="https://doi.org/10.1214/aop/1176995891">The distribution of leading digits and uniform distribution mod 1</a>, Ann. Probability 5 (1977), 72-81.</div>
+                             
+                                 <div class=sectline>Karl Dilcher and Kenneth B. Stolarsky, <a href="https://web.archive.org/web/20150906041323/https://www.maa.org/sites/default/files/pdf/upload_library/22/Ford/dilcher673.pdf">A Pascal-Type Triangle Characterizing Twin Primes</a>, The Amer. Math. Monthly 112(8) (Oct 2005), 673-681.</div>
+                             
+                                 <div class=sectline>Tomislav Došlic and Darko Veljan, <a href="https://doi.org/10.1016/j.disc.2007.04.066">Logarithmic behavior of some combinatorial sequences</a>, Disc. Math. 308(11) (2008), 2182-2212. MR2404544 (2009j:05019).</div>
+                             
+                                 <div class=sectline>Abdelhai Doukali, <a href="https://arxiv.org/abs/2607.12173">Expansions of Binomial(p*n, p+r) in Shifted Binomial Bases and a Modular Symmetry Criterion</a>, arXiv:2607.12173 [math.CO], 2026. See pp. 1, 5 (table in Sect. 5).</div>
+                             
+                                 <div class=sectline>Steffen Eger, <a href="https://cs.uwaterloo.ca/journals/JIS/VOL18/Eger/eger11.html">Some Elementary Congruences for the Number of Weighted Integer Compositions</a>, J. Int. Seq. 18 (2015), Art. 15.4.1.</div>
+                             
+                                 <div class=sectline>Leonhard Euler, <a href="https://arxiv.org/abs/math/0505425">On the expansion of the power of any polynomial (1+x+x^2+x^3+x^4+etc.)^n</a>, arXiv:math/0505425 [math.HO], 2005. See also <a href="https://scholarlycommons.pacific.edu/euler-works/709/">The Euler Archive</a>, item E709.</div>
+                             
+                                 <div class=sectline>Jackson Evoniuk, Steven Klee, and Van Magnan, <a href="https://cs.uwaterloo.ca/journals/JIS/VOL21/Klee/klee2.html">Enumerating Minimal Length Lattice Paths</a>, J. Int. Seq. 21 (2018), Art. 18.3.6.</div>
+                             
+                                 <div class=sectline>A. Farina, S. Giompapa, A. Graziano, A. Liburdi, M. Ravanelli, and F. Zirilli, <a href="https://doi.org/10.1007/s11760-011-0228-6">Tartaglia-Pascal's triangle: a historical perspective with applications</a>, Signal, Image and Video Processing, 7(1) (January 2013), 173-188.</div>
+                             
+                                 <div class=sectline>Steven Finch, Pascal Sebah, and Zai-Qiao Bai, <a href="https://arxiv.org/abs/0802.2654">Odd Entries in Pascal's Trinomial Triangle</a>, arXiv:0802.2654 [math.NT], 2008.</div>
+                             
+                                 <div class=sectline>David Fowler, <a href="https://www.jstor.org/stable/2975209">The binomial coefficient function</a>, Amer. Math. Monthly 103(1) (1996), 1-17.</div>
+                             
+                                 <div class=sectline>Shishuo Fu and Yaling Wang, <a href="https://arxiv.org/abs/1908.03912">Bijective recurrences concerning two Schröder triangles</a>, arXiv:1908.03912 [math.CO], 2019.</div>
+                             
+                                 <div class=sectline>Tom Halverson and Theodore N. Jacobson, <a href="https://arxiv.org/abs/1808.08118">Set-partition tableaux and representations of diagram algebras</a>, arXiv:1808.08118 [math.RT], 2018.</div>
+                             
+                                 <div class=sectline>Tian Han and Sergey Kitaev, <a href="https://arxiv.org/abs/2311.02974">Joint distributions of statistics over permutations avoiding two patterns of length 3</a>, arXiv:2311.02974 [math.CO], 2023</div>
+                             
+                                 <div class=sectline>Brady Haran and Casandra Monroe, <a href="https://www.youtube.com/watch?v=0iMtlus-afo">Pascal's Triangle</a>, Numberphile video (2017).</div>
+                             
+                                 <div class=sectline>Tian-Xiao He and Renzo Sprugnoli, <a href="https://doi.org/10.1016/j.disc.2008.11.021">Sequence characterization of Riordan arrays</a>, Disc. Math. 309(12) (2009), 3962-3974.</div>
+                             
+                                 <div class=sectline>Nick Hobson, <a href="/A007318/a007318.py.txt">Python program for A007318</a>.</div>
+                             
+                                 <div class=sectline>V. E. Hoggatt, Jr. and Marjorie Bicknell, <a href="https://www.fq.math.ca/Scanned/14-5/hoggatt1.pdf">Catalan and related sequences arising from inverses of Pascal's triangle matrices</a>, Fib. Quart. 14(5) (1976), 395-405.</div>
+                             
+                                 <div class=sectline>Matthew Hubbard and Tom Roby, <a href="http://web.archive.org/web/20060912171955/http://binomial.csuhayward.edu/">Pascal's Triangle From Top to Bottom</a>. [archived page]</div>
+                             
+                                 <div class=sectline>Charles Jordan, <a href="https://books.google.co.jp/books/about/Calculus_of_Finite_Differences.html?id=3RfZOsDAyQsC&amp;hl=fr">Calculus of Finite Differences</a>. See p. 65.</div>
+                             
+                                 <div class=sectline>Subhash Kak, <a href="https://doi.org/10.1007/978-0-8176-4695-0_7">The golden mean and the physics of aesthetics</a>, in: B. Yadav and M. Mohan (eds.), Ancient Indian Leaps into Mathematics, Birkhäuser, Boston, MA, 2009, pp. 111-119; <a href="https://arxiv.org/abs/physics/0411195">arXiv preprint</a>, arXiv:physics/0411195 [physics.hist-ph], 2004.</div>
+                             
+                                 <div class=sectline>Petro Kolosov, <a href="https://archive.org/details/polynomial-identities-involving-pascals-triangle-rows">Polynomial identities involving Pascal's triangle rows</a>, 2022.</div>
+                             
+                                 <div class=sectline>Wolfdieter Lang, <a href="https://cs.uwaterloo.ca/journals/JIS/VOL3/LANG/lang.html">On generalizations of Stirling number triangles</a>, J. Int. Seq. 3 (2000), Art. 00.2.4.</div>
+                             
+                                 <div class=sectline>Eric Lehman, F. Thomson Leighton, and Albert R. Meyer, <a href="https://people.csail.mit.edu/meyer/mcs.pdf">Mathematics for Computer Science</a>, Massachusetts Institute of Technology, 2015. See pp. 562-563, 566-567, 587-589, 633.</div>
+                             
+                                 <div class=sectline>Eitan Y. Levine, <a href="/A007318/a007318_1.txt">GCD formula proof</a>.</div>
+                             
+                                 <div class=sectline>Meng Li and Ron Goldman, <a href="https://doi.org/10.1016/j.disc.2020.111870">Limits of sums for binomial and Eulerian numbers and their associated distributions</a>, Disc. Math. 343(7) (2020), 111870.</div>
+                             
+                                 <div class=sectline>P. A. MacMahon, <a href="https://www.jstor.org/stable/90632">Memoir on the Theory of the Compositions of Numbers</a>, Phil. Trans. Royal Soc. London A, Vol. 184 (1893), 835-901.</div>
+                             
+                                 <div class=sectline>Mathforum, <a href="https://web.archive.org/web/20150326073547/http://mathforum.org/dr.math/faq/faq.pascal.triangle.html">Pascal's Triangle</a>.</div>
+                             
+                                 <div class=sectline>Carl McTague, <a href="https://arxiv.org/abs/1510.06696">On the Greatest Common Divisor of C(q*n,n), C(q*n,2*n), ...C(q*n,q*n-q)</a>, arXiv:1510.06696 [math.CO], 2015.</div>
+                             
+                                 <div class=sectline>Donatella Merlini, Renzo Sprugnoli, and Maria C. Verri, <a href="https://doi.org/10.1007/978-3-0348-8405-1_11">An algebra for proper generating trees</a>, in: D. Gardy and A. Mokkadem (eds.), Mathematics and Computer Science, Trends in Mathematics, Birkhäuser, Basel, 2000, pp. 127-139; <a href="https://www.researchgate.net/profile/Renzo-Sprugnoli/publication/2386023">ResearchGate link</a>.</div>
+                             
+                                 <div class=sectline>Donatella Merlini, Francesca Uncini, and M. Cecilia Verri, <a href="https://math.colgate.edu/~integers/e23/e23.Abstract.html">A unified approach to the study of general and palindromic compositions</a>, Integers, Vol. 4 (2004), A23, 26 pp.</div>
+                             
+                                 <div class=sectline>Ângela Mestre and José Agapito, <a href="https://cs.uwaterloo.ca/journals/JIS/VOL22/Agapito/mestre8.html">A Family of Riordan Group Automorphisms</a>, J. Int. Seq., Vol. 22 (2019), Article 19.8.5.</div>
+                             
+                                 <div class=sectline>Pierre Remond de Montmort, <a href="https://archive.org/details/ldpd_6444894_000/page/n107/mode/2up">Essay d'analyse sur les jeux de hazard</a>, Paris: Chez Jacque Quillau, 1708, p. 80.</div>
+                             
+                                 <div class=sectline>Yossi Moshe, <a href="https://doi.org/10.1016/S0022-314X(03)00103-3">The density of 0's in recurrence double sequences</a>, J. Number Theory, Vol. 103 (2003), pp. 109-121.</div>
+                             
+                                 <div class=sectline>Lili Mu and Sai-nan Zheng, <a href="https://cs.uwaterloo.ca/journals/JIS/VOL20/Zheng/zheng8.html"> On the Total Positivity of Delannoy-Like Triangles</a>, J. Int. Seq. 20 (2017), Art. 17.1.6.</div>
+                             
+                                 <div class=sectline>Abdelkader Necer, <a href="https://doi.org/10.5802/jtnb.205">Séries formelles et produit de Hadamard</a>, J. théorie des nombres de Bordeaux, 9(2) (1997), 319-335.</div>
+                             
+                                 <div class=sectline>Asamoah Nkwanta and Earl R. Barnes, <a href="https://cs.uwaterloo.ca/journals/JIS/VOL15/Nkwanta/nkwanta2.html">Two Catalan-type Riordan Arrays and their Connections to the Chebyshev Polynomials of the First Kind</a>, J. Int. Seq. 15 (2012), Art. 12.3.3.</div>
+                             
+                                 <div class=sectline>Asamoah Nkwanta and Akalu Tefera, <a href="https://cs.uwaterloo.ca/journals/JIS/VOL16/Nkwanta/nkwanta4.html">Curious Relations and Identities Involving the Catalan Generating Function and Numbers</a>, J. Int. Seq. 16 (2013), Art. 13.9.5.</div>
+                             
+                                 <div class=sectline>Mustafa A. A. Obaid, S. Khalid Nauman, Wafaa M. Fakieh, and Claus Michael Ringel, <a href="https://www.math.uni-bielefeld.de/~ringel/opus/jeddah.pdf">The numbers of support-tilting modules for a Dynkin algebra</a>, 2014.</div>
+                             
+                                 <div class=sectline>OEIS Wiki, <a href="/wiki/Binomial_coefficients">Binomial coefficients</a></div>
+                             
+                                 <div class=sectline>Richard L. Ollerton and Anthony G. Shannon, <a href="https://www.fq.math.ca/Scanned/36-2/ollerton.pdf">Some properties of generalized Pascal squares and triangles</a>, Fib. Q. 36(2) (1998), 98-109.</div>
+                             
+                                 <div class=sectline>Ed Pegg, Jr., <a href="https://www.mathpuzzle.com/MAA/07-Sequence%20Pictures/mathgames_12_08_03.html">Sequence Pictures</a>, Math Games column, Dec 08 2003.</div>
+                             
+                                 <div class=sectline>Ed Pegg, Jr., <a href="/A000043/a000043_2.pdf">Sequence Pictures</a>, Math Games column, Dec 08 2003. [Cached copy, with permission (pdf only)]</div>
+                             
+                                 <div class=sectline>Balak Ram, <a href="https://babel.hathitrust.org/cgi/pt?id=njp.32101080760422;view=1up;seq=51">Common factors of n!/(m!(n-m)!), (m = 1, 2, ... n-1)</a>, J. Indian Math. Club (Madras) 1 (1909), 39-43.</div>
+                             
+                                 <div class=sectline>Franck Ramaharo, <a href="https://arxiv.org/abs/1802.07701">Statistics on some classes of knot shadows</a>, arXiv:1802.07701 [math.CO], 2018.</div>
+                             
+                                 <div class=sectline>Franck Ramaharo, <a href="https://arxiv.org/abs/1805.10680">A generating polynomial for the pretzel knot</a>, arXiv:1805.10680 [math.CO], 2018.</div>
+                             
+                                 <div class=sectline>Franck Ramaharo, <a href="https://arxiv.org/abs/1902.08989">A generating polynomial for the two-bridge knot with Conway's notation C(n,r)</a>, arXiv:1902.08989 [math.CO], 2019.</div>
+                             
+                                 <div class=sectline>Franck Ramaharo, <a href="https://arxiv.org/abs/2002.06672">A bracket polynomial for 2-tangle shadows</a>, arXiv:2002.06672 [math.CO], 2020.</div>
+                             
+                                 <div class=sectline>Jack Ramsay, <a href="/A349812/a349812.pdf">On Arithmetical Triangles</a>, The Pulse of Long Island, June 1965 [Mentions application to design of antenna arrays. Annotated scan.]</div>
+                             
+                                 <div class=sectline>Thomas M. Richardson, <a href="https://arxiv.org/abs/1405.6315">The Reciprocal Pascal Matrix</a>, arXiv preprint arXiv:1405.6315 [math.CO], 2014.</div>
+                             
+                                 <div class=sectline>Yuriy Shablya, Dmitry Kruchinin, and Vladimir Kruchinin, <a href="https://doi.org/10.3390/math8060962">Method for Developing Combinatorial Generation Algorithms Based on AND/OR Trees and Its Application</a>, Mathematics 8(6) (2020), 962.</div>
+                             
+                                 <div class=sectline>Louis W. Shapiro, Seyoum Getu, Wen-Jin Woan, and Leon C. Woodson, <a href="https://doi.org/10.1016/0166-218X(91)90088-E">The Riordan group</a>, Disc. Appl. Math. 34 (1991), 229-239.</div>
+                             
+                                 <div class=sectline>N. J. A. Sloane, <a href="https://neilsloane.com/doc/sg.txt">My favorite integer sequences</a>, in Sequences and their Applications (Proceedings of SETA '98).</div>
+                             
+                                 <div class=sectline>N. J. A. Sloane, <a href="/A222314/a222314_1.pdf">Triangle showing silhouette of first 30 rows of Pascal's triangle (after Cobeli and Zaharescu)</a>.</div>
+                             
+                                 <div class=sectline>N. J. A. Sloane, <a href="https://arxiv.org/abs/2105.05111">The OEIS: A Fingerprint File for Mathematics</a>, arXiv:2105.05111 [math.HO], 2021.</div>
+                             
+                                 <div class=sectline>N. J. A. Sloane, <a href="https://arxiv.org/abs/2301.03149">&quot;A Handbook of Integer Sequences&quot; Fifty Years Later</a>, arXiv:2301.03149 [math.NT], 2023, p. 5.</div>
+                             
+                                 <div class=sectline>Hermann Stamm-Wilbrandt, <a href="/A007318/a007318_2.gif">Compute C(n+m,...) based on C(n,...) and C(m,...) values animation</a>.</div>
+                             
+                                 <div class=sectline>Igor Victorovich Statsenko, <a href="https://aeterna-ufa.ru/sbornik/IN-2024-02-2.pdf#page=15">On the ordinal numbers of triangles of generalized special numbers</a>, Innovation Science No. 2-2, State Ufa, Aeterna Publishing House, 2024, pp. 15-19. In Russian.</div>
+                             
+                                 <div class=sectline>Christopher Stover and Eric W. Weisstein, <a href="https://mathworld.wolfram.com/Composition.html">Composition</a>. From MathWorld - A Wolfram Web Resource.</div>
+                             
+                                 <div class=sectline>Gérard Villemin's Almanach of Numbers, <a href="https://diconombre.fr/Wwwgvmm/Iteration/TrgPasca.htm">Triangle de Pascal</a>.</div>
+                             
+                                 <div class=sectline>Eric Weisstein's World of Mathematics, <a href="https://mathworld.wolfram.com/PascalsTriangle.html">Pascal's Triangle</a>.</div>
+                             
+                                 <div class=sectline>Eric Weisstein's World of Mathematics, <a href="https://mathworld.wolfram.com/RascalTriangle.html">Rascal Triangle</a>.</div>
+                             
+                                 <div class=sectline>Wikipedia, <a href="https://en.wikipedia.org/wiki/Pascal&#39;s_triangle">Pascal's triangle</a>.</div>
+                             
+                                 <div class=sectline>Herbert S. Wilf, <a href="https://www2.math.upenn.edu/~wilf/DownldGF.html">Generatingfunctionology</a>, 2nd ed., Academic Press, NY, 1994, pp. 12ff.</div>
+                             
+                                 <div class=sectline>Ken Williams, Mathforum, <a href="https://web.archive.org/web/20170713190255/http://mathforum.org/dr.cgi/pascal.cgi">Interactive Pascal's Triangle</a>.</div>
+                             
+                                 <div class=sectline>Doron Zeilberger, <a href="https://arxiv.org/abs/math/9809136">The Combinatorial Astrology of Rabbi Abraham Ibn Ezra</a>, arXiv:math/9809136 [math.CO], 1998.</div>
+                             
+                                 <div class=sectline>Chris Zheng and Jeffrey Zheng, <a href="https://doi.org/10.1007/978-981-13-2282-2_4">Triangular Numbers and Their Inherent Properties</a>, Variant Construction from Theoretical Foundation to Applications, Springer, Singapore, 51-65.</div>
+                             
+                                 <div class=sectline><a href="/index/Pas#Pascal">Index entries for triangles and arrays related to Pascal's triangle</a>.</div>
+                             
+                                 <div class=sectline><a href="/index/Cor#core">Index entries for &quot;core&quot; sequences</a>.</div>
+                             
+                                 <div class=sectline><a href="/index/Be#Benford">Index entries for sequences related to Benford's law</a>.</div>
+                             
+                         </div>
+                     </div>
+                 
+            
+        
+            
+                 
+                 
+                 
+                 
+                     <div class=section>
+                         <div class=sectname>FORMULA</div>
+                         <div class=sectbody>
+                             
+                                 <div class=sectline>a(n, k) = C(n,k) = binomial(n, k).</div>
+                             
+                                 <div class=sectline>C(n, k) = C(n-1, k) + C(n-1, k-1).</div>
+                             
+                                 <div class=sectline>The triangle is symmetric: C(n,k) = C(n,n-k).</div>
+                             
+                                 <div class=sectline>a(n+1, m) = a(n, m) + a(n, m-1), a(n, -1) := 0, a(n, m) := 0, n&lt;m; a(0, 0)=1.</div>
+                             
+                                 <div class=sectline>C(n, k) = n!/(k!(n-k)!) if 0&lt;=k&lt;=n, otherwise 0.</div>
+                             
+                                 <div class=sectline>C(n, k) = ((n-k+1)/k) * C(n, k-1) with C(n, 0) = 1. - <a href="/wiki/User:Michael_B._Porter">Michael B. Porter</a>, Mar 23 2025</div>
+                             
+                                 <div class=sectline>G.f.: 1/(1-y-x*y) = Sum_(C(n, k)*x^k*y^n, n, k&gt;=0)</div>
+                             
+                                 <div class=sectline>G.f.: 1/(1-x-y) = Sum_(C(n+k, k)*x^k*y^n, n, k&gt;=0).</div>
+                             
+                                 <div class=sectline>G.f. for row n: (1+x)^n = Sum_{k=0..n} C(n, k)*x^k.</div>
+                             
+                                 <div class=sectline>G.f. for column k: x^k/(1-x)^(k+1); [corrected by <a href="/wiki/User:Werner_Schulte">Werner Schulte</a>, Jun 15 2022].</div>
+                             
+                                 <div class=sectline>E.g.f.: A(x, y) = exp(x+x*y).</div>
+                             
+                                 <div class=sectline>E.g.f. for column n: x^n*exp(x)/n!.</div>
+                             
+                                 <div class=sectline>In general the m-th power of <a href="/A007318" title="Pascal's triangle read by rows: C(n,k) = binomial(n,k) = n!/(k!*(n-k)!), 0 &lt;= k &lt;= n.">A007318</a> is given by: T(0, 0) = 1, T(n, k) = T(n-1, k-1) + m*T(n-1, k), where n is the row-index and k is the column; also T(n, k) = m^(n-k)*C(n, k).</div>
+                             
+                                 <div class=sectline>Triangle T(n, k) read by rows; given by <a href="/A000007" title="The characteristic function of {0}: a(n) = 0^n.">A000007</a> DELTA <a href="/A000007" title="The characteristic function of {0}: a(n) = 0^n.">A000007</a>, where DELTA is Deléham's operator defined in <a href="/A084938" title="Triangle read by rows: T(n,k) = Sum_{j&gt;=0} j!*T(n-j-1, k-1) for n &gt;= 0, k &gt;= 0.">A084938</a>.</div>
+                             
+                                 <div class=sectline>Let P(n+1) = the number of integer partitions of (n+1); let p(i) = the number of parts of the i-th partition of (n+1); let d(i) = the number of different parts of the i-th partition of (n+1); let m(i, j) = multiplicity of the j-th part of the i-th partition of (n+1). Define the operator Sum_{i=1..P(n+1), p(i)=k+1} as the sum running from i=1 to i=P(n+1) but taking only partitions with p(i)=(k+1) parts into account. Define the operator Product_{j=1..d(i)} = product running from j=1 to j=d(i). Then C(n, k) = Sum_{p(i)=(k+1), i=1..P(n+1)} p(i)! / [Product_{j=1..d(i)} m(i, j)!]. E.g., C(5, 3) = 10 because n=6 has the following partitions with m=3 parts: (114), (123), (222). For their multiplicities one has: (114): 3!/(2!*1!) = 3; (123): 3!/(1!*1!*1!) = 6; (222): 3!/3! = 1. The sum is 3 + 6 + 1 = 10 = C(5, 3). - <a href="/wiki/User:Thomas_Wieder">Thomas Wieder</a>, Jun 03 2005</div>
+                             
+                                 <div class=sectline>C(n, k) = Sum_{j=0..k} (-1)^j*C(n+1+j, k-j)*<a href="/A000108" title="Catalan numbers: C(n) = binomial(2n,n)/(n+1) = (2n)!/(n!(n+1)!).">A000108</a>(j). - <a href="/wiki/User:Philippe_Deléham">Philippe Deléham</a>, Oct 10 2005</div>
+                             
+                                 <div class=sectline>G.f.: 1 + x*(1 + x) + x^3*(1 + x)^2 + x^6*(1 + x)^3 + ... . - <a href="/wiki/User:Michael_Somos">Michael Somos</a>, Sep 16 2006</div>
+                             
+                                 <div class=sectline>Sum_{k=0..floor(n/2)} x^(n-k)*T(n-k,k) = <a href="/A000007" title="The characteristic function of {0}: a(n) = 0^n.">A000007</a>(n), <a href="/A000045" title="Fibonacci numbers: F(n) = F(n-1) + F(n-2) with F(0) = 0 and F(1) = 1.">A000045</a>(n+1), <a href="/A002605" title="a(n) = 2*(a(n-1) + a(n-2)), a(0) = 0, a(1) = 1.">A002605</a>(n), <a href="/A030195" title="a(n) = 3*a(n-1) + 3*a(n-2), a(0)=0, a(1)=1.">A030195</a>(n+1), <a href="/A057087" title="Scaled Chebyshev U-polynomials evaluated at i. Generalized Fibonacci sequence.">A057087</a>(n), <a href="/A057088" title="Scaled Chebyshev U-polynomials evaluated at i*sqrt(5)/2. Generalized Fibonacci sequence.">A057088</a>(n), <a href="/A057089" title="Scaled Chebyshev U-polynomials evaluated at i*sqrt(6)/2. Generalized Fibonacci sequence.">A057089</a>(n), <a href="/A057090" title="Scaled Chebyshev U-polynomials evaluated at i*sqrt(7)/2. Generalized Fibonacci sequence.">A057090</a>(n), <a href="/A057091" title="Scaled Chebyshev U-polynomials evaluated at i*sqrt(2). Generalized Fibonacci sequence.">A057091</a>(n), <a href="/A057092" title="Scaled Chebyshev U-polynomials evaluated at i*3/2. Generalized Fibonacci sequence.">A057092</a>(n), <a href="/A057093" title="Scaled Chebyshev U-polynomials evaluated at i*sqrt(10)/2. Generalized Fibonacci sequence.">A057093</a>(n) for x = 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, respectively. Sum_{k=0..floor(n/2)} (-1)^k*x^(n-k)*T(n-k,k) = <a href="/A000007" title="The characteristic function of {0}: a(n) = 0^n.">A000007</a>(n), <a href="/A010892" title="Inverse of 6th cyclotomic polynomial. A period 6 sequence.">A010892</a>(n), <a href="/A009545" title="Expansion of e.g.f. sin(x)*exp(x).">A009545</a>(n+1), <a href="/A057083" title="Scaled Chebyshev U-polynomials evaluated at sqrt(3)/2; expansion of 1/(1 - 3*x + 3*x^2).">A057083</a>(n), <a href="/A001787" title="a(n) = n*2^(n-1).">A001787</a>(n+1), <a href="/A030191" title="Scaled Chebyshev U-polynomial evaluated at sqrt(5)/2.">A030191</a>(n), <a href="/A030192" title="Scaled Chebyshev U-polynomial evaluated at sqrt(6)/2.">A030192</a>(n), <a href="/A030240" title="Scaled Chebyshev U-polynomials evaluated at sqrt(7)/2.">A030240</a>(n), <a href="/A057084" title="Scaled Chebyshev U-polynomials evaluated at sqrt(2).">A057084</a>(n), <a href="/A057085" title="a(n) = 9*a(n-1) - 9*a(n-2) for n&gt;1, with a(0)=0, a(1)=1.">A057085</a>(n+1), <a href="/A057086" title="Scaled Chebyshev U-polynomials evaluated at sqrt(10)/2.">A057086</a>(n), <a href="/A084329" title="a(0)=0, a(1)=1, a(n) = 20*a(n-1) - 20*a(n-2).">A084329</a>(n+1) for x = 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 20, respectively. - <a href="/wiki/User:Philippe_Deléham">Philippe Deléham</a>, Sep 16 2006</div>
+                             
+                                 <div class=sectline>C(n,k) &lt;= <a href="/A062758" title="Product of squares of divisors of n.">A062758</a>(n) for n &gt; 1. - <a href="/wiki/User:Reinhard_Zumkeller">Reinhard Zumkeller</a>, Mar 04 2008</div>
+                             
+                                 <div class=sectline>C(t+p-1, t) = Sum_{i=0..t} C(i+p-2, i) = Sum_{i=1..p} C(i+t-2, t-1). A binomial number is the sum of its left parent and all its right ancestors, which equals the sum of its right parent and all its left ancestors. - Lee Naish (lee(AT)cs.mu.oz.au), Mar 07 2008</div>
+                             
+                                 <div class=sectline>From <a href="/wiki/User:Paul_D._Hanna">Paul D. Hanna</a>, Mar 24 2011: (Start)</div>
+                             
+                                 <div class=sectline>Let A(x) = Sum_{n&gt;=0} x^(n*(n+1)/2)*(1+x)^n be the g.f. of the flattened triangle:</div>
+                             
+                                 <div class=sectline>A(x) = 1 + (x + x^2) + (x^3 + 2*x^4 + x^5) + (x^6 + 3*x^7 + 3*x^8 + x^9) + ...</div>
+                             
+                                 <div class=sectline>then A(x) equals the series Sum_{n&gt;=0} (1+x)^n*x^n*Product_{k=1..n} (1-(1+x)*x^(2*k-1))/(1-(1+x)*x^(2*k));</div>
+                             
+                                 <div class=sectline>also, A(x) equals the continued fraction 1/(1- x*(1+x)/(1+ x*(1-x)*(1+x)/(1- x^3*(1+x)/(1+ x^2*(1-x^2)*(1+x)/(1- x^5*(1+x)/(1+ x^3*(1-x^3)*(1+x)/(1- x^7*(1+x)/(1+ x^4*(1-x^4)*(1+x)/(1- ...))))))))).</div>
+                             
+                                 <div class=sectline>These formulas are due to (1) a q-series identity and (2) a partial elliptic theta function expression. (End)</div>
+                             
+                                 <div class=sectline>For n &gt; 0: T(n,k) = <a href="/A029600" title="Numbers in the (2,3)-Pascal triangle (by row).">A029600</a>(n,k) - <a href="/A029635" title="The (1,2)-Pascal triangle (or Lucas triangle) read by rows.">A029635</a>(n,k), 0 &lt;= k &lt;= n. - <a href="/wiki/User:Reinhard_Zumkeller">Reinhard Zumkeller</a>, Apr 16 2012</div>
+                             
+                                 <div class=sectline>Row n of the triangle is the result of applying the ConvOffs transform to the first n terms of the natural numbers (1, 2, 3, ..., n). See <a href="/A001263" title="Triangle of Narayana numbers T(n,k) = C(n-1,k-1)*C(n,k-1)/k with 1 &lt;= k &lt;= n, read by rows. Also called the Catalan triangle.">A001263</a> or <a href="/A214281" title="Triangle by rows, row n contains the ConvOffs transform of the first n terms of 1, 1, 3, 2, 5, 3, 7, ... (A026741 without le...">A214281</a> for a definition of this transformation. - <a href="/wiki/User:Gary_W._Adamson">Gary W. Adamson</a>, Jul 12 2012</div>
+                             
+                                 <div class=sectline>From <a href="/wiki/User:L._Edson_Jeffery">L. Edson Jeffery</a>, Aug 02 2012: (Start)</div>
+                             
+                                 <div class=sectline>Row n (n &gt;= 0) of the triangle is given by the n-th antidiagonal of the infinite matrix P^n, where P = (p_{i,j}), i,j &gt;= 0, is the production matrix</div>
+                             
+                                 <div class=sectline>  0, 1,</div>
+                             
+                                 <div class=sectline>  1, 0, 1,</div>
+                             
+                                 <div class=sectline>  0, 1, 0, 1,</div>
+                             
+                                 <div class=sectline>  0, 0, 1, 0, 1,</div>
+                             
+                                 <div class=sectline>  0, 0, 0, 1, 0, 1,</div>
+                             
+                                 <div class=sectline>  0, 0, 0, 0, 1, 0, 1,</div>
+                             
+                                 <div class=sectline>  0, 0, 0, 0, 0, 1, 0, 1,</div>
+                             
+                                 <div class=sectline>  0, 0, 0, 0, 0, 0, 1, 0, 1,</div>
+                             
+                                 <div class=sectline>  ... (End)</div>
+                             
+                                 <div class=sectline>Row n of the triangle is also given by the n+1 coefficients of the polynomial P_n(x) defined by the recurrence P_0(x) = 1, P_1(x) = x + 1, P_n(x) = x*P_{n-1}(x) + P_{n-2}(x), n &gt; 1. - <a href="/wiki/User:L._Edson_Jeffery">L. Edson Jeffery</a>, Aug 12 2013</div>
+                             
+                                 <div class=sectline>For a closed-form formula for arbitrary left and right borders of Pascal-like triangles see <a href="/A228196" title="A triangle formed like Pascal's triangle, but with n^2 on the left border and 2^n on the right border instead of 1.">A228196</a>. - <a href="/wiki/User:Boris_Putievskiy">Boris Putievskiy</a>, Aug 18 2013</div>
+                             
+                                 <div class=sectline>For a closed-form formula for generalized Pascal's triangle see <a href="/A228576" title="A triangle formed like generalized Pascal's triangle. The rule is T(n,k) = 2*T(n-1,k-1) + T(n-1,k), the left border is n and...">A228576</a>. - <a href="/wiki/User:Boris_Putievskiy">Boris Putievskiy</a>, Sep 04 2013</div>
+                             
+                                 <div class=sectline>(1+x)^n = Sum_{k=0..n} (-1)^(n-k)*binomial(n,k)*Sum_{i=0..k} k^(n-i)*binomial(k,i)*x^(n-i)/(n-i)!. - <a href="/wiki/User:Vladimir_Kruchinin">Vladimir Kruchinin</a>, Oct 21 2013</div>
+                             
+                                 <div class=sectline>E.g.f.: A(x,y) = exp(x+x*y) = 1 + (x+y*x)/( E(0)-(x+y*x)), where E(k) = 1 + (x+y*x)/(1 + (k+1)/E(k+1) ); (continued fraction). - <a href="/wiki/User:Sergei_N._Gladkovskii">Sergei N. Gladkovskii</a>, Nov 08 2013</div>
+                             
+                                 <div class=sectline>E.g.f.:  E(0) -1, where E(k) = 2 + x*(1+y)/(2*k+1 - x*(1+y)/E(k+1) ); (continued fraction). - <a href="/wiki/User:Sergei_N._Gladkovskii">Sergei N. Gladkovskii</a>, Dec 24 2013</div>
+                             
+                                 <div class=sectline>G.f.: 1 + x*(1+x)*(1+x^2*(1+x)/(W(0)-x^2-x^3)), where W(k) = 1 + (1+x)*x^(k+2) - (1+x)*x^(k+3)/W(k+1); (continued fraction). - <a href="/wiki/User:Sergei_N._Gladkovskii">Sergei N. Gladkovskii</a>, Dec 24 2013</div>
+                             
+                                 <div class=sectline>Sum_{n&gt;=0} C(n,k)/n! = e/k!, where e = exp(1), while allowing n &lt; k where C(n,k) = 0. Also Sum_{n&gt;=0} C(n+k-1,k)/n! = e * <a href="/A000262" title="Number of &quot;sets of lists&quot;: number of partitions of {1,...,n} into any number of lists, where a list means an ordered subset.">A000262</a>(k)/k!, and for k&gt;=1 equals e * <a href="/A067764" title="Numerators of the coefficients in exp(x/(1-x)) power series.">A067764</a>(k)/<a href="/A067653" title="Denominators of the coefficients in exp(x/(1-x)) power series.">A067653</a>(k). - <a href="/wiki/User:Richard_R._Forberg">Richard R. Forberg</a>, Jan 01 2014</div>
+                             
+                                 <div class=sectline>Sum_{n&gt;=k} 1/C(n,k) = k/(k-1) for k&gt;=1. - <a href="/wiki/User:Richard_R._Forberg">Richard R. Forberg</a>, Feb 10 2014</div>
+                             
+                                 <div class=sectline>From <a href="/wiki/User:Tom_Copeland">Tom Copeland</a>, Apr 26 2014: (Start)</div>
+                             
+                                 <div class=sectline>Multiply each n-th diagonal of the Pascal lower triangular matrix by x^n and designate the result by <a href="/A007318" title="Pascal's triangle read by rows: C(n,k) = binomial(n,k) = n!/(k!*(n-k)!), 0 &lt;= k &lt;= n.">A007318</a>(x) = P(x). Then with :xD:^n = x^n*(d/dx)^n and B(n,x), the Bell polynomials (<a href="/A008277" title="Triangle of Stirling numbers of the second kind, S2(n,k), n &gt;= 1, 1 &lt;= k &lt;= n.">A008277</a>),</div>
+                             
+                                 <div class=sectline>A) P(x)= exp(x*dP) = exp[x*(e^M-I)] = exp[M*B(.,x)] = (I+dP)^B(.,x)</div>
+                             
+                                 <div class=sectline>   with dP = <a href="/A132440" title="Infinitesimal Pascal matrix: generator (lower triangular matrix representation) of the Pascal matrix, the classical operator...">A132440</a>, M = <a href="/A238385" title="Triangle read by rows: shifted lower triangular matrix A238363 with an added main diagonal of ones.">A238385</a>-I, and I = identity matrix, and</div>
+                             
+                                 <div class=sectline>B) P(:xD:) = exp(dP:xD:) = exp[(e^M-I):xD:] = exp[M*B(.,:xD:)] = exp[M*xD] = (I+dP)^(xD) with action P(:xD:)g(x) = exp(dP:xD:)g(x) = g[(I+dP)*x] (cf. also <a href="/A238363" title="Coefficients for the commutator for the logarithm of the derivative operator [log(D),x^n D^n]=d[(xD)!/(xD-n)!]/d(xD) expande...">A238363</a>).</div>
+                             
+                                 <div class=sectline>C) P(x)^y = P(y*x). P(2x) = <a href="/A038207" title="Triangle whose (i,j)-th entry is binomial(i,j)*2^(i-j).">A038207</a>(x) = exp[M*B(.,2x)], the face vectors of the n-dim hypercubes.</div>
+                             
+                                 <div class=sectline>D) P(x) = [St2]*exp(x*M)*[St1] = [St2]*(I+dP)^x*[St1]</div>
+                             
+                                 <div class=sectline>E) = [St1]^(-1)*(I+dP)^x*[St1] = [St2]*(I+dP)^x*[St2]^(-1)</div>
+                             
+                                 <div class=sectline>where [St1]=padded <a href="/A008275" title="Triangle read by rows of Stirling numbers of first kind, s(n,k), n &gt;= 1, 1 &lt;= k &lt;= n.">A008275</a> just as [St2]=<a href="/A048993" title="Triangle of Stirling numbers of 2nd kind, S(n,k), n &gt;= 0, 0 &lt;= k &lt;= n.">A048993</a>=padded <a href="/A008277" title="Triangle of Stirling numbers of the second kind, S2(n,k), n &gt;= 1, 1 &lt;= k &lt;= n.">A008277</a> and exp(x*M) = (I+dP)^x = Sum_{k&gt;=0} C(x,k) dP^k. (End)</div>
+                             
+                                 <div class=sectline>T(n,k) = <a href="/A245334" title="A factorial-like triangle read by rows: T(0,0) = 1; T(n+1,0) = T(n,0)+1; T(n+1,k+1) = T(n,0)*T(n,k), k=0..n.">A245334</a>(n,k) / <a href="/A137948" title="Triangle read by rows, A000012 * A136579.">A137948</a>(n,k), 0 &lt;= k &lt;= n. - <a href="/wiki/User:Reinhard_Zumkeller">Reinhard Zumkeller</a>, Aug 31 2014</div>
+                             
+                                 <div class=sectline>From <a href="/wiki/User:Peter_Bala">Peter Bala</a>, Dec 21 2014: (Start)</div>
+                             
+                                 <div class=sectline>Recurrence equation: T(n,k) = T(n-1,k)*(n + k)/(n - k) - T(n-1,k-1) for n &gt;= 2 and 1 &lt;= k &lt; n, with boundary conditions T(n,0) = T(n,n) = 1. Note, changing the minus sign in the recurrence to a plus sign gives a recurrence for the square of the binomial coefficients - see <a href="/A008459" title="Square the entries of Pascal's triangle.">A008459</a>.</div>
+                             
+                                 <div class=sectline>There is a relation between the e.g.f.'s of the rows and the diagonals of the triangle, namely, exp(x) * e.g.f. for row n = e.g.f. for diagonal n. For example, for n = 3 we have exp(x)*(1 + 3*x + 3*x^2/2! + x^3/3!) = 1 + 4*x + 10*x^2/2! + 20*x^3/3! + 35*x^4/4! + .... This property holds more generally for the Riordan arrays of the form ( f(x), x/(1 - x) ), where f(x) is an o.g.f. of the form 1 + f_1*x + f_2*x^2 + .... See, for example, <a href="/A055248" title="Triangle of partial row sums of triangle A007318(n,m) (Pascal's triangle). Triangle A008949 read backwards. Riordan (1/(1-2x...">A055248</a> and <a href="/A106516" title="A Pascal-like triangle based on 3^n.">A106516</a>.</div>
+                             
+                                 <div class=sectline>Let P denote the present triangle. For k = 0,1,2,... define P(k) to be the lower unit triangular block array</div>
+                             
+                                 <div class=sectline>/I_k 0\</div>
+                             
+                                 <div class=sectline>\ 0  P/ having the k X k identity matrix I_k as the upper left block; in particular, P(0) = P. The infinite product P(0)*P(1)*P(2)*..., which is clearly well-defined, is equal to the triangle of Stirling numbers of the second kind <a href="/A008277" title="Triangle of Stirling numbers of the second kind, S2(n,k), n &gt;= 1, 1 &lt;= k &lt;= n.">A008277</a>. The infinite product in the reverse order, that is, ...*P(2)*P(1)*P(0), is equal to the triangle of Stirling cycle numbers <a href="/A130534" title="Triangle T(n,k), 0 &lt;= k &lt;= n, read by rows, giving coefficients of the polynomial (x+1)(x+2)...(x+n), expanded in increasing...">A130534</a>. (End)</div>
+                             
+                                 <div class=sectline>C(a+b,c) = Sum_{k=0..a} C(a,k)*C(b,b-c+k). This is a generalization of equation 1 from section 4.2.5 of the Prudnikov et al. reference, for a=b=c=n: C(2*n,n) = Sum_{k=0..n} C(n,k)^2. See Links section for animation of new formula. - <a href="/wiki/User:Hermann_Stamm-Wilbrandt">Hermann Stamm-Wilbrandt</a>, Aug 26 2015</div>
+                             
+                                 <div class=sectline>The row polynomials of the Pascal matrix P(n,x) = (1+x)^n are related to the Bernoulli polynomials Br(n,x) and their umbral compositional inverses Bv(n,x) by the umbral relation P(n,x) = (-Br(.,-Bv(.,x)))^n = (-1)^n Br(n,-Bv(.,x)), which translates into the matrix relation P = M * Br * M * Bv, where P is the Pascal matrix, M is the diagonal matrix diag(1,-1,1,-1,...), Br is the matrix for the coefficients of the Bernoulli polynomials, and Bv that for the umbral inverse polynomials defined umbrally by Br(n,Bv(.,x)) = x^n = Bv(n,Br(.,x)). Note M = M^(-1). - <a href="/wiki/User:Tom_Copeland">Tom Copeland</a>, Sep 05 2015</div>
+                             
+                                 <div class=sectline>1/(1-x)^k = (r(x) * r(x^2) * r(x^4) * ...) where r(x) = (1+x)^k. - <a href="/wiki/User:Gary_W._Adamson">Gary W. Adamson</a>, Oct 17 2016</div>
+                             
+                                 <div class=sectline>Boas-Buck type recurrence for column k for Riordan arrays (see the Aug 10 2017 remark in <a href="/A046521" title="Array T(i,j) = binomial(-1/2-i,j)*(-4)^j, i,j &gt;= 0 read by antidiagonals going down.">A046521</a>, also for the reference) with the Boas-Buck sequence b(n) = {repeat(1)}. T(n, k) = ((k+1)/(n-k))*Sum_{j=k..n-1} T(j, k), for n &gt;= 1, with T(n, n) = 1. This reduces, with T(n, k) = binomial(n, k), to a known binomial identity (e.g, Graham et al. p. 161). - <a href="/wiki/User:Wolfdieter_Lang">Wolfdieter Lang</a>, Nov 12 2018</div>
+                             
+                                 <div class=sectline>C((p-1)/a, b) == (-1)^b * fact_a(a*b-a+1)/fact_a(a*b) (mod p), where fact_n denotes the n-th multifactorial, a divides p-1, and the denominator of the fraction on the right side of the equation represents the modular inverse. - <a href="/wiki/User:Isaac_Saffold">Isaac Saffold</a>, Jan 07 2019</div>
+                             
+                                 <div class=sectline>C(n,k-1) = <a href="/A325002" title="Triangle read by rows: T(n,k) is the number of oriented colorings of the facets (or vertices) of a regular n-dimensional sim...">A325002</a>(n,k) - [k==n+1] = (<a href="/A325002" title="Triangle read by rows: T(n,k) is the number of oriented colorings of the facets (or vertices) of a regular n-dimensional sim...">A325002</a>(n,k) + <a href="/A325003" title="Triangle read by rows: T(n,k) is the number of achiral colorings of the facets (or vertices) of a regular n-dimensional simp...">A325003</a>(n,k)) / 2 = [k==n+1] + <a href="/A325003" title="Triangle read by rows: T(n,k) is the number of achiral colorings of the facets (or vertices) of a regular n-dimensional simp...">A325003</a>(n,k). - <a href="/wiki/User:Robert_A._Russell">Robert A. Russell</a>, Oct 20 2020</div>
+                             
+                                 <div class=sectline>From <a href="/wiki/User:Hermann_Stamm-Wilbrandt">Hermann Stamm-Wilbrandt</a>, May 13 2021: (Start)</div>
+                             
+                                 <div class=sectline>Binomial sums are Fibonacci numbers <a href="/A000045" title="Fibonacci numbers: F(n) = F(n-1) + F(n-2) with F(0) = 0 and F(1) = 1.">A000045</a>:</div>
+                             
+                                 <div class=sectline>Sum_{k=0..n} C(n + k, 2*k + 1) = F(2*n).</div>
+                             
+                                 <div class=sectline>Sum_{k=0..n} C(n + k, 2*k) = F(2*n + 1). (End)</div>
+                             
+                                 <div class=sectline>C(n,k) = Sum_{i=0..k} <a href="/A000108" title="Catalan numbers: C(n) = binomial(2n,n)/(n+1) = (2n)!/(n!(n+1)!).">A000108</a>(i) * C(n-2i-1, k-i), for 0 &lt;= k &lt;= floor(n/2)-1. - <a href="/wiki/User:Tushar_Bansal">Tushar Bansal</a>, May 17 2025</div>
+                             
+                                 <div class=sectline><a href="/A399199" title="Table of T(n, k) read by antidiagonals: Exact inverse of Pascal's triangle (A007318) such that T(binomial(N, k), k) = N, for...">A399199</a>(C(n, k), k) = <a href="/A399199" title="Table of T(n, k) read by antidiagonals: Exact inverse of Pascal's triangle (A007318) such that T(binomial(N, k), k) = N, for...">A399199</a>(binomial(n, k), k) = n, for n &gt;= k-1, k &gt;= 1. - <a href="/wiki/User:Yoshio_Okita">Yoshio Okita</a>, Oct 01 2026</div>
+                             
+                         </div>
+                     </div>
+                 
+            
+        
+            
+                 
+                 
+                 
+                 
+                     <div class=section>
+                         <div class=sectname>EXAMPLE</div>
+                         <div class=sectbody>
+                             
+                                 <div class=sectline>Triangle T(n,k) begins:</div>
+                             
+                                 <div class=sectline>   n\k 0   1   2   3   4   5   6   7   8   9  10  11 ...</div>
+                             
+                                 <div class=sectline>   0   1</div>
+                             
+                                 <div class=sectline>   1   1   1</div>
+                             
+                                 <div class=sectline>   2   1   2   1</div>
+                             
+                                 <div class=sectline>   3   1   3   3   1</div>
+                             
+                                 <div class=sectline>   4   1   4   6   4   1</div>
+                             
+                                 <div class=sectline>   5   1   5  10  10   5   1</div>
+                             
+                                 <div class=sectline>   6   1   6  15  20  15   6   1</div>
+                             
+                                 <div class=sectline>   7   1   7  21  35  35  21   7   1</div>
+                             
+                                 <div class=sectline>   8   1   8  28  56  70  56  28   8   1</div>
+                             
+                                 <div class=sectline>   9   1   9  36  84 126 126  84  36   9   1</div>
+                             
+                                 <div class=sectline>  10   1  10  45 120 210 252 210 120  45  10   1</div>
+                             
+                                 <div class=sectline>  11   1  11  55 165 330 462 462 330 165  55  11   1</div>
+                             
+                                 <div class=sectline>  ...</div>
+                             
+                                 <div class=sectline>There are C(4,2)=6 ways to distribute 5 balls BBBBB, among 3 different urns, &lt; &gt; ( ) [ ], so that each urn gets at least one ball, namely, &lt;BBB&gt;(B)[B], &lt;B&gt;(BBB)[B], &lt;B&gt;(B)[BBB], &lt;BB&gt;(BB)[B], &lt;BB&gt;(B)[BB], and &lt;B&gt;(BB)[BB].</div>
+                             
+                                 <div class=sectline>There are C(4,2)=6 increasing functions from {1,2} to {1,2,3,4}, namely, {(1,1),(2,2)},{(1,1),(2,3)}, {(1,1),(2,4)}, {(1,2),(2,3)}, {(1,2),(2,4)}, and {(1,3),(2,4)}. - <a href="/wiki/User:Dennis_P._Walsh">Dennis P. Walsh</a>, Apr 07 2011</div>
+                             
+                                 <div class=sectline>There are C(4,2)=6 subsets of {1,2,3,4,5} with median element 3, namely, {3}, {1,3,4}, {1,3,5}, {2,3,4}, {2,3,5}, and {1,2,3,4,5}. - <a href="/wiki/User:Dennis_P._Walsh">Dennis P. Walsh</a>, Dec 15 2011</div>
+                             
+                                 <div class=sectline>The successive k-iterations of {A(0)} = E are E;E;E;...; the corresponding number of elements are 1,1,1,... The successive k-iterations of {A(1)} = {a} are (omitting brackets) a;a,E; a,E,E;...; the corresponding number of elements are 1,2,3,... The successive k-iterations of {A(2)} = {a,a} are aa; aa,a,E; aa, a, E and a,E and E;...; the corresponding number of elements are 1,3,6,... - <a href="/wiki/User:Gregory_L._Simay">Gregory L. Simay</a>, Aug 06 2018</div>
+                             
+                                 <div class=sectline>Boas-Buck type recurrence for column k = 4: T(8, 4) = (5/4)*(1 + 5 + 15 + 35) = 70. See the Boas-Buck comment above. - <a href="/wiki/User:Wolfdieter_Lang">Wolfdieter Lang</a>, Nov 12 2018</div>
+                             
+                         </div>
+                     </div>
+                 
+            
+        
+            
+                 
+                 
+                 
+                 
+                     <div class=section>
+                         <div class=sectname>MAPLE</div>
+                         <div class=sectbody>
+                             
+                                 <div class=sectline><a href="/A007318" title="Pascal's triangle read by rows: C(n,k) = binomial(n,k) = n!/(k!*(n-k)!), 0 &lt;= k &lt;= n.">A007318</a> := (n, k)-&gt;binomial(n, k);</div>
+                             
+                         </div>
+                     </div>
+                 
+            
+        
+            
+                 
+                 
+                 
+                 
+                     <div class=section>
+                         <div class=sectname>MATHEMATICA</div>
+                         <div class=sectbody>
+                             
+                                 <div class=sectline>Flatten[Table[Binomial[n, k], {n, 0, 11}, {k, 0, n}]] (* <a href="/wiki/User:Robert_G._Wilson_v">Robert G. Wilson v</a>, Jan 19 2004 *)</div>
+                             
+                                 <div class=sectline>(* Alternative: *)</div>
+                             
+                                 <div class=sectline>Flatten[CoefficientList[CoefficientList[Series[1/(1 - x - x*y), {x, 0, 12}], x], y]] (* <a href="/wiki/User:Mats_Granvik">Mats Granvik</a>, Jul 08 2014 *)</div>
+                             
+                         </div>
+                     </div>
+                 
+            
+        
+            
+                 
+                 
+                 
+                 
+                     <div class=section>
+                         <div class=sectname>PROG</div>
+                         <div class=sectbody>
+                             
+                                 <div class=sectline>(Axiom) -- (start)</div>
+                             
+                                 <div class=sectline>)set expose add constructor OutputForm</div>
+                             
+                                 <div class=sectline>pascal(0, n) == 1</div>
+                             
+                                 <div class=sectline>pascal(n, n) == 1</div>
+                             
+                                 <div class=sectline>pascal(i, j | 0 &lt; i and i &lt; j) == pascal(i-1, j-1) + pascal(i, j-1)</div>
+                             
+                                 <div class=sectline>pascalRow(n) == [pascal(i, n) for i in 0..n]</div>
+                             
+                                 <div class=sectline>displayRow(n) == output center blankSeparate pascalRow(n)</div>
+                             
+                                 <div class=sectline>for i in 0..20 repeat displayRow i -- (end)</div>
+                             
+                                 <div class=sectline>(PARI) C(n, k)=binomial(n, k) \\ <a href="/wiki/User:Charles_R_Greathouse_IV">Charles R Greathouse IV</a>, Jun 08 2011</div>
+                             
+                                 <div class=sectline>(Python) # See Hobson link. Further programs:</div>
+                             
+                                 <div class=sectline>from math import prod, factorial</div>
+                             
+                                 <div class=sectline>def C(n, k): return prod(range(n, n-k, -1))//factorial(k) # <a href="/wiki/User:M._F._Hasler">M. F. Hasler</a>, Dec 13 2019, updated Apr 29 2022, Feb 17 2023</div>
+                             
+                                 <div class=sectline>(Python)</div>
+                             
+                                 <div class=sectline>from math import comb, isqrt</div>
+                             
+                                 <div class=sectline>def <a href="/A007318" title="Pascal's triangle read by rows: C(n,k) = binomial(n,k) = n!/(k!*(n-k)!), 0 &lt;= k &lt;= n.">A007318</a>(n): return comb(r:=(m:=isqrt(k:=n+1&lt;&lt;1))-(k&lt;=m*(m+1)), n-comb(r+1, 2)) # <a href="/wiki/User:Chai_Wah_Wu">Chai Wah Wu</a>, Nov 11 2024</div>
+                             
+                                 <div class=sectline>(Haskell)</div>
+                             
+                                 <div class=sectline>a007318 n k = a007318_tabl !! n !! k</div>
+                             
+                                 <div class=sectline>a007318_row n = a007318_tabl !! n</div>
+                             
+                                 <div class=sectline>a007318_list = concat a007318_tabl</div>
+                             
+                                 <div class=sectline>a007318_tabl = iterate (\row -&gt; zipWith (+) ([0] ++ row) (row ++ [0])) [1]</div>
+                             
+                                 <div class=sectline>-- Cf. http://www.haskell.org/haskellwiki/Blow_your_mind#Mathematical_sequences</div>
+                             
+                                 <div class=sectline>-- <a href="/wiki/User:Reinhard_Zumkeller">Reinhard Zumkeller</a>, Nov 09 2011, Oct 22 2010</div>
+                             
+                                 <div class=sectline>(Maxima) create_list(binomial(n, k), n, 0, 12, k, 0, n); /* <a href="/wiki/User:Emanuele_Munarini">Emanuele Munarini</a>, Mar 11 2011 */</div>
+                             
+                                 <div class=sectline>(SageMath) def C(n, k): return Subsets(range(n), k).cardinality() # <a href="/wiki/User:Ralf_Stephan">Ralf Stephan</a>, Jan 21 2014</div>
+                             
+                                 <div class=sectline>(Magma) /* As triangle: */ [[Binomial(n, k): k in [0..n]]: n in [0.. 10]]; // <a href="/wiki/User:Vincenzo_Librandi">Vincenzo Librandi</a>, Jul 29 2015</div>
+                             
+                                 <div class=sectline>(GAP) Flat(List([0..12], n-&gt;List([0..n], k-&gt;Binomial(n, k)))); # <a href="/wiki/User:Stefano_Spezia">Stefano Spezia</a>, Dec 22 2018</div>
+                             
+                                 <div class=sectline>(MATLAB) nchoosek(n, k) % <a href="/wiki/User:Yoshio_Okita">Yoshio Okita</a>, Oct 01 2026</div>
+                             
+                         </div>
+                     </div>
+                 
+            
+        
+            
+                 
+                 
+                     
+                 
+                 
+                 
+                     <div class=section>
+                         <div class=sectname>CROSSREFS</div>
+                         <div class=sectbody>
+                             
+                                 <div class=sectline>Equals differences between consecutive terms of <a href="/A102363" title="Triangle read by rows, constructed by a Pascal-like rule with left edge = 2^k, right edge = 2^(k+1)-1 (k &gt;= 0).">A102363</a>. - David G. Williams (davidwilliams(AT)Paxway.com), Jan 23 2006</div>
+                             
+                                 <div class=sectline>Row sums give <a href="/A000079" title="Powers of 2: a(n) = 2^n.">A000079</a> (powers of 2).</div>
+                             
+                                 <div class=sectline>Cf. <a href="/A083093" title="Triangle, read by rows, formed by reading Pascal's triangle (A007318) mod 3.">A083093</a> (triangle read mod 3), <a href="/A214292" title="Triangle read by rows: T(n,k) = T(n-1,k-1) + T(n-1,k), 0 &lt; k &lt; n with T(n,0) = n and T(n,n) = -n.">A214292</a> (first differences of rows).</div>
+                             
+                                 <div class=sectline>Partial sums of rows give triangle <a href="/A008949" title="Triangle read by rows of partial sums of binomial coefficients: T(n,k) = Sum_{i=0..k} binomial(n,i) (0 &lt;= k &lt;= n); also dime...">A008949</a>.</div>
+                             
+                                 <div class=sectline>The triangle of the antidiagonals is <a href="/A011973" title="Irregular triangle read by rows: T(n,k) = binomial(n-k, k), n &gt;= 0, 0 &lt;= k &lt;= floor(n/2); or, coefficients of (one version o...">A011973</a>.</div>
+                             
+                                 <div class=sectline>Infinite matrix squared: <a href="/A038207" title="Triangle whose (i,j)-th entry is binomial(i,j)*2^(i-j).">A038207</a>, cubed: <a href="/A027465" title="Cube of lower triangular normalized binomial matrix.">A027465</a>.</div>
+                             
+                                 <div class=sectline>Cf. <a href="/A101164" title="Triangle read by rows: Delannoy numbers minus binomial coefficients.">A101164</a>. If rows are sorted we get <a href="/A061554" title="Square table read by antidiagonals: a(n,k) = binomial(n+k, floor(k/2)).">A061554</a> or <a href="/A107430" title="Triangle read by rows: row n is row n of Pascal's triangle (A007318) sorted into increasing order.">A107430</a>.</div>
+                             
+                                 <div class=sectline>Another version: <a href="/A108044" title="Triangle read by rows: right half of Pascal's triangle (A007318) interspersed with 0's.">A108044</a>.</div>
+                             
+                                 <div class=sectline>Cf. <a href="/A008277" title="Triangle of Stirling numbers of the second kind, S2(n,k), n &gt;= 1, 1 &lt;= k &lt;= n.">A008277</a>, <a href="/A132311" title="Triangle read by rows: T(n,k) is the number of partitions of binomial(n,k) into parts of the first n rows of Pascal's triang...">A132311</a>, <a href="/A132312" title="Triangle read by rows: T(n,k) = number of partitions of binomial(n,k) into distinct parts of the first n rows of Pascal's tr...">A132312</a>, <a href="/A052216" title="Sums of two powers of 10.">A052216</a>, <a href="/A052217" title="Numbers whose sum of digits is 3.">A052217</a>, <a href="/A052218" title="Numbers whose sum of digits is 4.">A052218</a>, <a href="/A052219" title="Numbers whose sum of digits is 5.">A052219</a>, <a href="/A052220" title="Numbers whose sum of digits is 6.">A052220</a>, <a href="/A052221" title="Numbers whose sum of digits is 7.">A052221</a>, <a href="/A052222" title="Numbers whose sum of digits is 8.">A052222</a>, <a href="/A052223" title="Numbers whose sum of digits is 9.">A052223</a>, <a href="/A144225" title="Bordered Pascal's triangle in rectangular format.">A144225</a>, <a href="/A202750" title="Triangle T(n,k) = binomial(n,k)^4 read by rows, 0&lt;=k&lt;=n.">A202750</a>, <a href="/A211226" title="Triangular array: T(n,k) = f(n)/(f(k)*f(n-k)), where f(n) = (floor(n/2))!.">A211226</a>, <a href="/A047999" title="Sierpiński's [Sierpinski's] triangle (or gasket): triangle, read by rows, formed by reading Pascal's triangle (A007318) mod 2.">A047999</a>, <a href="/A026729" title="Square array of binomial coefficients T(n,k) = binomial(n,k), n &gt;= 0, k &gt;= 0, read by downward antidiagonals.">A026729</a>, <a href="/A052553" title="Square array of binomial coefficients T(n,k) = binomial(n,k), n &gt;= 0, k &gt;= 0, read by upward antidiagonals.">A052553</a>, <a href="/A051920" title="a(n) = binomial(n, floor(n/2)) + 1.">A051920</a>, <a href="/A193242" title="a(n) = (C(n, floor(n/2)) + 2)^n for n &gt;= 0.">A193242</a>.</div>
+                             
+                                 <div class=sectline>Triangle sums (see the comments): <a href="/A000079" title="Powers of 2: a(n) = 2^n.">A000079</a> (Row1); <a href="/A000007" title="The characteristic function of {0}: a(n) = 0^n.">A000007</a> (Row2); <a href="/A000045" title="Fibonacci numbers: F(n) = F(n-1) + F(n-2) with F(0) = 0 and F(1) = 1.">A000045</a> (Kn11 &amp; Kn21); <a href="/A000071" title="a(n) = Fibonacci(n) - 1.">A000071</a> (Kn12 &amp; Kn22); <a href="/A001924" title="Apply partial sum operator twice to Fibonacci numbers.">A001924</a> (Kn13 &amp; Kn23); <a href="/A014162" title="Apply partial sum operator thrice to Fibonacci numbers.">A014162</a> (Kn14 &amp; Kn24); <a href="/A014166" title="Apply partial sum operator 4 times to Fibonacci numbers.">A014166</a> (Kn15 &amp; Kn25); <a href="/A053739" title="Partial sums of A014166.">A053739</a> (Kn16 &amp; Kn26); <a href="/A053295" title="Partial sums of A053739.">A053295</a> (Kn17 &amp; Kn27); <a href="/A053296" title="Partial sums of A053295.">A053296</a> (Kn18 &amp; Kn28); <a href="/A053308" title="Partial sums of A053296.">A053308</a> (Kn19 &amp; Kn29); <a href="/A053309" title="Partial sums of A053308.">A053309</a> (Kn110 &amp; Kn210); <a href="/A001519" title="a(n) = 3*a(n-1) - a(n-2) for n &gt;= 2, with a(0) = a(1) = 1.">A001519</a> (Kn3 &amp; Kn4); <a href="/A011782" title="Coefficients of expansion of (1-x)/(1-2*x) in powers of x.">A011782</a> (Fi1 &amp; Fi2); <a href="/A000930" title="Narayana's cows sequence: a(0) = a(1) = a(2) = 1; thereafter a(n) = a(n-1) + a(n-3).">A000930</a> (Ca1 &amp; Ca2); <a href="/A052544" title="Expansion of (1-x)^2/(1 - 4*x + 3*x^2 - x^3).">A052544</a> (Ca3 &amp; Ca4); <a href="/A003269" title="a(n) = a(n-1) + a(n-4) with a(0) = 0, a(1) = a(2) = a(3) = 1.">A003269</a> (Gi1 &amp; Gi2); <a href="/A055988" title="Sequence is its own 4th difference.">A055988</a> (Gi3 &amp; Gi4); <a href="/A034943" title="Binomial transform of Padovan sequence A000931.">A034943</a> (Ze1 &amp; Ze2); <a href="/A005251" title="a(0) = 0, a(1) = a(2) = a(3) = 1; thereafter, a(n) = a(n-1) + a(n-2) + a(n-4).">A005251</a> (Ze3 &amp; Ze4). - <a href="/wiki/User:Johannes_W._Meijer">Johannes W. Meijer</a>, Sep 22 2010</div>
+                             
+                                 <div class=sectline>Fibonacci-Pascal triangles: <a href="/A027926" title="Triangular array T read by rows: T(n,0) = T(n,2n) = 1 for n &gt;= 0; T(n,1) = 1 for n &gt;= 1; T(n,k) = T(n-1,k-2) + T(n-1,k-1) fo...">A027926</a>, <a href="/A036355" title="Fibonacci-Pascal triangle read by rows.">A036355</a>, <a href="/A037027" title="Skew Fibonacci-Pascal triangle read by rows.">A037027</a>, <a href="/A074829" title="Triangle formed by Pascal's rule, except that the n-th row begins and ends with the n-th Fibonacci number.">A074829</a>, <a href="/A105809" title="Riordan array (1/(1 - x - x^2), x/(1 - x)).">A105809</a>, <a href="/A109906" title="A triangle based on A000045 and Pascal's triangle: T(n,m) = Fibonacci(n-m+1) * Fibonacci(m+1) * binomial(n,m).">A109906</a>, <a href="/A111006" title="Another version of Fibonacci-Pascal triangle A037027.">A111006</a>, <a href="/A114197" title="A Pascal-Fibonacci triangle.">A114197</a>, <a href="/A162741" title="Fibonacci-Pascal triangle; same as Pascal triangle, but beginning another Pascal triangle to the right of each row starting ...">A162741</a>, <a href="/A228074" title="A Fibonacci-Pascal triangle read by rows: T(n,0) = Fibonacci(n), T(n,n) = n and for n &gt; 0: T(n,k) = T(n-1,k-1) + T(n-1,k), 0...">A228074</a>, <a href="/A228196" title="A triangle formed like Pascal's triangle, but with n^2 on the left border and 2^n on the right border instead of 1.">A228196</a>, <a href="/A228576" title="A triangle formed like generalized Pascal's triangle. The rule is T(n,k) = 2*T(n-1,k-1) + T(n-1,k), the left border is n and...">A228576</a>.</div>
+                             
+                                 <div class=sectline>Cf. <a href="/A137948" title="Triangle read by rows, A000012 * A136579.">A137948</a>, <a href="/A245334" title="A factorial-like triangle read by rows: T(0,0) = 1; T(n+1,0) = T(n,0)+1; T(n+1,k+1) = T(n,0)*T(n,k), k=0..n.">A245334</a>.</div>
+                             
+                                 <div class=sectline>Cf. <a href="/A085478" title="Triangle read by rows: T(n, k) = binomial(n + k, 2*k).">A085478</a>, <a href="/A258993" title="Triangle read by rows: T(n,k) = binomial(n+k,n-k), k = 0..n-1.">A258993</a>.</div>
+                             
+                                 <div class=sectline>Cf. <a href="/A115940" title="Pandigital (meaning every digit appears exactly once) triangular numbers.">A115940</a> (pandigital binomial coefficients C(m,k) with k&gt;1).</div>
+                             
+                                 <div class=sectline>Cf. (simplex colorings) <a href="/A325002" title="Triangle read by rows: T(n,k) is the number of oriented colorings of the facets (or vertices) of a regular n-dimensional sim...">A325002</a> (oriented), [k==n+1] (chiral), <a href="/A325003" title="Triangle read by rows: T(n,k) is the number of achiral colorings of the facets (or vertices) of a regular n-dimensional simp...">A325003</a> (achiral), <a href="/A325000" title="Array read by descending antidiagonals: T(n,k) is the number of unoriented colorings of the facets (or vertices) of a regula...">A325000</a> (k or fewer colors), <a href="/A325009" title="Triangle read by rows: T(n,k) is the number of unoriented colorings of the facets of a regular n-dimensional orthotope using...">A325009</a> (orthotope facets, orthoplex vertices), <a href="/A325017" title="Triangle read by rows: T(n,k) is the number of unoriented colorings of the facets of a regular n-dimensional orthoplex using...">A325017</a> (orthoplex facets, orthotope vertices).</div>
+                             
+                                 <div class=sectline>Triangles of generalized binomial coefficients (n,k)_m (or generalized Pascal triangles) for m = 2..12: <a href="/A001263" title="Triangle of Narayana numbers T(n,k) = C(n-1,k-1)*C(n,k-1)/k with 1 &lt;= k &lt;= n, read by rows. Also called the Catalan triangle.">A001263</a>, <a href="/A056939" title="Array read by antidiagonals: number of antichains (or order ideals) in the poset 3*m*n or plane partitions with rows &lt;= m, c...">A056939</a>, <a href="/A056940" title="Number of antichains (or order ideals) in the poset 4*m*n or plane partitions with at most m rows and n columns and entries ...">A056940</a>, <a href="/A056941" title="Number of antichains (or order ideals) in the poset 5*m*n or plane partitions with not more than m rows, n columns and entri...">A056941</a>, <a href="/A142465" title="Triangle T(n,m) read by rows: T(n,m) = Product_{i=0..5} binomial(n+i,m)/binomial(m+i,m).">A142465</a>, <a href="/A142467" title="Triangle T(n,m) read by rows: T(n,m) = Product_{i=0..6} binomial(n+i,m)/binomial(m+i,m).">A142467</a>, <a href="/A142468" title="An eight-products triangle sequence of coefficients: T(n,k) = binomial(n,k) * Product_{j=1..7} j!*(n+j)!/((k+j)!*(n-k+j)!).">A142468</a>, <a href="/A174109" title="Triangle read by rows: T(n, k) = c(n, q)/(c(k, q)*c(n-k, q)), where c(n, q) = Product_{j=1..n} (j+q)!/(j-1)! and q = 8.">A174109</a>, <a href="/A342889" title="Triangle read by rows: T(n,k) = generalized binomial coefficients (n,k)_10 (n &gt;= 0, 0 &lt;= k &lt;= n).">A342889</a>, <a href="/A342890" title="Triangle read by rows: T(n,k) = generalized binomial coefficients (n,k)_11 (n &gt;= 0, 0 &lt;= k &lt;= n).">A342890</a>, <a href="/A342891" title="Triangle read by rows: T(n,k) = generalized binomial coefficients (n,k)_12 (n &gt;= 0, 0 &lt;= k &lt;= n).">A342891</a>.</div>
+                             
+                                 <div class=sectline>Cf. <a href="/A399199" title="Table of T(n, k) read by antidiagonals: Exact inverse of Pascal's triangle (A007318) such that T(binomial(N, k), k) = N, for...">A399199</a> (functional inverse of Pascal's triangle).</div>
+                             
+                                 <div class=sectline>Sequence in context: <a href="/A154926" title="Signed version of Pascal's triangle. Diagonal positive, rest negative.">A154926</a> <a href="/A117440" title="A cyclically signed version of Pascal's triangle.">A117440</a> <a href="/A118433" title="Self-inverse triangle H, read by rows; a nontrivial matrix square-root of identity: H^2 = I, where H(n,k) = C(n,k)*(-1)^(flo...">A118433</a> * <a href="/A108086" title="Triangle, read by rows, where T(0,0) = 1, T(n,k) = (-1)^(n+k)*T(n-1,k) + T(n-1,k-1); a signed version of Pascal's triangle.">A108086</a> <a href="/A130595" title="Triangle read by rows: lower triangular matrix which is inverse to Pascal's triangle (A007318) regarded as a lower triangula...">A130595</a> <a href="/A383566" title="Square array A(n,k), n &gt;= 0, k &gt;= 0, read by antidiagonals downwards, where A(n,k) is the number of lattice paths from (0,0)...">A383566</a></div>
+                             
+                                 <div class=sectline>Adjacent sequences:  <a href="/A007315" title="Reversion of g.f. (beginning with constant term) for number of trees with n nodes.">A007315</a> <a href="/A007316" title="Reversion of g.f. for Euler numbers A000111(n-1).">A007316</a> <a href="/A007317" title="Binomial transform of Catalan numbers.">A007317</a> * <a href="/A007319" title="A grasshopper sequence: closed under n -&gt; 2n+2 and 6n+6.">A007319</a> <a href="/A007320" title="Number of steps needed for juggler sequence (A094683) started at n to reach 1.">A007320</a> <a href="/A007321" title="Number of steps needed for modified juggler sequence (A094685) started at n to reach 1.">A007321</a></div>
+                             
+                         </div>
+                     </div>
+                 
+            
+        
+            
+                 
+                 
+                 
+                 
+                     <div class=section>
+                         <div class=sectname>KEYWORD</div>
+                         <div class=sectbody>
+                             
+                                 <div class=sectline><span title="a sequence of nonnegative numbers">nonn</span>,<span title="typically a triangle of numbers, made into a sequence by reading it row by row"><a href="/A007318/table">tabl</a></span>,<span title="an exceptionally nice sequence">nice</span>,<span title="it is very easy to produce terms of sequence">easy</span>,<span title="an important sequence">core</span>,<span title="sequence has an interesting graph"><a href="/A007318/graph">look</a></span>,<span title="sequence makes an interesting sound"><a href="/A007318/listen">hear</a></span></div>
+                             
+                         </div>
+                     </div>
+                 
+            
+        
+            
+                 
+                 
+                 
+                 
+                     <div class=section>
+                         <div class=sectname>AUTHOR</div>
+                         <div class=sectbody>
+                             
+                                 <div class=sectline><a href="/wiki/User:N._J._A._Sloane">N. J. A. Sloane</a> and <a href="/wiki/User:Mira_Bernstein">Mira Bernstein</a>, Apr 28 1994</div>
+                             
+                         </div>
+                     </div>
+                 
+            
+        
+            
+                 
+                 
+                 
+                 
+                     <div class=section>
+                         <div class=sectname>EXTENSIONS</div>
+                         <div class=sectbody>
+                             
+                                 <div class=sectline>Checked all links, deleted 8 that seemed lost forever and were probably not of great importance. - <a href="/wiki/User:N._J._A._Sloane">N. J. A. Sloane</a>, May 08 2018</div>
+                             
+                         </div>
+                     </div>
+                 
+            
+        
+            
+                 
+                 
+                 
+                 
+                     <div class=section>
+                         <div class=sectname>STATUS</div>
+                         <div class=sectbody>
+                             
+                                 <div class=sectline>approved</div>
+                             
+                         </div>
+                     </div>
+                 
+            
+        
+
+        
+    </div>
+
+        
+        <div class=space10></div>
+    </div>
+
+    </div></div>
+
+    <p>
+
+    <div class=footerpad></div>
+    <div class=footer>
+    <center>
+    <div class=bottom>
+    <div class=linksbar>
+      <a href="/">Lookup</a>
+      <a href="/wiki/Welcome"><font color="red">Welcome</font></a>
+      <a href="/wiki/Main_Page"><font color="red">Wiki</font></a>
+      <a href="/account">Register</a>
+      
+      <a href="/play.html">Music</a>
+      <a href="/plot2.html">Plot 2</a>
+      <a href="/demo1.html">Demos</a>
+      <a href="/wiki/Index_to_OEIS">Index</a>
+      <a href="/webcam">WebCam</a>
+      <a href="/Submit.html">Contribute</a>
+      <a href="/eishelp2.html">Format</a>
+      <a href="/wiki/Style_Sheet">Style Sheet</a>
+      <a href="/transforms.html">Transforms</a>
+      <a href="/ol.html">Superseeker</a>
+      <a href="/recent">Recents</a>
+    </div>
+    <div class=linksbar>
+      <a href="/community.html">The OEIS Community</a>
+    </div>
+    <div class=linksbar>
+      Maintained by <a href="http://oeisf.org">The OEIS Foundation Inc.</a>
+    </div>
+
+    <div class=dbinfo>Last modified October 31 03:46 EDT 2026.  Contains 400851 sequences.</div>
+    <div class=legal>
+    <a href="/wiki/Legal_Documents">License Agreements, Terms of Use, Privacy Policy</a>
+    </div>
+
+    </div>
+    </center>
+    </div>
+  <script type="module" src="https://static.cloudflareinsights.com/beacon.min.js/vce701823e78c4301a35b7e07294d87301792088814092" integrity="sha512-UKNk8GbxkABxKcXYuLkO16EleLGUkcvJWtpSNmExE0Too3ZaFAxTscNWEc1OdAv5/BikHawapSCaiD2XCmp+Bw==" data-cf-beacon='{"version":"2024.11.0","token":"781e3e2683624a28a850394a171c1b83","r":1,"spa":2}' crossorigin="anonymous"></script>
+<script>(function(){function c(){var b=a.contentDocument||(a.contentWindow&&a.contentWindow.document);if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'a5310daf8f7ae03f',t:'MTc5MzQzMjg2NQ=='};var l=window.parent.location,o;try{o=new URL(l.origin).origin}catch(e){try{o=new URL(new URL(l.href).origin).origin}catch(e){o=''}}var u='/cdn-cgi/challenge-platform/scripts/jsd/main.js?ray=a5310daf8f7ae03f',a=document.createElement('script');a.src=o?new URL(u,o).href:u;document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+</html>

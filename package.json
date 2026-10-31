@@ -1,0 +1,18 @@
+{
+	"name": "oeistypeset",
+	"version": "0.1.0",
+	"description": "Typeset the formulas on OEIS sequence pages: a Violentmonkey userscript (OEIS notation -> LaTeX -> MathML via Temml) and a Stylus UserCSS.",
+	"directories": {
+		"test": "test"
+	},
+	"scripts": {
+		"build": "node tools/build.js",
+		"test": "node --test test/test.js",
+		"corpus": "node test/runCorpus.js"
+	},
+	"author": "Hunter Hogan",
+	"dependencies": {
+		"temml": "0.13.5"
+	},
+	"private": true
+}

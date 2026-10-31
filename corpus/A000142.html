@@ -1,0 +1,966 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<html>
+  
+  <head>
+  
+  <link rel="stylesheet" href="/styles.css?v=20260927">
+  <meta name="format-detection" content="telephone=no">
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name=viewport content="width=device-width, initial-scale=1">
+  <meta name="keywords" content="OEIS,integer sequences,Sloane" />
+  
+  
+  
+  <title>A000142 - OEIS</title>
+  <link rel="search" type="application/opensearchdescription+xml" title="OEIS" href="/oeis.xml">
+  
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg?v=20260826">
+  <link rel="icon" sizes="16x16 32x32 48x48" href="/favicon.ico?v=20260826">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png?v=20260826">
+  <script>
+  var myURL = "\/A000142"
+  function redir() {
+      var host = document.location.hostname;
+      if(host != "oeis.org" && host != "edit.oeis.org" && host != "127.0.0.1" && !/^([0-9.]+)$/.test(host) && host != "localhost" && host != "edit.localhost" && host != "localhost.localdomain") {
+          document.location = "https"+":"+"//"+"oeis"+".org/" + myURL;
+      }
+  }
+  function sf() {
+      if(document.location.pathname == "/" && document.f) document.f.q.focus();
+  }
+  </script>
+  </head>
+  <body bgcolor=#ffffff onload="redir();sf()"><a href="https://oeis.org/cdn-cgi/content?id=TWRzR1GWLQdicOXXQgyYd58P7DwvcpfLasZd.DTysR8-1793432874.412448-1.2.1.1-l0zNos8dngKCln4SITIGK2mUocOjMmg8rRMyWduJG5ZGhb2zY19lslUMcK2nC5Cu" aria-hidden="true" rel="nofollow noopener" style="display: none !important; visibility: hidden !important"></a>
+    <div class=loginbar>
+      <div class=login>
+      
+        <a href="/login?redirect=%2FA000142" rel="nofollow">login</a>
+      
+      </div>
+    </div>
+
+    <div class=center><div class=top>
+    <center>
+    <div class=donors>
+    The OEIS is supported by <a href="http://oeisf.org/#DONATE">the many generous donors to the OEIS Foundation</a>.
+    </div>
+
+    <div class=banner>
+    <a href="/"><picture>
+
+    <source media="(min-width: 830px)" srcset="/oeis-400k-banner.png 1x" width="918" height="129">
+    <img class=banner border="0" width="540" height="129" src="/oeis-400k-banner.png" srcset="/oeis-400k-banner.png 1x" alt="A000142 - OEIS">
+    </picture></a>
+    </div>
+
+    
+    
+    
+    <div class="motdbox" style="justify-content: center;">
+        <div class="motd">
+            <p><a href="https://oeis.org/wiki/A400K_Winners">Winners in the A400K Celebration</a></p>
+        </div>
+        
+    </div>
+    
+    </center>
+    </div></div>
+
+    <div class=center><div class=pagebody>
+      
+    
+    <div class=searchbarcenter>
+        <form name=f action="/search" method="GET">
+            <div class=searchbargreet>
+                <div class=searchbar>
+                    <div class=searchq>
+                        <input class=searchbox maxLength=1024 name=q value="" title="Search Query">
+                        
+                        
+                        
+                        
+                    </div>
+                    <div class=searchsubmit>
+                        <input type=submit value="Search" name=go>
+                    </div>
+                    <div class=hints>
+                        <span class=hints><a href="/hints.html">Hints</a></span>
+                    </div>
+                </div>
+                <div class=searchgreet>
+                    (Greetings from <a href="/welcome">The On-Line Encyclopedia of Integer Sequences</a>!)
+                </div>
+            </div>
+        </form>
+    </div>
+
+    <div class=sequence>
+        <div class=space1></div>
+        <div class=line></div>
+        
+        <div class=seqhead>
+            <div class=seqnumname>
+                <div class=seqnum>
+                    
+                        A000142
+                    
+                </div>
+                <div class=seqname>
+                    Factorial numbers: n! = 1*2*3*4*...*n (order of symmetric group S_n, number of permutations of n letters).
+                    <br><font size=-1>(Formerly M1675 N0659)</font>
+                </div>
+            </div>
+            <div class=scorerefs>
+                        
+                        3128
+            </div>
+        </div>
+        
+            
+    
+    
+    <div>
+        <div class=seqdatabox>
+            <div class=seqdata>1, 1, 2, 6, 24, 120, 720, 5040, 40320, 362880, 3628800, 39916800, 479001600, 6227020800, 87178291200, 1307674368000, 20922789888000, 355687428096000, 6402373705728000, 121645100408832000, 2432902008176640000, 51090942171709440000, 1124000727777607680000</div>
+            
+                <div class=seqdatalinks>
+                (<a href="/A000142/list">list</a>;
+                
+                
+                
+                    <a href="/A000142/graph">graph</a>;
+                
+                <a rel=nofollow href="/search?q=A000142+-id:A000142">refs</a>;
+                <a href="/A000142/listen">listen</a>;
+                <a rel=nofollow href="/history?seq=A000142">history</a>;
+                
+                <a href="/search?q=id:A000142&fmt=text">text</a>;
+                <a href="/A000142/internal">internal format</a>)
+                </div>
+            
+        </div>
+    </div>
+    <div class=entry>
+        
+            
+        
+            
+        
+            
+        
+            
+                 
+                 
+                 
+                 
+                     <div class=section>
+                         <div class=sectname>OFFSET</div>
+                         <div class=sectbody>
+                             
+                                 <div class=sectline>0,3</div>
+                             
+                         </div>
+                     </div>
+                 
+            
+        
+            
+                 
+                 
+                 
+                 
+                     <div class=section>
+                         <div class=sectname>COMMENTS</div>
+                         <div class=sectbody>
+                             
+                                 <div class=sectline>The earliest publication that discusses this sequence appears to be the Sepher Yezirah [Book of Creation], circa AD 300. (See Knuth, also the Zeilberger link.) - <a href="/wiki/User:N._J._A._Sloane">N. J. A. Sloane</a>, Apr 07 2014</div>
+                             
+                                 <div class=sectline>For n &gt;= 1, a(n) is the number of n X n (0,1) matrices with each row and column containing exactly one entry equal to 1.</div>
+                             
+                                 <div class=sectline>This sequence is the BinomialMean transform of <a href="/A000354" title="Expansion of e.g.f. exp(-x)/(1-2*x).">A000354</a>. (See <a href="/A075271" title="a(0) = 1 and, for n &gt;= 1, (BM)a(n) = 2*a(n-1), where BM is the BinomialMean transform.">A075271</a> for definition.) - <a href="/wiki/User:John_W._Layman">John W. Layman</a>, Sep 12 2002 [This is easily verified from the Paul Barry formula for <a href="/A000354" title="Expansion of e.g.f. exp(-x)/(1-2*x).">A000354</a>, by interchanging summations and using the formula: Sum_k (-1)^k C(n-i, k) = KroneckerDelta(i,n). - <a href="/wiki/User:David_Callan">David Callan</a>, Aug 31 2003]</div>
+                             
+                                 <div class=sectline>Number of distinct subsets of T(n-1) elements with 1 element A, 2 elements B, ..., n - 1 elements X (e.g., at n = 5, we consider the distinct subsets of ABBCCCDDDD and there are 5! = 120). - <a href="/wiki/User:Jon_Perry">Jon Perry</a>, Jun 12 2003</div>
+                             
+                                 <div class=sectline>n! is the smallest number with that prime signature. E.g., 720 = 2^4 * 3^2 * 5. - <a href="/wiki/User:Amarnath_Murthy">Amarnath Murthy</a>, Jul 01 2003</div>
+                             
+                                 <div class=sectline>a(n) is the permanent of the n X n matrix M with M(i, j) = 1. - <a href="/wiki/User:Philippe_Deléham">Philippe Deléham</a>, Dec 15 2003</div>
+                             
+                                 <div class=sectline>Given n objects of distinct sizes (e.g., areas, volumes) such that each object is sufficiently large to simultaneously contain all previous objects, then n! is the total number of essentially different arrangements using all n objects. Arbitrary levels of nesting of objects are permitted within arrangements. (This application of the sequence was inspired by considering leftover moving boxes.) If the restriction exists that each object is able or permitted to contain at most one smaller (but possibly nested) object at a time, the resulting sequence begins 1,2,5,15,52 (Bell Numbers?). Sets of nested wooden boxes or traditional nested Russian dolls come to mind here. - <a href="/wiki/User:Rick_L._Shepherd">Rick L. Shepherd</a>, Jan 14 2004</div>
+                             
+                                 <div class=sectline>From <a href="/wiki/User:Michael_Somos">Michael Somos</a>, Mar 04 2004; edited by <a href="/wiki/User:M._F._Hasler">M. F. Hasler</a>, Jan 02 2015: (Start)</div>
+                             
+                                 <div class=sectline>Stirling transform of [2, 2, 6, 24, 120, ...] is <a href="/A052856" title="E.g.f.: (1-3*exp(x)+exp(2*x))/(exp(x)-2).">A052856</a> = [2, 2, 4, 14, 76, ...].</div>
+                             
+                                 <div class=sectline>Stirling transform of [1, 2, 6, 24, 120, ...] is <a href="/A000670" title="Fubini numbers: number of preferential arrangements of n labeled elements; or number of weak orders on n labeled elements; o...">A000670</a> = [1, 3, 13, 75, ...].</div>
+                             
+                                 <div class=sectline>Stirling transform of [0, 2, 6, 24, 120, ...] is <a href="/A052875" title="E.g.f.: (exp(x)-1)^2/(2-exp(x)).">A052875</a> = [0, 2, 12, 74, ...].</div>
+                             
+                                 <div class=sectline>Stirling transform of [1, 1, 2, 6, 24, 120, ...] is <a href="/A000629" title="Number of necklaces of partitions of n+1 labeled beads.">A000629</a> = [1, 2, 6, 26, ...].</div>
+                             
+                                 <div class=sectline>Stirling transform of [0, 1, 2, 6, 24, 120, ...] is <a href="/A002050" title="Number of simplices in barycentric subdivision of n-simplex.">A002050</a> = [0, 1, 5, 25, 140, ...].</div>
+                             
+                                 <div class=sectline>Stirling transform of (<a href="/A165326" title="a(0)=a(1)=1, a(n) = -a(n-1) for n &gt; 1.">A165326</a>*<a href="/A089064" title="Expansion of e.g.f. log(1-log(1-x)).">A089064</a>)(1...) = [1, 0, 1, -1, 8, -26, 194, ...] is [1, 1, 2, 6, 24, 120, ...] (this sequence). (End)</div>
+                             
+                                 <div class=sectline>First Eulerian transform of 1, 1, 1, 1, 1, 1... The first Eulerian transform transforms a sequence s to a sequence t by the formula t(n) = Sum_{k=0..n} e(n, k)s(k), where e(n, k) is a first-order Eulerian number [<a href="/A008292" title="Triangle of Eulerian numbers T(n,k) (n &gt;= 1, 1 &lt;= k &lt;= n) read by rows.">A008292</a>]. - <a href="/wiki/User:Ross_La_Haye">Ross La Haye</a>, Feb 13 2005</div>
+                             
+                                 <div class=sectline>Conjecturally, 1, 6, and 120 are the only numbers which are both triangular and factorial. - Christopher M. Tomaszewski (cmt1288(AT)comcast.net), Mar 30 2005</div>
+                             
+                                 <div class=sectline>n! is the n-th finite difference of consecutive n-th powers. E.g., for n = 3, [0, 1, 8, 27, 64, ...] -&gt; [1, 7, 19, 37, ...] -&gt; [6, 12, 18, ...] -&gt; [6, 6, ...]. - Bryan Jacobs (bryanjj(AT)gmail.com), Mar 31 2005</div>
+                             
+                                 <div class=sectline>a(n+1) = (n+1)! = 1, 2, 6, ... has e.g.f. 1/(1-x)^2. - <a href="/wiki/User:Paul_Barry">Paul Barry</a>, Apr 22 2005</div>
+                             
+                                 <div class=sectline>Write numbers 1 to n on a circle. Then a(n) = sum of the products of all n - 2 adjacent numbers. E.g., a(5) = 1*2*3 + 2*3*4 + 3*4*5 + 4*5*1 +5*1*2 = 120. - <a href="/wiki/User:Amarnath_Murthy">Amarnath Murthy</a>, Jul 10 2005</div>
+                             
+                                 <div class=sectline>The number of chains of maximal length in the power set of {1, 2, ..., n} ordered by the subset relation. - <a href="/wiki/User:Rick_L._Shepherd">Rick L. Shepherd</a>, Feb 05 2006</div>
+                             
+                                 <div class=sectline>The number of circular permutations of n letters for n &gt;= 0 is 1, 1, 1, 2, 6, 24, 120, 720, 5040, 40320, ... - Xavier Noria (fxn(AT)hashref.com), Jun 04 2006</div>
+                             
+                                 <div class=sectline>a(n) is the number of deco polyominoes of height n (n &gt;= 1; see definitions in the Barcucci et al. references). - <a href="/wiki/User:Emeric_Deutsch">Emeric Deutsch</a>, Aug 07 2006</div>
+                             
+                                 <div class=sectline>a(n) is the number of partition tableaux of size n. See Steingrimsson/Williams link for the definition. - <a href="/wiki/User:David_Callan">David Callan</a>, Oct 06 2006</div>
+                             
+                                 <div class=sectline>Consider the n! permutations of the integer sequence [n] = 1, 2, ..., n. The i-th permutation consists of ncycle(i) permutation cycles. Then, if the Sum_{i=1..n!} 2^ncycle(i) runs from 1 to n!, we have Sum_{i=1..n!} 2^ncycle(i) = (n+1)!. E.g., for n = 3 we have ncycle(1) = 3, ncycle(2) = 2, ncycle(3) = 1, ncycle(4) = 2, ncycle(5) = 1, ncycle(6) = 2 and 2^3 + 2^2 + 2^1 + 2^2 + 2^1 + 2^2 = 8 + 4 + 2 + 4 + 2 + 4 = 24 = (n+1)!. - <a href="/wiki/User:Thomas_Wieder">Thomas Wieder</a>, Oct 11 2006</div>
+                             
+                                 <div class=sectline>a(n) is the number of set partitions of {1, 2, ..., 2n - 1, 2n} into blocks of size 2 (perfect matchings) in which each block consists of one even and one odd integer. For example, a(3) = 6 counts 12-34-56, 12-36-45, 14-23-56, 14-25-36, 16-23-45, 16-25-34. - <a href="/wiki/User:David_Callan">David Callan</a>, Mar 30 2007</div>
+                             
+                                 <div class=sectline>Consider the multiset M = [1, 2, 2, 3, 3, 3, 4, 4, 4, 4, ...] = [1, 2, 2, ..., n x 'n'] and form the set U (where U is a set in the strict sense) of all subsets N (where N may be a multiset again) of M. Then the number of elements |U| of U is equal to (n+1)!. E.g. for M = [1, 2, 2] we get U = [[], [2], [2, 2], [1], [1, 2], [1, 2, 2]] and |U| = 3! = 6. This observation is a more formal version of the comment given already by <a href="/wiki/User:Rick_L._Shepherd">Rick L. Shepherd</a>, Jan 14 2004. - <a href="/wiki/User:Thomas_Wieder">Thomas Wieder</a>, Nov 27 2007</div>
+                             
+                                 <div class=sectline>For n &gt;= 1, a(n) = 1, 2, 6, 24, ... are the positions corresponding to the 1's in decimal expansion of Liouville's constant (<a href="/A012245" title="Characteristic function of factorial numbers; also decimal expansion of Liouville's number or Liouville's constant.">A012245</a>). - <a href="/wiki/User:Paul_Muljadi">Paul Muljadi</a>, Apr 15 2008</div>
+                             
+                                 <div class=sectline>Triangle <a href="/A144107" title="Eigentriangle, row sums = n!">A144107</a> has n! for row sums (given n &gt; 0) with right border n! and left border <a href="/A003319" title="Number of connected permutations of [1..n] (those not fixing [1..j] for 0 &lt; j &lt; n). Also called indecomposable permutations,...">A003319</a>, the INVERTi transform of (1, 2, 6, 24, ...). - <a href="/wiki/User:Gary_W._Adamson">Gary W. Adamson</a>, Sep 11 2008</div>
+                             
+                                 <div class=sectline>Equals INVERT transform of <a href="/A052186" title="Number of permutations of [n] with no strong fixed points.">A052186</a> and row sums of triangle <a href="/A144108" title="Eigentriangle based on A052186 (permutations without strong fixed points), row sums = n!">A144108</a>. - <a href="/wiki/User:Gary_W._Adamson">Gary W. Adamson</a>, Sep 11 2008</div>
+                             
+                                 <div class=sectline>From <a href="/wiki/User:Abdullahi_Umar">Abdullahi Umar</a>, Oct 12 2008: (Start)</div>
+                             
+                                 <div class=sectline>a(n) is also the number of order-decreasing full transformations (of an n-chain).</div>
+                             
+                                 <div class=sectline>a(n-1) is also the number of nilpotent order-decreasing full transformations (of an n-chain). (End)</div>
+                             
+                                 <div class=sectline>n! is also the number of optimal broadcast schemes in the complete graph K_{n}, equivalent to the number of binomial trees embedded in K_{n} (see Calin D. Morosan, Information Processing Letters, 100 (2006), 188-193). - Calin D. Morosan (cd_moros(AT)alumni.concordia.ca), Nov 28 2008</div>
+                             
+                                 <div class=sectline>Let S_{n} denote the n-star graph. The S_{n} structure consists of n S_{n-1} structures. This sequence gives the number of edges between the vertices of any two specified S_{n+1} structures in S_{n+2} (n &gt;= 1). - <a href="/wiki/User:K.V.Iyer">K.V.Iyer</a>, Mar 18 2009</div>
+                             
+                                 <div class=sectline>Chromatic invariant of the sun graph S_{n-2}.</div>
+                             
+                                 <div class=sectline>It appears that a(n+1) is the inverse binomial transform of <a href="/A000255" title="a(n) = n*a(n-1) + (n-1)*a(n-2), a(0) = 1, a(1) = 1.">A000255</a>. - <a href="/wiki/User:Timothy_Hopper">Timothy Hopper</a>, Aug 20 2009</div>
+                             
+                                 <div class=sectline>a(n) is also the determinant of a square matrix, An, whose coefficients are the reciprocals of beta function: a{i, j} = 1/beta(i, j), det(An) = n!. - <a href="/wiki/User:Enrique_Pérez_Herrero">Enrique Pérez Herrero</a>, Sep 21 2009</div>
+                             
+                                 <div class=sectline>The asymptotic expansions of the exponential integrals E(x, m = 1, n = 1) ~ exp(-x)/x*(1 - 1/x + 2/x^2 - 6/x^3 + 24/x^4 + ...) and E(x, m = 1, n = 2) ~ exp(-x)/x*(1 - 2/x + 6/x^2 - 24/x^3 + ...) lead to the factorial numbers. See <a href="/A163931" title="Decimal expansion of the higher-order exponential integral E(x, m=2, n=1) at x=1.">A163931</a> and <a href="/A130534" title="Triangle T(n,k), 0 &lt;= k &lt;= n, read by rows, giving coefficients of the polynomial (x+1)(x+2)...(x+n), expanded in increasing...">A130534</a> for more information. - <a href="/wiki/User:Johannes_W._Meijer">Johannes W. Meijer</a>, Oct 20 2009</div>
+                             
+                                 <div class=sectline>Satisfies A(x)/A(x^2), A(x) = <a href="/A173280" title="First column of the matrix power A173279(.,.)^j in the limit j-&gt;infinity.">A173280</a>. - <a href="/wiki/User:Gary_W._Adamson">Gary W. Adamson</a>, Feb 14 2010</div>
+                             
+                                 <div class=sectline>a(n) = G^n where G is the geometric mean of the first n positive integers. - <a href="/wiki/User:Jaroslav_Krizek">Jaroslav Krizek</a>, May 28 2010</div>
+                             
+                                 <div class=sectline>Increasing colored 1-2 trees with choice of two colors for the rightmost branch of nonleaves. - <a href="/wiki/User:Wenjin_Woan">Wenjin Woan</a>, May 23 2011</div>
+                             
+                                 <div class=sectline>Number of necklaces with n labeled beads of 1 color. - <a href="/wiki/User:Robert_G._Wilson_v">Robert G. Wilson v</a>, Sep 22 2011</div>
+                             
+                                 <div class=sectline>The sequence 1!, (2!)!, ((3!)!)!, (((4!)!)!)!, ..., ((...(n!)!)...)! (n times) grows too rapidly to have its own entry. See Hofstadter.</div>
+                             
+                                 <div class=sectline>The e.g.f. of 1/a(n) = 1/n! is BesselI(0, 2*sqrt(x)). See Abramowitz-Stegun, p. 375, 9.3.10. - <a href="/wiki/User:Wolfdieter_Lang">Wolfdieter Lang</a>, Jan 09 2012</div>
+                             
+                                 <div class=sectline>a(n) is the length of the n-th row which is the sum of n-th row in triangle <a href="/A170942" title="Take the permutations of lengths 1, 2, 3, ... arranged lexicographically, and replace each permutation with the number of it...">A170942</a>. - <a href="/wiki/User:Reinhard_Zumkeller">Reinhard Zumkeller</a>, Mar 29 2012</div>
+                             
+                                 <div class=sectline>Number of permutations of elements 1, 2, ..., n + 1 with a fixed element belonging to a cycle of length r does not depend on r and equals a(n). - <a href="/wiki/User:Vladimir_Shevelev">Vladimir Shevelev</a>, May 12 2012</div>
+                             
+                                 <div class=sectline>a(n) is the number of fixed points in all permutations of 1, ..., n: in all n! permutations, 1 is first exactly (n-1)! times, 2 is second exactly (n-1)! times, etc., giving (n-1)!*n = n!. - <a href="/wiki/User:Jon_Perry">Jon Perry</a>, Dec 20 2012</div>
+                             
+                                 <div class=sectline>For n &gt;= 1, a(n-1) is the binomial transform of <a href="/A000757" title="Number of cyclic permutations of [n] with no i -&gt; i+1 (mod n).">A000757</a>. See Moreno-Rivera. - <a href="/wiki/User:Luis_Manuel_Rivera_Martínez">Luis Manuel Rivera Martínez</a>, Dec 09 2013</div>
+                             
+                                 <div class=sectline>Each term is divisible by its digital root (<a href="/A010888" title="Digital root of n (repeatedly add the digits of n until a single digit is reached).">A010888</a>). - <a href="/wiki/User:Ivan_N._Ianakiev">Ivan N. Ianakiev</a>, Apr 14 2014</div>
+                             
+                                 <div class=sectline>For m &gt;= 3, a(m-2) is the number hp(m) of acyclic Hamiltonian paths in a simple graph with m vertices, which is complete except for one missing edge. For m &lt; 3, hp(m)=0. - <a href="/wiki/User:Stanislav_Sykora">Stanislav Sykora</a>, Jun 17 2014</div>
+                             
+                                 <div class=sectline>a(n) is the number of increasing forests with n nodes. - <a href="/wiki/User:Brad_R._Jones">Brad R. Jones</a>, Dec 01 2014</div>
+                             
+                                 <div class=sectline>The factorial numbers can be calculated by means of the recurrence n! = (floor(n/2)!)^2 * sf(n) where sf(n) are the swinging factorials <a href="/A056040" title="Swinging factorial, a(n) = 2^(n-(n mod 2))*Product_{k=1..n} k^((-1)^(k+1)).">A056040</a>. This leads to an efficient algorithm if sf(n) is computed via prime factorization. For an exposition of this algorithm see the link below. - <a href="/wiki/User:Peter_Luschny">Peter Luschny</a>, Nov 05 2016</div>
+                             
+                                 <div class=sectline>Treeshelves are ordered (plane) binary (0-1-2) increasing trees where the nodes of outdegree 1 come in 2 colors. There are n! treeshelves of size n, and classical Françon's bijection maps bijectively treeshelves into permutations. - <a href="/wiki/User:Sergey_Kirgizov">Sergey Kirgizov</a>, Dec 26 2016</div>
+                             
+                                 <div class=sectline>Satisfies Benford's law [Diaconis, 1977; Berger-Hill, 2017] - <a href="/wiki/User:N._J._A._Sloane">N. J. A. Sloane</a>, Feb 07 2017</div>
+                             
+                                 <div class=sectline>a(n) = Sum((d_p)^2), where d_p is the number of standard tableaux in the Ferrers board of the integer partition p and summation is over all integer partitions p of n. Example: a(3) = 6. Indeed, the  partitions of 3 are [3], [2,1], and [1,1,1], having 1, 2, and 1 standard tableaux, respectively; we have 1^2 + 2^2 + 1^2 = 6. - <a href="/wiki/User:Emeric_Deutsch">Emeric Deutsch</a>, Aug 07 2017</div>
+                             
+                                 <div class=sectline>a(n) is the n-th derivative of x^n. - <a href="/wiki/User:Iain_Fox">Iain Fox</a>, Nov 19 2017</div>
+                             
+                                 <div class=sectline>a(n) is the number of maximum chains in the n-dimensional Boolean cube {0,1}^n in respect to the relation &quot;precedes&quot;. It is defined as follows: for arbitrary vectors u, v of {0,1}^n, such that u = (u_1, u_2, ..., u_n) and v = (v_1, v_2, ..., v_n), &quot;u precedes v&quot; if u_i &lt;= v_i, for i=1, 2, ..., n. - <a href="/wiki/User:Valentin_Bakoev">Valentin Bakoev</a>, Nov 20 2017</div>
+                             
+                                 <div class=sectline>a(n) is the number of shortest paths (for example, obtained by Breadth First Search) between the nodes (0,0,...,0) (i.e., the all-zeros vector) and (1,1,...,1) (i.e., the all-ones vector) in the graph H_n, corresponding to the n-dimensional Boolean cube {0,1}^n. The graph is defined as H_n = (V_n, E_n), where V_n is the set of all vectors of {0,1}^n, and E_n contains edges formed by each pair adjacent vectors. - <a href="/wiki/User:Valentin_Bakoev">Valentin Bakoev</a>, Nov 20 2017</div>
+                             
+                                 <div class=sectline>a(n) is also the determinant of the symmetric n X n matrix M defined by M(i,j) = sigma(gcd(i,j)) for 1 &lt;= i,j &lt;= n. - <a href="/wiki/User:Bernard_Schott">Bernard Schott</a>, Dec 05 2018</div>
+                             
+                                 <div class=sectline>a(n) is also the number of inversion sequences of length n. A length n inversion sequence e_1, e_2, ..., e_n is a sequence of n integers such that 0 &lt;= e_i &lt; i. - <a href="/wiki/User:Juan_S._Auli">Juan S. Auli</a>, Oct 14 2019</div>
+                             
+                                 <div class=sectline>The term &quot;factorial&quot; (&quot;factorielle&quot; in French) was coined by the French mathematician Louis François Antoine Arbogast (1759-1803) in 1800. The notation &quot;!&quot; was first used by the French mathematician Christian Kramp (1760-1826) in 1808. - <a href="/wiki/User:Amiram_Eldar">Amiram Eldar</a>, Apr 16 2021</div>
+                             
+                                 <div class=sectline>Also the number of signotopes of rank 2, i.e., mappings X:{{1..n} choose 2}-&gt;{+,-} such that for any three indices a &lt; b &lt; c, the sequence X(a,b), X(a,c), X(b,c) changes its sign at most once (see Felsner-Weil reference). - <a href="/wiki/User:Manfred_Scheucher">Manfred Scheucher</a>, Feb 09 2022</div>
+                             
+                                 <div class=sectline>a(n) is also the number of labeled commutative semisimple rings with n elements. As an example the only commutative semisimple rings with 4 elements are F_4 and F_2 X F_2. They both have exactly 2 automorphisms, hence a(4)=24/2+24/2=24. - <a href="/wiki/User:Paul_Laubie">Paul Laubie</a>, Mar 05 2024</div>
+                             
+                                 <div class=sectline>a(n) is the number of extremely unlucky Stirling permutations of order n+1; i.e., the number of Stirling permutations of order n+1 that have exactly one lucky car. - <a href="/wiki/User:Bridget_Tenner">Bridget Tenner</a>, Apr 09 2024</div>
+                             
+                                 <div class=sectline>For n &gt; 0, a(n) is the product of the number of automorphisms of any graph G on vertex set [n] and the number of possible ways to bijectively label G by the elements of [n] so that all obtained graphs are different (see Bona at p. 249). - <a href="/wiki/User:Stefano_Spezia">Stefano Spezia</a>, Apr 01 2026</div>
+                             
+                         </div>
+                     </div>
+                 
+            
+        
+            
+                 
+                 
+                 
+                 
+                     <div class=section>
+                         <div class=sectname>REFERENCES</div>
+                         <div class=sectbody>
+                             
+                                 <div class=sectline>M. Abramowitz and I. A. Stegun, eds., Handbook of Mathematical Functions, National Bureau of Standards Applied Math. Series 55, 1964 (and various reprintings), p. 833.</div>
+                             
+                                 <div class=sectline>A. T. Benjamin and J. J. Quinn, Proofs that really count: the art of combinatorial proof, M.A.A. 2003, id. 125; also p. 90, ex. 3.</div>
+                             
+                                 <div class=sectline>Mary L. Boas, Mathematical Methods in The Physical Sciences, 3rd Edition, John Wiley &amp; Sons, Inc., 2006. See pp. 538-539, 552-553.</div>
+                             
+                                 <div class=sectline>Miklos Bona, Introduction to Enumerative and Analytic Combinatorics, CRC Press, 2025, pp. 249, 501.</div>
+                             
+                                 <div class=sectline>Florian Cajori, A History of Mathematical Notations, Dover edition (2012), pars. 448-449.</div>
+                             
+                                 <div class=sectline>John H. Conway and Richard K. Guy, The Book of Numbers, New York: Springer-Verlag, 1996. See pp. 64-66.</div>
+                             
+                                 <div class=sectline>John Derbyshire, Unknown Quantity: A Real and Imaginary History of Algebra. Washington, DC: Joseph Henry Press (2006): 219.</div>
+                             
+                                 <div class=sectline>Răzvan Gelca and Titu Andreescu, Putnam and Beyond, Springer 2007, pp. 162-163, 257, 693-694.</div>
+                             
+                                 <div class=sectline>Jan Gullberg, Mathematics from the Birth of Numbers, W. W. Norton &amp; Co., NY &amp; London, 1997, §4.1 Symbols Galore, p. 106.</div>
+                             
+                                 <div class=sectline>Douglas R. Hofstadter, Fluid concepts &amp; creative analogies: computer models of the fundamental mechanisms of thought, Basic Books, 1995, pages 44-46.</div>
+                             
+                                 <div class=sectline>A. N. Khovanskii. The Application of Continued Fractions and Their Generalizations to Problem in Approximation Theory. Groningen: Noordhoff, Netherlands, 1963. See p. 141 (10.19).</div>
+                             
+                                 <div class=sectline>D. E. Knuth, The Art of Computer Programming, Vol. 3, Section 5.1.2, p. 23. [From <a href="/wiki/User:N._J._A._Sloane">N. J. A. Sloane</a>, Apr 07 2014]</div>
+                             
+                                 <div class=sectline>J.-M. De Koninck and A. Mercier, 1001 Problèmes en Théorie Classique des Nombres, Problème 693 pp. 90, 297, Ellipses Paris 2004.</div>
+                             
+                                 <div class=sectline>A. P. Prudnikov, Yu. A. Brychkov, and O. I. Marichev, &quot;Integrals and Series&quot;, Volume 1: &quot;Elementary Functions&quot;, Chapter 4: &quot;Finite Sums&quot;, New York, Gordon and Breach Science Publishers, 1986-1992.</div>
+                             
+                                 <div class=sectline>Hans Rademacher and Otto Toeplitz, The Enjoyment of Mathematics, Princeton Science Library, 1994. See pp. 50-51.</div>
+                             
+                                 <div class=sectline>R. W. Robinson, Counting arrangements of bishops, pp. 198-214 of Combinatorial Mathematics IV (Adelaide 1975), Lect. Notes Math., 560 (1976).</div>
+                             
+                                 <div class=sectline>Sepher Yezirah [Book of Creation], circa AD 300. See verse 52.</div>
+                             
+                                 <div class=sectline>N. J. A. Sloane, A Handbook of Integer Sequences, Academic Press, 1973 (includes this sequence).</div>
+                             
+                                 <div class=sectline>N. J. A. Sloane and Simon Plouffe, The Encyclopedia of Integer Sequences, Academic Press, 1995 (includes this sequence).</div>
+                             
+                                 <div class=sectline>Jerome Spanier and Keith B. Oldham, &quot;Atlas of Functions&quot;, Hemisphere Publishing Corp., 1987, chapter 2, pages 19-24.</div>
+                             
+                                 <div class=sectline>D. Stanton and D. White, Constructive Combinatorics, Springer, 1986; see p. 91.</div>
+                             
+                                 <div class=sectline>Carlo Suares, Sepher Yetsira, Shambhala Publications, 1976. See verse 52.</div>
+                             
+                                 <div class=sectline>David Wells, The Penguin Dictionary of Curious and Interesting Numbers, Penguin Books, 1987, pp. 102.</div>
+                             
+                         </div>
+                     </div>
+                 
+            
+        
+            
+                 
+                 
+                 
+                     
+                 
+                 
+                     <div class=section>
+                         <div class=sectname>LINKS</div>
+                         <div class=sectbody>
+                             
+                                 <div class=sectline>N. J. A. Sloane, <a href="/A000142/b000142.txt">The first 100 factorials: Table of n, n! for n = 0..100</a></div>
+                             
+                                 <div class=sectline>M. Abramowitz and I. A. Stegun, eds., <a href="https://www.convertit.com/Go/ConvertIt/Reference/AMS55.ASP">Handbook of Mathematical Functions</a>, National Bureau of Standards, Applied Math. Series 55, Tenth Printing, 1972.</div>
+                             
+                                 <div class=sectline>S. B. Akers and B. Krishnamurthy, <a href="https://doi.org/10.1109/12.21148">A group-theoretic model for symmetric interconnection networks</a>, IEEE Trans. Comput., 38(4), April 1989, 555-566.</div>
+                             
+                                 <div class=sectline>Masanori Ando, <a href="https://arxiv.org/abs/1504.04121">Odd number and Trapezoidal number</a>, arXiv:1504.04121 [math.CO], 2015.</div>
+                             
+                                 <div class=sectline>David Applegate and N. J. A. Sloane, <a href="/A000142/a000142.txt.gz">Table giving cycle index of S_0 through S_40 in Maple format</a>. [gzipped]</div>
+                             
+                                 <div class=sectline>L. F. A. Arbogast, <a href="https://archive.org/details/ducalculdesdri00arbouoft">Du calcul des dérivations</a>, Strasbourg: Levrault, 1800.</div>
+                             
+                                 <div class=sectline>Kassie Archer and Robert P. Laudone, <a href="https://arxiv.org/abs/2603.04218">Arrow pattern avoidance in permutations: structure and enumeration</a>, arXiv:2603.04218 [math.CO], 2026. See pp. 6, 10.</div>
+                             
+                                 <div class=sectline>Cyril Banderier, Mireille Bousquet-Mélou, Alain Denise, Philippe Flajolet, Danièle Gardy, and Dominique Gouyou-Beauchamps, <a href="https://doi.org/10.1016/S0012-365X(01)00250-3">Generating Functions for Generating Trees</a>, Disc. Math. 246(1-3) (March 2002) 29-55.</div>
+                             
+                                 <div class=sectline>Stefano Barbero, Umberto Cerruti, and Nadir Murru, <a href="https://doi.org/10.1007/s11587-018-0389-5">On the operations of sequences in rings and binomial type sequences</a>, Ricerche di Matematica (2018), pp 1-17., also <a href="https://arxiv.org/abs/1805.11922">arXiv:1805.11922</a> [math.NT], 2018.</div>
+                             
+                                 <div class=sectline>Elena Barcucci, Alberto Del Lungo, and Renzo Pinzani, <a href="https://doi.org/10.1016/0304-3975(95)00199-9">&quot;Deco&quot; polyominoes, permutations and random generation</a>, Theoretical Comp. Sci., 159 (1996), 29-42.</div>
+                             
+                                 <div class=sectline>Elena Barcucci, Alberto Del Lungo, Renzo Pinzani, and Renzo Sprugnoli, <a href="https://www.mat.univie.ac.at/~slc/opapers/s31barc.html">La hauteur des polyominos dirigés verticalement convexes</a>, Actes du 31e Séminaire Lotharingien de Combinatoire, Publ. IRMA, Université Strasbourg I (1993).</div>
+                             
+                                 <div class=sectline>Jean-Luc Baril, Sergey Kirgizov, and Vincent Vajnovszki, <a href="https://doi.org/10.1016/j.disc.2017.07.021">Patterns in treeshelves</a>, Discrete Mathematics, Vol. 340, No. 12 (2017), 2946-2954, arXiv:<a href="https://arxiv.org/abs/1611.07793">1611.07793 [cs.DM]</a>, 2016.</div>
+                             
+                                 <div class=sectline>A. Berger and T. P. Hill, <a href="https://www.ams.org/publications/journals/notices/201702/rnoti-p132.pdf">What is Benford's Law?</a>, Notices, Amer. Math. Soc., 64:2 (2017), 132-134.</div>
+                             
+                                 <div class=sectline>Manjul Bhargava, <a href="https://doi.org/10.2307/2695734">The factorial function and generalizations</a>, Amer. Math. Monthly, 107 (Nov. 2000), 783-799.</div>
+                             
+                                 <div class=sectline>Anders Björner and Richard P. Stanley, <a href="https://math.mit.edu/~rstan/papers/comb.pdf">A combinatorial miscellany</a>, (2010).</div>
+                             
+                                 <div class=sectline>Natasha Blitvić and Einar Steingrímsson, <a href="https://arxiv.org/abs/2001.00280">Permutations, moments, measures</a>, arXiv:2001.00280 [math.CO], 2020.</div>
+                             
+                                 <div class=sectline>Henry Bottomley, <a href="/A000142/a000142.gif">Illustration of initial terms</a>.</div>
+                             
+                                 <div class=sectline>Douglas Butler, <a href="https://web.archive.org/web/20191108081905/http://www.tsm-resources.com/alists/fact.html">Factorials!</a>.</div>
+                             
+                                 <div class=sectline>David Callan, <a href="https://www.cs.uwaterloo.ca/journals/JIS/VOL7/Callan/callan91.html">Counting Stabilized-Interval-Free Permutations</a>, Journal of Integer Sequences, Vol. 7 (2004), Article 04.1.8.</div>
+                             
+                                 <div class=sectline>Peter J. Cameron, <a href="https://www.cs.uwaterloo.ca/journals/JIS/VOL3/groups.html">Sequences realized by oligomorphic permutation groups</a>, J. Integ. Seqs. Vol. 3 (2000), #00.1.5.</div>
+                             
+                                 <div class=sectline>Laura Colmenarejo, Aleyah Dawkins, Jennifer Elder, Pamela E. Harris, Kimberly J. Harry, Selvi Kara, Dorian Smith, and Bridget Eileen Tenner, <a href="https://arxiv.org/abs/2403.03280">On the lucky and displacement statistics of Stirling permutations</a>, arXiv:2403.03280 [math.CO], 2024.</div>
+                             
+                                 <div class=sectline>CombOS - Combinatorial Object Server, <a href="https://combos.org/perm.html">Generate permutations</a>.</div>
+                             
+                                 <div class=sectline>Persi Diaconis, <a href="https://doi.org/10.1214/aop/1176995891">The distribution of leading digits and uniform distribution mod 1</a>, Ann. Probability, 5, 1977, 72--81.</div>
+                             
+                                 <div class=sectline>Robert M. Dickau, <a href="https://www.robertdickau.com/permutations.html">Permutation diagrams</a>.</div>
+                             
+                                 <div class=sectline>Stefan Felsner and Helmut Weil, <a href="https://doi.org/10.1016/S0166-218X(00)00232-8">Sweeps, arrangements and signotopes</a>, Disc. Appl. Math. 109(1-2) (2001), 67-94.</div>
+                             
+                                 <div class=sectline>Philippe Flajolet and Robert Sedgewick, <a href="https://algo.inria.fr/flajolet/Publications/books.html">Analytic Combinatorics</a>, 2009; see page 18.</div>
+                             
+                                 <div class=sectline>Jean Françon, <a href="https://www.numdam.org/numdam-bin/item?id=ITA_1976__10_3_35_0">Arbres binaires de recherche : propriétés combinatoires et applications</a>, Revue française d'automatique informatique recherche opérationnelle, Informatique théorique, 10 no. 3 (1976), pp. 35-50.</div>
+                             
+                                 <div class=sectline>Joël Gay and Vincent Pilaud, <a href="https://arxiv.org/abs/1804.06572">The weak order on Weyl posets</a>, arXiv:1804.06572 [math.CO], 2018.</div>
+                             
+                                 <div class=sectline>Shyam Sunder Gupta, <a href="https://doi.org/10.1007/978-981-97-2465-9_16">Fascinating Factorials</a>, Exploring the Beauty of Fascinating Numbers, Springer (2025) Ch. 16, 411-442.</div>
+                             
+                                 <div class=sectline>Ian R. Harris and Ryan P. A. McShane, <a href="https://cs.uwaterloo.ca/journals/JIS/VOL27/McShane/mcshane1.html">Counting Tournaments with a Specified Number of Circular Triads</a>, Journal of Integer Sequences, Vol. 27 (2024), Article 24.8.7. See pages 2, 22.</div>
+                             
+                                 <div class=sectline>Elizabeth Hartung, Hung Phuc Hoang, Torsten Mütze, and Aaron Williams, <a href="https://arxiv.org/abs/1906.06069">Combinatorial generation via permutation languages. I. Fundamentals</a>, arXiv:1906.06069 [cs.DM], 2019.</div>
+                             
+                                 <div class=sectline>A. M. Ibrahim, <a href="https://www.nntdm.net/papers/nntdm-19/NNTDM-19-2-30_42.pdf">Extension of factorial concept to negative numbers</a>, Notes on Number Theory and Discrete Mathematics, Vol. 19, 2013, 2, 30-42.</div>
+                             
+                                 <div class=sectline>INRIA Algorithms Project, <a href="http://ecs.inria.fr/services/structure?nbr=20">Encyclopedia of Combinatorial Structures 20</a>. [dead link]</div>
+                             
+                                 <div class=sectline>INRIA Algorithms Project, <a href="http://ecs.inria.fr/services/structure?nbr=297">Encyclopedia of Combinatorial Structures 297</a>. [dead link]</div>
+                             
+                                 <div class=sectline>Milan Janjic, <a href="https://old.pmf.unibl.org/wp-content/uploads/2017/10/enumfun.pdf">Enumerative Formulas for Some Functions on Finite Sets</a>.</div>
+                             
+                                 <div class=sectline>Milan Janjic, <a href="https://cs.uwaterloo.ca/journals/JIS/VOL15/Janjic/janjic42.html">Determinants and Recurrence Sequences</a>, Journal of Integer Sequences, 2012, Article 12.3.5. - <a href="/wiki/User:N._J._A._Sloane">N. J. A. Sloane</a>, Sep 16 2012</div>
+                             
+                                 <div class=sectline>Bradley Robert Jones, <a href="https://summit.sfu.ca/item/14554">On tree hook length formulas, Feynman rules and B-series</a>, Master's thesis, Simon Fraser University, (Canada 2014). See p. 22.</div>
+                             
+                                 <div class=sectline>Clark Kimberling, <a href="https://www.cs.uwaterloo.ca/journals/JIS/VOL6/Kimberling/kimberling24.html">Matrix Transformations of Integer Sequences</a>, J. Int. Seq., 6 (2003).</div>
+                             
+                                 <div class=sectline>Christian Kramp, <a href="https://books.google.com/books?id=w-pSD-UeLRUC">Élémens d'arithmétique universelle</a>, Cologne: De l'imprimerie de Th. F. Thiriart, 1808.</div>
+                             
+                                 <div class=sectline>Gilbert Labelle, Pierre Leroux, Elisa Pergola, and Renzo Pinzani, <a href="https://doi.org/10.1016/S0012-365X(01)00257-6">Stirling numbers interpolation using permutations with forbidden subsequences</a>, Discrete Math. 246 (2002), 177-195.</div>
+                             
+                                 <div class=sectline>Wolfdieter Lang, <a href="https://www.cs.uwaterloo.ca/journals/JIS/VOL3/LANG/lang.html">On generalizations of Stirling number triangles</a>, J. Int. Seq., Vol. 3 (2000), #00.2.4.</div>
+                             
+                                 <div class=sectline>John W. Layman, <a href="https://www.cs.uwaterloo.ca/journals/JIS/VOL4/LAYMAN/hankel.html">The Hankel Transform and Some of its Properties</a>, J. Int. Seq., 4 (2001), #01.1.5.</div>
+                             
+                                 <div class=sectline>Eric Lehman, F. Thomson Leighton, and Albert R. Meyer, <a href="https://people.csail.mit.edu/meyer/mcs.pdf">Mathematics for Computer Science</a>, Massachusetts Institute of Technology, 2015. See pp. 181, 504, 522-525, 558-559.</div>
+                             
+                                 <div class=sectline>Paul Leyland, <a href="https://web.archive.org/web/20120204131629/http://www.leyland.vispa.com/numth/factorization/cullen_woodall/gcw.htm">Generalized Cullen and Woodall numbers</a>. [Cached copy at the Wayback Machine]</div>
+                             
+                                 <div class=sectline>Peter Luschny, <a href="/A000142/a000142.pdf">Swing, divide and conquer the factorial</a>, (excerpt).</div>
+                             
+                                 <div class=sectline>Rutilo Moreno and Luis Manuel Rivera, <a href="https://arxiv.org/abs/1306.5708">Blocks in cycles and k-commuting permutations</a>, arXiv:1306:5708 [math.CO], 2013-2014.</div>
+                             
+                                 <div class=sectline>Thomas Morrill, <a href="https://arxiv.org/abs/1804.08067">Further Development of &quot;Non-Pythagorean&quot; Musical Scales Based on Logarithms</a>, arXiv:1804.08067 [math.HO], 2018.</div>
+                             
+                                 <div class=sectline>T. S. Motzkin, <a href="/A000262/a000262.pdf">Sorting numbers for cylinders and other classification numbers</a>, in Combinatorics, Proc. Symp. Pure Math. 19, AMS, 1971, pp. 167-176. [Annotated, scanned copy]</div>
+                             
+                                 <div class=sectline>Norihiro Nakashima and Shuhei Tsujie, <a href="https://arxiv.org/abs/1904.09748">Enumeration of Flats of the Extended Catalan and Shi Arrangements with Species</a>, arXiv:1904.09748 [math.CO], 2019.</div>
+                             
+                                 <div class=sectline>Niels Erik Nørlund, <a href="https://www-gdz.sub.uni-goettingen.de/cgi-bin/digbib.cgi?PPN373206070">Vorlesungen über Differenzenrechnung</a> Springer 1924, p. 98.</div>
+                             
+                                 <div class=sectline>R. Ondrejka, <a href="https://doi.org/10.1090/S0025-5718-70-99856-X">1273 exact factorials</a>, Math. Comp., 24 (1970), 231.</div>
+                             
+                                 <div class=sectline>Enrique Pérez Herrero, <a href="https://psychedelic-geometry.blogspot.com/2009/09/beta-function-matrix-determinant.html">Beta function matrix determinant </a> Psychedelic Geometry blogspot-09/21/09.</div>
+                             
+                                 <div class=sectline>Alexsandar Petojevic, <a href="https://www.cs.uwaterloo.ca/journals/JIS/VOL5/Petojevic/petojevic5.html">The Function vM_m(s; a; z) and Some Well-Known Sequences</a>, Journal of Integer Sequences, Vol. 5 (2002), Article 02.1.7.</div>
+                             
+                                 <div class=sectline>Mihai Prunescu and Lorenzo Sauras-Altuzarra, <a href="https://doi.org/10.1016/j.exco.2024.100136">An arithmetic term for the factorial function</a>, Examples and Counterexamples, Vol. 5 (2024).</div>
+                             
+                                 <div class=sectline>Fred Richman, <a href="https://web.archive.org/web/20070212130424/https://math.fau.edu/Richman/long.htm">Multiple precision arithmetic (Computing factorials up to 765!)</a>. [Cached copy at the Wayback Machine]</div>
+                             
+                                 <div class=sectline>Luis Manuel Rivera, <a href="https://arxiv.org/abs/1406.3081">Integer sequences and k-commuting permutations</a>, arXiv preprint arXiv:1406.3081 [math.CO], 2014-2015.</div>
+                             
+                                 <div class=sectline>David A. Sheppard, <a href="https://doi.org/10.1016/0012-365X(76)90051-0">The factorial representation of major balanced labelled graphs</a>, Discrete Math., 15(1976), no. 4, 379-388.</div>
+                             
+                                 <div class=sectline>Michael Z. Spivey and Laura L. Steil, <a href="https://www.cs.uwaterloo.ca/journals/JIS/VOL9/Spivey/spivey7.html">The k-Binomial Transforms and the Hankel Transform</a>, J. Int. Seq., 9 (2006), #06.1.1.</div>
+                             
+                                 <div class=sectline>Richard P. Stanley, <a href="https://doi.org/10.1090/S0273-0979-02-00966-7">Recent Progress in Algebraic Combinatorics</a>, Bull. Amer. Math. Soc., 40 (2003), 55-68.</div>
+                             
+                                 <div class=sectline>Einar Steingrimsson and Lauren K. Williams, <a href="https://arxiv.org/abs/math/0507149">Permutation tableaux and permutation patterns</a>, arXiv:math/0507149 [math.CO], 2005-2006.</div>
+                             
+                                 <div class=sectline>Abdullahi Umar, <a href="https://doi.org/10.1017/S0308210500015031">On the semigroups of order-decreasing finite full transformations</a>, Proc. Roy. Soc. Edinburgh 120A (1992), 129-142.</div>
+                             
+                                 <div class=sectline>Gerard Villemin's Almanach of Numbers, <a href="https://diconombre.fr/Wwwgvmm/Compter/SixFact.htm">Factorielles</a>.</div>
+                             
+                                 <div class=sectline>Sage Weil, <a href="https://web.archive.org/web/20090211043639/http://www.newdream.net/~sage/old/numbers/fact.htm">The First 999 Factorials</a>. [Cached copy at the Wayback Machine]</div>
+                             
+                                 <div class=sectline>Eric Weisstein's World of Mathematics, <a href="https://mathworld.wolfram.com/AssemblyNumber.html">Assembly Number</a>.</div>
+                             
+                                 <div class=sectline>Eric Weisstein's World of Mathematics, <a href="https://mathworld.wolfram.com/ConstructionNumber.html">Construction Number</a>.</div>
+                             
+                                 <div class=sectline>Eric Weisstein's World of Mathematics, <a href="https://mathworld.wolfram.com/Factorial.html">Factorial</a>, <a href="https://mathworld.wolfram.com/GammaFunction.html">Gamma Function</a>, <a href="https://mathworld.wolfram.com/Multifactorial.html">Multifactorial</a>, <a href="https://mathworld.wolfram.com/Permutation.html">Permutation</a>, <a href="https://mathworld.wolfram.com/PermutationPattern.html">Permutation Pattern</a>, <a href="https://mathworld.wolfram.com/LaguerrePolynomial.html">Laguerre Polynomial</a>, <a href="https://mathworld.wolfram.com/DiagonalMatrix.html">Diagonal Matrix</a>, <a href="https://mathworld.wolfram.com/ChromaticInvariant.html">Chromatic Invariant</a>.</div>
+                             
+                                 <div class=sectline>Eric Weisstein's World of Mathematics, <a href="https://mathworld.wolfram.com/GraphAutomorphismGroup.html">Graph Automorphism Group</a>.</div>
+                             
+                                 <div class=sectline>Eric Weisstein's World of Mathematics, <a href="https://mathworld.wolfram.com/SymmetricGroup.html">Symmetric Group</a>.</div>
+                             
+                                 <div class=sectline>Robin W. Whitty, <a href="https://doi.org/10.1016/j.disc.2007.07.054">Rook polynomials on two-dimensional surfaces and graceful labellings of graphs</a>, Discrete Math., 308 (2008), 674-683.</div>
+                             
+                                 <div class=sectline>Wikipedia, <a href="https://www.wikipedia.org/wiki/Factorial">Factorial</a>.</div>
+                             
+                                 <div class=sectline>Doron Zeilberger, <a href="https://www.math.rutgers.edu/~zeilberg/mamarim/mamarimPDF/king.pdf">King Solomon and Rabbi Ben Ezra's Evaluations of Pi and Patriarch Abraham's Analysis of an Algorithm</a>.</div>
+                             
+                                 <div class=sectline>Doron Zeilberger, <a href="/A000142/a000142_1.pdf">King Solomon and Rabbi Ben Ezra's Evaluations of Pi and Patriarch Abraham's Analysis of an Algorithm</a>. [Local copy]</div>
+                             
+                                 <div class=sectline>Doron Zeilberger and Noam Zeilberger, <a href="https://arxiv.org/abs/1810.12701">Two Questions about the Fractional Counting of Partitions</a>, arXiv:1810.12701 [math.CO], 2018.</div>
+                             
+                                 <div class=sectline><a href="/index/Cor#core">Index entries for &quot;core&quot; sequences</a>.</div>
+                             
+                                 <div class=sectline><a href="/index/Di#divseq">Index to divisibility sequences</a>.</div>
+                             
+                                 <div class=sectline><a href="/index/Fa#factorial">Index entries for sequences related to factorial numbers</a>.</div>
+                             
+                                 <div class=sectline><a href="/index/Be#Benford">Index entries for sequences related to Benford's law</a>.</div>
+                             
+                         </div>
+                     </div>
+                 
+            
+        
+            
+                 
+                 
+                 
+                 
+                     <div class=section>
+                         <div class=sectname>FORMULA</div>
+                         <div class=sectbody>
+                             
+                                 <div class=sectline>Exp(x) = Sum_{m &gt;= 0} x^m/m!. - <a href="/wiki/User:Mohammad_K._Azarian">Mohammad K. Azarian</a>, Dec 28 2010</div>
+                             
+                                 <div class=sectline>Sum_{i=0..n} (-1)^i * i^n * binomial(n, i) = (-1)^n * n!. - Yong Kong (ykong(AT)curagen.com), Dec 26 2000</div>
+                             
+                                 <div class=sectline>Sum_{i=0..n} (-1)^i * (n-i)^n * binomial(n, i) = n!. - Peter C. Heinig (algorithms(AT)gmx.de), Apr 10 2007</div>
+                             
+                                 <div class=sectline>The sequence trivially satisfies the recurrence a(n+1) = Sum_{k=0..n} binomial(n,k) * a(k)*a(n-k). - <a href="/wiki/User:Robert_FERREOL">Robert FERREOL</a>, Dec 05 2009</div>
+                             
+                                 <div class=sectline>D-finite with recurrence: a(n) = n*a(n-1), n &gt;= 1. n! ~ sqrt(2*Pi) * n^(n+1/2) / e^n (Stirling's approximation).</div>
+                             
+                                 <div class=sectline>a(0) = 1, a(n) = subs(x = 1, (d^n/dx^n)(1/(2-x))), n = 1, 2, ... - <a href="/wiki/User:Karol_A._Penson">Karol A. Penson</a>, Nov 12 2001</div>
+                             
+                                 <div class=sectline>E.g.f.: 1/(1-x). - <a href="/wiki/User:Michael_Somos">Michael Somos</a>, Mar 04 2004</div>
+                             
+                                 <div class=sectline>a(n) = Sum_{k=0..n} (-1)^(n-k)*<a href="/A000522" title="Total number of ordered k-tuples (k=0..n) of distinct elements from an n-element set: a(n) = Sum_{k=0..n} n!/k!.">A000522</a>(k)*binomial(n, k) = Sum_{k=0..n} (-1)^(n-k)*(x+k)^n*binomial(n, k). - <a href="/wiki/User:Philippe_Deléham">Philippe Deléham</a>, Jul 08 2004</div>
+                             
+                                 <div class=sectline>Binomial transform of <a href="/A000166" title="Subfactorial or rencontres numbers, or derangements: number of permutations of n elements with no fixed points.">A000166</a>. - <a href="/wiki/User:Ross_La_Haye">Ross La Haye</a>, Sep 21 2004</div>
+                             
+                                 <div class=sectline>a(n) = Sum_{i=1..n} ((-1)^(i-1) * sum of 1..n taken n - i at a time) - e.g., 4! = (1*2*3 + 1*2*4 + 1*3*4 + 2*3*4) - (1*2 + 1*3 + 1*4 + 2*3 + 2*4 + 3*4) + (1 + 2 + 3 + 4) - 1 = (6 + 8 + 12 + 24) - (2 + 3 + 4 + 6 + 8 + 12) + 10 - 1 = 50 - 35 + 10 - 1 = 24. - <a href="/wiki/User:Jon_Perry">Jon Perry</a>, Nov 14 2005</div>
+                             
+                                 <div class=sectline>a(n) = (n-1)*(a(n-1) + a(n-2)), n &gt;= 2. - Matthew J. White, Feb 21 2006</div>
+                             
+                                 <div class=sectline>1 / a(n) = determinant of matrix whose (i,j) entry is (i+j)!/(i!(j+1)!) for n &gt; 0. This is a matrix with Catalan numbers on the diagonal. - <a href="/wiki/User:Alexander_Adamchuk">Alexander Adamchuk</a>, Jul 04 2006</div>
+                             
+                                 <div class=sectline>Hankel transform of <a href="/A074664" title="Number of algebraically independent elements of degree n in the algebra of symmetric polynomials in noncommuting variables.">A074664</a>. - <a href="/wiki/User:Philippe_Deléham">Philippe Deléham</a>, Jun 21 2007</div>
+                             
+                                 <div class=sectline>For n &gt;= 2, a(n-2) = (-1)^n*Sum_{j=0..n-1} (j+1)*Stirling1(n,j+1). - <a href="/wiki/User:Milan_Janjic">Milan Janjic</a>, Dec 14 2008</div>
+                             
+                                 <div class=sectline>From <a href="/wiki/User:Paul_Barry">Paul Barry</a>, Jan 15 2009: (Start)</div>
+                             
+                                 <div class=sectline>G.f.: 1/(1-x-x^2/(1-3x-4x^2/(1-5x-9x^2/(1-7x-16x^2/(1-9x-25x^2... (continued fraction), hence Hankel transform is <a href="/A055209" title="a(n) = Product_{i=0..n} i!^2.">A055209</a>.</div>
+                             
+                                 <div class=sectline>G.f. of (n+1)! is 1/(1-2x-2x^2/(1-4x-6x^2/(1-6x-12x^2/(1-8x-20x^2... (continued fraction), hence Hankel transform is <a href="/A059332" title="Determinant of n X n matrix A defined by A[i,j] = (i+j-1)! for 1 &lt;= i,j &lt;= n.">A059332</a>. (End)</div>
+                             
+                                 <div class=sectline>a(n) = Product_{p prime} p^(Sum_{k &gt; 0} floor(n/p^k)) by Legendre's formula for the highest power of a prime dividing n!. - <a href="/wiki/User:Jonathan_Sondow">Jonathan Sondow</a>, Jul 24 2009</div>
+                             
+                                 <div class=sectline>a(n) = <a href="/A053657" title="a(n) = Product_{p prime} p^{ Sum_{k&gt;=0} floor[(n-1)/((p-1)p^k)]}.">A053657</a>(n)/<a href="/A163176" title="The n-th Minkowski number divided by the n-th factorial: a(n) = A053657(n)/n!.">A163176</a>(n) for n &gt; 0. - <a href="/wiki/User:Jonathan_Sondow">Jonathan Sondow</a>, Jul 26 2009</div>
+                             
+                                 <div class=sectline>It appears that a(n) = (1/0!) + (1/1!)*n + (3/2!)*n*(n-1) + (11/3!)*n*(n-1)*(n-2) + ... + (b(n)/n!)*n*(n-1)*...*2*1, where a(n) = (n+1)! and b(n) = <a href="/A000255" title="a(n) = n*a(n-1) + (n-1)*a(n-2), a(0) = 1, a(1) = 1.">A000255</a>. - <a href="/wiki/User:Timothy_Hopper">Timothy Hopper</a>, Aug 12 2009</div>
+                             
+                                 <div class=sectline>Sum_{n &gt;= 0} 1/a(n) = e. - <a href="/wiki/User:Jaume_Oliver_Lafont">Jaume Oliver Lafont</a>, Mar 03 2009</div>
+                             
+                                 <div class=sectline>a(n) = a(n-1)^2/a(n-2) + a(n-1), n &gt;= 2. - <a href="/wiki/User:Jaume_Oliver_Lafont">Jaume Oliver Lafont</a>, Sep 21 2009</div>
+                             
+                                 <div class=sectline>a(n) = Gamma(n+1). - <a href="/wiki/User:Enrique_Pérez_Herrero">Enrique Pérez Herrero</a>, Sep 21 2009</div>
+                             
+                                 <div class=sectline>a(n) = <a href="/A173333" title="Triangle read by rows: T(n, k) = n! / k!, 1 &lt;= k &lt;= n.">A173333</a>(n,1). - <a href="/wiki/User:Reinhard_Zumkeller">Reinhard Zumkeller</a>, Feb 19 2010</div>
+                             
+                                 <div class=sectline>a(n) = A_{n}(1) where A_{n}(x) are the Eulerian polynomials. - <a href="/wiki/User:Peter_Luschny">Peter Luschny</a>, Aug 03 2010</div>
+                             
+                                 <div class=sectline>a(n) = n*(2*a(n-1) - (n-1)*a(n-2)), n &gt; 1. - <a href="/wiki/User:Gary_Detlefs">Gary Detlefs</a>, Sep 16 2010</div>
+                             
+                                 <div class=sectline>1/a(n) = -Sum_{k=1..n+1} (-2)^k*(n+k+2)*a(k)/(a(2*k+1)*a(n+1-k)). - <a href="/wiki/User:Groux_Roland">Groux Roland</a>, Dec 08 2010</div>
+                             
+                                 <div class=sectline>From <a href="/wiki/User:Vladimir_Shevelev">Vladimir Shevelev</a>, Feb 21 2011: (Start)</div>
+                             
+                                 <div class=sectline>a(n) = Product_{p prime, p &lt;= n} p^(Sum_{i &gt;= 1} floor(n/p^i)).</div>
+                             
+                                 <div class=sectline>The infinitary analog of this formula is: a(n) = Product_{q terms of <a href="/A050376" title="&quot;Fermi-Dirac primes&quot;: numbers of the form p^(2^k) where p is prime and k &gt;= 0.">A050376</a> &lt;= n} q^((n)_q), where (n)_q denotes the number of those numbers &lt;= n for which q is an infinitary divisor (for the definition see comment in <a href="/A037445" title="Number of infinitary divisors (or i-divisors) of n.">A037445</a>). (End)</div>
+                             
+                                 <div class=sectline>The terms are the denominators of the expansion of sinh(x) + cosh(x). - <a href="/wiki/User:Arkadiusz_Wesolowski">Arkadiusz Wesolowski</a>, Feb 03 2012</div>
+                             
+                                 <div class=sectline>G.f.: 1 / (1 - x / (1 - x / (1 - 2*x / (1 - 2*x / (1 - 3*x / (1 - 3*x / ... )))))). - <a href="/wiki/User:Michael_Somos">Michael Somos</a>, May 12 2012</div>
+                             
+                                 <div class=sectline>G.f. 1 + x/(G(0)-x) where G(k) = 1 - (k+1)*x/(1 - x*(k+2)/G(k+1)); (continued fraction, 2-step). - <a href="/wiki/User:Sergei_N._Gladkovskii">Sergei N. Gladkovskii</a>, Aug 14 2012</div>
+                             
+                                 <div class=sectline>G.f.: W(1,1;-x)/(W(1,1;-x) - x*W(1,2;-x)), where W(a,b,x) = 1 - a*b*x/1! + a*(a+1)*b*(b+1)*x^2/2! - ... + a*(a+1)*...*(a+n-1)*b*(b+1)*...*(b+n-1)*x^n/n! + ...; see [A. N. Khovanskii, p. 141 (10.19)]. - <a href="/wiki/User:Sergei_N._Gladkovskii">Sergei N. Gladkovskii</a>, Aug 15 2012</div>
+                             
+                                 <div class=sectline>From <a href="/wiki/User:Sergei_N._Gladkovskii">Sergei N. Gladkovskii</a>, Dec 26 2012: (Start)</div>
+                             
+                                 <div class=sectline>G.f.: A(x) = 1 + x/(G(0) - x) where G(k) = 1 + (k+1)*x - x*(k+2)/G(k+1); (continued fraction).</div>
+                             
+                                 <div class=sectline>Let B(x) be the g.f. for <a href="/A051296" title="INVERT transform of factorial numbers.">A051296</a>, then A(x) = 2 - 1/B(x). (End)</div>
+                             
+                                 <div class=sectline>G.f.: 1 + x*(G(0) - 1)/(x-1) where G(k) = 1 - (2*k+1)/(1-x/(x - 1/(1 - (2*k+2)/(1-x/(x - 1/G(k+1) ))))); (continued fraction). - <a href="/wiki/User:Sergei_N._Gladkovskii">Sergei N. Gladkovskii</a>, Jan 15 2013</div>
+                             
+                                 <div class=sectline>G.f.: 1 + x*(1 - G(0))/(sqrt(x)-x) where G(k) = 1 - (k+1)*sqrt(x)/(1-sqrt(x)/(sqrt(x)-1/G(k+1) )); (continued fraction). - <a href="/wiki/User:Sergei_N._Gladkovskii">Sergei N. Gladkovskii</a>, Jan 25 2013</div>
+                             
+                                 <div class=sectline>G.f.: 1 + x/G(0) where G(k) = 1 - x*(k+2)/( 1 - x*(k+1)/G(k+1) ); (continued fraction). - <a href="/wiki/User:Sergei_N._Gladkovskii">Sergei N. Gladkovskii</a>, Mar 23 2013</div>
+                             
+                                 <div class=sectline>a(n) = det(S(i+1, j), 1 &lt;= i, j &lt;=n ), where S(n,k) are Stirling numbers of the second kind. - <a href="/wiki/User:Mircea_Merca">Mircea Merca</a>, Apr 04 2013</div>
+                             
+                                 <div class=sectline>G.f.: G(0)/2, where G(k) = 1 + 1/(1 - x*(k+1)/(x*(k+1) + 1/G(k+1))); (continued fraction). - <a href="/wiki/User:Sergei_N._Gladkovskii">Sergei N. Gladkovskii</a>, May 24 2013</div>
+                             
+                                 <div class=sectline>G.f.: 2/G(0), where G(k) = 1 + 1/(1 - 1/(1 - 1/(2*x*(k+1)) + 1/G(k+1))); (continued fraction). - <a href="/wiki/User:Sergei_N._Gladkovskii">Sergei N. Gladkovskii</a>, May 29 2013</div>
+                             
+                                 <div class=sectline>G.f.: G(0), where G(k) = 1 + x*(2*k+1)/(1 - x*(2*k+2)/(x*(2*k+2) + 1/G(k+1))); (continued fraction). - <a href="/wiki/User:Sergei_N._Gladkovskii">Sergei N. Gladkovskii</a>, Jun 07 2013</div>
+                             
+                                 <div class=sectline>a(n) = P(n-1, floor(n/2)) * floor(n/2)! * (n - (n-2)*((n+1) mod 2)), where P(n, k) are the k-permutations of n objects, n &gt; 0. - <a href="/wiki/User:Wesley_Ivan_Hurt">Wesley Ivan Hurt</a>, Jun 07 2013</div>
+                             
+                                 <div class=sectline>a(n) = a(n-2)*(n-1)^2 + a(n-1), n &gt; 1. - <a href="/wiki/User:Ivan_N._Ianakiev">Ivan N. Ianakiev</a>, Jun 18 2013</div>
+                             
+                                 <div class=sectline>a(n) = a(n-2)*(n^2-1) - a(n-1), n &gt; 1. - <a href="/wiki/User:Ivan_N._Ianakiev">Ivan N. Ianakiev</a>, Jun 30 2013</div>
+                             
+                                 <div class=sectline>G.f.: 1 + x/Q(0), m=+2, where Q(k) = 1 - 2*x*(2*k+1) - m*x^2*(k+1)*(2*k+1)/( 1 - 2*x*(2*k+2) - m*x^2*(k+1)*(2*k+3)/Q(k+1) ); (continued fraction). - <a href="/wiki/User:Sergei_N._Gladkovskii">Sergei N. Gladkovskii</a>, Sep 24 2013</div>
+                             
+                                 <div class=sectline>a(n) = <a href="/A245334" title="A factorial-like triangle read by rows: T(0,0) = 1; T(n+1,0) = T(n,0)+1; T(n+1,k+1) = T(n,0)*T(n,k), k=0..n.">A245334</a>(n,n). - <a href="/wiki/User:Reinhard_Zumkeller">Reinhard Zumkeller</a>, Aug 31 2014</div>
+                             
+                                 <div class=sectline>a(n) = Product_{i = 1..n} <a href="/A014963" title="Exponential of Mangoldt function M(n): a(n) = 1 unless n is a prime or prime power, in which case a(n) = that prime.">A014963</a>^floor(n/i) = Product_{i = 1..n} <a href="/A003418" title="Least common multiple (or LCM) of {1, 2, ..., n} for n &gt;= 1, a(0) = 1.">A003418</a>(floor(n/i)). - <a href="/wiki/User:Matthew_Vandermast">Matthew Vandermast</a>, Dec 22 2014</div>
+                             
+                                 <div class=sectline>a(n) = round(Sum_{k&gt;=1} log(k)^n/k^2), for n&gt;=1, which is related to the n-th derivative of the Riemann zeta function at x=2 as follows: round((-1)^n * zeta^(n)(2)). Also see <a href="/A073002" title="Decimal expansion of -zeta'(2) (the first derivative of the zeta function at 2).">A073002</a>. - <a href="/wiki/User:Richard_R._Forberg">Richard R. Forberg</a>, Dec 30 2014</div>
+                             
+                                 <div class=sectline>a(n) ~ Sum_{j&gt;=0} j^n/e^j, where e = <a href="/A001113" title="Decimal expansion of e.">A001113</a>. When substituting a generic variable for &quot;e&quot; this infinite sum is related to Eulerian polynomials. See <a href="/A008292" title="Triangle of Eulerian numbers T(n,k) (n &gt;= 1, 1 &lt;= k &lt;= n) read by rows.">A008292</a>. This approximation of n! is within 0.4% at n = 2. See <a href="/A255169" title="Decimal expansion of the sum_{n&gt;=0} n^2/e^n = e(1+e)/(e-1)^3.">A255169</a>. Accuracy, as a percentage, improves rapidly for larger n. - <a href="/wiki/User:Richard_R._Forberg">Richard R. Forberg</a>, Mar 07 2015</div>
+                             
+                                 <div class=sectline>a(n) = Product_{k=1..n} (C(n+1, 2)-C(k, 2))/(2*k-1); see Masanori Ando link. - <a href="/wiki/User:Michel_Marcus">Michel Marcus</a>, Apr 17 2015</div>
+                             
+                                 <div class=sectline>Sum_{n&gt;=0} a(n)/(a(n + 1)*a(n + 2)) = Sum_{n&gt;=0} 1/((n + 2)*(n + 1)^2*a(n)) = 2 - exp(1) - gamma + Ei(1) = 0.5996203229953..., where gamma = <a href="/A001620" title="Decimal expansion of Euler's constant (or the Euler-Mascheroni constant), gamma.">A001620</a>, Ei(1) = <a href="/A091725" title="Decimal expansion of second exponential integral at 1, ExpIntegralEi[1].">A091725</a>. - <a href="/wiki/User:Ilya_Gutkovskiy">Ilya Gutkovskiy</a>, Nov 01 2016</div>
+                             
+                                 <div class=sectline>a(2^n) = 2^(2^n - 1) * 1!! * 3!! * 7!! * ... * (2^n - 1)!!. For example, 16! = 2^15*(1*3)*(1*3*5*7)*(1*3*5*7*9*11*13*15) = 20922789888000. - <a href="/wiki/User:Peter_Bala">Peter Bala</a>, Nov 01 2016</div>
+                             
+                                 <div class=sectline>a(n) = sum(prod(B)), where the sum is over all subsets B of {1,2,...,n-1} and where prod(B) denotes the product of all the elements of set B. If B is a singleton set with element b, then we define prod(B)=b, and, if B is the empty set, we define prod(B) to be 1. For example, a(4)=(1*2*3)+(1*2)+(1*3)+(2*3)+(1)+(2)+(3)+1=24. - <a href="/wiki/User:Dennis_P._Walsh">Dennis P. Walsh</a>, Oct 23 2017</div>
+                             
+                                 <div class=sectline>Sum_{n &gt;= 0} 1/(a(n)*(n+2)) = 1. - Multiplying the denominator by (n+2) in Jaume Oliver Lafont's entry above creates a telescoping sum. - <a href="/wiki/User:Fred_Daniel_Kline">Fred Daniel Kline</a>, Nov 08 2020</div>
+                             
+                                 <div class=sectline>O.g.f.: Sum_{k &gt;= 0} k!*x^k = Sum_{k &gt;= 0} (k+y)^k*x^k/(1 + (k+y)*x)^(k+1) for arbitrary y. - <a href="/wiki/User:Peter_Bala">Peter Bala</a>, Mar 21 2022</div>
+                             
+                                 <div class=sectline>E.g.f.: 1/(1 + LambertW(-x*exp(-x))) = 1/(1-x), see <a href="/A258773" title="Triangle read by rows, T(n,k) = (-1)^(n-k)*C(n,k)*k^n, for n &gt;= 0 and 0 &lt;= k &lt;= n.">A258773</a>. -(1/x)*substitute(z = x*exp(-x), z*(d/dz)LambertW(-z)) = 1/(1 - x). See <a href="/A075513" title="Triangle read by rows. T(n, m) are the coefficients of Sidi polynomials.">A075513</a>. Proof: Use the compositional inverse (x*exp(-x))^[-1] = -LambertW(-z). See <a href="/A000169" title="Number of labeled rooted trees with n nodes: n^(n-1).">A000169</a> or <a href="/A152917" title="A000169 prefixed by an initial 0.">A152917</a>, and Richard P. Stanley: Enumerative Combinatorics, vol. 2,  p. 37, eq. (5.52). - <a href="/wiki/User:Wolfdieter_Lang">Wolfdieter Lang</a>, Oct 17 2022</div>
+                             
+                                 <div class=sectline>Sum_{k &gt;= 1} 1/10^a(k) = <a href="/A012245" title="Characteristic function of factorial numbers; also decimal expansion of Liouville's number or Liouville's constant.">A012245</a> (Liouville constant). - <a href="/wiki/User:Bernard_Schott">Bernard Schott</a>, Dec 18 2022</div>
+                             
+                                 <div class=sectline>From <a href="/wiki/User:David_Ulgenes">David Ulgenes</a>, Sep 19 2023: (Start)</div>
+                             
+                                 <div class=sectline>1/a(n) = (e/(2*Pi*n)*Integral_{x=-oo..oo} cos(x-n*arctan(x))/(1+x^2)^(n/2) dx). Proof: take the real component of Laplace's integral for 1/Gamma(x).</div>
+                             
+                                 <div class=sectline>a(n) = Integral_{x=0..1} e^(-t)*LerchPhi(1/e, -n, t) dt. Proof: use the relationship Gamma(x+1) = Sum_{n &gt;= 0} Integral_{t=n..n+1} e^(-t)t^x dt = Sum_{n &gt;= 0} Integral_{t=0..1} e^(-(t+n))(t+n)^x dt and interchange the order of summation and integration.</div>
+                             
+                                 <div class=sectline>Conjecture: a(n) = 1/(2*Pi)*Integral_{x=-oo..oo}(n+i*x+1)!/(i*x+1)-(n+i*x-1)!/(i*x-1)dx. (End)</div>
+                             
+                                 <div class=sectline>a(n) = floor(b(n)^n / (floor(((2^b(n) + 1) / 2^n)^b(n)) mod 2^b(n))), where b(n) = (n + 1)^(n + 2) = <a href="/A007778" title="a(n) = n^(n+1).">A007778</a>(n+1). Joint work with <a href="/wiki/User:Mihai_Prunescu">Mihai Prunescu</a>. - <a href="/wiki/User:Lorenzo_Sauras_Altuzarra">Lorenzo Sauras Altuzarra</a>, Oct 18 2023</div>
+                             
+                                 <div class=sectline>a(n) = e^(Integral_{x=1..n+1} Psi(x) dx) where Psi(x) is the digamma function. - <a href="/wiki/User:Andrea_Pinos">Andrea Pinos</a>, Jan 10 2024</div>
+                             
+                                 <div class=sectline>a(n) = Integral_{x=0..oo} e^(-x^(1/n)) dx, for n &gt; 0. - <a href="/wiki/User:Ridouane_Oudra">Ridouane Oudra</a>, Apr 20 2024</div>
+                             
+                                 <div class=sectline>O.g.f.: N(x) = hypergeometric([1,1], [], x) = LaplaceTransform(x/(1-x))/x, satisfying x^2*N'(x) + (x-1)*N(x) + 1 = 0, with N(0) = 1. - <a href="/wiki/User:Wolfdieter_Lang">Wolfdieter Lang</a>, May 31 2025</div>
+                             
+                                 <div class=sectline>a(n) = Sum_{k=0..n} |Stirling1(n,k)|. - <a href="/wiki/User:Vaclav_Kotesovec">Vaclav Kotesovec</a>, Jan 22 2026</div>
+                             
+                                 <div class=sectline>a(n) = Integral_{x=0..1} (log(1/x))^n dx. - <a href="/wiki/User:Stefano_Spezia">Stefano Spezia</a>, Apr 28 2026</div>
+                             
+                         </div>
+                     </div>
+                 
+            
+        
+            
+                 
+                 
+                 
+                 
+                     <div class=section>
+                         <div class=sectname>EXAMPLE</div>
+                         <div class=sectbody>
+                             
+                                 <div class=sectline>There are 3! = 1*2*3 = 6 ways to arrange 3 letters {a, b, c}, namely abc, acb, bac, bca, cab, cba.</div>
+                             
+                                 <div class=sectline>Let n = 2. Consider permutations of {1, 2, 3}. Fix element 3. There are a(2) = 2 permutations in each of the following cases: (a) 3 belongs to a cycle of length 1 (permutations (1, 2, 3) and (2, 1, 3)); (b) 3 belongs to a cycle of length 2 (permutations (3, 2, 1) and (1, 3, 2)); (c) 3 belongs to a cycle of length 3 (permutations (2, 3, 1) and (3, 1, 2)). - <a href="/wiki/User:Vladimir_Shevelev">Vladimir Shevelev</a>, May 13 2012</div>
+                             
+                                 <div class=sectline>G.f. = 1 + x + 2*x^2 + 6*x^3 + 24*x^4 + 120*x^5 + 720*x^6 + 5040*x^7 + ...</div>
+                             
+                         </div>
+                     </div>
+                 
+            
+        
+            
+                 
+                 
+                 
+                 
+                     <div class=section>
+                         <div class=sectname>MAPLE</div>
+                         <div class=sectbody>
+                             
+                                 <div class=sectline><a href="/A000142" title="Factorial numbers: n! = 1*2*3*4*...*n (order of symmetric group S_n, number of permutations of n letters).">A000142</a> := n -&gt; n!; seq(n!, n=0..20);</div>
+                             
+                                 <div class=sectline>spec := [ S, {S=Sequence(Z) }, labeled ]; seq(combstruct[count](spec, size=n), n=0..20);</div>
+                             
+                                 <div class=sectline># Maple program for computing cycle indices of symmetric groups</div>
+                             
+                                 <div class=sectline>M:=6: f:=array(0..M): f[0]:=1: print(`n= `, 0); print(f[0]); f[1]:=x[1]: print(`n= `, 1); print(f[1]); for n from 2 to M do f[n]:=expand((1/n)*add( x[l]*f[n-l], l=1..n)); print(`n= `, n); print(f[n]); od:</div>
+                             
+                                 <div class=sectline>with(combstruct):ZL0:=[S, {S=Set(Cycle(Z, card&gt;0))}, labeled]: seq(count(ZL0, size=n), n=0..20); # <a href="/wiki/User:Zerinvary_Lajos">Zerinvary Lajos</a>, Sep 26 2007</div>
+                             
+                         </div>
+                     </div>
+                 
+            
+        
+            
+                 
+                 
+                 
+                 
+                     <div class=section>
+                         <div class=sectname>MATHEMATICA</div>
+                         <div class=sectbody>
+                             
+                                 <div class=sectline>Table[Factorial[n], {n, 0, 20}] (* <a href="/wiki/User:Stefan_Steinerberger">Stefan Steinerberger</a>, Mar 30 2006 *)</div>
+                             
+                                 <div class=sectline>(* Alternative: *)</div>
+                             
+                                 <div class=sectline>FoldList[#1 #2 &amp;, 1, Range@ 20] (* <a href="/wiki/User:Robert_G._Wilson_v">Robert G. Wilson v</a>, May 07 2011 *)</div>
+                             
+                                 <div class=sectline>(* Alternative: *)</div>
+                             
+                                 <div class=sectline>Range[20]! (* <a href="/wiki/User:Harvey_P._Dale">Harvey P. Dale</a>, Nov 19 2011 *)</div>
+                             
+                                 <div class=sectline>(* Alternative: *)</div>
+                             
+                                 <div class=sectline>RecurrenceTable[{a[n] == n*a[n - 1], a[0] == 1}, a, {n, 0, 22}] (* <a href="/wiki/User:Ray_Chandler">Ray Chandler</a>, Jul 30 2015 *)</div>
+                             
+                         </div>
+                     </div>
+                 
+            
+        
+            
+                 
+                 
+                 
+                 
+                     <div class=section>
+                         <div class=sectname>PROG</div>
+                         <div class=sectbody>
+                             
+                                 <div class=sectline>(Axiom) [factorial(n) for n in 0..10]</div>
+                             
+                                 <div class=sectline>(Magma) a:= func&lt; n | Factorial(n) &gt;; [ a(n) : n in [0..10]];</div>
+                             
+                                 <div class=sectline>(Haskell)</div>
+                             
+                                 <div class=sectline>a000142 :: (Enum a, Num a, Integral t) =&gt; t -&gt; a</div>
+                             
+                                 <div class=sectline>a000142 n = product [1 .. fromIntegral n]</div>
+                             
+                                 <div class=sectline>a000142_list = 1 : zipWith (*) [1..] a000142_list</div>
+                             
+                                 <div class=sectline>-- <a href="/wiki/User:Reinhard_Zumkeller">Reinhard Zumkeller</a>, Mar 02 2014, Nov 02 2011, Apr 21 2011</div>
+                             
+                                 <div class=sectline>(Python)</div>
+                             
+                                 <div class=sectline>import math</div>
+                             
+                                 <div class=sectline>def a(n): return math.factorial(n) # <a href="/wiki/User:Ruskin_Harding">Ruskin Harding</a>, Feb 22 2013</div>
+                             
+                                 <div class=sectline>(PARI) a(n)=prod(i=1, n, i) \\ <a href="/wiki/User:Felix_Fröhlich">Felix Fröhlich</a>, Aug 17 2014</div>
+                             
+                                 <div class=sectline>(PARI) {a(n) = if(n&lt;0, 0, n!)}; /* <a href="/wiki/User:Michael_Somos">Michael Somos</a>, Mar 04 2004 */</div>
+                             
+                                 <div class=sectline>(SageMath) [factorial(n) for n in (1..22)] # <a href="/wiki/User:Giuseppe_Coppoletta">Giuseppe Coppoletta</a>, Dec 05 2014</div>
+                             
+                                 <div class=sectline>(GAP) List([0..22], Factorial); # <a href="/wiki/User:Muniru_A_Asiru">Muniru A Asiru</a>, Dec 05 2018</div>
+                             
+                                 <div class=sectline>(Scala) (1: BigInt).to(24: BigInt).scanLeft(1: BigInt)(_ * _) // <a href="/wiki/User:Alonso_del_Arte">Alonso del Arte</a>, Mar 02 2019</div>
+                             
+                                 <div class=sectline>(Julia) print([factorial(big(n)) for n in 0:28]) # <a href="/wiki/User:Paul_Muljadi">Paul Muljadi</a>, May 01 2024</div>
+                             
+                         </div>
+                     </div>
+                 
+            
+        
+            
+                 
+                 
+                     
+                 
+                 
+                 
+                     <div class=section>
+                         <div class=sectname>CROSSREFS</div>
+                         <div class=sectbody>
+                             
+                                 <div class=sectline>Cf. <a href="/A000165" title="Double factorial of even numbers: (2n)!! = 2^n*n!.">A000165</a>, <a href="/A001044" title="a(n) = (n!)^2.">A001044</a>, <a href="/A001563" title="a(n) = n*n! = (n+1)! - n!.">A001563</a>, <a href="/A003422" title="Left factorials: !n = Sum_{k=0..n-1} k!.">A003422</a>, <a href="/A009445" title="a(n) = (2*n+1)!.">A009445</a>, <a href="/A010050" title="a(n) = (2n)!.">A010050</a>, <a href="/A012245" title="Characteristic function of factorial numbers; also decimal expansion of Liouville's number or Liouville's constant.">A012245</a>, <a href="/A033312" title="a(n) = n! - 1.">A033312</a>, <a href="/A034886" title="Number of digits in n!.">A034886</a>, <a href="/A038507" title="a(n) = n! + 1.">A038507</a>, <a href="/A047920" title="Triangular array formed from successive differences of factorial numbers.">A047920</a>, <a href="/A048631" title="Xfactorials - like factorials but use carryless GF(2)[ X ] polynomial multiplication.">A048631</a>.</div>
+                             
+                                 <div class=sectline>Factorial base representation: <a href="/A007623" title="Integers written in factorial base.">A007623</a>.</div>
+                             
+                                 <div class=sectline>Cf. <a href="/A003319" title="Number of connected permutations of [1..n] (those not fixing [1..j] for 0 &lt; j &lt; n). Also called indecomposable permutations,...">A003319</a>, <a href="/A052186" title="Number of permutations of [n] with no strong fixed points.">A052186</a>, <a href="/A144107" title="Eigentriangle, row sums = n!">A144107</a>, <a href="/A144108" title="Eigentriangle based on A052186 (permutations without strong fixed points), row sums = n!">A144108</a>. - <a href="/wiki/User:Gary_W._Adamson">Gary W. Adamson</a>, Sep 11 2008</div>
+                             
+                                 <div class=sectline>Complement of <a href="/A063992" title="Numbers that are not factorials.">A063992</a>. - <a href="/wiki/User:Reinhard_Zumkeller">Reinhard Zumkeller</a>, Oct 11 2008</div>
+                             
+                                 <div class=sectline>Cf. <a href="/A053657" title="a(n) = Product_{p prime} p^{ Sum_{k&gt;=0} floor[(n-1)/((p-1)p^k)]}.">A053657</a>, <a href="/A163176" title="The n-th Minkowski number divided by the n-th factorial: a(n) = A053657(n)/n!.">A163176</a>. - <a href="/wiki/User:Jonathan_Sondow">Jonathan Sondow</a>, Jul 26 2009</div>
+                             
+                                 <div class=sectline>Cf. <a href="/A173280" title="First column of the matrix power A173279(.,.)^j in the limit j-&gt;infinity.">A173280</a>. - <a href="/wiki/User:Gary_W._Adamson">Gary W. Adamson</a>, Feb 14 2010</div>
+                             
+                                 <div class=sectline>Boustrophedon transforms: <a href="/A230960" title="Boustrophedon transform of factorials, cf. A000142.">A230960</a>, <a href="/A230961" title="Boustrophedon transform of factorials beginning with 1, cf. A000142.">A230961</a>.</div>
+                             
+                                 <div class=sectline>Cf. <a href="/A233589" title="Decimal expansion of the continued fraction c(1) +c(1)/(c(2) +c(2)/(c(3) +c(3)/(c(4) +c(4)/....))), where c(i)=(i-1)!.">A233589</a>.</div>
+                             
+                                 <div class=sectline>Cf. <a href="/A245334" title="A factorial-like triangle read by rows: T(0,0) = 1; T(n+1,0) = T(n,0)+1; T(n+1,k+1) = T(n,0)*T(n,k), k=0..n.">A245334</a>.</div>
+                             
+                                 <div class=sectline>A row of the array in <a href="/A249026" title="Array read by antidiagonals upwards: T(d,n) = number of d-dimensional permutations of n letters (d &gt;= 0, n &gt;= 1).">A249026</a>.</div>
+                             
+                                 <div class=sectline>Cf. <a href="/A001013" title="Jordan-Polya numbers: products of factorial numbers A000142.">A001013</a> (multiplicative closure).</div>
+                             
+                                 <div class=sectline>For factorials with initial digit d (1 &lt;= d &lt;= 9) see <a href="/A045509" title="Factorials having initial digit '1'.">A045509</a>, <a href="/A045510" title="Factorials having initial digit '2'.">A045510</a>, <a href="/A045511" title="Factorials having initial digit '3'.">A045511</a>, <a href="/A045516" title="Factorials with initial digit '4'.">A045516</a>, <a href="/A045517" title="Factorials with initial digit '5'.">A045517</a>, <a href="/A045518" title="Factorials with initial digit '6'.">A045518</a>, <a href="/A282021" title="Factorials with initial digit '7'.">A282021</a>, <a href="/A045519" title="Factorials with initial digit '8'.">A045519</a>; <a href="/A045520" title="Numbers k such that k! has initial digit '1'.">A045520</a>, <a href="/A045521" title="Numbers k such that k! has initial digit '2'.">A045521</a>, <a href="/A045522" title="Numbers k such that k! has initial digit '3'.">A045522</a>, <a href="/A045523" title="Numbers k such that k! has initial digit '4'.">A045523</a>, <a href="/A045524" title="Numbers k such that k! has initial digit '5'.">A045524</a>, <a href="/A045525" title="Numbers k such that k! has initial digit '6'.">A045525</a>, <a href="/A045526" title="Numbers k such that k! has initial digit '7'.">A045526</a>, <a href="/A045527" title="Numbers k such that k! has initial digit '8'.">A045527</a>, <a href="/A045528" title="Numbers k such that k! has initial digit '9'.">A045528</a>, <a href="/A045529" title="a(n+1) = 5*a(n)^3 - 3*a(n), a(0) = 1.">A045529</a>.</div>
+                             
+                                 <div class=sectline>Cf. <a href="/A000169" title="Number of labeled rooted trees with n nodes: n^(n-1).">A000169</a>, <a href="/A075513" title="Triangle read by rows. T(n, m) are the coefficients of Sidi polynomials.">A075513</a>, <a href="/A132393" title="Triangle of unsigned Stirling numbers of the first kind (see A048994), read by rows, T(n,k) for 0 &lt;= k &lt;= n.">A132393</a>, <a href="/A152917" title="A000169 prefixed by an initial 0.">A152917</a>, <a href="/A258773" title="Triangle read by rows, T(n,k) = (-1)^(n-k)*C(n,k)*k^n, for n &gt;= 0 and 0 &lt;= k &lt;= n.">A258773</a>.</div>
+                             
+                                 <div class=sectline>Sequence in context: <a href="/A133942" title="a(n) = (-1)^n * n!.">A133942</a> <a href="/A159333" title="Roman factorial of n.">A159333</a> <a href="/A165233" title="Signed denominators of terms in series expansion of cos(x)+sin(x).">A165233</a> * <a href="/A104150" title="Shifted factorial numbers: a(0)=0, a(n) = (n-1)!.">A104150</a> <a href="/A358185" title="Coefficients of x^n/n! in the expansion of (1 - x)*log(1 - x).">A358185</a> <a href="/A370360" title="Number of labeled semisimple rings with n elements.">A370360</a></div>
+                             
+                                 <div class=sectline>Adjacent sequences:  <a href="/A000139" title="a(n) = 2*(3*n)! / ((2*n+1)!*(n+1)!).">A000139</a> <a href="/A000140" title="Kendall-Mann numbers: the most common number of inversions in a permutation on n letters is floor(n*(n-1)/4); a(n) is the nu...">A000140</a> <a href="/A000141" title="Number of ways of writing n as a sum of 6 squares.">A000141</a> * <a href="/A000143" title="Number of ways of writing n as a sum of 8 squares.">A000143</a> <a href="/A000144" title="Number of ways of writing n as a sum of 10 squares.">A000144</a> <a href="/A000145" title="Number of ways of writing n as a sum of 12 squares.">A000145</a></div>
+                             
+                         </div>
+                     </div>
+                 
+            
+        
+            
+                 
+                 
+                 
+                 
+                     <div class=section>
+                         <div class=sectname>KEYWORD</div>
+                         <div class=sectbody>
+                             
+                                 <div class=sectline><span title="an important sequence">core</span>,<span title="it is very easy to produce terms of sequence">easy</span>,<span title="a sequence of nonnegative numbers">nonn</span>,<span title="an exceptionally nice sequence">nice</span>,<span title="edited within the last two weeks">changed</span></div>
+                             
+                         </div>
+                     </div>
+                 
+            
+        
+            
+                 
+                 
+                 
+                 
+                     <div class=section>
+                         <div class=sectname>AUTHOR</div>
+                         <div class=sectbody>
+                             
+                                 <div class=sectline><a href="/wiki/User:N._J._A._Sloane">N. J. A. Sloane</a></div>
+                             
+                         </div>
+                     </div>
+                 
+            
+        
+            
+                 
+                 
+                 
+                 
+            
+        
+            
+                 
+                 
+                 
+                 
+                     <div class=section>
+                         <div class=sectname>STATUS</div>
+                         <div class=sectbody>
+                             
+                                 <div class=sectline>approved</div>
+                             
+                         </div>
+                     </div>
+                 
+            
+        
+
+        
+    </div>
+
+        
+        <div class=space10></div>
+    </div>
+
+    </div></div>
+
+    <p>
+
+    <div class=footerpad></div>
+    <div class=footer>
+    <center>
+    <div class=bottom>
+    <div class=linksbar>
+      <a href="/">Lookup</a>
+      <a href="/wiki/Welcome"><font color="red">Welcome</font></a>
+      <a href="/wiki/Main_Page"><font color="red">Wiki</font></a>
+      <a href="/account">Register</a>
+      
+      <a href="/play.html">Music</a>
+      <a href="/plot2.html">Plot 2</a>
+      <a href="/demo1.html">Demos</a>
+      <a href="/wiki/Index_to_OEIS">Index</a>
+      <a href="/webcam">WebCam</a>
+      <a href="/Submit.html">Contribute</a>
+      <a href="/eishelp2.html">Format</a>
+      <a href="/wiki/Style_Sheet">Style Sheet</a>
+      <a href="/transforms.html">Transforms</a>
+      <a href="/ol.html">Superseeker</a>
+      <a href="/recent">Recents</a>
+    </div>
+    <div class=linksbar>
+      <a href="/community.html">The OEIS Community</a>
+    </div>
+    <div class=linksbar>
+      Maintained by <a href="http://oeisf.org">The OEIS Foundation Inc.</a>
+    </div>
+
+    <div class=dbinfo>Last modified October 31 03:46 EDT 2026.  Contains 400851 sequences.</div>
+    <div class=legal>
+    <a href="/wiki/Legal_Documents">License Agreements, Terms of Use, Privacy Policy</a>
+    </div>
+
+    </div>
+    </center>
+    </div>
+  <script>(function(){function c(){var b=a.contentDocument||(a.contentWindow&&a.contentWindow.document);if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'a5310de91aed2cd6',t:'MTc5MzQzMjg3NA=='};var l=window.parent.location,o;try{o=new URL(l.origin).origin}catch(e){try{o=new URL(new URL(l.href).origin).origin}catch(e){o=''}}var u='/cdn-cgi/challenge-platform/scripts/jsd/main.js?ray=a5310de91aed2cd6',a=document.createElement('script');a.src=o?new URL(u,o).href:u;document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script><script type="module" src="https://static.cloudflareinsights.com/beacon.min.js/vce701823e78c4301a35b7e07294d87301792088814092" integrity="sha512-UKNk8GbxkABxKcXYuLkO16EleLGUkcvJWtpSNmExE0Too3ZaFAxTscNWEc1OdAv5/BikHawapSCaiD2XCmp+Bw==" data-cf-beacon='{"version":"2024.11.0","token":"781e3e2683624a28a850394a171c1b83","r":1,"spa":2}' crossorigin="anonymous"></script>
+</body>
+</html>

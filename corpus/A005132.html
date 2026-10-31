@@ -1,0 +1,679 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<html>
+  
+  <head>
+  
+  <link rel="stylesheet" href="/styles.css?v=20260927">
+  <meta name="format-detection" content="telephone=no">
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name=viewport content="width=device-width, initial-scale=1">
+  <meta name="keywords" content="OEIS,integer sequences,Sloane" />
+  
+  
+  
+  <title>A005132 - OEIS</title>
+  <link rel="search" type="application/opensearchdescription+xml" title="OEIS" href="/oeis.xml">
+  
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg?v=20260826">
+  <link rel="icon" sizes="16x16 32x32 48x48" href="/favicon.ico?v=20260826">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png?v=20260826">
+  <script>
+  var myURL = "\/A005132"
+  function redir() {
+      var host = document.location.hostname;
+      if(host != "oeis.org" && host != "edit.oeis.org" && host != "127.0.0.1" && !/^([0-9.]+)$/.test(host) && host != "localhost" && host != "edit.localhost" && host != "localhost.localdomain") {
+          document.location = "https"+":"+"//"+"oeis"+".org/" + myURL;
+      }
+  }
+  function sf() {
+      if(document.location.pathname == "/" && document.f) document.f.q.focus();
+  }
+  </script>
+  </head>
+  <body bgcolor=#ffffff onload="redir();sf()"><a href="https://oeis.org/cdn-cgi/content?id=xveRwb8.sK_EqCgsxjbVJJEjWYeM4AlVkIT_4axttdM-1793432867.565306-1.2.1.1-L3UebbABqcMXUJxszBGR2VKJXOUW6SrxRv8paKsLHFmBGLT4uX.Yd5lVNdEBMMZw" aria-hidden="true" rel="nofollow noopener" style="display: none !important; visibility: hidden !important"></a>
+    <div class=loginbar>
+      <div class=login>
+      
+        <a href="/login?redirect=%2FA005132" rel="nofollow">login</a>
+      
+      </div>
+    </div>
+
+    <div class=center><div class=top>
+    <center>
+    <div class=donors>
+    The OEIS is supported by <a href="http://oeisf.org/#DONATE">the many generous donors to the OEIS Foundation</a>.
+    </div>
+
+    <div class=banner>
+    <a href="/"><picture>
+
+    <source media="(min-width: 830px)" srcset="/oeis-400k-banner.png 1x" width="918" height="129">
+    <img class=banner border="0" width="540" height="129" src="/oeis-400k-banner.png" srcset="/oeis-400k-banner.png 1x" alt="A005132 - OEIS">
+    </picture></a>
+    </div>
+
+    
+    
+    
+    <div class="motdbox" style="justify-content: center;">
+        <div class="motd">
+            <p><a href="https://oeis.org/wiki/A400K_Winners">Winners in the A400K Celebration</a></p>
+        </div>
+        
+    </div>
+    
+    </center>
+    </div></div>
+
+    <div class=center><div class=pagebody>
+      
+    
+    <div class=searchbarcenter>
+        <form name=f action="/search" method="GET">
+            <div class=searchbargreet>
+                <div class=searchbar>
+                    <div class=searchq>
+                        <input class=searchbox maxLength=1024 name=q value="" title="Search Query">
+                        
+                        
+                        
+                        
+                    </div>
+                    <div class=searchsubmit>
+                        <input type=submit value="Search" name=go>
+                    </div>
+                    <div class=hints>
+                        <span class=hints><a href="/hints.html">Hints</a></span>
+                    </div>
+                </div>
+                <div class=searchgreet>
+                    (Greetings from <a href="/welcome">The On-Line Encyclopedia of Integer Sequences</a>!)
+                </div>
+            </div>
+        </form>
+    </div>
+
+    <div class=sequence>
+        <div class=space1></div>
+        <div class=line></div>
+        
+        <div class=seqhead>
+            <div class=seqnumname>
+                <div class=seqnum>
+                    
+                        A005132
+                    
+                </div>
+                <div class=seqname>
+                    Recamán's sequence (or Recaman's sequence): a(0) = 0; for n &gt; 0, a(n) = a(n-1) - n if nonnegative and not already in the sequence, otherwise a(n) = a(n-1) + n.
+                    <br><font size=-1>(Formerly M2511)</font>
+                </div>
+            </div>
+            <div class=scorerefs>
+                        
+                        247
+            </div>
+        </div>
+        
+            
+    
+    
+    <div>
+        <div class=seqdatabox>
+            <div class=seqdata>0, 1, 3, 6, 2, 7, 13, 20, 12, 21, 11, 22, 10, 23, 9, 24, 8, 25, 43, 62, 42, 63, 41, 18, 42, 17, 43, 16, 44, 15, 45, 14, 46, 79, 113, 78, 114, 77, 39, 78, 38, 79, 37, 80, 36, 81, 35, 82, 34, 83, 33, 84, 32, 85, 31, 86, 30, 87, 29, 88, 28, 89, 27, 90, 26, 91, 157, 224, 156, 225, 155</div>
+            
+                <div class=seqdatalinks>
+                (<a href="/A005132/list">list</a>;
+                
+                
+                
+                    <a href="/A005132/graph">graph</a>;
+                
+                <a rel=nofollow href="/search?q=A005132+-id:A005132">refs</a>;
+                <a href="/A005132/listen">listen</a>;
+                <a rel=nofollow href="/history?seq=A005132">history</a>;
+                
+                <a href="/search?q=id:A005132&fmt=text">text</a>;
+                <a href="/A005132/internal">internal format</a>)
+                </div>
+            
+        </div>
+    </div>
+    <div class=entry>
+        
+            
+        
+            
+        
+            
+        
+            
+                 
+                 
+                 
+                 
+                     <div class=section>
+                         <div class=sectname>OFFSET</div>
+                         <div class=sectbody>
+                             
+                                 <div class=sectline>0,3</div>
+                             
+                         </div>
+                     </div>
+                 
+            
+        
+            
+                 
+                 
+                 
+                 
+                     <div class=section>
+                         <div class=sectname>COMMENTS</div>
+                         <div class=sectbody>
+                             
+                                 <div class=sectline>The name &quot;Recamán's sequence&quot; is due to <a href="/wiki/User:N._J._A._Sloane">N. J. A. Sloane</a>, not the author!</div>
+                             
+                                 <div class=sectline>I conjecture that every number eventually appears - see <a href="/A057167" title="Term in Recamán's sequence A005132 where n appears for first time, or -1 if n never appears.">A057167</a>, <a href="/A064227" title="From Recamán's sequence (A005132): record values in A057167.">A064227</a>, <a href="/A064228" title="From Recamán's sequence (A005132): values of n achieving records in A057167.">A064228</a>. - <a href="/wiki/User:N._J._A._Sloane">N. J. A. Sloane</a>. That was written in 1991. Today I'm not so sure that every number appears. - <a href="/wiki/User:N._J._A._Sloane">N. J. A. Sloane</a>, Feb 26 2017</div>
+                             
+                                 <div class=sectline>As of Jan 25 2018, the first 13 missing numbers are 852655, 930058, 930557, 964420, 966052, 966727, 969194, 971330, 971626, 971866, 972275, 972827, 976367, ... For further information see the &quot;Computing the Recaman Sequence&quot; link. - <a href="/wiki/User:Benjamin_Chaffin">Benjamin Chaffin</a>, Jan 25 2018</div>
+                             
+                                 <div class=sectline>From <a href="/wiki/User:David_W._Wilson">David W. Wilson</a>, Jul 13 2009: (Start)</div>
+                             
+                                 <div class=sectline>The sequence satisfies [1] a(n) &gt;= 0, [2] |a(n)-a(n-1)| = n, and tries to avoid repeats by greedy choice of a(n) = a(n-1) -+ n.</div>
+                             
+                                 <div class=sectline>This &quot;wants&quot; to be an injection on N = {0, 1, 2, ...}, as it attempts to avoid repeats by choice of a(n) = a(n-1) + n when a(n) = a(n-1) - n is a repeat.</div>
+                             
+                                 <div class=sectline>Clearly, there are injections satisfying [1] and [2], e.g., a(n) = n(n+1)/2.</div>
+                             
+                                 <div class=sectline>Is there a lexicographically earliest injection satisfying [1] and [2]? (End)</div>
+                             
+                                 <div class=sectline>Answer: Yes, of course: The set of injections satisfying [1] and [2] is not empty, so there's a lexicographically least element. More concretely, it starts with the same 23 terms a(0..22) which are known to be minimal, but after a(22) = 41 it has to go on with a(23) = 41 + 23 = 64, since choosing &quot;-&quot; here necessarily yields a non-injective sequence. See <a href="/A171884" title="Lexicographically earliest injective nonnegative sequence a(n) satisfying |a(n+1) - a(n)| = n for all n.">A171884</a>. - <a href="/wiki/User:M._F._Hasler">M. F. Hasler</a>, Apr 01 2019</div>
+                             
+                                 <div class=sectline>It appears that a(n) is also the value of &quot;x&quot; and &quot;y&quot; of the endpoint of the L-toothpick structure mentioned in <a href="/A210606" title="Length of the n-th edge of an L-toothpick structure which gives Recamán's sequence A005132.">A210606</a> after n-th stage. - <a href="/wiki/User:Omar_E._Pol">Omar E. Pol</a>, Mar 24 2012</div>
+                             
+                                 <div class=sectline>Of course this is not a permutation of the integers: the first repeated term is 42 = a(24) = a(20). - <a href="/wiki/User:M._F._Hasler">M. F. Hasler</a>, Nov 03 2014. Also 43 = a(18) = a(26). - <a href="/wiki/User:Jon_Perry">Jon Perry</a>, Nov 06 2014</div>
+                             
+                                 <div class=sectline>Of all the sequences in the OEIS, this one is my favorite to listen to. Click the &quot;listen&quot; button at the top, set the instrument to &quot;103. FX 7 (Echoes)&quot;, click &quot;Save&quot;, and open the MIDI file with a program like QuickTime Player 7. - <a href="/wiki/User:N._J._A._Sloane">N. J. A. Sloane</a>, Aug 08 2017</div>
+                             
+                                 <div class=sectline>This sequence cycles clockwise around the OEIS logo. - <a href="/wiki/User:Ryan_Brooks">Ryan Brooks</a>, May 09 2020</div>
+                             
+                         </div>
+                     </div>
+                 
+            
+        
+            
+                 
+                 
+                 
+                 
+                     <div class=section>
+                         <div class=sectname>REFERENCES</div>
+                         <div class=sectbody>
+                             
+                                 <div class=sectline>Alex Bellos and Edmund Harriss, Visions of the Universe (2016), Unnumbered pages. Includes Harriss's illustration of the first 65 steps drawn as a spiral.</div>
+                             
+                                 <div class=sectline>Benjamin Chaffin, N. J. A. Sloane, and Allan Wilks, On sequences of Recaman type, paper in preparation, 2006.</div>
+                             
+                                 <div class=sectline>Bernardo Recamán Santos, letter to N. J. A. Sloane, Jan 29 1991</div>
+                             
+                                 <div class=sectline>N. J. A. Sloane and Simon Plouffe, The Encyclopedia of Integer Sequences, Academic Press, 1995 (includes this sequence).</div>
+                             
+                         </div>
+                     </div>
+                 
+            
+        
+            
+                 
+                 
+                 
+                     
+                 
+                 
+                     <div class=section>
+                         <div class=sectname>LINKS</div>
+                         <div class=sectbody>
+                             
+                                 <div class=sectline>N. J. A. Sloane, <a href="/A005132/b005132.txt">The first 100000 terms</a></div>
+                             
+                                 <div class=sectline>Farid Aliniaeifard and Shu Xiao Li, <a href="https://arxiv.org/abs/2506.12868">Peak algebra in noncommuting variables</a>, arXiv:2506.12868 [math.CO], 2025. See p. 45.</div>
+                             
+                                 <div class=sectline>Alex Bellos and Brady Haran, <a href="https://www.youtube.com/watch?v=FGC5TdIiT9U">The Slightly Spooky Recamán Sequence</a>, Numberphile video, 2018.</div>
+                             
+                                 <div class=sectline>Alex Bellos and Brady Haran, <a href="/A005132/a005132_1.png">Edmund Harriss's illustration of first 62 steps drawn as a spiral</a>, snapshot from Numberphile video &quot;The Slightly Spooky Recamán Sequence&quot; (2018) at 2:37 minutes. [Included with permission of the authors] See also the Harriss link below.</div>
+                             
+                                 <div class=sectline>Harlan Brothers, <a href="https://www.youtube.com/watch?v=_itqtYqCHqo">Recamán's Blues (a sonification Recamán's sequence)</a>, Animation, Jun 8, 2024.</div>
+                             
+                                 <div class=sectline>Benjamin Chaffin, <a href="/A005132/a005132_3.png">Log-log (base 10) plot of first 10^612 terms</a></div>
+                             
+                                 <div class=sectline>Benjamin Chaffin, <a href="/A005132/a005132_2.txt">Missing numbers less than 2^32, after 10^612 terms</a></div>
+                             
+                                 <div class=sectline>Benjamin Chaffin, <a href="https://benchaffin.com/recaman/recaman.html">Computing the Recaman Sequence</a>, Feb 08 2026.</div>
+                             
+                                 <div class=sectline>Fabio Deelan Cunden, Marilena Ligabò, and Tommaso Monni, <a href="https://arxiv.org/abs/2301.13555">Random matrices associated to Young diagrams</a>, arXiv:2301.13555 [math.PR], 2023. See p. 7.</div>
+                             
+                                 <div class=sectline>Michael De Vlieger, video of first 1200 steps of the <a href="https://youtu.be/xl1yLPWypmo">Recamán sequence</a>, with audio accompaniment generated by aspects of the sequence. Oct 12, 2019.</div>
+                             
+                                 <div class=sectline>GBnums, <a href="https://www.echolalie.org/echolaliste/gbnums/eois.htm">A nice OEIS sequence</a>.</div>
+                             
+                                 <div class=sectline>Hester Graves, <a href="https://arxiv.org/abs/2603.13225">Sizes of Pre-Images of the Minimal Euclidean Function on the Gaussian Integers</a>, arXiv:2603.13225 [math.NT], 2026. See p. 7.</div>
+                             
+                                 <div class=sectline>Gordon Hamilton, <a href="https://www.youtube.com/watch?v=mQdNaofLqVc">Wrecker Ball Sequences</a>, Video, 2013.</div>
+                             
+                                 <div class=sectline>Edmund Harriss, <a href="/A005132/a005132_1.pdf">The first 65 steps drawn as a spiral</a>.</div>
+                             
+                                 <div class=sectline>Nick Hobson, <a href="/A005132/a005132.py.txt">Python program for this sequence</a></div>
+                             
+                                 <div class=sectline>Bradley Klee, <a href="/A005132/a005132.go.txt">Code for pdf spiral drawing (golang)</a>.</div>
+                             
+                                 <div class=sectline>Bradley Klee, <a href="/A005132/a005132_2.pdf">The first 65 steps drawn as a spiral (color)</a>.</div>
+                             
+                                 <div class=sectline>Dana G. Korssjoen, Biyao Li, Stefan Steinerberger, Raghavendra Tripathi, and Ruimin Zhang, <a href="https://arxiv.org/abs/2012.04625">Finding structure in sequences of real numbers via graph theory: a problem list</a>, arXiv:2012.04625, Dec 08, 2020</div>
+                             
+                                 <div class=sectline>C. L. Mallows, <a href="/A005132/a005132.jpg">Plot (jpeg) of first 10000 terms</a></div>
+                             
+                                 <div class=sectline>C. L. Mallows, <a href="/A005132/a005132.ps">Plot (postscript) of first 10000 terms</a></div>
+                             
+                                 <div class=sectline>Joseph Samuel Myers, Richard Schroeppel, Scott R. Shannon, N. J. A. Sloane, and Paul Zimmermann, <a href="https://arxiv.org/abs/2004.14000">Three Cousins of Recaman's Sequence</a>, arXiv:2004:14000 [math.NT], April 2020.</div>
+                             
+                                 <div class=sectline>Tilman Piesk, <a href="https://commons.wikimedia.org/wiki/File:Recaman%27s_sequence.svg">First 172 items in a coordinate system</a> [This is a graph of the start of <a href="/A005132" title="Recamán's sequence (or Recaman's sequence): a(0) = 0; for n &gt; 0, a(n) = a(n-1) - n if nonnegative and not already in the se...">A005132</a> rotated clockwise by 90 degs. - <a href="/wiki/User:N._J._A._Sloane">N. J. A. Sloane</a>, Mar 23 2012]</div>
+                             
+                                 <div class=sectline>Omar E. Pol, <a href="http://www.polprimos.com/imagenespub/polcrt01.jpg">Illustration of initial terms of A001057, A005132, A000217</a>, 2012.</div>
+                             
+                                 <div class=sectline>Omar E. Pol, <a href="http://www.polprimos.com/imagenespub/polrec01.jpg">Illustration of initial terms</a>, 2012.</div>
+                             
+                                 <div class=sectline>Omar E. Pol, <a href="https://oeis.org/plot2a?name1=A005132&amp;name2=A000004&amp;tform1=untransformed&amp;tform2=untransformed&amp;shift=0&amp;radiop1=matp&amp;drawlines=true">Lateral view of a 3D-model whose front view is formed by spirals</a>, 2022 (using Plot 2 <a href="/A005132" title="Recamán's sequence (or Recaman's sequence): a(0) = 0; for n &gt; 0, a(n) = a(n-1) - n if nonnegative and not already in the se...">A005132</a> vs <a href="/A000004" title="The zero sequence.">A000004</a>)</div>
+                             
+                                 <div class=sectline>Bernardo Recamán Santos and N. J. A. Sloane, <a href="/A005132/a005132.pdf">Correspondence</a>, 1991.</div>
+                             
+                                 <div class=sectline>Scott R. Shannon, <a href="/A005132/a005132_2.png">Illustration of the first 2000 terms plotted as steps on a 2D square (Ulam) spiral</a>. The colors are graduated across the spectrum from red to violet to show the relative step order.</div>
+                             
+                                 <div class=sectline>Muhammad Khubab Siddique, <a href="https://www.researchgate.net/publication/344659758_Mathematics-II_B_Ed_Programme">Sequence and Series-I</a>, Unit 8, Mathematics-II, Dept. of Sci. Ed., Allama Iqbal Open Univ. (Islamabad, Pakistan, 2020), 281-313.</div>
+                             
+                                 <div class=sectline>N. J. A. Sloane, <a href="https://neilsloane.com/doc/sg.txt">My favorite integer sequences</a>, in Sequences and their Applications (Proceedings of SETA '98).</div>
+                             
+                                 <div class=sectline>N. J. A. Sloane, <a href="/A005132/a005132.txt">FORTRAN program for A005132, A057167, A064227, A064228</a></div>
+                             
+                                 <div class=sectline>N. J. A. Sloane, <a href="https://arxiv.org/abs/2301.03149">&quot;A Handbook of Integer Sequences&quot; Fifty Years Later</a>, arXiv:2301.03149 [math.NT], 2023, pp. 10, 12-13.</div>
+                             
+                                 <div class=sectline>Alex van den Brandhof, <a href="https://pyth.eu/uploads/user/ArchiefPDF/Pyth55-2.pdf">Een bizarre rij</a>, Pythagoras, 55ste Jaargang, Nummer 2, Nov 2015 (Article in Dutch about this sequence, see page 19 and back cover).</div>
+                             
+                                 <div class=sectline>Eric Weisstein's World of Mathematics, <a href="https://mathworld.wolfram.com/RecamansSequence.html">Recaman's Sequence</a>.</div>
+                             
+                                 <div class=sectline><a href="/index/Rea#Recaman">Index entries for sequences related to Recamán's sequence</a></div>
+                             
+                         </div>
+                     </div>
+                 
+            
+        
+            
+                 
+                 
+                 
+                 
+                     <div class=section>
+                         <div class=sectname>FORMULA</div>
+                         <div class=sectbody>
+                             
+                                 <div class=sectline>a(k) = <a href="/A000217" title="Triangular numbers: a(n) = binomial(n+1,2) = n*(n+1)/2 = 0 + 1 + 2 + ... + n.">A000217</a>(k) - 2*Sum_{i=1..n} <a href="/A057166" title="Indices of subtraction steps in Recamán's sequence A005132.">A057166</a>(i), for <a href="/A057166" title="Indices of subtraction steps in Recamán's sequence A005132.">A057166</a>(n) &lt;= k &lt; <a href="/A057166" title="Indices of subtraction steps in Recamán's sequence A005132.">A057166</a>(n+1). - <a href="/wiki/User:Christopher_Hohl">Christopher Hohl</a>, Jan 27 2019</div>
+                             
+                         </div>
+                     </div>
+                 
+            
+        
+            
+                 
+                 
+                 
+                 
+                     <div class=section>
+                         <div class=sectname>EXAMPLE</div>
+                         <div class=sectbody>
+                             
+                                 <div class=sectline>Consider n=6. We have a(5)=7 and try to subtract 6. The result, 1, is certainly positive, but we cannot use it because 1 is already in the sequence. So we must add 6 instead, getting a(6) = 7 + 6 = 13.</div>
+                             
+                         </div>
+                     </div>
+                 
+            
+        
+            
+                 
+                 
+                 
+                 
+                     <div class=section>
+                         <div class=sectname>MAPLE</div>
+                         <div class=sectbody>
+                             
+                                 <div class=sectline>h := array(1..100000); maxt := 100000; a := [1]; ad := [1]; su := []; h[1] := 1; for nx from 2 to 500 do t1 := a[nx-1]-nx; if t1&gt;0 and h[t1] &lt;&gt; 1 then su := [op(su), nx]; else t1 := a[nx-1]+nx; ad := [op(ad), nx]; fi; a := [op(a), t1]; if t1 &lt;= maxt then h[t1] := 1; fi; od: # a is <a href="/A005132" title="Recamán's sequence (or Recaman's sequence): a(0) = 0; for n &gt; 0, a(n) = a(n-1) - n if nonnegative and not already in the se...">A005132</a>, ad is <a href="/A057165" title="Indices of addition steps in Recamán's sequence A005132.">A057165</a>, su is <a href="/A057166" title="Indices of subtraction steps in Recamán's sequence A005132.">A057166</a></div>
+                             
+                                 <div class=sectline><a href="/A005132" title="Recamán's sequence (or Recaman's sequence): a(0) = 0; for n &gt; 0, a(n) = a(n-1) - n if nonnegative and not already in the se...">A005132</a> := proc(n)</div>
+                             
+                                 <div class=sectline>    option remember; local a, found, j;</div>
+                             
+                                 <div class=sectline>    if n = 0 then return 0 fi;</div>
+                             
+                                 <div class=sectline>    a := procname(n-1) - n ;</div>
+                             
+                                 <div class=sectline>    if a &lt;= 0 then return a+2*n fi;</div>
+                             
+                                 <div class=sectline>    found := false;</div>
+                             
+                                 <div class=sectline>    for j from 0 to n-1 while not found do</div>
+                             
+                                 <div class=sectline>        found := procname(j) = a;</div>
+                             
+                                 <div class=sectline>    od;</div>
+                             
+                                 <div class=sectline>    if found then a+2*n else a fi;</div>
+                             
+                                 <div class=sectline>end:</div>
+                             
+                                 <div class=sectline>seq(<a href="/A005132" title="Recamán's sequence (or Recaman's sequence): a(0) = 0; for n &gt; 0, a(n) = a(n-1) - n if nonnegative and not already in the se...">A005132</a>(n), n=0..70); # <a href="/wiki/User:R._J._Mathar">R. J. Mathar</a>, Apr 01 2012 (reformatted by <a href="/wiki/User:Peter_Luschny">Peter Luschny</a>, Jan 06 2019)</div>
+                             
+                         </div>
+                     </div>
+                 
+            
+        
+            
+                 
+                 
+                 
+                 
+                     <div class=section>
+                         <div class=sectname>MATHEMATICA</div>
+                         <div class=sectbody>
+                             
+                                 <div class=sectline>a = {1}; Do[ If[ a[[ -1 ]] - n &gt; 0 &amp;&amp; Position[ a, a[[ -1 ]] - n ] == {}, a = Append[ a, a[[ -1 ]] - n ], a = Append[ a, a[[ -1 ]] + n ] ], {n, 2, 70} ]; a</div>
+                             
+                                 <div class=sectline>(* Alternative: *)</div>
+                             
+                                 <div class=sectline>f[s_List] := Block[{a = s[[ -1]], len = Length@s}, Append[s, If[a &gt; len &amp;&amp; !MemberQ[s, a - len], a - len, a + len]]]; Nest[f, {0}, 70] (* <a href="/wiki/User:Robert_G._Wilson_v">Robert G. Wilson v</a>, May 01 2009 *)</div>
+                             
+                                 <div class=sectline>(* Alternative: *)</div>
+                             
+                                 <div class=sectline>RecamanSeq[i_Integer] := Fold[With[{lst=Last@#, len=Length@#}, Append[#, If[lst &gt; len &amp;&amp; !MemberQ[#, lst - len], lst - len, lst + len]]] &amp;, {0}, Range@i]; RecamanSeq[10^5] (* <a href="/wiki/User:Mikk_Heidemaa">Mikk Heidemaa</a>, Nov 02 2024 *)</div>
+                             
+                         </div>
+                     </div>
+                 
+            
+        
+            
+                 
+                 
+                 
+                 
+                     <div class=section>
+                         <div class=sectname>PROG</div>
+                         <div class=sectbody>
+                             
+                                 <div class=sectline>(PARI) a(n)=if(n&lt;2, 1, if(abs(sign(a(n-1)-n)-1)+setsearch(Set(vector(n-1, i, a(i))), a(n-1)-n), a(n-1)+n, a(n-1)-n)) \\ <a href="/wiki/User:Benoit_Cloitre">Benoit Cloitre</a></div>
+                             
+                                 <div class=sectline>(PARI) <a href="/A005132" title="Recamán's sequence (or Recaman's sequence): a(0) = 0; for n &gt; 0, a(n) = a(n-1) - n if nonnegative and not already in the se...">A005132</a>(N=1000, show=0)={ my(s, t); for(n=1, N, s=bitor(s, 1&lt;&lt;t += if( t&lt;=n || bittest(s, t-n), n, -n)); show&amp;&amp;print1(t&quot;, &quot;)); t} \\ <a href="/wiki/User:M._F._Hasler">M. F. Hasler</a>, May 11 2008, updated <a href="/wiki/User:M._F._Hasler">M. F. Hasler</a>, Nov 03 2014</div>
+                             
+                                 <div class=sectline>(MATLAB)</div>
+                             
+                                 <div class=sectline>function a=<a href="/A005132" title="Recamán's sequence (or Recaman's sequence): a(0) = 0; for n &gt; 0, a(n) = a(n-1) - n if nonnegative and not already in the se...">A005132</a>(m)</div>
+                             
+                                 <div class=sectline>% m=max number of terms in a(n). Offset n:0</div>
+                             
+                                 <div class=sectline>a=zeros(1, m);</div>
+                             
+                                 <div class=sectline>for n=2:m</div>
+                             
+                                 <div class=sectline>    B=a(n-1)-(n-1);</div>
+                             
+                                 <div class=sectline>    C=0.^( abs(B+1) + (B+1) );</div>
+                             
+                                 <div class=sectline>    D=ismember(B, a(1:n-1));</div>
+                             
+                                 <div class=sectline>    a(n)=a(n-1)+ (n-1) * (-1)^(C + D -1);</div>
+                             
+                                 <div class=sectline>end</div>
+                             
+                                 <div class=sectline>% <a href="/wiki/User:Adriano_Caroli">Adriano Caroli</a>, Dec 26 2010</div>
+                             
+                                 <div class=sectline>(Haskell)</div>
+                             
+                                 <div class=sectline>import Data.Set (Set, singleton, notMember, insert)</div>
+                             
+                                 <div class=sectline>a005132 n = a005132_list !! n</div>
+                             
+                                 <div class=sectline>a005132_list = 0 : recaman (singleton 0) 1 0 where</div>
+                             
+                                 <div class=sectline>   recaman :: Set Integer -&gt; Integer -&gt; Integer -&gt; [Integer]</div>
+                             
+                                 <div class=sectline>   recaman s n x = if x &gt; n &amp;&amp; (x - n) `notMember` s</div>
+                             
+                                 <div class=sectline>                      then (x-n) : recaman (insert (x-n) s) (n+1) (x-n)</div>
+                             
+                                 <div class=sectline>                      else (x+n) : recaman (insert (x+n) s) (n+1) (x+n)</div>
+                             
+                                 <div class=sectline>-- <a href="/wiki/User:Reinhard_Zumkeller">Reinhard Zumkeller</a>, Mar 14 2011</div>
+                             
+                                 <div class=sectline>(Python)</div>
+                             
+                                 <div class=sectline>l=[0]</div>
+                             
+                                 <div class=sectline>for n in range(1, 101):</div>
+                             
+                                 <div class=sectline>    x=l[n - 1] - n</div>
+                             
+                                 <div class=sectline>    if x&gt;0 and not x in l: l+=[x, ]</div>
+                             
+                                 <div class=sectline>    else: l+=[l[n - 1] + n]</div>
+                             
+                                 <div class=sectline>print(l) # <a href="/wiki/User:Indranil_Ghosh">Indranil Ghosh</a>, Jun 01 2017</div>
+                             
+                                 <div class=sectline>(Python)</div>
+                             
+                                 <div class=sectline>def recaman(n):</div>
+                             
+                                 <div class=sectline>  seq = []</div>
+                             
+                                 <div class=sectline>  for i in range(n):</div>
+                             
+                                 <div class=sectline>    if(i == 0): x = 0</div>
+                             
+                                 <div class=sectline>    else: x = seq[i-1]-i</div>
+                             
+                                 <div class=sectline>    if(x&gt;=0 and x not in seq): seq+=[x]</div>
+                             
+                                 <div class=sectline>    else: seq+=[seq[i-1]+i]</div>
+                             
+                                 <div class=sectline>  return seq</div>
+                             
+                                 <div class=sectline>print(recaman(1000)) # <a href="/wiki/User:Ely_Golden">Ely Golden</a>, Jun 14 2018</div>
+                             
+                                 <div class=sectline>(Python)</div>
+                             
+                                 <div class=sectline>from itertools import count, islice</div>
+                             
+                                 <div class=sectline>def <a href="/A005132" title="Recamán's sequence (or Recaman's sequence): a(0) = 0; for n &gt; 0, a(n) = a(n-1) - n if nonnegative and not already in the se...">A005132</a>_gen(): # generator of terms</div>
+                             
+                                 <div class=sectline>    a, aset = 0, set()</div>
+                             
+                                 <div class=sectline>    for n in count(1):</div>
+                             
+                                 <div class=sectline>        yield a</div>
+                             
+                                 <div class=sectline>        aset.add(a)</div>
+                             
+                                 <div class=sectline>        a = b if (b:=a-n)&gt;=0 and b not in aset else a+n</div>
+                             
+                                 <div class=sectline><a href="/A005132" title="Recamán's sequence (or Recaman's sequence): a(0) = 0; for n &gt; 0, a(n) = a(n-1) - n if nonnegative and not already in the se...">A005132</a>_list = list(islice(<a href="/A005132" title="Recamán's sequence (or Recaman's sequence): a(0) = 0; for n &gt; 0, a(n) = a(n-1) - n if nonnegative and not already in the se...">A005132</a>_gen(), 30)) # <a href="/wiki/User:Chai_Wah_Wu">Chai Wah Wu</a>, Sep 15 2022</div>
+                             
+                         </div>
+                     </div>
+                 
+            
+        
+            
+                 
+                 
+                     
+                 
+                 
+                 
+                     <div class=section>
+                         <div class=sectname>CROSSREFS</div>
+                         <div class=sectbody>
+                             
+                                 <div class=sectline>Cf. <a href="/A057165" title="Indices of addition steps in Recamán's sequence A005132.">A057165</a> (addition steps), <a href="/A057166" title="Indices of subtraction steps in Recamán's sequence A005132.">A057166</a> (subtraction steps), <a href="/A057167" title="Term in Recamán's sequence A005132 where n appears for first time, or -1 if n never appears.">A057167</a> (steps to hit n), <a href="/A008336" title="a(n+1) = a(n)/n if n|a(n) else a(n)*n, a(1) = 1.">A008336</a>, <a href="/A046901" title="a(n) = a(n-1) - n if a(n-1) &gt; n, else a(n) = a(n-1) + n.">A046901</a> (simplified version), <a href="/A064227" title="From Recamán's sequence (A005132): record values in A057167.">A064227</a> (records for reaching n), <a href="/A064228" title="From Recamán's sequence (A005132): values of n achieving records in A057167.">A064228</a> (value of n that take a record number of steps to reach), <a href="/A064284" title="Number of times n appears in Recamán's sequence A005132.">A064284</a> (no. of times n appears), <a href="/A064290" title="First number of height n in Recamán's sequence A005132.">A064290</a> (heights of terms), <a href="/A064291" title="Record high values in Recamán's sequence A005132.">A064291</a> (record highs), <a href="/A119632" title="Lengths of successive runs in A160357, where a run here means a string of alternating terms.">A119632</a> (condensed version), <a href="/A063733" title="A variant of Recamán's sequence: a(0)=1, a(n) = a(n-1)-(n-1) if positive and new, else a(n) = a(n-1)+(n-1).">A063733</a>, <a href="/A079053" title="Recamán Fibonacci variation: a(1)=1; a(2)=2; for n &gt; 2, a(n) = a(n-1)+a(n-2)-F(n) if that number is positive and not alread...">A079053</a>, <a href="/A064288" title="Height of n when it appears for first time in Recamán's sequence A005132.">A064288</a>, <a href="/A064289" title="Height of n-th term in Recamán's sequence A005132.">A064289</a>, <a href="/A064387" title="Variation (2) on Recamán's sequence (A005132): to get a(n), we first try to subtract n from a(n-1): a(n) = a(n-1)-n if posi...">A064387</a>, <a href="/A064388" title="Variation (3) on Recamán's sequence (A005132): set s (the step size) initially equal to 2; to get a(n), we first try to sub...">A064388</a>, <a href="/A064389" title="Variation (4) on Recamán's sequence (A005132): to get a(n), we first try to subtract n from a(n-1): a(n) = a(n-1) - n if po...">A064389</a>, <a href="/A228474" title="Number of steps required to reach zero in the wrecker ball sequence starting with n: On the k-th step (k = 1, 2, 3, ...) mov...">A228474</a> (bidirectional version).</div>
+                             
+                                 <div class=sectline><a href="/A065056" title="Partial sums of Recamán's sequence A005132.">A065056</a> gives partial sums, <a href="/A160356" title="First differences of Recamán's sequence A005132.">A160356</a> gives first differences.</div>
+                             
+                                 <div class=sectline>A row of <a href="/A066201" title="Array read by antidiagonals upwards: for n-th row (n&gt;=0), T(n,0) = 1; for k &gt; 0, T(n,k) = T(n,k-1)-(n+k-1) if this is positi...">A066201</a>.</div>
+                             
+                                 <div class=sectline>Cf. <a href="/A171884" title="Lexicographically earliest injective nonnegative sequence a(n) satisfying |a(n+1) - a(n)| = n for all n.">A171884</a> (injective variant).</div>
+                             
+                                 <div class=sectline>See <a href="/A324784" title="Indices of low points in Recamán's sequence A005132 (see Comments in A309226 for definition).">A324784</a>, <a href="/A324785" title="Values of A005132 at its low points.">A324785</a>, <a href="/A324786" title="First differences of A324784: distances in A005132 from one low point to the next.">A324786</a> for the &quot;low points&quot;.</div>
+                             
+                                 <div class=sectline>Cf. <a href="/A330791" title="Values of k such that A005132(k) (the k-th number in the Recamán sequence) divides k.">A330791</a>, <a href="/A331659" title="Fixed points in the Recamán sequence; k such that A005132(k) = k.">A331659</a>, <a href="/A331670" title="First step in Recamán's sequence (A005132) at which there are n consecutive addition steps in a row.">A331670</a>.</div>
+                             
+                                 <div class=sectline>Sequence in context: <a href="/A277558" title="A variation on Recamán's sequence (A005132): to get a(n), we first try to subtract n from a(n-1): a(n) = a(n-1)-n if positi...">A277558</a> <a href="/A350578" title="a(0) = 0; for n &gt; 0, if a(n-1) - n &gt;= 0 and a(n-1) - n has appeared the same or fewer times than a(n-1) + n, then a(n) = a(n...">A350578</a> <a href="/A335299" title="a(0) = 0; for n &gt; 0, a(n) = abs(a(n-1) - n) if not already in the sequence, otherwise a(n) = a(n-1) + n.">A335299</a> * <a href="/A064388" title="Variation (3) on Recamán's sequence (A005132): set s (the step size) initially equal to 2; to get a(n), we first try to sub...">A064388</a> <a href="/A064387" title="Variation (2) on Recamán's sequence (A005132): to get a(n), we first try to subtract n from a(n-1): a(n) = a(n-1)-n if posi...">A064387</a> <a href="/A064389" title="Variation (4) on Recamán's sequence (A005132): to get a(n), we first try to subtract n from a(n-1): a(n) = a(n-1) - n if po...">A064389</a></div>
+                             
+                                 <div class=sectline>Adjacent sequences:  <a href="/A005129" title="Theta series of {E_6}* lattice.">A005129</a> <a href="/A005130" title="Robbins numbers: a(n) = Product_{k=0..n-1} (3k+1)!/(n+k)!; also the number of descending plane partitions whose parts do not...">A005130</a> <a href="/A005131" title="A generalized continued fraction for Euler's number e.">A005131</a> * <a href="/A005133" title="Number of index n subgroups of modular group PSL_2(Z).">A005133</a> <a href="/A005134" title="Number of n-dimensional unimodular lattices (or quadratic forms).">A005134</a> <a href="/A005135" title="Number of laminated lattices of dimension n.">A005135</a></div>
+                             
+                         </div>
+                     </div>
+                 
+            
+        
+            
+                 
+                 
+                 
+                 
+                     <div class=section>
+                         <div class=sectname>KEYWORD</div>
+                         <div class=sectbody>
+                             
+                                 <div class=sectline><span title="a sequence of nonnegative numbers">nonn</span>,<span title="an exceptionally nice sequence">nice</span>,<span title="sequence makes an interesting sound"><a href="/A005132/listen">hear</a></span>,<span title="sequence has an interesting graph"><a href="/A005132/graph">look</a></span></div>
+                             
+                         </div>
+                     </div>
+                 
+            
+        
+            
+                 
+                 
+                 
+                 
+                     <div class=section>
+                         <div class=sectname>AUTHOR</div>
+                         <div class=sectbody>
+                             
+                                 <div class=sectline><a href="/wiki/User:N._J._A._Sloane">N. J. A. Sloane</a> and <a href="/wiki/User:Simon_Plouffe">Simon Plouffe</a>, May 16 1991</div>
+                             
+                         </div>
+                     </div>
+                 
+            
+        
+            
+                 
+                 
+                 
+                 
+                     <div class=section>
+                         <div class=sectname>EXTENSIONS</div>
+                         <div class=sectbody>
+                             
+                                 <div class=sectline><a href="/wiki/User:Allan_Wilks">Allan Wilks</a>, Nov 06 2001, computed 10^15 terms of this sequence. At this point all the numbers below 852655 had appeared, but 852655 = 5*31*5501 was missing.</div>
+                             
+                                 <div class=sectline>After 10^25 terms of <a href="/A005132" title="Recamán's sequence (or Recaman's sequence): a(0) = 0; for n &gt; 0, a(n) = a(n-1) - n if nonnegative and not already in the se...">A005132</a> the smallest missing number is still 852655. - <a href="/wiki/User:Benjamin_Chaffin">Benjamin Chaffin</a>, Jun 13 2006</div>
+                             
+                                 <div class=sectline>Even after 7.78*10^37 terms, the smallest missing number is still 852655. - <a href="/wiki/User:Benjamin_Chaffin">Benjamin Chaffin</a>, Mar 28 2008</div>
+                             
+                                 <div class=sectline>Even after 4.28*10^73 terms, the smallest missing number is still 852655. - <a href="/wiki/User:Benjamin_Chaffin">Benjamin Chaffin</a>, Mar 22 2010</div>
+                             
+                                 <div class=sectline>Even after 10^230 terms, the smallest missing number is still 852655. - <a href="/wiki/User:Benjamin_Chaffin">Benjamin Chaffin</a>, 2018</div>
+                             
+                                 <div class=sectline>Changed &quot;positive&quot; in definition to &quot;nonnegative&quot;. - <a href="/wiki/User:N._J._A._Sloane">N. J. A. Sloane</a>, May 04 2020</div>
+                             
+                                 <div class=sectline>Even after 10^612 terms, the smallest missing number is still 852655. - <a href="/wiki/User:Benjamin_Chaffin">Benjamin Chaffin</a>, Feb 08 2026</div>
+                             
+                         </div>
+                     </div>
+                 
+            
+        
+            
+                 
+                 
+                 
+                 
+                     <div class=section>
+                         <div class=sectname>STATUS</div>
+                         <div class=sectbody>
+                             
+                                 <div class=sectline>approved</div>
+                             
+                         </div>
+                     </div>
+                 
+            
+        
+
+        
+    </div>
+
+        
+        <div class=space10></div>
+    </div>
+
+    </div></div>
+
+    <p>
+
+    <div class=footerpad></div>
+    <div class=footer>
+    <center>
+    <div class=bottom>
+    <div class=linksbar>
+      <a href="/">Lookup</a>
+      <a href="/wiki/Welcome"><font color="red">Welcome</font></a>
+      <a href="/wiki/Main_Page"><font color="red">Wiki</font></a>
+      <a href="/account">Register</a>
+      
+      <a href="/play.html">Music</a>
+      <a href="/plot2.html">Plot 2</a>
+      <a href="/demo1.html">Demos</a>
+      <a href="/wiki/Index_to_OEIS">Index</a>
+      <a href="/webcam">WebCam</a>
+      <a href="/Submit.html">Contribute</a>
+      <a href="/eishelp2.html">Format</a>
+      <a href="/wiki/Style_Sheet">Style Sheet</a>
+      <a href="/transforms.html">Transforms</a>
+      <a href="/ol.html">Superseeker</a>
+      <a href="/recent">Recents</a>
+    </div>
+    <div class=linksbar>
+      <a href="/community.html">The OEIS Community</a>
+    </div>
+    <div class=linksbar>
+      Maintained by <a href="http://oeisf.org">The OEIS Foundation Inc.</a>
+    </div>
+
+    <div class=dbinfo>Last modified October 31 03:46 EDT 2026.  Contains 400851 sequences.</div>
+    <div class=legal>
+    <a href="/wiki/Legal_Documents">License Agreements, Terms of Use, Privacy Policy</a>
+    </div>
+
+    </div>
+    </center>
+    </div>
+  <script type="module" src="https://static.cloudflareinsights.com/beacon.min.js/vce701823e78c4301a35b7e07294d87301792088814092" integrity="sha512-UKNk8GbxkABxKcXYuLkO16EleLGUkcvJWtpSNmExE0Too3ZaFAxTscNWEc1OdAv5/BikHawapSCaiD2XCmp+Bw==" data-cf-beacon='{"version":"2024.11.0","token":"781e3e2683624a28a850394a171c1b83","r":1,"spa":2}' crossorigin="anonymous"></script>
+<script>(function(){function c(){var b=a.contentDocument||(a.contentWindow&&a.contentWindow.document);if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'a5310dbe484585a5',t:'MTc5MzQzMjg2Nw=='};var l=window.parent.location,o;try{o=new URL(l.origin).origin}catch(e){try{o=new URL(new URL(l.href).origin).origin}catch(e){o=''}}var u='/cdn-cgi/challenge-platform/scripts/jsd/main.js?ray=a5310dbe484585a5',a=document.createElement('script');a.src=o?new URL(u,o).href:u;document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+</html>

@@ -1,0 +1,790 @@
+html {
+  font-size: 100%;
+  font-family: serif;
+}
+body {
+  padding: 0;
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+div.footerpad {
+  flex-grow: 1;
+}
+
+/* monospace elements */
+tt, p.editing, div.editing > p, p.diffs, div.seqdata, div.sectbody, div.sectline, table.seqlist, table.seqtable {
+  font-family: Menlo, 'Droid Sans Mono', 'DejaVu Sans Mono', 'Lucida Sans Typewriter', 'Consolas', monospace;
+  font-size: 0.83rem;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+/* login bar at top */
+div.loginbar {
+  width: 100%;
+  display: flex;
+  padding-bottom: 5px;
+  justify-content: flex-end;
+}
+div.login {
+  font-size: small;
+}
+
+/* donors ack at top */
+div.donors {
+  font-size: small;
+  font-style: italic;
+}
+@media(max-width: 400px) {
+  div.donors { display: none; }
+}
+
+/* links at bottom */
+div.footer {
+  background: #ddd;
+  font-size: small;
+  font-family: sans-serif;
+}
+div.footer a {
+  padding-right: 0.5em;
+}
+div.linksbar, div.dbinfo, div.legal {
+  margin-top: 0.4em;
+  margin-bottom: 0.4em;
+}
+div.legal {
+  font-style: italic;
+}
+
+/* main content box */
+div.top, div.pagebody, div.bottom {
+  width: 1000px;
+  max-width: 90%;
+}
+
+div.draftlist table {
+  width: 100%;
+}
+
+/* front page */
+div.frontsearchbox {
+}
+input#q {
+  width: 100%;
+}
+div.languages {
+  font-size: smaller;
+}
+div.languages a.translate {
+  font-weight: bold;
+}
+div.languages span {
+  margin-left: 0.5em;
+}
+
+/* banner and search bar at top of page */
+img.banner {
+  width: 440px;
+  max-width: 100%;
+  height: auto;
+  margin-top: 0.25em;
+  margin-bottom: 0.25em;
+}
+/* 440 and 747 are the widths at which the two banners stand 105px tall, the
+   height banner2021.jpg had at width=600.  div.top is already 90%, so the
+   one-line banner only earns its place once the column can show all 747px of
+   it; on both sides of that the capitals measure the same 18.7px. */
+@media(min-width: 830px) {
+  img.banner { width: 747px; }
+}
+div.searchbarcenter {
+  display: flex;
+  justify-content: center;
+}
+form {
+  margin: 0;
+}
+div.searchbarcenter form {
+  flex-grow: 1;
+}
+div.searchbargreet {
+  margin-top: 1em;
+  margin-bottom: 1em;
+  flex-grow: 1;
+}
+div.searchbar {
+  display: flex;
+}
+div.searchq { flex-grow: 1; }
+div.searchq > input { width: 100%; }
+div.hints {
+  margin-left: 10px;
+  display: flex;
+  align-items: center;
+}
+span.hints {
+  font-size: x-small;
+}
+div.searchsubmit {
+  margin-left: 4px;
+}
+div.searchgreet {
+  font-size: small;
+}
+@media(max-width: 750px) {
+  div.hints { display: none; }
+}
+
+/* fundraising message of the day */
+div.motdbox {
+  display: flex;
+  width: 70%;
+  border: 1px solid black;
+  background-color: #ffffcc;
+  margin: 1em;
+}
+div.motd {
+  padding-right: 1em;
+}
+
+/* memorial bar */
+div.blackbar {
+  text-align: center;
+  font-weight: bold;
+  width: 70%;
+  border: 1px solid black;
+  background-color: black;
+  color: white;
+  margin: 1em;
+  width: 100%;
+  margin: 0;
+}
+div.blackbar a {
+  color: white;
+}
+
+/* basic text */
+a.selflink {
+  color: inherit;
+  text-decoration-line: inherit;
+}
+p {
+  word-wrap: break-word;
+}
+p.editing {
+  margin: 10px;
+  text-indent: -10px;
+}
+div.editing > p, p.diffs {
+  text-indent: -1em;
+  margin-left: 1em;
+  margin-top: 0;
+  margin-bottom: 0;
+  white-space: pre-wrap;
+}
+ins {
+  text-decoration: underline;
+  text-decoration-color: #00f;
+  font-weight: bold;
+}
+del {
+  text-decoration: underline;
+  text-decoration-color: #f00;
+  color: #888;
+}
+
+/* centering div */
+div.center {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+/* spacing divs */
+div.flex {
+  display: flex;
+}
+div.space1 {
+  height: 1px;
+  margin: 0;
+  padding: 0;
+}
+div.space4 {
+  height: 4px;
+  margin: 0;
+  padding: 0;
+}
+div.space10 {
+  height: 10px;
+  margin: 0;
+  padding: 0;
+}
+
+/* sequence display */
+div.sequence {
+  text-align: left;
+}
+div.line {
+  height: 1px;
+  background-color: #76767f;
+}
+div.seqhead {
+  background-color: #eeeeff;
+  display: flex;
+  justify-content: space-between;
+}
+div.seqnumname {
+  display: flex;
+  flex: auto;
+}
+div.seqnum {
+  flex: 0 0 100px;
+  vertical-align: top;
+}
+div.seqname {
+  padding-left: 5px;
+  flex: auto;
+}
+div.scorerefs {
+  vertical-align: top;
+  text-align: right;
+  font-size: x-small;
+  padding-left: 2px;
+}
+
+div.seqdatabox {
+  padding-left: 26px;
+  padding-top: 2px;
+  padding-bottom: 2px;
+  width: calc(100% - 26px);
+}
+div.seqdatalinks {
+  font-size: small;
+}
+
+div.section {
+  display: flex;
+}
+div.sectname {
+  padding: 2px;
+  padding-left: 26px;
+  font-size: x-small;
+  flex: 0 0 100px;
+}
+div.sectbody {
+  word-wrap: break-word;
+  padding: 2px;
+}
+div.sectline {
+  white-space: pre-wrap;
+  text-indent: -1rem;
+  margin-left: 1rem;
+}
+@media(max-width: 666px) {
+  div.seqdatabox {
+    padding-left: 1rem;
+    width: calc(100% - 2rem);
+  }
+  div.section {
+    flex-direction: column;
+  }
+  div.sectname {
+    flex: auto;
+    font-size: small;
+    padding-left: 0px;
+    font-weight: bold;
+    margin-top: 0.5rem;
+    text-decoration: underline;
+  }
+  div.sectbody {
+    padding-left: 1rem;
+  }
+}
+
+
+div.resultbar {
+  background-color: #ffffcc;
+}
+div.resultline {
+  height: 1px;
+  background-color: #7f7f66;
+}
+div.space5 {
+  height: 5px;
+}
+div.pagelinkbox {
+  display: flex;
+  justify-content: space-between;
+}
+div.pagelinks {
+  padding-top: 1px;
+}
+div.superheading {
+  padding-top: 20px;
+  border-top: 1px solid #76767f;
+  padding-bottom: 10px;
+  font-weight: bold;
+}
+
+/* tables (for actual tables, not layout) */
+table, tr, td {
+  border: none;
+}
+table.seqlist {
+}
+table.seqlist th.index {
+  font-weight: bold;
+  text-align: center;
+}
+table.seqlist th.value {
+  font-weight: bold;
+  text-align: center;
+  padding-left: 20px;
+}
+table.seqlist td.index {
+  text-align: right;
+}
+table.seqlist td.value {
+  text-align: right;
+  padding-left: 20px;
+}
+table.seqtable td {
+  text-align: center;
+}
+div.webcambar {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10px;
+  vertical-align: center;
+}
+div.webcambar select {
+  margin-right: 3px;
+}
+div.webcamspace {
+  flex: 0 0 30px;
+}
+div.countdown {
+  flex: 0 0 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+span#countdown {
+}
+div.playbox {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+div.draftbar {
+  background-color: #ffffee
+}
+div.revbar {
+  background-color: #ffffcc
+}
+div.discussbar {
+  background-color: #fff0f0
+}
+div.discusshead {
+  background-color: #ffcccc;
+  font-weight: bold;
+  font-size: small;
+}
+div.discussrevbar {
+  background-color: #ffcccc;
+  height: 1px;
+}
+div.discussnote {
+  display: flex
+}
+div.discussnote div.date {
+  flex: 0 0 80px;
+  font-size: small;
+}
+div.discussnote div.time {
+  flex: 0 0 40px;
+  font-size: small;
+}
+div.history {
+  text-align: left;
+}
+div.discussnote pre.note {
+  margin: 0;
+  flex: auto;
+  font-family: serif;
+  white-space: pre-wrap;
+  white-space: -moz-pre-wrap;
+  white-space: -pre-wrap;
+  white-space: -o-pre-wrap;
+  word-wrap: break-word;
+}
+div.discussnote pre.note span.user {
+  font-weight: bold;
+}
+div.left {
+  text-align: left;
+}
+div.editbox {
+  width: 772px;
+  margin-top: 1px;
+}
+div.editor {
+}
+div.hideshowguide {
+  text-align: right;
+}
+div.editfield {
+  display: flex;
+}
+div.editfieldname {
+  flex: 0 0 72px;
+  padding-right: 20px;
+  font-size: x-small;
+}
+div.editfieldbody {
+  flex: 0 0 700px;
+  width: 700px;
+}
+div.editintro {
+  background-color: #ffffcc;
+  display: flex;
+}
+div.hideguide1 {
+  padding-right: 1em;
+}
+
+/* Account and sign-in pages: the only long forms on the site. The look is
+   the site's own -- the inherited serif, the browser's own controls, and
+   the search-results palette: #ffffcc bars between #7f7f66 lines, #ffffee
+   and #fff0f0 boxes, small type for asides. The provider sign-in buttons
+   on /login are the exception; their styling is Google's, served by the
+   auth package, and the mail form there is drawn to sit with them. */
+div.accountpage {
+  max-width: 40em;
+  margin: 1em auto 2em;
+  text-align: left;
+}
+div.accountpage h2 {
+  font-size: 1.3em;
+  margin: 1.2em 0 0.8em;
+}
+div.accountpage h3 {
+  font-size: 1.1em;
+  margin: 2em 0 0.6em;
+}
+/* The sentence under a heading that says what the section is for. It reads
+   at the size of the prose around it: it is what most of these pages are,
+   and setting it smaller made the page shrink as it went down. Only dates
+   and status stay small, below. */
+div.accountpage label {
+  display: block;
+  margin: 0 0 1.2em;
+}
+div.accountpage label .what {
+  display: block;
+  font-weight: bold;
+  margin: 0 0 0.25em;
+}
+div.accountpage label .why {
+  display: block;
+  font-weight: normal;
+  margin: 0 0 0.35em;
+}
+/* A margin on both sides, so that a lead-in sentence standing directly
+   above a button is not pressed against it. Where the next thing brings a
+   margin of its own -- a form, a table, a heading -- the two collapse and
+   the spacing is unchanged. */
+div.accountpage p.why {
+  margin: 1em 0;
+}
+div.accountpage p.signedas {
+  margin: 0 0 1.6em;
+}
+div.accountpage input[type=text],
+div.accountpage input[type=password],
+div.accountpage textarea {
+  width: 100%;
+  box-sizing: border-box;
+}
+div.accountpage textarea {
+  min-height: 7em;
+}
+div.accountpage .buttons {
+  margin: 1em 0 0;
+}
+div.accountpage hr.or {
+  border: 0;
+  border-top: 1px solid #76767f;
+  margin: 2.5em 0 1.5em;
+}
+
+/* message boxes on the account and sign-in pages */
+p.msg, div.msg {
+  background-color: #ffffcc;
+  border: 1px solid #7f7f66;
+  padding: 0.5em 0.8em;
+  margin: 0 0 1.2em;
+}
+p.msg.good, div.msg.good {
+  background-color: #eeffee;
+  border-color: #667f66;
+}
+
+/* a question that needs an answer: showing a device code, deleting an account */
+div.confirm {
+  margin: 0 0 2em;
+  padding: 1em 1.2em;
+  border: 1px solid #7f7f66;
+  background-color: #ffffee;
+}
+div.confirm.loud {
+  border: 2px solid red;
+  background-color: #fff0f0;
+}
+div.confirm .shout {
+  font-size: 1.25em;
+  font-weight: bold;
+  margin: 0 0 0.6em;
+}
+div.confirm.loud .shout {
+  color: red;
+}
+div.confirm ul {
+  margin: 0 0 1em;
+  padding-left: 1.4em;
+}
+div.confirm li {
+  margin: 0.2em 0;
+}
+div.confirm input[type=text] {
+  width: auto;
+}
+
+/* the QR code for signing in a mobile device */
+div.accountpage .qr {
+  margin: 1em 0;
+}
+div.accountpage .qr svg {
+  display: block;
+  width: 256px;
+  height: 256px;
+  max-width: 100%;
+}
+
+/* the passkey list */
+div.accountpage table.passkeys {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1em 0;
+}
+div.accountpage table.passkeys td {
+  border-top: 1px solid #cccccc;
+  padding: 0.7em 0;
+  vertical-align: top;
+}
+div.accountpage table.passkeys td.act {
+  text-align: right;
+  width: 1%;
+  white-space: nowrap;
+  padding-left: 1em;
+}
+div.accountpage table.passkeys form {
+  margin: 0;
+}
+div.accountpage form.rename {
+  display: flex;
+  gap: 0.5em;
+  align-items: center;
+}
+div.accountpage form.rename input[type=text] {
+  width: 14em;
+}
+div.accountpage .when {
+  font-size: small;
+}
+div.accountpage table.passkeys .when {
+  display: block;
+  margin: 0.35em 0 0;
+}
+div.accountpage .passkey-add {
+  margin: 1em 0 0;
+}
+/* the error and note boxes the server's passkey script injects,
+   restyled to match the message boxes above */
+div.accountpage .passkey-error, div.accountpage .passkey-note {
+  font: inherit;
+  font-size: small;
+  color: inherit;
+  border-radius: 0;
+  padding: 0.5em 0.8em;
+  background-color: #fff0f0;
+  border: 1px solid #7f6666;
+}
+div.accountpage .passkey-note {
+  background-color: #eeffee;
+  border-color: #667f66;
+}
+
+/* the addresses on an account */
+div.accountpage form.emails {
+  margin: 1em 0 0;
+}
+div.accountpage label.addrline {
+  display: flex;
+  align-items: baseline;
+  gap: 0.5em;
+  margin: 0 0 0.4em;
+  font-weight: normal;
+}
+div.accountpage label.addrline input {
+  margin: 0;
+}
+div.accountpage label.addrline .tag {
+  font-size: small;
+}
+
+/* the lookup and queue on /admin/accounts; each request under its own
+   result bar, so that a page of them reads as a list rather than a wall
+   of form fields */
+div.accountpage div.resultbar {
+  margin: 2.2em 0 1.1em;
+}
+div.accountpage form.lookup {
+  margin: 0 0 1.6em;
+}
+div.accountpage form.lookup input[type=text] {
+  width: auto;
+}
+div.accountpage form.addemail {
+  margin: 0.8em 0 1.2em;
+}
+div.accountpage form.addemail input[type=text] {
+  width: auto;
+}
+
+/* the addresses an account signs in with, one line each with the button
+   that takes it off. Shown only when there is more than one, since the
+   last address cannot be removed. */
+div.accountpage div.rmemails {
+  margin: 0.8em 0 1.2em;
+}
+div.accountpage form.rmemail {
+  display: flex;
+  gap: 0.5em;
+  align-items: baseline;
+  margin: 0 0 0.3em;
+}
+div.accountpage table.history {
+  border-collapse: collapse;
+  margin: 0.3em 0 1em;
+  font-size: small;
+}
+div.accountpage table.history td {
+  padding: 0.15em 0.9em 0.15em 0;
+  vertical-align: top;
+}
+
+/* the recent requests on /admin/accounts: one line each, in a box of its
+   own height, so that the list is there to compare against without pushing
+   the queue it is compared with off the screen */
+div.accountpage details.recent {
+  margin: 0 0 1.6em;
+}
+div.accountpage details.recent summary {
+  cursor: pointer;
+  font-weight: bold;
+}
+div.accountpage div.recent {
+  max-height: 14em;
+  overflow: auto;
+  border: 1px solid #ddd;
+  padding: 0.2em 0.5em;
+  margin-top: 0.4em;
+}
+div.accountpage div.recent table.history {
+  margin: 0;
+}
+div.accountpage div.recent table.history td {
+  white-space: nowrap;
+}
+
+/* the login page: one column, everything the same width, the lot centred.
+   Without this the buttons sit shrink-to-fit at the left of a page-wide box
+   and the mail button stretches to fill the row. The mail form keeps the
+   metrics of the provider buttons above it (Google's, from SigninCSS), so
+   that the ways to sign in read as one set. */
+div.loginbox {
+  max-width: 24em;
+  margin: 2.5em auto 3em;
+}
+div.loginbox .signin {
+  justify-content: stretch;
+}
+div.loginbox form.email {
+  display: grid;
+  gap: 12px;
+  margin: 12px 0 0;
+}
+div.loginbox form.email input {
+  width: 100%;
+  height: 40px;
+  box-sizing: border-box;
+  padding: 0 14px;
+  border: 1px solid #747775;
+  border-radius: 20px;
+  font: 400 14px/1 Roboto, arial, sans-serif;
+  color: #1f1f1f;
+}
+div.loginbox form.email input:focus {
+  outline: none;
+  border-color: #303030;
+  box-shadow: 0 0 0 1px #303030;
+}
+div.loginbox form.email input.website {
+  position: absolute;
+  left: -10000px;
+  width: 1px;
+  height: 1px;
+  opacity: 0;
+}
+div.loginbox .signin-button {
+  width: 100%;
+  max-width: none;
+}
+div.loginbox .rule {
+  display: flex;
+  align-items: center;
+  gap: 0.75em;
+  margin: 1.25em 0 0.5em;
+  font-size: small;
+}
+div.loginbox .rule::before, div.loginbox .rule::after {
+  content: "";
+  flex: 1;
+  height: 1px;
+  background: #cccccc;
+}
+div.loginbox .aside {
+  margin: 1.5em 0 0;
+  font-size: small;
+  text-align: center;
+}
+div.loginbox table {
+  margin: 0 auto;
+}
+
+/* sign-out and device sign-in pages: one question, centered */
+div.logoutbox, div.devicebox {
+  max-width: 24em;
+  margin: 2.5em auto 3em;
+  text-align: center;
+}
+div.devicebox h2 {
+  font-size: 1.3em;
+  margin: 0 0 0.8em;
+}

@@ -1,0 +1,6 @@
+node_modules/
+test/preview/
+test/report.html
+test/failures.json
+test/sample*.html
+test/corpus.json

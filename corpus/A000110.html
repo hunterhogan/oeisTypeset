@@ -1,0 +1,1635 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<html>
+  
+  <head>
+  
+  <link rel="stylesheet" href="/styles.css?v=20260927">
+  <meta name="format-detection" content="telephone=no">
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name=viewport content="width=device-width, initial-scale=1">
+  <meta name="keywords" content="OEIS,integer sequences,Sloane" />
+  
+  
+  
+  <title>A000110 - OEIS</title>
+  <link rel="search" type="application/opensearchdescription+xml" title="OEIS" href="/oeis.xml">
+  
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg?v=20260826">
+  <link rel="icon" sizes="16x16 32x32 48x48" href="/favicon.ico?v=20260826">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png?v=20260826">
+  <script>
+  var myURL = "\/A000110"
+  function redir() {
+      var host = document.location.hostname;
+      if(host != "oeis.org" && host != "edit.oeis.org" && host != "127.0.0.1" && !/^([0-9.]+)$/.test(host) && host != "localhost" && host != "edit.localhost" && host != "localhost.localdomain") {
+          document.location = "https"+":"+"//"+"oeis"+".org/" + myURL;
+      }
+  }
+  function sf() {
+      if(document.location.pathname == "/" && document.f) document.f.q.focus();
+  }
+  </script>
+  </head>
+  <body bgcolor=#ffffff onload="redir();sf()"><a href="https://oeis.org/cdn-cgi/content?id=jaO3zFvv8MXpcrst2uezRm26hf1DU8fA_sbc6G.XqoY-1793432866.322782-1.2.1.1-LdLmqVhniKIcZRduCv4TWk28wczVSl9lwOgVzBDngeCi3iY0dq74024uNoMH3o9y" aria-hidden="true" rel="nofollow noopener" style="display: none !important; visibility: hidden !important"></a>
+    <div class=loginbar>
+      <div class=login>
+      
+        <a href="/login?redirect=%2FA000110" rel="nofollow">login</a>
+      
+      </div>
+    </div>
+
+    <div class=center><div class=top>
+    <center>
+    <div class=donors>
+    The OEIS is supported by <a href="http://oeisf.org/#DONATE">the many generous donors to the OEIS Foundation</a>.
+    </div>
+
+    <div class=banner>
+    <a href="/"><picture>
+
+    <source media="(min-width: 830px)" srcset="/oeis-400k-banner.png 1x" width="918" height="129">
+    <img class=banner border="0" width="540" height="129" src="/oeis-400k-banner.png" srcset="/oeis-400k-banner.png 1x" alt="A000110 - OEIS">
+    </picture></a>
+    </div>
+
+    
+    
+    
+    <div class="motdbox" style="justify-content: center;">
+        <div class="motd">
+            <p><a href="https://oeis.org/wiki/A400K_Winners">Winners in the A400K Celebration</a></p>
+        </div>
+        
+    </div>
+    
+    </center>
+    </div></div>
+
+    <div class=center><div class=pagebody>
+      
+    
+    <div class=searchbarcenter>
+        <form name=f action="/search" method="GET">
+            <div class=searchbargreet>
+                <div class=searchbar>
+                    <div class=searchq>
+                        <input class=searchbox maxLength=1024 name=q value="" title="Search Query">
+                        
+                        
+                        
+                        
+                    </div>
+                    <div class=searchsubmit>
+                        <input type=submit value="Search" name=go>
+                    </div>
+                    <div class=hints>
+                        <span class=hints><a href="/hints.html">Hints</a></span>
+                    </div>
+                </div>
+                <div class=searchgreet>
+                    (Greetings from <a href="/welcome">The On-Line Encyclopedia of Integer Sequences</a>!)
+                </div>
+            </div>
+        </form>
+    </div>
+
+    <div class=sequence>
+        <div class=space1></div>
+        <div class=line></div>
+        
+        <div class=seqhead>
+            <div class=seqnumname>
+                <div class=seqnum>
+                    
+                        A000110
+                    
+                </div>
+                <div class=seqname>
+                    Bell or exponential numbers: number of ways to partition a set of n labeled elements.
+                    <br><font size=-1>(Formerly M1484 N0585)</font>
+                </div>
+            </div>
+            <div class=scorerefs>
+                        
+                        1432
+            </div>
+        </div>
+        
+            
+    
+    
+    <div>
+        <div class=seqdatabox>
+            <div class=seqdata>1, 1, 2, 5, 15, 52, 203, 877, 4140, 21147, 115975, 678570, 4213597, 27644437, 190899322, 1382958545, 10480142147, 82864869804, 682076806159, 5832742205057, 51724158235372, 474869816156751, 4506715738447323, 44152005855084346, 445958869294805289, 4638590332229999353, 49631246523618756274</div>
+            
+                <div class=seqdatalinks>
+                (<a href="/A000110/list">list</a>;
+                
+                
+                
+                    <a href="/A000110/graph">graph</a>;
+                
+                <a rel=nofollow href="/search?q=A000110+-id:A000110">refs</a>;
+                <a href="/A000110/listen">listen</a>;
+                <a rel=nofollow href="/history?seq=A000110">history</a>;
+                
+                <a href="/search?q=id:A000110&fmt=text">text</a>;
+                <a href="/A000110/internal">internal format</a>)
+                </div>
+            
+        </div>
+    </div>
+    <div class=entry>
+        
+            
+        
+            
+        
+            
+        
+            
+                 
+                 
+                 
+                 
+                     <div class=section>
+                         <div class=sectname>OFFSET</div>
+                         <div class=sectbody>
+                             
+                                 <div class=sectline>0,3</div>
+                             
+                         </div>
+                     </div>
+                 
+            
+        
+            
+                 
+                 
+                 
+                 
+                     <div class=section>
+                         <div class=sectname>COMMENTS</div>
+                         <div class=sectbody>
+                             
+                                 <div class=sectline>The leading diagonal of its difference table is the sequence shifted, see Bernstein and Sloane (1995). - <a href="/wiki/User:N._J._A._Sloane">N. J. A. Sloane</a>, Jul 04 2015</div>
+                             
+                                 <div class=sectline>Also the number of equivalence relations that can be defined on a set of n elements. - Federico Arboleda (federico.arboleda(AT)gmail.com), Mar 09 2005</div>
+                             
+                                 <div class=sectline>a(n) = number of nonisomorphic colorings of a map consisting of a row of n+1 adjacent regions. Adjacent regions cannot have the same color. - <a href="/wiki/User:David_W._Wilson">David W. Wilson</a>, Feb 22 2005</div>
+                             
+                                 <div class=sectline>If an integer is squarefree and has n distinct prime factors then a(n) is the number of ways of writing it as a product of its divisors. - <a href="/wiki/User:Amarnath_Murthy">Amarnath Murthy</a>, Apr 23 2001</div>
+                             
+                                 <div class=sectline>Consider rooted trees of height at most 2. Letting each tree 'grow' into the next generation of n means we produce a new tree for every node which is either the root or at height 1, which gives the Bell numbers. - <a href="/wiki/User:Jon_Perry">Jon Perry</a>, Jul 23 2003</div>
+                             
+                                 <div class=sectline>Begin with [1,1] and follow the rule that [1,k] -&gt; [1,k+1] and [1,k] k times, e.g., [1,3] is transformed to [1,4], [1,3], [1,3], [1,3]. Then a(n) is the sum of all components: [1,1] = 2; [1,2], [1,1] = 5; [1,3], [1,2], [1,2], [1,2], [1,1] = 15; etc. - <a href="/wiki/User:Jon_Perry">Jon Perry</a>, Mar 05 2004</div>
+                             
+                                 <div class=sectline>Number of distinct rhyme schemes for a poem of n lines: a rhyme scheme is a string of letters (e.g., 'abba') such that the leftmost letter is always 'a' and no letter may be greater than one more than the greatest letter to its left. Thus 'aac' is not valid since 'c' is more than one greater than 'a'. For example, a(3)=5 because there are 5 rhyme schemes: aaa, aab, aba, abb, abc; also see example by Neven Juric. - <a href="/wiki/User:Bill_Blewett">Bill Blewett</a>, Mar 23 2004</div>
+                             
+                                 <div class=sectline>In other words, number of length-n restricted growth strings (RGS) [s(0),s(1),...,s(n-1)] where s(0)=0 and s(k) &lt;= 1 + max(prefix) for k &gt;= 1, see example (cf. <a href="/A080337" title="Bisection of A080107.">A080337</a> and <a href="/A189845" title="Number of length-n restricted growth strings (RGS) [s(0),s(1),...,s(n-1)] where s(0)=0 and s(k)&lt;=3+max(prefix) for k&gt;=1.">A189845</a>). - <a href="/wiki/User:Joerg_Arndt">Joerg Arndt</a>, Apr 30 2011</div>
+                             
+                                 <div class=sectline>Number of partitions of {1, ..., n+1} into subsets of nonconsecutive integers, including the partition 1|2|...|n+1. E.g., a(3)=5: there are 5 partitions of {1,2,3,4} into subsets of nonconsecutive integers, namely, 13|24, 13|2|4, 14|2|3, 1|24|3, 1|2|3|4. - <a href="/wiki/User:Augustine_O._Munagi">Augustine O. Munagi</a>, Mar 20 2005</div>
+                             
+                                 <div class=sectline>Triangle (addition) scheme to produce terms, derived from the recurrence, from Oscar Arevalo (loarevalo(AT)sbcglobal.net), May 11 2005:</div>
+                             
+                                 <div class=sectline>    1</div>
+                             
+                                 <div class=sectline>    1  2</div>
+                             
+                                 <div class=sectline>    2  3  5</div>
+                             
+                                 <div class=sectline>    5  7 10 15</div>
+                             
+                                 <div class=sectline>   15 20 27 37 52</div>
+                             
+                                 <div class=sectline>   ... [This is Aitken's array <a href="/A011971" title="Aitken's array: triangle of numbers {a(n,k), n &gt;= 0, 0 &lt;= k &lt;= n} read by rows, defined by a(0,0)=1, a(n,0) = a(n-1,n-1), a(...">A011971</a>]</div>
+                             
+                                 <div class=sectline>With P(n) = the number of integer partitions of n, p(i) = the number of parts of the i-th partition of n, d(i) = the number of different parts of the i-th partition of n, p(j,i) = the j-th part of the i-th partition of n, m(i,j) = multiplicity of the j-th part of the i-th partition of n, one has: a(n) = Sum_{i=1..P(n)} (n!/(Product_{j=1..p(i)} p(i,j)!)) * (1/(Product_{j=1..d(i)} m(i,j)!)). - <a href="/wiki/User:Thomas_Wieder">Thomas Wieder</a>, May 18 2005</div>
+                             
+                                 <div class=sectline>a(n+1) is the number of binary relations on an n-element set that are both symmetric and transitive. - Justin Witt (justinmwitt(AT)gmail.com), Jul 12 2005</div>
+                             
+                                 <div class=sectline>If the rule from Jon Perry, Mar 05 2004, is used, then a(n-1) = [number of components used to form a(n)] / 2. - Daniel Kuan (dkcm(AT)yahoo.com), Feb 19 2006</div>
+                             
+                                 <div class=sectline>a(n) is the number of functions f from {1,...,n} to {1,...,n,n+1} that satisfy the following two conditions for all x in the domain: (1) f(x) &gt; x; (2) f(x)=n+1 or f(f(x))=n+1. E.g., a(3)=5 because there are exactly five functions that satisfy the two conditions: f1={(1,4),(2,4),(3,4)}, f2={(1,4),(2,3),(3,4)}, f3={(1,3),(2,4),(3,4)}, f4={(1,2),(2,4),(3,4)} and f5={(1,3),(2,3),(3,4)}. - <a href="/wiki/User:Dennis_P._Walsh">Dennis P. Walsh</a>, Feb 20 2006</div>
+                             
+                                 <div class=sectline>Number of asynchronic siteswap patterns of length n which have no zero-throws (i.e., contain no 0's) and whose number of orbits (in the sense given by Allen Knutson) is equal to the number of balls. E.g., for n=4, the condition is satisfied by the following 15 siteswaps: 4444, 4413, 4242, 4134, 4112, 3441, 2424, 1344, 2411, 1313, 1241, 2222, 3131, 1124, 1111. Also number of ways to choose n permutations from identity and cyclic permutations (1 2), (1 2 3), ..., (1 2 3 ... n) so that their composition is identity. For n=3 we get the following five: id o id o id, id o (1 2) o (1 2), (1 2) o id o (1 2), (1 2) o (1 2) o id, (1 2 3) o (1 2 3) o (1 2 3). (To see the bijection, look at Ehrenborg and Readdy paper.) - <a href="/wiki/User:Antti_Karttunen">Antti Karttunen</a>, May 01 2006</div>
+                             
+                                 <div class=sectline>a(n) is the number of permutations on [n] in which a 3-2-1 (scattered) pattern occurs only as part of a 3-2-4-1 pattern. Example: a(3) = 5 counts all permutations on [3] except 321. See &quot;Eigensequence for Composition&quot; reference a(n) = number of permutation tableaux of size n (<a href="/A000142" title="Factorial numbers: n! = 1*2*3*4*...*n (order of symmetric group S_n, number of permutations of n letters).">A000142</a>) whose first row contains no 0's. Example: a(3)=5 counts {{}, {}, {}}, {{1}, {}}, {{1}, {0}}, {{1}, {1}}, {{1, 1}}. - <a href="/wiki/User:David_Callan">David Callan</a>, Oct 07 2006</div>
+                             
+                                 <div class=sectline>From <a href="/wiki/User:Gottfried_Helms">Gottfried Helms</a>, Mar 30 2007: (Start)</div>
+                             
+                                 <div class=sectline>This sequence is also the first column in the matrix-exponential of the (lower triangular) Pascal-matrix, scaled by exp(-1): PE = exp(P) / exp(1) =</div>
+                             
+                                 <div class=sectline>     1</div>
+                             
+                                 <div class=sectline>     1    1</div>
+                             
+                                 <div class=sectline>     2    2    1</div>
+                             
+                                 <div class=sectline>     5    6    3    1</div>
+                             
+                                 <div class=sectline>    15   20   12    4    1</div>
+                             
+                                 <div class=sectline>    52   75   50   20    5    1</div>
+                             
+                                 <div class=sectline>   203  312  225  100   30    6   1</div>
+                             
+                                 <div class=sectline>   877 1421 1092  525  175   42   7   1</div>
+                             
+                                 <div class=sectline>First 4 columns are <a href="/A000110" title="Bell or exponential numbers: number of ways to partition a set of n labeled elements.">A000110</a>, <a href="/A033306" title="Triangle of coefficients of ordered cycle-index polynomials: T(n,k) = binomial(n,k)*Bell(k)*Bell(n-k).">A033306</a>, <a href="/A105479" title="a(n) = C(n,2)*Bell(n-2) (cf. A000217, A000110).">A105479</a>, <a href="/A105480" title="Number of partitions of {1...n} containing 3 pairs of consecutive integers, where each pair is counted within a block and a ...">A105480</a>. The general case is mentioned in the two latter entries. PE is also the Hadamard-product Toeplitz(<a href="/A000110" title="Bell or exponential numbers: number of ways to partition a set of n labeled elements.">A000110</a>) (X) P:</div>
+                             
+                                 <div class=sectline>     1</div>
+                             
+                                 <div class=sectline>     1    1</div>
+                             
+                                 <div class=sectline>     2    1    1</div>
+                             
+                                 <div class=sectline>     5    2    1    1</div>
+                             
+                                 <div class=sectline>    15    5    2    1    1      (X) P</div>
+                             
+                                 <div class=sectline>    52   15    5    2    1    1</div>
+                             
+                                 <div class=sectline>   203   52   15    5    2    1   1</div>
+                             
+                                 <div class=sectline>   877  203   52   15    5    2   1   1</div>
+                             
+                                 <div class=sectline>(End)</div>
+                             
+                                 <div class=sectline>The terms can also be computed with finite steps and precise integer arithmetic. Instead of exp(P)/exp(1) one can compute A = exp(P - I) where I is the identity-matrix of appropriate dimension since (P-I) is nilpotent to the order of its dimension. Then a(n)=A[n,1] where n is the row-index starting at 1. - <a href="/wiki/User:Gottfried_Helms">Gottfried Helms</a>, Apr 10 2007</div>
+                             
+                                 <div class=sectline>When n is prime, a(n) == 2 (mod n), but the converse is not always true. Define a Bell pseudoprime to be a composite number n such that a(n) == 2 (mod n). W. F. Lunnon recently found the Bell pseudoprimes 21361 = 41*521 and C46 = 3*23*16218646893090134590535390526854205539989357 and conjectured that Bell pseudoprimes are extremely scarce. So the second Bell pseudoprime is unlikely to be known with certainty in the near future. I confirmed that 21361 is the first. - <a href="/wiki/User:David_W._Wilson">David W. Wilson</a>, Aug 04 2007 and Sep 24 2007</div>
+                             
+                                 <div class=sectline>This sequence and <a href="/A000587" title="Rao Uppuluri-Carpenter numbers (or complementary Bell numbers): e.g.f. = exp(1 - exp(x)).">A000587</a> form a reciprocal pair under the list partition transform described in <a href="/A133314" title="Coefficients of list partition transform: reciprocal of an exponential generating function (e.g.f.).">A133314</a>. - <a href="/wiki/User:Tom_Copeland">Tom Copeland</a>, Oct 21 2007</div>
+                             
+                                 <div class=sectline>Starting (1, 2, 5, 15, 52, ...), equals row sums and right border of triangle <a href="/A136789" title="Triangle read by rows: A007318^(-1) * A011971.">A136789</a>. Also row sums of triangle <a href="/A136790" title="Triangle read by rows: A011971 * A007318^(-1).">A136790</a>. - <a href="/wiki/User:Gary_W._Adamson">Gary W. Adamson</a>, Jan 21 2008</div>
+                             
+                                 <div class=sectline>This is the exponential transform of <a href="/A000012" title="The simplest sequence of positive numbers: the all 1's sequence.">A000012</a>. - <a href="/wiki/User:Thomas_Wieder">Thomas Wieder</a>, Sep 09 2008</div>
+                             
+                                 <div class=sectline>From <a href="/wiki/User:Abdullahi_Umar">Abdullahi Umar</a>, Oct 12 2008: (Start)</div>
+                             
+                                 <div class=sectline>a(n) is also the number of idempotent order-decreasing full transformations (of an n-chain).</div>
+                             
+                                 <div class=sectline>a(n) is also the number of nilpotent partial one-one order-decreasing transformations (of an n-chain).</div>
+                             
+                                 <div class=sectline>a(n+1) is also the number of partial one-one order-decreasing transformations (of an n-chain). (End)</div>
+                             
+                                 <div class=sectline>From <a href="/wiki/User:Peter_Bala">Peter Bala</a>, Oct 19 2008: (Start)</div>
+                             
+                                 <div class=sectline>Bell(n) is the number of n-pattern sequences [Cooper &amp; Kennedy]. An n-pattern sequence is a sequence of integers (a_1,...,a_n) such that a_i = i or a_i = a_j for some j &lt; i. For example, Bell(3) = 5 since the 3-pattern sequences are (1,1,1), (1,1,3), (1,2,1), (1,2,2) and (1,2,3).</div>
+                             
+                                 <div class=sectline>Bell(n) is the number of sequences of positive integers (N_1,...,N_n) of length n such that N_1 = 1 and N_(i+1) &lt;= 1 + max{j = 1..i} N_j for i &gt;= 1 (see the comment by B. Blewett above). It is interesting to note that if we strengthen the latter condition to N_(i+1) &lt;= 1 + N_i we get the Catalan numbers <a href="/A000108" title="Catalan numbers: C(n) = binomial(2n,n)/(n+1) = (2n)!/(n!(n+1)!).">A000108</a> instead of the Bell numbers.</div>
+                             
+                                 <div class=sectline>(End)</div>
+                             
+                                 <div class=sectline>Equals the eigensequence of Pascal's triangle, <a href="/A007318" title="Pascal's triangle read by rows: C(n,k) = binomial(n,k) = n!/(k!*(n-k)!), 0 &lt;= k &lt;= n.">A007318</a>; and starting with offset 1, = row sums of triangles <a href="/A074664" title="Number of algebraically independent elements of degree n in the algebra of symmetric polynomials in noncommuting variables.">A074664</a> and <a href="/A152431" title="Eigentriangle, row sums = A000110, the Bell numbers.">A152431</a>. - <a href="/wiki/User:Gary_W._Adamson">Gary W. Adamson</a>, Dec 04 2008</div>
+                             
+                                 <div class=sectline>The entries f(i, j) in the exponential of the infinite lower-triangular matrix of binomial coefficients b(i, j) are f(i, j) = b(i, j) e a(i - j). - <a href="/wiki/User:David_Pasino">David Pasino</a>, Dec 04 2008</div>
+                             
+                                 <div class=sectline>Equals lim_{k-&gt;oo} <a href="/A071919" title="Number of monotone nondecreasing functions [n]-&gt;[m] for n &gt;= 0, m &gt;= 0, read by antidiagonals.">A071919</a>^k. - <a href="/wiki/User:Gary_W._Adamson">Gary W. Adamson</a>, Jan 02 2009</div>
+                             
+                                 <div class=sectline>Equals <a href="/A154107" title="A000110 / A014182: (A154107 convolved with A014182 = Bell numbers).">A154107</a> convolved with <a href="/A014182" title="Expansion of e.g.f. exp(1-x-exp(-x)).">A014182</a>, where <a href="/A014182" title="Expansion of e.g.f. exp(1-x-exp(-x)).">A014182</a> = expansion of exp(1-x-exp(-x)), the eigensequence of <a href="/A007318" title="Pascal's triangle read by rows: C(n,k) = binomial(n,k) = n!/(k!*(n-k)!), 0 &lt;= k &lt;= n.">A007318</a>^(-1). Starting with offset 1 = <a href="/A154108" title="A000110 / (1,2,3,...): (convolved with (1,2,3,...) = Bell numbers).">A154108</a> convolved with (1,2,3,...) = row sums of triangle <a href="/A154109" title="Convolution triangle by rows, A004736 * (A154108 * 0^(n-k)); row sums = Bell numbers.">A154109</a>. - <a href="/wiki/User:Gary_W._Adamson">Gary W. Adamson</a>, Jan 04 2009</div>
+                             
+                                 <div class=sectline>Repeated iterates of (binomial transform of [1,0,0,0,...]) will converge upon (1, 2, 5, 15, 52, ...) when each result is prefaced with a &quot;1&quot;; such that the final result is the fixed limit: (binomial transform of [1,1,2,5,15,...]) = (1,2,5,15,52,...). - <a href="/wiki/User:Gary_W._Adamson">Gary W. Adamson</a>, Jan 14 2009</div>
+                             
+                                 <div class=sectline>From <a href="/wiki/User:Karol_A._Penson">Karol A. Penson</a>, May 03 2009: (Start)</div>
+                             
+                                 <div class=sectline>Relation between the Bell numbers B(n) and the n-th derivative of 1/Gamma(1+x) evaluated at x=1:</div>
+                             
+                                 <div class=sectline>a) produce a number of such derivatives through seq(subs(x=1, simplify((d^n/dx^n) Gamma(1+x)^(-1))), n=1..5);</div>
+                             
+                                 <div class=sectline>b) leave them expressed in terms of digamma (Psi(k)) and polygamma (Psi(k,n)) functions and unevaluated;</div>
+                             
+                                 <div class=sectline>Examples of such expressions, for n=1..5, are:</div>
+                             
+                                 <div class=sectline>n=1: -Psi(1),</div>
+                             
+                                 <div class=sectline>n=2: -(-Psi(1)^2 + Psi(1,1)),</div>
+                             
+                                 <div class=sectline>n=3: -Psi(1)^3 + 3*Psi(1)*Psi(1,1) - Psi(2,1),</div>
+                             
+                                 <div class=sectline>n=4: -(-Psi(1)^4 + 6*Psi(1)^2*Psi(1,1) - 3*Psi(1,1)^2 - 4*Psi(1)*Psi(2,1) + Psi(3, 1)),</div>
+                             
+                                 <div class=sectline>n=5: -Psi(1)^5 + 10*Psi(1)^3*Psi(1,1) - 15*Psi(1)*Psi(1,1)^2 - 10*Psi(1)^2*Psi(2,1) + 10*Psi(1,1)*Psi(2,1) + 5*Psi(1)*Psi(3,1) - Psi(4,1);</div>
+                             
+                                 <div class=sectline>c) for a given n, read off the sum of absolute values of coefficients of every term involving digamma or polygamma functions.</div>
+                             
+                                 <div class=sectline>This sum is equal to B(n). Examples: B(1)=1, B(2)=1+1=2, B(3)=1+3+1=5, B(4)=1+6+3+4+1=15, B(5)=1+10+15+10+10+5+1=52;</div>
+                             
+                                 <div class=sectline>d) Observe that this decomposition of the Bell number B(n) apparently does not involve the Stirling numbers of the second kind explicitly.</div>
+                             
+                                 <div class=sectline>(End)</div>
+                             
+                                 <div class=sectline>The numbers given above by Penson lead to the multinomial coefficients <a href="/A036040" title="Irregular triangle of multinomial coefficients, read by rows (version 1).">A036040</a>. - <a href="/wiki/User:Johannes_W._Meijer">Johannes W. Meijer</a>, Aug 14 2009</div>
+                             
+                                 <div class=sectline>Column 1 of <a href="/A162663" title="Table by antidiagonals, T(n,k) is the number of partitions of {1..(nk)} that are invariant under a permutation consisting of...">A162663</a>. - <a href="/wiki/User:Franklin_T._Adams-Watters">Franklin T. Adams-Watters</a>, Jul 09 2009</div>
+                             
+                                 <div class=sectline>Asymptotic expansions (0!+1!+2!+...+(n-1)!)/(n-1)! = a(0) + a(1)/n + a(2)/n^2 + ... and (0!+1!+2!+...+n!)/n! = 1 + a(0)/n + a(1)/n^2 + a(2)/n^3 + .... - <a href="/wiki/User:Michael_Somos">Michael Somos</a>, Jun 28 2009</div>
+                             
+                                 <div class=sectline>Starting with offset 1 = row sums of triangle <a href="/A165194" title="Triangle of 2^(n-1) terms by rows, left half of (n+1)-th row = row n; right half = &quot;reverse and increment&quot; row n; using term...">A165194</a>. - <a href="/wiki/User:Gary_W._Adamson">Gary W. Adamson</a>, Sep 06 2009</div>
+                             
+                                 <div class=sectline>a(n+1) = <a href="/A165196" title="Partial sums of A165195.">A165196</a>(2^n); where <a href="/A165196" title="Partial sums of A165195.">A165196</a> begins: (1, 2, 4, 5, 7, 12, 14, 15, ...). such that <a href="/A165196" title="Partial sums of A165195.">A165196</a>(2^3) = 15 = <a href="/A000110" title="Bell or exponential numbers: number of ways to partition a set of n labeled elements.">A000110</a>(4). - <a href="/wiki/User:Gary_W._Adamson">Gary W. Adamson</a>, Sep 06 2009</div>
+                             
+                                 <div class=sectline>The divergent series g(x=1,m) = 1^m*1! - 2^m*2! + 3^m*3! - 4^m*4! + ..., m &gt;= -1, which for m=-1 dates back to Euler, is related to the Bell numbers. We discovered that g(x=1,m) = (-1)^m * (<a href="/A040027" title="The Gould numbers.">A040027</a>(m) - <a href="/A000110" title="Bell or exponential numbers: number of ways to partition a set of n labeled elements.">A000110</a>(m+1) * <a href="/A073003" title="Decimal expansion of -exp(1)*Ei(-1), also called Gompertz's constant, or the Euler-Gompertz constant.">A073003</a>). We observe that <a href="/A073003" title="Decimal expansion of -exp(1)*Ei(-1), also called Gompertz's constant, or the Euler-Gompertz constant.">A073003</a> is Gompertz's constant and that <a href="/A040027" title="The Gould numbers.">A040027</a> was published by Gould, see for more information <a href="/A163940" title="Triangle related to the divergent series 1^m*1! - 2^m*2! + 3^m*3! - 4^m*4! + ... for m &gt;= -1.">A163940</a>. - <a href="/wiki/User:Johannes_W._Meijer">Johannes W. Meijer</a>, Oct 16 2009</div>
+                             
+                                 <div class=sectline>a(n) = E(X^n), i.e., the n-th moment about the origin of a random variable X that has a Poisson distribution with (rate) parameter, lambda = 1. - <a href="/wiki/User:Geoffrey_Critzer">Geoffrey Critzer</a>, Nov 30 2009</div>
+                             
+                                 <div class=sectline>Let <a href="/A000110" title="Bell or exponential numbers: number of ways to partition a set of n labeled elements.">A000110</a> = S(x), then S(x) = A(x)/A(x^2) when A(x) = <a href="/A173110" title="Limit_{n-&gt;oo} M^n as a vector, where M is A173108 as an infinite lower triangular matrix.">A173110</a>; or (1, 1, 2, 5, 15, 52, ...) = (1, 1, 3, 6, 20, 60, ...) / (1, 0, 1, 0, 3, 0, 6, 0, 20, ...). - <a href="/wiki/User:Gary_W._Adamson">Gary W. Adamson</a>, Feb 09 2010</div>
+                             
+                                 <div class=sectline>The Bell numbers serve as the upper limit for the number of distinct homomorphic images from any given finite universal algebra. Every algebra homomorphism is determined by its kernel, which must be a congruence relation. As the number of possible congruence relations with respect to a finite universal algebra must be a subset of its possible equivalence classes (given by the Bell numbers), it follows naturally. - <a href="/wiki/User:Max_Sills">Max Sills</a>, Jun 01 2010</div>
+                             
+                                 <div class=sectline>For a proof of the o.g.f. given in the R. Stephan comment see, e.g., the W. Lang link under <a href="/A071919" title="Number of monotone nondecreasing functions [n]-&gt;[m] for n &gt;= 0, m &gt;= 0, read by antidiagonals.">A071919</a>. - <a href="/wiki/User:Wolfdieter_Lang">Wolfdieter Lang</a>, Jun 23 2010</div>
+                             
+                                 <div class=sectline>Let B(x) = (1 + x + 2x^2 + 5x^3 + ...). Then B(x) is satisfied by A(x)/A(x^2) where A(x) = polcoeff <a href="/A173110" title="Limit_{n-&gt;oo} M^n as a vector, where M is A173108 as an infinite lower triangular matrix.">A173110</a>: (1 + x + 3x^2 + 6x^3 + 20x^4 + 60x^5 + ...) = B(x) * B(x^2) * B(x^4) * B(x^8) * .... - <a href="/wiki/User:Gary_W._Adamson">Gary W. Adamson</a>, Jul 08 2010</div>
+                             
+                                 <div class=sectline>Consider a set of <a href="/A000217" title="Triangular numbers: a(n) = binomial(n+1,2) = n*(n+1)/2 = 0 + 1 + 2 + ... + n.">A000217</a>(n) balls of n colors in which, for each integer k = 1 to n, exactly one color appears in the set a total of k times. (Each ball has exactly one color and is indistinguishable from other balls of the same color.) a(n+1) equals the number of ways to choose 0 or more balls of each color without choosing any two colors the same positive number of times. (See related comments for <a href="/A000108" title="Catalan numbers: C(n) = binomial(2n,n)/(n+1) = (2n)!/(n!(n+1)!).">A000108</a>, <a href="/A008277" title="Triangle of Stirling numbers of the second kind, S2(n,k), n &gt;= 1, 1 &lt;= k &lt;= n.">A008277</a>, <a href="/A016098" title="Number of crossing set partitions of {1,2,...,n}.">A016098</a>.) - <a href="/wiki/User:Matthew_Vandermast">Matthew Vandermast</a>, Nov 22 2010</div>
+                             
+                                 <div class=sectline>A binary counter with faulty bits starts at value 0 and attempts to increment by 1 at each step. Each bit that should toggle may or may not do so. a(n) is the number of ways that the counter can have the value 0 after n steps. E.g., for n=3, the 5 trajectories are 0,0,0,0; 0,1,0,0; 0,1,1,0; 0,0,1,0; 0,1,3,0. - <a href="/wiki/User:David_Scambler">David Scambler</a>, Jan 24 2011</div>
+                             
+                                 <div class=sectline>No Bell number is divisible by 8, and no Bell number is congruent to 6 modulo 8; see Theorem 6.4 and Table 1.7 in Lunnon, Pleasants and Stephens. - <a href="/wiki/User:Jon_Perry">Jon Perry</a>, Feb 07 2011, clarified by <a href="/wiki/User:Eric_Rowland">Eric Rowland</a>, Mar 26 2014</div>
+                             
+                                 <div class=sectline>a(n+1) is the number of (symmetric) positive semidefinite n X n 0-1 matrices. These correspond to equivalence relations on {1,...,n+1}, where matrix element M[i,j] = 1 if and only if i and j are equivalent to each other but not to n+1. - <a href="/wiki/User:Robert_Israel">Robert Israel</a>, Mar 16 2011</div>
+                             
+                                 <div class=sectline>a(n) is the number of monotonic-labeled forests on n vertices with rooted trees of height less than 2. We note that a labeled rooted tree is monotonic-labeled if the label of any parent vertex is greater than the label of any offspring vertex. See link &quot;Counting forests with Stirling and Bell numbers&quot;. - <a href="/wiki/User:Dennis_P._Walsh">Dennis P. Walsh</a>, Nov 11 2011</div>
+                             
+                                 <div class=sectline>a(n) = D^n(exp(x)) evaluated at x = 0, where D is the operator (1+x)*d/dx. Cf. <a href="/A000772" title="E.g.f. exp(tan(x) + sec(x) - 1).">A000772</a> and <a href="/A094198" title="Number of ways that n boxes with distinct sizes can contain each other under the condition that each box may contain at most...">A094198</a>. - <a href="/wiki/User:Peter_Bala">Peter Bala</a>, Nov 25 2011</div>
+                             
+                                 <div class=sectline>B(n) counts the length n+1 rhyme schemes without repetitions. E.g., for n=2 there are 5 rhyme schemes of length 3 (aaa, aab, aba, abb, abc), and the 2 without repetitions are aba, abc. This is basically O. Munagi's result that the Bell numbers count partitions into subsets of nonconsecutive integers (see comment above dated Mar 20 2005). - Eric Bach, Jan 13 2012</div>
+                             
+                                 <div class=sectline>Right and left borders and row sums of <a href="/A212431" title="Triangle read by rows: row sums, right and left borders are the Bell sequence, or a shifted variant. See Comments for precis...">A212431</a> = <a href="/A000110" title="Bell or exponential numbers: number of ways to partition a set of n labeled elements.">A000110</a> or a shifted variant. - <a href="/wiki/User:Gary_W._Adamson">Gary W. Adamson</a>, Jun 21 2012</div>
+                             
+                                 <div class=sectline>Number of maps f: [n] -&gt; [n] where f(x) &lt;= x and f(f(x)) = f(x) (projections). - <a href="/wiki/User:Joerg_Arndt">Joerg Arndt</a>, Jan 04 2013</div>
+                             
+                                 <div class=sectline>Permutations of [n] avoiding any given one of the 8 dashed patterns in the equivalence classes (i) 1-23, 3-21, 12-3, 32-1, and (ii) 1-32, 3-12, 21-3, 23-1. (See Claesson 2001 reference.) - <a href="/wiki/User:David_Callan">David Callan</a>, Oct 03 2013</div>
+                             
+                                 <div class=sectline>Conjecture: No a(n) has the form x^m with m &gt; 1 and x &gt; 1. - <a href="/wiki/User:Zhi-Wei_Sun">Zhi-Wei Sun</a>, Dec 02 2013</div>
+                             
+                                 <div class=sectline>Sum_{n&gt;=0} a(n)/n! = e^(e-1) = 5.57494152476..., see <a href="/A234473" title="Decimal expansion of exp(exp(1) - 1).">A234473</a>. - <a href="/wiki/User:Richard_R._Forberg">Richard R. Forberg</a>, Dec 26 2013 (This is the e.g.f. for x=1. - <a href="/wiki/User:Wolfdieter_Lang">Wolfdieter Lang</a>, Feb 02 2015)</div>
+                             
+                                 <div class=sectline>Sum_{j=0..n} binomial(n,j)*a(j) = (1/e)*Sum_{k&gt;=0} (k+1)^n/k! = (1/e) Sum_{k=1..oo} k^(n+1)/k! = a(n+1), n &gt;= 0, using the Dobinski formula. See the comment by <a href="/wiki/User:Gary_W._Adamson">Gary W. Adamson</a>, Dec 04 2008 on the Pascal eigensequence. - <a href="/wiki/User:Wolfdieter_Lang">Wolfdieter Lang</a>, Feb 02 2015</div>
+                             
+                                 <div class=sectline>In fact it is not really an eigensequence of the Pascal matrix; rather the Pascal matrix acts on the sequence as a shift. It is an eigensequence (the unique eigensequence with eigenvalue 1) of the matrix derived from the Pascal matrix by adding at the top the row [1, 0, 0, 0 ...]. The binomial sum formula may be derived from the definition in terms of partitions: label any element X of a set S of N elements, and let X(k) be the number of subsets of S containing X with k elements. Since each subset has a unique coset, the number of partitions p(N) of S is given by p(N) = Sum_{k=1..N} (X(k) p(N-k)); trivially X(k) = N-1 choose k-1. - <a href="/wiki/User:Mason_Bogue">Mason Bogue</a>, Mar 20 2015</div>
+                             
+                                 <div class=sectline>a(n) is the number of ways to nest n matryoshkas (Russian nesting dolls): we may identify {1, 2, ..., n} with dolls of ascending sizes and the sets of a set partition with stacks of dolls. - <a href="/wiki/User:Carlo_Sanna">Carlo Sanna</a>, Oct 17 2015</div>
+                             
+                                 <div class=sectline>Number of permutations of [n] where the initial elements of consecutive runs of increasing elements are in decreasing order. a(4) = 15: `1234, `2`134, `23`14, `234`1, `24`13, `3`124, `3`2`14, `3`24`1, `34`12, `34`2`1, `4`123, `4`2`13, `4`23`1, `4`3`12, `4`3`2`1. - <a href="/wiki/User:Alois_P._Heinz">Alois P. Heinz</a>, Apr 27 2016</div>
+                             
+                                 <div class=sectline>Taking with alternating signs, the Bell numbers are the coefficients in the asymptotic expansion (Ramanujan): (-1)^n*(<a href="/A000166" title="Subfactorial or rencontres numbers, or derangements: number of permutations of n elements with no fixed points.">A000166</a>(n) - n!/exp(1)) ~ 1/n - 2/n^2 + 5/n^3 - 15/n^4 + 52/n^5 - 203/n^6 + O(1/n^7). - <a href="/wiki/User:Vladimir_Reshetnikov">Vladimir Reshetnikov</a>, Nov 10 2016</div>
+                             
+                                 <div class=sectline>Number of treeshelves avoiding pattern T231. See <a href="/A278677" title="a(n) = Sum_{k=0..n} A011971(n, k)*(k + 1). The Aitken-Bell triangle considered as a linear transform applied to the positive...">A278677</a> for definitions and examples. - <a href="/wiki/User:Sergey_Kirgizov">Sergey Kirgizov</a>, Dec 24 2016</div>
+                             
+                                 <div class=sectline>Presumably this satisfies Benford's law, although the results in Hürlimann (2009) do not make this clear. - <a href="/wiki/User:N._J._A._Sloane">N. J. A. Sloane</a>, Feb 09 2017</div>
+                             
+                                 <div class=sectline>a(n) = Sum(# of standard immaculate tableaux of shape m, m is a composition of n), where this sum is over all integer compositions m of n &gt; 0. This formula is easily seen to hold by identifying standard immaculate tableaux of size n with set partitions of { 1, 2, ..., n }. For example, if we sum over integer compositions of 4 lexicographically, we see that 1+1+2+1+3+3+3+1 = 15 = <a href="/A000110" title="Bell or exponential numbers: number of ways to partition a set of n labeled elements.">A000110</a>(4). - <a href="/wiki/User:John_M._Campbell">John M. Campbell</a>, Jul 17 2017</div>
+                             
+                                 <div class=sectline>a(n) is also the number of independent vertex sets (and vertex covers) in the (n-1)-triangular honeycomb bishop graph. - <a href="/wiki/User:Eric_W._Weisstein">Eric W. Weisstein</a>, Aug 10 2017</div>
+                             
+                                 <div class=sectline>Even-numbered entries represent the numbers of configurations of identity and non-identity for alleles of a gene in n diploid individuals with distinguishable maternal and paternal alleles. - <a href="/wiki/User:Noah_A_Rosenberg">Noah A Rosenberg</a>, Jan 28 2019</div>
+                             
+                                 <div class=sectline>Number of partial equivalence relations (PERs) on a set with n elements (offset=1), i.e., number of symmetric, transitive (not necessarily reflexive) relations. The idea is to add a dummy element D to the set, and then take equivalence relations on the result; anything equivalent to D is then removed for the partial equivalence relation. - <a href="/wiki/User:David_Spivak">David Spivak</a>, Feb 06 2019</div>
+                             
+                                 <div class=sectline>Number of words of length n+1 with no equal adjacent letters, when letters are unlabeled. - <a href="/wiki/User:Thomas_Anton">Thomas Anton</a>, Mar 14 2019 [Clarified by <a href="/wiki/User:Eric_W._Weisstein">Eric W. Weisstein</a>, Oct 13 2026]</div>
+                             
+                                 <div class=sectline>Named by Becker and Riordan (1948) after the Scottish-American mathematician and writer Eric Temple Bell (1883 - 1960). - <a href="/wiki/User:Amiram_Eldar">Amiram Eldar</a>, Dec 04 2020</div>
+                             
+                                 <div class=sectline>Also the number of partitions of {1,2,...,n+1} with at most one n+1 singleton. E.g., a(3)=5: {13|24, 12|34, 123|4, 14|23, 1234}. - <a href="/wiki/User:Yuchun_Ji">Yuchun Ji</a>, Dec 21 2020</div>
+                             
+                                 <div class=sectline>a(n) is the number of sigma algebras on the set of n elements. Note that each sigma algebra is generated by a partition of the set. For example, the sigma algebra generated by the partition {{1}, {2}, {3,4}} is {{}, {1}, {2}, {1,2}, {3,4}, {1,3,4}, {2,3,4}, {1,2,3,4}}. - <a href="/wiki/User:Jianing_Song">Jianing Song</a>, Apr 01 2021</div>
+                             
+                                 <div class=sectline>a(n) is the number of P_3-free graphs on n labeled nodes. - <a href="/wiki/User:Eren_Zihnekul">Eren Zihnekul</a>, Jun 04 2021</div>
+                             
+                                 <div class=sectline>a(n) is the number of functions X:([n] choose 2) -&gt; {+,-} such that for any ordered 3-tuple abc we have X(ab)X(ac)X(bc) not in {+-+,++-,-++}. - <a href="/wiki/User:Robert_Lauff">Robert Lauff</a>, Dec 09 2022</div>
+                             
+                                 <div class=sectline>From <a href="/wiki/User:Manfred_Boergens">Manfred Boergens</a>, Mar 11 2025: (Start)</div>
+                             
+                                 <div class=sectline>The partitions in the definition can be described as disjoint covers of the set. &quot;Covers&quot; in general give rise to the following amendments:</div>
+                             
+                                 <div class=sectline>For disjoint covers which may include one empty set see <a href="/A186021" title="a(n) = Bell(n)*(2 - 0^n).">A186021</a>.</div>
+                             
+                                 <div class=sectline>For arbitrary (including non-disjoint) covers see <a href="/A003465" title="Number of ways to cover an n-set.">A003465</a>.</div>
+                             
+                                 <div class=sectline>For arbitrary (including non-disjoint) covers which may include one empty set see <a href="/A000371" title="a(n) = Sum_{k=0..n} (-1)^(n-k)*binomial(n,k)*2^(2^k).">A000371</a>. (End)</div>
+                             
+                                 <div class=sectline>Number of semilabeled trees with n+1 vertices (see Exercise 10 of Section 7.2.1.5 of Knuth) (a semilabeled tree is a rooted tree with labeled leaves but unlabeled internal nodes, see Subsection 2.2.1 of Post). - <a href="/wiki/User:Lorenzo_Sauras_Altuzarra">Lorenzo Sauras Altuzarra</a>, Feb 13 2026</div>
+                             
+                         </div>
+                     </div>
+                 
+            
+        
+            
+                 
+                 
+                 
+                 
+                     <div class=section>
+                         <div class=sectname>REFERENCES</div>
+                         <div class=sectbody>
+                             
+                                 <div class=sectline>Stefano Aguzzoli, Brunella Gerla and Corrado Manara, Poset Representation for Goedel and Nilpotent Minimum Logics, in Symbolic and Quantitative Approaches to Reasoning with Uncertainty, Lecture Notes in Computer Science, Volume 3571/2005, Springer-Verlag. [Added by <a href="/wiki/User:N._J._A._Sloane">N. J. A. Sloane</a>, Jul 08 2009]</div>
+                             
+                                 <div class=sectline>S. Ainley, Problem 19, QARCH, No. IV, Nov 03, 1980.</div>
+                             
+                                 <div class=sectline>J.-P. Allouche and J. Shallit, Automatic Sequences, Cambridge Univ. Press, 2003, p. 205.</div>
+                             
+                                 <div class=sectline>W. Asakly, A. Blecher, C. Brennan, A. Knopfmacher, T. Mansour, S. Wagner, Set partition asymptotics and a conjecture of Gould and Quaintance, Journal of Mathematical Analysis and Applications, Volume 416, Issue 2, Aug 15 2014, Pages 672-682.</div>
+                             
+                                 <div class=sectline>J. Balogh, B. Bollobas and D. Weinreich, A jump to the Bell numbers for hereditary graph properties, J. Combin. Theory Ser. B 95 (2005), no. 1, 29-48.</div>
+                             
+                                 <div class=sectline>R. E. Beard, On the coefficients in the expansion of exp(exp(t)) and exp(-exp(t)), J. Institute Actuaries, 76 (1951), 152-163.</div>
+                             
+                                 <div class=sectline>H. W. Becker, Abstracts of two papers related to Bell numbers, Bull. Amer. Math. Soc., 52 (1946), p. 415.</div>
+                             
+                                 <div class=sectline>E. T. Bell, The iterated exponential numbers, Ann. Math., 39 (1938), 539-557.</div>
+                             
+                                 <div class=sectline>C. M. Bender, D. C. Brody and B. K. Meister, Quantum Field Theory of Partitions, J. Math. Phys., 40,7 (1999), 3239-45.</div>
+                             
+                                 <div class=sectline>E. A. Bender and J. R. Goldman, Enumerative uses of generating functions, Indiana Univ. Math. J., 20 (1971), 753-765.</div>
+                             
+                                 <div class=sectline>G. Birkhoff, Lattice Theory, Amer. Math. Soc., Revised Ed., 1961, p. 108, Ex. 1.</div>
+                             
+                                 <div class=sectline>M. T. L. Bizley, On the coefficients in the expansion of exp(lambda exp(t)), J. Inst. Actuaries, 77 (1952), p. 122.</div>
+                             
+                                 <div class=sectline>Miklos Bona, Introduction to Enumerative and Analytic Combinatorics, CRC Press, 2025, pp. 64-65.</div>
+                             
+                                 <div class=sectline>J. M. Borwein, D. H. Bailey and R. Girgensohn, Experimentation in Mathematics, A K Peters, Ltd., Natick, MA, 2004. x+357 pp. See p. 41.</div>
+                             
+                                 <div class=sectline>Carlier, Jacques; and Lucet, Corinne; A decomposition algorithm for network reliability evaluation. In First International Colloquium on Graphs and Optimization (GOI), 1992 (Grimentz). Discrete Appl. Math. 65 (1996), 141-156.</div>
+                             
+                                 <div class=sectline>Anders Claesson, Generalized Pattern Avoidance, European Journal of Combinatorics, 22 (2001) 961-971.</div>
+                             
+                                 <div class=sectline>L. Comtet, Advanced Combinatorics, Reidel, 1974, p. 210.</div>
+                             
+                                 <div class=sectline>John H. Conway and Richard K. Guy, The Book of Numbers, New York: Springer-Verlag, 1996. See pp. 92-93.</div>
+                             
+                                 <div class=sectline>John H. Conway et al., The Symmetries of Things, Peters, 2008, p. 207.</div>
+                             
+                                 <div class=sectline>Colin Defant, Highly sorted permutations and Bell numbers, ECA 1:1 (2021) Article S2R6.</div>
+                             
+                                 <div class=sectline>De Angelis, Valerio, and Dominic Marcello. &quot;Wilf's Conjecture.&quot; The American Mathematical Monthly 123.6 (2016): 557-573.</div>
+                             
+                                 <div class=sectline>N. G. de Bruijn, Asymptotic Methods in Analysis, Dover, 1981, Sections 3.3. Case b and 6.1-6.3.</div>
+                             
+                                 <div class=sectline>J.-M. De Koninck, Ces nombres qui nous fascinent, Entry 52, p. 19, Ellipses, Paris 2008.</div>
+                             
+                                 <div class=sectline>Elena Deza and Michel Marie Deza, Figurate numbers, World Scientific Publishing (2012), page 284.</div>
+                             
+                                 <div class=sectline>G. Dobinski, Summierung der Reihe Sum(n^m/n!) für m = 1, 2, 3, 4, 5, ..., Grunert Archiv (Arch. f. Math. und Physik), 61 (1877) 333-336.</div>
+                             
+                                 <div class=sectline>L. F. Epstein, A function related to the series for exp(exp(z)), J. Math. and Phys., 18 (1939), 153-173.</div>
+                             
+                                 <div class=sectline>G. Everest, A. van der Poorten, I. Shparlinski and T. Ward, Recurrence Sequences, Amer. Math. Soc., 2003; see esp. p. 255.</div>
+                             
+                                 <div class=sectline>Steven R. Finch, Mathematical Constants, Encyclopedia of Mathematics and its Applications, vol. 94, Cambridge University Press, 2003, Section 5.8, p. 321.</div>
+                             
+                                 <div class=sectline>Flajolet, Philippe and Schott, Rene, Nonoverlapping partitions, continued fractions, Bessel functions and a divergent series, European J. Combin. 11 (1990), no. 5, 421-432.</div>
+                             
+                                 <div class=sectline>Martin Gardner, Fractal Music, Hypercards and More (Freeman, 1992), Chapter 2.</div>
+                             
+                                 <div class=sectline>H. W. Gould, Research bibliography of two special number sequences, Mathematica Monongaliae, Vol. 12, 1971.</div>
+                             
+                                 <div class=sectline>R. L. Graham, D. E. Knuth and O. Patashnik, Concrete Mathematics, Addison-Wesley, 2nd ed., p. 493.</div>
+                             
+                                 <div class=sectline>Silvia Heubach and Toufik Mansour, Combinatorics of Compositions and Words, CRC Press, 2010.</div>
+                             
+                                 <div class=sectline>M. Kauers and P. Paule, The Concrete Tetrahedron, Springer 2011, p. 26.</div>
+                             
+                                 <div class=sectline>D. E. Knuth, The Art of Computer Programming, vol. 4A, Combinatorial Algorithms, Section 7.2.1.5 (p. 418).</div>
+                             
+                                 <div class=sectline>Christian Kramp, Der polynomische Lehrsatz (Leipzig: 1796), 113.</div>
+                             
+                                 <div class=sectline>Lehmer, D. H. Some recursive sequences. Proceedings of the Manitoba Conference on Numerical Mathematics (Univ. Manitoba, Winnipeg, Man., 1971), pp. 15--30. Dept. Comput. Sci., Univ. Manitoba, Winnipeg, Man., 1971. MR0335426 (49 #208)</div>
+                             
+                                 <div class=sectline>J. Levine and R. E. Dalton, Minimum periods, modulo p, of first-order Bell exponential integers, Math. Comp., 16 (1962), 416-423.</div>
+                             
+                                 <div class=sectline>Levinson, H.; Silverman, R. Topologies on finite sets. II. Proceedings of the Tenth Southeastern Conference on Combinatorics, Graph Theory and Computing (Florida Atlantic Univ., Boca Raton, Fla., 1979), pp. 699--712, Congress. Numer., XXIII-XXIV, Utilitas Math., Winnipeg, Man., 1979. MR0561090 (81c:54006)</div>
+                             
+                                 <div class=sectline>S. Linusson, The number of M-sequences and f-vectors, Combinatorica, 19 (1999), 255-266.</div>
+                             
+                                 <div class=sectline>L. Lovasz, Combinatorial Problems and Exercises, North-Holland, 1993, pp. 14-15.</div>
+                             
+                                 <div class=sectline>M. Meier, On the number of partitions of a given set, Amer. Math. Monthly, 114 (2007), p. 450.</div>
+                             
+                                 <div class=sectline>Merris, Russell, and Stephen Pierce. &quot;The Bell numbers and r-fold transitivity.&quot; Journal of Combinatorial Theory, Series A 12.1 (1972): 155-157.</div>
+                             
+                                 <div class=sectline>Moser, Leo, and Max Wyman. An asymptotic formula for the Bell numbers. Trans. Royal Soc. Canada, 49 (1955), 49-53.</div>
+                             
+                                 <div class=sectline>A. Murthy, Generalization of partition function, introducing Smarandache factor partition, Smarandache Notions Journal, Vol. 11, No. 1-2-3, Spring 2000.</div>
+                             
+                                 <div class=sectline>Amarnath Murthy and Charles Ashbacher, Generalized Partitions and Some New Ideas on Number Theory and Smarandache Sequences, Hexis, Phoenix; USA 2005. See Section 1.4,1.8.</div>
+                             
+                                 <div class=sectline>P. Peart, Hankel determinants via Stieltjes matrices. Proceedings of the Thirty-first Southeastern International Conference on Combinatorics, Graph Theory and Computing (Boca Raton, FL, 2000). Congr. Numer. 144 (2000), 153-159.</div>
+                             
+                                 <div class=sectline>A. M. Robert, A Course in p-adic Analysis, Springer-Verlag, 2000; p. 212.</div>
+                             
+                                 <div class=sectline>G.-C. Rota, Finite Operator Calculus.</div>
+                             
+                                 <div class=sectline>Frank Ruskey, Jennifer Woodcock and Yuji Yamauchi, Counting and computing the Rand and block distances of pairs of set partitions, Journal of Discrete Algorithms, Volume 16, October 2012, Pages 236-248.</div>
+                             
+                                 <div class=sectline>N. J. A. Sloane, A Handbook of Integer Sequences, Academic Press, 1973 (includes this sequence).</div>
+                             
+                                 <div class=sectline>N. J. A. Sloane and Simon Plouffe, The Encyclopedia of Integer Sequences, Academic Press, 1995 (includes this sequence).</div>
+                             
+                                 <div class=sectline>R. P. Stanley, Enumerative Combinatorics, Cambridge; see Section 1.4 and Example 5.2.4.</div>
+                             
+                                 <div class=sectline>Abdullahi Umar, On the semigroups of order-decreasing finite full transformations, Proc. Roy. Soc. Edinburgh 120A (1992), 129-142.</div>
+                             
+                                 <div class=sectline>Abdullahi Umar, On the semigroups of partial one-to-one order-decreasing finite transformations, Proc. Roy. Soc. Edinburgh 123A (1993), 355-363.</div>
+                             
+                         </div>
+                     </div>
+                 
+            
+        
+            
+                 
+                 
+                 
+                     
+                 
+                 
+                     <div class=section>
+                         <div class=sectname>LINKS</div>
+                         <div class=sectbody>
+                             
+                                 <div class=sectline>Simon Plouffe, <a href="/A000110/b000110.txt">Table of n, a(n) for n = 0..500</a></div>
+                             
+                                 <div class=sectline>Simon Plouffe, <a href="/A000110/a000110.txt">Table of n, a(n) for n = 0..3015</a></div>
+                             
+                                 <div class=sectline>M. Aigner, <a href="https://doi.org/10.1016/S0012-365X(99)00108-9">A characterization of the Bell numbers</a>, Discr. Math., 205 (1999), 207-210.</div>
+                             
+                                 <div class=sectline>M. Aigner, <a href="https://doi.org/10.1016/j.disc.2007.06.012">Enumeration via ballot numbers</a>, Discrete Math., 308 (2008), 2544-2563.</div>
+                             
+                                 <div class=sectline>S. Ainley, <a href="/A000110/a000110_6.pdf">Problem 19</a>, QARCH, No. IV, Nov 03, 1980. [Annotated scanned copy]</div>
+                             
+                                 <div class=sectline>R. Aldrovandi and L. P. Freitas, <a href="https://arxiv.org/abs/physics/9712026">Continuous iteration of dynamical maps</a>, arXiv:physics/9712026 [math-ph], 1997.</div>
+                             
+                                 <div class=sectline>Y. Alp and E. G. Kocer, <a href="https://doi.org/10.1007/s00025-024-02193-5">Exponential Almost-Riordan Arrays</a>, Results Math 79, 173 (2024). See page 14.</div>
+                             
+                                 <div class=sectline>Horst Alzer, <a href="https://cs.uwaterloo.ca/journals/JIS/VOL22/Alzer/alzer6.html">On Engel's Inequality for Bell Numbers</a>, J. Int. Seq., Vol. 22 (2019), Article 19.7.1.</div>
+                             
+                                 <div class=sectline>Tewodros Amdeberhan, Valerio de Angelis and Victor H. Moll, <a href="https://vdeangel.xula.edu/Publications/CBell.pdf">Complementary Bell numbers: arithmetical properties and Wilf's conjecture</a>.</div>
+                             
+                                 <div class=sectline>Kassie Archer and Robert P. Laudone, <a href="https://arxiv.org/abs/2603.04218">Arrow pattern avoidance in permutations: structure and enumeration</a>, arXiv:2603.04218 [math.CO], 2026. See pp. 3, 6, 10, 12.</div>
+                             
+                                 <div class=sectline>Joerg Arndt, <a href="https://www.jjj.de/fxt/#fxtbook">Matters Computational (The Fxtbook)</a>, p.151, p.358, and p. 368.</div>
+                             
+                                 <div class=sectline>Joerg Arndt, <a href="https://arxiv.org/abs/1405.6503">Subset-lex: did we miss an order?</a>, arXiv:1405.6503 [math.CO], 2014-2015.</div>
+                             
+                                 <div class=sectline>Juan S. Auli and Sergi Elizalde, <a href="https://arxiv.org/abs/2003.11533">Wilf equivalences between vincular patterns in inversion sequences</a>, arXiv:2003.11533 [math.CO], 2020.</div>
+                             
+                                 <div class=sectline>E. Baake, M. Baake, and M. Salamat, <a href="https://arxiv.org/abs/1409.1378">The general recombination equation in continuous time and its solution</a>, arXiv preprint arXiv:1409.1378 [math.CA], 2014-2015.</div>
+                             
+                                 <div class=sectline>Pat Ballew, <a href="https://web.archive.org/web/20171109040655/http://www.pballew.net/Bellno.html">Bell Numbers</a></div>
+                             
+                                 <div class=sectline>C. Banderier, M. Bousquet-Mélou, A. Denise, P. Flajolet, D. Gardy and D. Gouyou-Beauchamps, <a href="https://doi.org/10.1016/S0012-365X(01)00250-3">Generating Functions for Generating Trees</a>, Discrete Mathematics 246(1-3), March 2002, pp. 29-55.</div>
+                             
+                                 <div class=sectline>Elizabeth Banjo, <a href="https://openaccess.city.ac.uk/id/eprint/2360/1/Banjo%2C_Elizabeth.pdf">Representation theory of algebras related to the partition algebra</a>, Unpublished Doctoral thesis, City University London, 2013.</div>
+                             
+                                 <div class=sectline>S. Barbero, U. Cerruti, and N. Murru, <a href="https://cs.uwaterloo.ca/journals/JIS/VOL13/Barbero2/barbero7.html">A Generalization of the Binomial Interpolated Operator and its Action on Linear Recurrent Sequences</a>, J. Int. Seq. 13 (2010) # 10.9.7.</div>
+                             
+                                 <div class=sectline>J.-L. Baril, T. Mansour, and A. Petrossian, <a href="https://jl.baril.u-bourgogne.fr/equival.pdf">Equivalence classes of permutations modulo excedances</a>, 2014.</div>
+                             
+                                 <div class=sectline>Jean-Luc Baril, Sergey Kirgizov, and Vincent Vajnovszki, <a href="https://arxiv.org/abs/1611.07793">Patterns in treeshelves</a>, arXiv:1611.07793 [cs.DM], 2016.</div>
+                             
+                                 <div class=sectline>Jean-Luc Baril and José L. Ramírez, <a href="https://doi.org/10.1007/s00010-026-01275-9">Some distributions on increasing and flattened permutations</a>, Aequat. Math. 100 (2026), 29. See p. 16 (Cor. 3.4). See also <a href="https://arxiv.org/abs/2410.15434">arXiv:2410.15434</a> [math.CO], 2024. See p. 15.</div>
+                             
+                                 <div class=sectline>Paul Barry, <a href="https://arxiv.org/abs/1107.5490">Invariant number triangles, eigentriangles and Somos-4 sequences</a>, arXiv preprint arXiv:1107.5490 [math.CO], 2011.</div>
+                             
+                                 <div class=sectline>D. Barsky, <a href="https://www.mat.univie.ac.at/~slc/opapers/s05barsky.html">Analyse p-adique et suites classiques de nombres</a>, Sem. Loth. Comb. B05b (1981) 1-21.</div>
+                             
+                                 <div class=sectline>R. E. Beard, <a href="/A000587/a000587.pdf">On the Coefficients in the Expansion of e^(e^t) and e^(-e^t)</a>, J. Institute of Actuaries, 76 (1950), 152-163. [Annotated scanned copy]</div>
+                             
+                                 <div class=sectline>H. W. Becker, <a href="/A000110/a000110_7.pdf">Abstracts of two papers from 1946 related to Bell numbers</a> [Annotated scanned copy]</div>
+                             
+                                 <div class=sectline>H. W. Becker, <a href="https://www.jstor.org/stable/3029709">Rooks and rhymes</a>, Math. Mag., 22 (1948/49), 23-26.</div>
+                             
+                                 <div class=sectline>H. W. Becker, <a href="/A056857/a056857.pdf">Rooks and rhymes</a>, Math. Mag., 22 (1948/49), 23-26. [Annotated scanned copy]</div>
+                             
+                                 <div class=sectline>H. W. Becker and D. H. Browne, <a href="https://www.jstor.org/stable/2303322">Problem E461 and solution</a>, American Mathematical Monthly, Vol. 48 (1941), pp. 701-703.</div>
+                             
+                                 <div class=sectline>H. W. Becker and John Riordan, <a href="https://www.jstor.org/stable/2372336">The Arithmetic of Bell and Stirling Numbers</a>, American Journal of Mathematics, Vol. 70, No. 2 (1948), pp. 385-394.</div>
+                             
+                                 <div class=sectline>E. T. Bell, <a href="https://www.jstor.org/stable/2300300">Exponential numbers</a>, Amer. Math. Monthly, 41 (1934), 411-419.</div>
+                             
+                                 <div class=sectline>E. T. Bell, <a href="https://www.jstor.org/stable/1968431">Exponential polynomials</a>, Ann. Math., 35 (1934), 258-277.</div>
+                             
+                                 <div class=sectline>E. A. Bender and J. R. Goldman, <a href="/A000110/a000110_5.pdf">Enumerative uses of generating functions</a>, Indiana Univ. Math. J., 20 (1971), 753-765. [Annotated scanned copy]</div>
+                             
+                                 <div class=sectline>Beáta Bényi and José L. Ramírez, <a href="https://arxiv.org/abs/1804.03949">Some Applications of S-restricted Set Partitions</a>, arXiv:1804.03949 [math.CO], 2018.</div>
+                             
+                                 <div class=sectline>M. Bernstein and N. J. A. Sloane, <a href="https://arxiv.org/abs/math/0205301">Some canonical sequences of integers</a>, arXiv:math/0205301 [math.CO], 2002; Linear Alg. Applications, 226-228 (1995), 57-72; erratum 320 (2000), 210. [Link to arXiv version]</div>
+                             
+                                 <div class=sectline>M. Bernstein and N. J. A. Sloane, <a href="/A003633/a003633_1.pdf">Some canonical sequences of integers</a>, Linear Alg. Applications, 226-228 (1995), 57-72; erratum 320 (2000), 210. [Link to Lin. Alg. Applic. version together with omitted figures]</div>
+                             
+                                 <div class=sectline>Daniel Birmajer, Juan B. Gil, and Michael D. Weiner, <a href="https://arxiv.org/abs/1803.07727">A family of Bell transformations</a>, arXiv:1803.07727 [math.CO], 2018.</div>
+                             
+                                 <div class=sectline>M. T. L. Bizley, <a href="/A000110/a000110_2.pdf">On the coefficients in the expansion of exp(lambda exp(t))</a>, J. Inst. Actuaries, 77 (1952), p. 122. [Annotated scanned copy]</div>
+                             
+                                 <div class=sectline>Roberto Blanco Gómez, <a href="https://doi.org/10.5281/zenodo.23150301">Open statements in core entries of the OEIS, III: Benford's law for the Bell numbers, Bala's congruences for the Motzkin numbers, and further proofs</a>, Zenodo, 2026. See Theorem 2.4.</div>
+                             
+                                 <div class=sectline>P. Blasiak, K. A. Penson and A. I. Solomon, <a href="https://arxiv.org/abs/quant-ph/0212072">The Boson Normal Ordering Problem and Generalized Bell Numbers</a>, arXiv:quant-ph/0212072, 2002.</div>
+                             
+                                 <div class=sectline>P. Blasiak, K. A. Penson and A. I. Solomon, <a href="https://arxiv.org/abs/quant-ph/0402027">The general boson normal ordering problem</a>, arXiv:quant-ph/0402027, 2004.</div>
+                             
+                                 <div class=sectline>Tobias Boege and Thomas Kahle, <a href="https://arxiv.org/abs/1902.11260">Construction Methods for Gaussoids</a>, arXiv:1902.11260 [math.CO], 2019.</div>
+                             
+                                 <div class=sectline>Tommaso Bolognesi and Vincenzo Ciancia, <a href="https://doi.org/10.1016/j.jlamp.2017.08.001">Exploring nominal cellular automata</a>, Journal of Logical and Algebraic Methods in Programming, vol 93 (2017), see p 26.</div>
+                             
+                                 <div class=sectline>D. Borwein, S. Rankin, and L. Renner, <a href="https://doi.org/10.1016/0012-365X(89)90272-0">Enumeration of injective partial transformations</a>, Discrete Math. (1989), 73: 291-296.</div>
+                             
+                                 <div class=sectline>J. M. Borwein, <a href="https://carmamaths.org/resources/jon/OEIStalk.pdf">Adventures with the OEIS: Five sequences Tony may like</a>, Guttmann 70th [Birthday] Meeting, 2015, revised May 2016.</div>
+                             
+                                 <div class=sectline>J. M. Borwein, <a href="/A060997/a060997.pdf">Adventures with the OEIS: Five sequences Tony may like</a>, Guttmann 70th [Birthday] Meeting, 2015, revised May 2016. [Cached copy, with permission]</div>
+                             
+                                 <div class=sectline>Henry Bottomley, <a href="/A000110/a000110.gif">Illustration of initial terms</a></div>
+                             
+                                 <div class=sectline>Lukas Bulwahn, <a href="https://www.isa-afp.org/browser_info/current/AFP/Bell_Numbers_Spivey/document.pdf">Spivey's Generalized Recurrence for Bell Numbers</a>, Archive of Formal Proofs, 2016.</div>
+                             
+                                 <div class=sectline>Alexander Burstein and Isaiah Lankham, <a href="https://arxiv.org/abs/math/0506358">Combinatorics of patience sorting piles</a>, arXiv:math/0506358 [math.CO], 2005-2006.</div>
+                             
+                                 <div class=sectline>Alexander Burstein and Louis W. Shapiro, <a href="https://arxiv.org/abs/2112.11595">Pseudo-involutions in the Riordan group</a>, arXiv:2112.11595 [math.CO], 2021.</div>
+                             
+                                 <div class=sectline>David Callan, <a href="https://cs.uwaterloo.ca/journals/JIS/VOL9/Callan/callan96.html">A Combinatorial Interpretation of the Eigensequence for Composition</a>, Vol. 9 (2006), Article 06.1.4.</div>
+                             
+                                 <div class=sectline>David Callan, <a href="https://arxiv.org/abs/0708.3301">Cesaro's integral formula for the Bell numbers (corrected)</a>, arXiv:0708.3301 [math.HO], 2007.</div>
+                             
+                                 <div class=sectline>David Callan and Emeric Deutsch, <a href="https://arxiv.org/abs/1112.3639">The Run Transform</a>, arXiv preprint arXiv:1112.3639 [math.CO], 2011.</div>
+                             
+                                 <div class=sectline>David Callan, <a href="https://arxiv.org/abs/1911.02209">On Ascent, Repetition and Descent Sequences</a>, arXiv:1911.02209 [math.CO], 2019.</div>
+                             
+                                 <div class=sectline>P. J. Cameron, <a href="https://cs.uwaterloo.ca/journals/JIS/VOL3/groups.html">Sequences realized by oligomorphic permutation groups</a>, J. Integ. Seqs. Vol. 3 (2000), #00.1.5.</div>
+                             
+                                 <div class=sectline>M. E. Cesaro, <a href="https://www.numdam.org/item/NAM_1885_3_4__36_0/">Sur une équation aux différences mêlées</a>, Nouvelles Annales de Math. (3), Tome 4, (1885), 36-40.</div>
+                             
+                                 <div class=sectline>S. D. Chatterji, <a href="/A000798/a000798_10.pdf">The number of topologies on n points</a>, Kent State University, NASA Technical report, 1966 [Annotated scanned copy]</div>
+                             
+                                 <div class=sectline>K.-W. Chen, <a href="https://cs.uwaterloo.ca/journals/JIS/VOL4/CHEN/AlgBE2.html">Algorithms for Bernoulli numbers and Euler numbers</a>, J. Integer Sequences, 4 (2001), #01.1.6.</div>
+                             
+                                 <div class=sectline>B. Chern, P. Diaconis, D. M. Kane, and R. C. Rhoades, <a href="http://statweb.stanford.edu/~cgates/PERSI/papers/setpartition_stats10.pdf">Central limit theorems for some set partition statistics</a>, 2014.</div>
+                             
+                                 <div class=sectline>Shane Chern, <a href="https://arxiv.org/abs/2006.04318">On 0012-avoiding inversion sequences and a Conjecture of Lin and Ma</a>, arXiv:2006.04318 [math.CO], 2020.</div>
+                             
+                                 <div class=sectline>Ali Chouria, Vlad-Florin Drǎgoi, and Jean-Gabriel Luque, <a href="https://arxiv.org/abs/2004.04203">On recursively defined combinatorial classes and labelled trees</a>, arXiv:2004.04203 [math.CO], 2020.</div>
+                             
+                                 <div class=sectline>Johann Cigler and Christian Krattenthaler, <a href="https://arxiv.org/abs/2003.01676">Hankel determinants of linear combinations of moments of orthogonal polynomials</a>, arXiv:2003.01676 [math.CO], 2020.</div>
+                             
+                                 <div class=sectline>Anders Claesson and Toufik Mansour, <a href="https://arxiv.org/abs/math/0110036">Counting occurrences of a pattern of type (1,2) or (2,1) in permutations</a>, arXiv:math/0110036 [math.CO], 2001.</div>
+                             
+                                 <div class=sectline>Martin Cohn, Shimon Even, Karl Menger, Jr., and Philip K. Hooper, <a href="https://www.jstor.org/stable/2310780">On the Number of Partitionings of a Set of n Distinct Objects</a>, Amer. Math. Monthly 69 (1962), no. 8, 782--785. MR1531841.</div>
+                             
+                                 <div class=sectline>Martin Cohn, Shimon Even, Karl Menger, Jr., and Philip K. Hooper, <a href="/A011965/a011965.pdf">On the Number of Partitionings of a Set of n Distinct Objects</a>, Amer. Math. Monthly 69 (1962), no. 8, <a href="https://doi.org/10.2307/2310780">782--785</a>. MR1531841. [Annotated scanned copy]</div>
+                             
+                                 <div class=sectline>C. Coker, <a href="https://doi.org/10.1016/j.disc.2003.12.008">A family of eigensequences</a>, Discrete Math. 282 (2004), 249-250.</div>
+                             
+                                 <div class=sectline>Laura Colmenarejo, Rosa Orellana, Franco Saliola, Anne Schilling, and Mike Zabrocki, <a href="https://arxiv.org/abs/1905.02071">An insertion algorithm on multiset partitions with applications to diagram algebras</a>, arXiv:1905.02071 [math.CO], 2019.</div>
+                             
+                                 <div class=sectline>CombOS - Combinatorial Object Server, <a href="https://combos.org/part.html">Generate set partitions</a></div>
+                             
+                                 <div class=sectline>C. Cooper and R. E. Kennedy, <a href="http://cs.ucmo.edu/~cnc8851/articles/pasnsk.pdf">Patterns, automata and Stirling numbers of the second kind</a>, Mathematics and Computer Education Journal, 26 (1992), 120-124.</div>
+                             
+                                 <div class=sectline>C. Cooper and R. E. Kennedy, <a href="/A000110/a000110_8.pdf">Patterns, automata and Stirling numbers of the second kind</a>, Mathematics and Computer Education Journal, 26 (1992), 120-124. [Local copy]</div>
+                             
+                                 <div class=sectline>Éva Czabarka, Péter L. Erdős, Virginia Johnson, Anne Kupczok and László A. Székely, <a href="https://arxiv.org/abs/1108.6015">Asymptotically normal distribution of some tree families relevant for phylogenetics, and of partitions without singletons</a>, arXiv preprint arXiv:1108.6015 [math.CO], 2011.</div>
+                             
+                                 <div class=sectline>Colin Defant, <a href="https://arxiv.org/abs/2012.03869">Highly Sorted Permutations and Bell Numbers</a>, arXiv:2012.03869 [math.CO], 2020.</div>
+                             
+                                 <div class=sectline>Gesualdo Delfino and Jacopo Viti, <a href="https://arxiv.org/abs/1104.4323">Potts q-color field theory and scaling random cluster model</a>, arXiv preprint arXiv:1104.4323 [hep-th], 2011.</div>
+                             
+                                 <div class=sectline>R. M. Dickau, <a href="https://robertdickau.com/bell.html">Bell number diagrams</a></div>
+                             
+                                 <div class=sectline>A. Dil and Veli Kurt, <a href="https://cs.uwaterloo.ca/journals/JIS/VOL14/Dil/dil5.html">Investigating Geometric and Exponential Polynomials with Euler-Seidel Matrices</a>, J. Int. Seq. 14 (2011) # 11.4.6.</div>
+                             
+                                 <div class=sectline>Ayhan Dil and Veli Kurt, <a href="https://math.colgate.edu/~integers/m38/m38.Abstract.html">Polynomials related to harmonic numbers and evaluation of harmonic number series I</a>, INTEGERS, 12 (2012), #A38. - From <a href="/wiki/User:N._J._A._Sloane">N. J. A. Sloane</a>, Feb 08 2013</div>
+                             
+                                 <div class=sectline>G. Dobiński, <a href="https://archive.org/stream/archivdermathem88unkngoog#page/n346">Summirung der Reihe sum n^m/n! für m = 1, 2, 3, 4, 5, ...</a>, Grunert's Archiv (1877), no. 61, 333--336.</div>
+                             
+                                 <div class=sectline>Robert W. Donley Jr, <a href="https://arxiv.org/abs/1905.01525">Binomial arrays and generalized Vandermonde identities</a>, arXiv:1905.01525 [math.CO], 2019.</div>
+                             
+                                 <div class=sectline>Tomislav Došlic and Darko Veljan, <a href="https://doi.org/10.1016/j.disc.2007.04.066">Logarithmic behavior of some combinatorial sequences</a>, Discrete Math. 308 (2008), no. 11, 2182--2212. MR2404544 (2009j:05019) - <a href="/wiki/User:N._J._A._Sloane">N. J. A. Sloane</a>, May 01 2012</div>
+                             
+                                 <div class=sectline>Xiaoling Dou, Hsien-Kuei Hwang and Chong-Yi Li, <a href="https://arxiv.org/abs/2110.01156">Bell numbers in Matsunaga's and Arima's Genjiko combinatorics: Modern perspectives and local limit theorems</a>, arXiv:2110.01156 [math.CO], 2021.</div>
+                             
+                                 <div class=sectline>Robert Dougherty-Bliss, <a href="https://arxiv.org/abs/2210.13520">Gosper's algorithm and Bell numbers</a>, arXiv:2210.13520 [cs.SC], 2022.</div>
+                             
+                                 <div class=sectline>Branko Dragovich, <a href="https://arxiv.org/abs/1702.02569">On Summation of p-Adic Series</a>, arXiv:1702.02569 [math.NT], 2017.</div>
+                             
+                                 <div class=sectline>Branko Dragovich, Andrei Yu. Khrennikov, and Natasa Z. Misic, <a href="https://arxiv.org/abs/1508.05079">Summation of p-Adic Functional Series in Integer Points</a>, arXiv:1508.05079 [math.NT], 2015.</div>
+                             
+                                 <div class=sectline>B. Dragovich and N. Z. Misic, <a href="https://doi.org/10.1134/S2070046614040025">p-Adic invariant summation of some p-adic functional series</a>, P-Adic Numbers, Ultrametric Analysis, and Applications, October 2014, Volume 6, Issue 4, pp 275-283.</div>
+                             
+                                 <div class=sectline>R. Ehrenborg and M. Readdy, <a href="https://doi.org/10.1016/S0012-365X(96)83010-X">Juggling and applications to q-analogues</a>, Discrete Math. 157 (1996), 107-125.</div>
+                             
+                                 <div class=sectline>L. F. Epstein, <a href="/A000110/a000110_3.pdf"> A function related to the series for exp(exp(z))</a>, J. Math. and Phys., 18 (1939), 153-173. [Annotated scanned copy]</div>
+                             
+                                 <div class=sectline>M. Erné, <a href="https://doi.org/10.1007/BF01173716">Struktur- und Anzahlformeln für Topologien auf Endlichen Mengen</a>, Manuscripta Math., 11 (1974), 221-259.</div>
+                             
+                                 <div class=sectline>M. Erné, <a href="/A006056/a006056.pdf">Struktur- und Anzahlformeln für Topologien auf Endlichen Mengen</a>, Manuscripta Math., 11 (1974), 221-259. (Annotated scanned copy)</div>
+                             
+                                 <div class=sectline>FindStat - Combinatorial Statistic Finder, <a href="https://www.findstat.org/CollectionsDatabase/SetPartitions/">Set partitions</a></div>
+                             
+                                 <div class=sectline>John Fiorillo, <a href="http://spectacle.berkeley.edu/~fiorillo/7genjimon.html">GENJI-MON</a></div>
+                             
+                                 <div class=sectline>P. Flajolet and R. Sedgewick, <a href="https://algo.inria.fr/flajolet/Publications/books.html">Analytic Combinatorics</a>, 2009; see page 109, 110</div>
+                             
+                                 <div class=sectline>H. Fripertinger, <a href="http://www-ang.kfunigraz.ac.at/~fripert/fga/k1bell.html">The Bell Numbers</a> [Dead link]</div>
+                             
+                                 <div class=sectline>O. Furdui and T. Trif, <a href="https://cs.uwaterloo.ca/journals/JIS/VOL14/Furdui/furdui3.html">On the Summation of Certain Iterated Series</a>, J. Int. Seq. 14 (2011) #11.6.1.</div>
+                             
+                                 <div class=sectline>Luis Henri Gallardo, <a href="https://www.math.nthu.edu.tw/~amen/2023/AMEN-220120.pdf">Bell Numbers Modulo p</a>, Applied Mathematics E-Notes, 23(2023), 40-48.</div>
+                             
+                                 <div class=sectline>Daniel L. Geisler, <a href="https://web.archive.org/web/20190707000825/http://www.iteratedfunctions.com/Combinatorics/index.html">Combinatorics of Iterated Functions</a></div>
+                             
+                                 <div class=sectline>A. Gertsch and A. M. Robert, <a href="https://doi.org/10.36045/bbms/1105554416">Some congruences concerning the Bell numbers</a>, Bull. Belg. Math. Soc. 3 (1996), 467-475.</div>
+                             
+                                 <div class=sectline>Robert Gill, <a href="https://doi.org/10.1016/S0012-365X(97)00187-8">The number of elements in a generalized partition semilattice</a>, Discrete mathematics 186.1-3 (1998): 125-134. See Example 2.</div>
+                             
+                                 <div class=sectline>Jekuthiel Ginsburg, <a href="/A000405/a000405.pdf">Iterated exponentials</a>, Scripta Math., 11 (1945), 340-353. [Annotated scanned copy]</div>
+                             
+                                 <div class=sectline>H. W. Gould and J. Quaintance, <a href="https://cs.uwaterloo.ca/journals/JIS/VOL11/Gould/gould35.html">Implications of Spivey's Bell Number formula</a>, JIS 11 (2008) 08.3.7</div>
+                             
+                                 <div class=sectline>Adam M. Goyt and Lara K. Pudwell, <a href="https://arxiv.org/abs/1203.3786">Avoiding colored partitions of two elements in the pattern sense</a>, arXiv preprint arXiv:1203.3786 [math.CO], 2012. - From <a href="/wiki/User:N._J._A._Sloane">N. J. A. Sloane</a>, Sep 17 2012</div>
+                             
+                                 <div class=sectline>W. S. Gray and M. Thitsa, <a href="https://doi.org/10.1109/SSST.2013.6524939">System Interconnections and Combinatorial Integer Sequences</a>, in: System Theory (SSST), 2013 45th Southeastern Symposium on, Date of Conference: 11-11 Mar 2013.</div>
+                             
+                                 <div class=sectline>M. Griffiths, <a href="https://cs.uwaterloo.ca/journals/JIS/VOL12/Griffiths/griffiths7.html">Generalized Near-Bell Numbers</a>, JIS 12 (2009) 09.5.7</div>
+                             
+                                 <div class=sectline>M. Griffiths and I. Mezo, <a href="https://cs.uwaterloo.ca/journals/JIS/VOL13/Griffiths/griffiths11.html">A generalization of Stirling Numbers of the Second Kind via a special multiset</a>, JIS 13 (2010) #10.2.5.</div>
+                             
+                                 <div class=sectline>L. H. Harper, <a href="https://doi.org/10.1214/aoms/1177698956">Stirling Behaviour is Asymptotically Normal</a>, Ann. Math. Statist. 38(2): 410-414 (April, 1967).</div>
+                             
+                                 <div class=sectline>Song He, Fei Teng and Yong Zhang, <a href="https://arxiv.org/abs/1907.06041">String Correlators: Recursive Expansion, Integration-by-Parts and Scattering Equations</a>, arXiv:1907.06041 [hep-th], 2019. Also in <a href="https://doi.org/10.1007/JHEP09(2019)085">Journal of High Energy Physics</a> (2019), 2019:85.</div>
+                             
+                                 <div class=sectline>Gottfried Helms, <a href="https://go.helms-net.de/math/binomial/04_5_SummingBellStirling.pdf">Bell Numbers</a>, 2008.</div>
+                             
+                                 <div class=sectline>A. Hertz and H. Melot, <a href="https://web.archive.org/web/20241218181129/http://www.gerad.ca/~alainh/G1382.pdf">Counting the Number of Non-Equivalent Vertex Colorings of a Graph</a>, Les Cahiers du GERAD G-2013-82</div>
+                             
+                                 <div class=sectline>M. E. Hoffman, <a href="https://arxiv.org/abs/1207.1705">Updown categories: Generating functions and universal covers</a>, arXiv preprint arXiv:1207.1705 [math.CO], 2012. - From <a href="/wiki/User:N._J._A._Sloane">N. J. A. Sloane</a>, Dec 22 2012</div>
+                             
+                                 <div class=sectline>A. Horzela, P. Blasiak, G. E. H. Duchamp, K. A. Penson and A. I. Solomon, <a href="https://arxiv.org/abs/quant-ph/0409152">A product formula and combinatorial field theory</a>, arXiv:quant-ph/0409152, 2004.</div>
+                             
+                                 <div class=sectline>W. Hürlimann, <a href="https://doi.org/10.1155/2009/970284">Generalizing Benford's law using power laws: application to integer sequences</a>. International Journal of Mathematics and Mathematical Sciences, Article ID 970284 (2009).</div>
+                             
+                                 <div class=sectline>Greg Hurst and Andrew Schultz, <a href="https://arxiv.org/abs/0906.0696v2">An elementary (number theory) proof of Touchard's congruence</a>, arXiv:0906.0696 [math.CO], (2009)</div>
+                             
+                                 <div class=sectline>INRIA Algorithms Project, <a href="http://ecs.inria.fr/services/structure?nbr=15">Encyclopedia of Combinatorial Structures 15</a>, <a href="http://ecs.inria.fr/services/structure?nbr=65">Encyclopedia of Combinatorial Structures 65</a>, <a href="http://ecs.inria.fr/services/structure?nbr=73">Encyclopedia of Combinatorial Structures 73</a>, <a href="http://ecs.inria.fr/services/structure?nbr=291">Encyclopedia of Combinatorial Structures 291</a></div>
+                             
+                                 <div class=sectline>Giovanni Cerulli Irelli, Xin Fang, Evgeny Feigin, Ghislain Fourier, and Markus Reineke, <a href="https://arxiv.org/abs/1901.11020">Linear degenerations of flag varieties: partial flags, defining equations, and group actions</a>, arXiv:1901.11020 [math.AG], 2019.</div>
+                             
+                                 <div class=sectline>R. Jakimczuk, <a href="https://cs.uwaterloo.ca/journals/JIS/VOL14/Jakimczuk/jak.html">Integer Sequences, Functions of Slow Increase, and the Bell Numbers</a>, J. Int. Seq. 14 (2011) #11.5.8.</div>
+                             
+                                 <div class=sectline>M. Janjic, <a href="https://cs.uwaterloo.ca/journals/JIS/VOL15/Janjic/janjic42.html">Determinants and Recurrence Sequences</a>, Journal of Integer Sequences, 2012, Article 12.3.5. - <a href="/wiki/User:N._J._A._Sloane">N. J. A. Sloane</a>, Sep 16 2012</div>
+                             
+                                 <div class=sectline>F. Johansson, <a href="https://fredrikj.net/blog/2015/08/computing-bell-numbers/">Computing Bell numbers</a>, Aug 06 2015.</div>
+                             
+                                 <div class=sectline>J. Katriel, <a href="https://cs.uwaterloo.ca/journals/JIS/VOL11/Katriel/katriel6.html">On a generalized recurrence for Bell Numbers</a>, JIS 11 (2008) 08.3.8.</div>
+                             
+                                 <div class=sectline>A. Kerber, <a href="/A004211/a004211.pdf">A matrix of combinatorial numbers related to the symmetric groups</a>, Discrete Math., 21 (1978), 319-321. [Annotated scanned copy]</div>
+                             
+                                 <div class=sectline>M. Klazar, <a href="https://www.jstor.org/stable/3647908">Counting even and odd partitions</a>, Amer. Math. Monthly, 110 (No. 6, 2003), 527-532.</div>
+                             
+                                 <div class=sectline>M. Klazar, <a href="https://doi.org/10.1016/S0097-3165(03)00014-1">Bell numbers, their relatives and algebraic differential equations</a>, J. Combin. Theory, A 102 (2003), 63-87.</div>
+                             
+                                 <div class=sectline>A. Knutson, <a href="http://www.juggling.org/bin/mfs/JIS/help/siteswap/faq.html#back">Siteswap FAQ, Section 5, Working backwards</a>, defines the term &quot;orbit&quot; in siteswap notation.</div>
+                             
+                                 <div class=sectline>Nate Kube and Frank Ruskey, <a href="https://cs.uwaterloo.ca/journals/JIS/VOL8/Ruskey/ruskey99.html">Sequences That Satisfy a(n-a(n))=0</a>, Journal of Integer Sequences, Vol. 8 (2005), Article 05.5.5.</div>
+                             
+                                 <div class=sectline>Kazuhiro Kunii, <a href="https://web.archive.org/web/20001207021000/http://plaza27.mbn.or.jp/~921/kumiko/genjiko/genjikou.html">Genji-koh no zu</a> [Japanese page illustrating a(5) = 52]</div>
+                             
+                                 <div class=sectline>Jacques Labelle, <a href="https://www.labmath.uqam.ca/~annales/volumes/07-1/PDF/059-094.pdf">Applications diverses de la théorie combinatoire des espèces de structures</a>, Ann. Sci. Math. Québec, 7.1 (1983): 59-94.</div>
+                             
+                                 <div class=sectline>G. Labelle et al., <a href="https://doi.org/10.1016/S0012-365X(01)00257-6">Stirling numbers interpolation using permutations with forbidden subsequences</a>, Discrete Math. 246 (2002), 177-195.</div>
+                             
+                                 <div class=sectline>Wolfdieter Lang, <a href="https://cs.uwaterloo.ca/journals/JIS/VOL3/LANG/lang.html">On generalizations of Stirling number triangles</a>, J. Integer Seqs., Vol. 3 (2000), #00.2.4.</div>
+                             
+                                 <div class=sectline>J. W. Layman, <a href="https://cs.uwaterloo.ca/journals/JIS/VOL4/LAYMAN/hankel.html">The Hankel Transform and Some of its Properties</a>, J. Integer Sequences, 4 (2001), #01.1.5.</div>
+                             
+                                 <div class=sectline>Jack Levine, <a href="https://www.jstor.org/stable/3029532">A binomial identity related to rhyming sequences</a>, Mathematics Magazine, 32 (1958): 71-74.</div>
+                             
+                                 <div class=sectline>Zhicong Lin and Sherry H. F. Yan, <a href="https://doi.org/10.1016/j.amc.2019.124672">Vincular patterns in inversion sequences</a>, Applied Mathematics and Computation (2020), Vol. 364, 124672.</div>
+                             
+                                 <div class=sectline>W. F. Lunnon et al., <a href="https://matwbn.icm.edu.pl/ksiazki/aa/aa35/aa3511.pdf">Arithmetic properties of Bell numbers to a composite modulus I</a>, Acta Arith., Vol. 35 (1979), pp. 1-16.</div>
+                             
+                                 <div class=sectline>Peter Luschny, <a href="https://oeis.org/wiki/User:Peter_Luschny/SetPartitions">Set partitions and Bell numbers</a></div>
+                             
+                                 <div class=sectline>T. Mansour, A. Munagi, and M. Shattuck, <a href="https://cs.uwaterloo.ca/journals/JIS/VOL14/Mansour/mansour4.html">Recurrence Relations and Two-Dimensional Set Partitions</a>, J. Int. Seq. 14 (2011) # 11.4.1.</div>
+                             
+                                 <div class=sectline>T. Mansour and M. Shattuck, <a href="https://cs.uwaterloo.ca/journals/JIS/VOL13/Shattuck/shattuck3.html">Counting Peaks and Valleys in a Partition of a Set</a>, J. Int. Seq. 13 (2010), 10.6.8.</div>
+                             
+                                 <div class=sectline>Toufik Mansour and Mark Shattuck, <a href="https://math.colgate.edu/~integers/l67/l67.Abstract.html">A recurrence related to the Bell numbers</a>, INTEGERS 11 (2011), #A67.</div>
+                             
+                                 <div class=sectline>Toufik Mansour, Matthias Schork and Mark Shattuck, <a href="https://cs.uwaterloo.ca/journals/JIS/VOL15/Schork/schork2.html">The Generalized Stirling and Bell Numbers Revisited</a>, Journal of Integer Sequences, Vol. 15 (2012), #12.8.3.</div>
+                             
+                                 <div class=sectline>R. J. Marsh and P. P. Martin, <a href="https://arxiv.org/abs/math/0612572">Pascal arrays: counting Catalan sets</a>, arXiv:math/0612572 [math.CO], 2006.</div>
+                             
+                                 <div class=sectline>Richard J. Mathar, <a href="https://arxiv.org/abs/1903.12477">2-regular Digraphs of the Lovelock Lagrangian</a>, arXiv:1903.12477 [math.GM], 2019.</div>
+                             
+                                 <div class=sectline>MathOverflow, <a href="https://mathoverflow.net/questions/172955/ordinary-generating-function-for-bell-numbers">Ordinary Generating Function for Bell Numbers</a></div>
+                             
+                                 <div class=sectline>Victor Meally, <a href="/A002868/a002868.pdf">Comparison of several sequences given in Motzkin's paper &quot;Sorting numbers for cylinders...&quot;, letter to N. J. A. Sloane, N. D.</a></div>
+                             
+                                 <div class=sectline>N. S. Mendelsohn, <a href="https://www.jstor.org/stable/2307771">Number of equivalence relations for n elements, Problem 4340</a>, Amer. Math. Monthly 58 (1951), 46-48.</div>
+                             
+                                 <div class=sectline>Romeo Mestrovic, <a href="https://arxiv.org/abs/1312.7037">Variations of Kurepa's left factorial hypothesis</a>, arXiv preprint arXiv:1312.7037 [math.NT], 2013-2014.</div>
+                             
+                                 <div class=sectline>Istvan Mezo, <a href="https://cs.uwaterloo.ca/journals/JIS/VOL15/Mezo/mezo14.html">The Dual of Spivey's Bell Number Formula</a>, Journal of Integer Sequences, Vol. 15 (2012), #12.2.4.</div>
+                             
+                                 <div class=sectline>I. Mezo and A. Baricz, <a href="https://arxiv.org/abs/1408.3999">On the generalization of the Lambert W function with applications in theoretical physics</a>, arXiv preprint arXiv:1408.3999 [math.CA], 2014-2015.</div>
+                             
+                                 <div class=sectline>M. Mihoubi and H. Belbachir, <a href="https://cs.uwaterloo.ca/journals/JIS/VOL17/Mihoubi/mihoubi18.html">Linear Recurrences for r-Bell Polynomials</a>, J. Int. Seq. 17 (2014) # 14.10.6.</div>
+                             
+                                 <div class=sectline>Janusz Milek, <a href="https://arxiv.org/abs/2002.07389">Quantum Implementation of Risk Analysis-relevant Copulas</a>, arXiv:2002.07389 [stat.ME], 2020.</div>
+                             
+                                 <div class=sectline>M. D. Moffitt, <a href="https://doi.org/10.1609/aaai.v36i9.21271">Search Strategies for Topological Network Optimization</a>, Proceedings of the AAAI Conference on Artificial Intelligence, 36(9) (2022), 10299-10308.</div>
+                             
+                                 <div class=sectline>N. Moreira and R. Reis, <a href="https://cs.uwaterloo.ca/journals/JIS/VOL8/Moreira/moreira8.html">On the Density of Languages Representing Finite Set Partitions</a>, Journal of Integer Sequences, Vol. 8 (2005), Article 05.2.8.</div>
+                             
+                                 <div class=sectline>Leo Moser and Max Wyman, <a href="/A000110/a000110_4.pdf">An asymptotic formula for the Bell numbers</a>, Trans. Royal Soc. Canada, 49 (1955), 49-53. [Annotated scanned copy]</div>
+                             
+                                 <div class=sectline>T. S. Motzkin, <a href="/A000262/a000262.pdf">Sorting numbers for cylinders and other classification numbers</a>, in Combinatorics, Proc. Symp. Pure Math. 19, AMS, 1971, pp. 167-176. [Annotated, scanned copy]</div>
+                             
+                                 <div class=sectline>A. O. Munagi, <a href="https://doi.org/10.1155/IJMMS.2005.215">k-Complementing Subsets of Nonnegative Integers</a>, International Journal of Mathematics and Mathematical Sciences, 2005:2 (2005), 215-224.</div>
+                             
+                                 <div class=sectline>Emanuele Munarini <a href="https://cs.uwaterloo.ca/journals/JIS/VOL23/Munarini/muna6.html">q-Derangement Identities</a>, J. Int. Seq., Vol. 23 (2020), Article 20.3.8.</div>
+                             
+                                 <div class=sectline>Norihiro Nakashima and Shuhei Tsujie, <a href="https://arxiv.org/abs/1904.09748">Enumeration of Flats of the Extended Catalan and Shi Arrangements with Species</a>, arXiv:1904.09748 [math.CO], 2019.</div>
+                             
+                                 <div class=sectline>Pierpaolo Natalini and Paolo Emilio Ricci, <a href="https://doi.org/10.3390/axioms7040071">New Bell-Sheffer Polynomial Sets</a>, Axioms 2018, 7(4), 71.</div>
+                             
+                                 <div class=sectline>A. M. Odlyzko, Asymptotic enumeration methods, pp. 1063-1229 of R. L. Graham et al., eds., Handbook of Combinatorics, 1995; see Examples 5.4 and 12.2. (<a href="https://www-users.cse.umn.edu/~odlyzko/doc/asymptotic.enum.pdf">pdf</a>, <a href="https://www-users.cse.umn.edu/~odlyzko/doc/asymptotic.enum.ps">ps</a>)</div>
+                             
+                                 <div class=sectline>OEIS Wiki, <a href="https://oeis.org/wiki/Sorting_numbers">Sorting numbers</a></div>
+                             
+                                 <div class=sectline>Igor Pak, <a href="https://arxiv.org/abs/1803.06636">Complexity problems in enumerative combinatorics</a>, arXiv:1803.06636 [math.CO], 2018.</div>
+                             
+                                 <div class=sectline>K. A. Penson, P. Blasiak, G. Duchamp, A. Horzela and A. I. Solomon, <a href="https://arxiv.org/abs/quant-ph/0312202">Hierarchical Dobinski-type relations via substitution and the moment problem</a>, arXiv:quant-ph/0312202, 2003.</div>
+                             
+                                 <div class=sectline>K. A. Penson, P. Blasiak, A. Horzela, G. H. E. Duchamp and A. I. Solomon, <a href="https://arxiv.org/abs/0904.0369">Laguerre-type derivatives: Dobinski relations and combinatorial identities</a>, J. Math. Phys. vol. 50, 083512 (2009).</div>
+                             
+                                 <div class=sectline>K. A. Penson and J.-M. Sixdeniers, <a href="https://cs.uwaterloo.ca/journals/JIS/VOL4/SIXDENIERS/Catalan.html">Integral Representations of Catalan and Related Numbers</a>, J. Integer Sequences, 4 (2001), #01.2.5.</div>
+                             
+                                 <div class=sectline>G. Pfeiffer, <a href="https://cs.uwaterloo.ca/journals/JIS/VOL7/Pfeiffer/pfeiffer6.html">Counting Transitive Relations</a>, Journal of Integer Sequences, Vol. 7 (2004), Article 04.3.2.</div>
+                             
+                                 <div class=sectline>Simon Plouffe, <a href="https://www.plouffe.fr/simon/constants/bell.txt">Bell numbers (first 1000 terms)</a></div>
+                             
+                                 <div class=sectline>Jacob Post, <a href="https://summit.sfu.ca/item/9667">Combinatorics of Arc Diagrams, Ferrers Fillings, Young Tableaux and Lattice Paths</a>, MSc thesis, Simon Fraser University, Canada, 2009.</div>
+                             
+                                 <div class=sectline>T. Prellberg, <a href="http://algo.inria.fr/seminars/sem02-03/prellberg1-slides.ps">On the asymptotic analysis of a class of linear recurrences</a> (slides).</div>
+                             
+                                 <div class=sectline>R. A. Proctor, <a href="https://arxiv.org/abs/math/0606404">Let's Expand Rota's Twelvefold Way for Counting Partitions!</a>, arXiv:math/0606404 [math.CO], 2006-2007.</div>
+                             
+                                 <div class=sectline>Feng Qi, <a href="https://arxiv.org/abs/1402.2361">An Explicit Formula for Bell Numbers in Terms of Stirling Numbers and Hypergeometric Functions</a>, arXiv:1402.2361 [math.CO], 2014.</div>
+                             
+                                 <div class=sectline>Feng Qi, <a href="https://www.researchgate.net/profile/Feng_Qi/publication/279750659">On sum of the Lah numbers and zeros of the Kummer confluent hypergeometric function</a>, 2015.</div>
+                             
+                                 <div class=sectline>Feng Qi, <a href="https://www.ias.ac.in/article/fulltext/pmsc/127/04/0551-0564">Some inequalities for the Bell numbers</a>, Proc. Indian Acad. Sci. Math. Sci. 127:4 (2017), pp. 551-564.</div>
+                             
+                                 <div class=sectline>Jocelyn Quaintance and Harris Kwong, <a href="https://math.colgate.edu/~integers/n29/n29.Abstract.html">A combinatorial interpretation of the Catalan and Bell number difference tables</a>, Integers, 13 (2013), #A29.</div>
+                             
+                                 <div class=sectline>C. Radoux, <a href="https://www.mat.univie.ac.at/~slc/opapers/s28radoux.html">Déterminants de Hankel et théorème de Sylvester</a>, Séminaire Lotharingien de Combinatoire, B28b (1992), 9 pp.</div>
+                             
+                                 <div class=sectline>S. Ramanujan, <a href="https://www.imsc.res.in/~rao/ramanujan/NoteBooks/NoteBook2/chapterIII/page5.htm">Notebook entry</a></div>
+                             
+                                 <div class=sectline>M. Rayburn, <a href="https://doi.org/10.1090/S0002-9939-1968-0227034-6">On the Borel fields of a finite set</a>, Proc. Amer. Math. Soc., 19 (1968), 885-889.</div>
+                             
+                                 <div class=sectline>M. Rayburn, <a href="/A000110/a000110_1.pdf">On the Borel fields of a finite set</a>, Proc. Amer. Math.. Soc., 19 (1968), 885-889. [Annotated scanned copy]</div>
+                             
+                                 <div class=sectline>M. Rayburn and N. J. A. Sloane, <a href="/A000110/a000110.pdf">Correspondence, 1974</a></div>
+                             
+                                 <div class=sectline>C. Reid, <a href="https://www.jstor.org/stable/2695793">The alternative life of E. T. Bell</a>, Amer. Math. Monthly, 108 (No. 5, 2001), 393-402.</div>
+                             
+                                 <div class=sectline>H. P. Robinson, <a href="/A002065/a002065.pdf">Letter to N. J. A. Sloane, Jul 12 1971</a></div>
+                             
+                                 <div class=sectline>Ivo Rosenberg; <a href="https://doi.org/10.1016/0097-3165(73)90058-7">The number of maximal closed classes in the set of functions over a finite domain</a>, J. Combinatorial Theory Ser. A 14 (1973), 1-7.</div>
+                             
+                                 <div class=sectline>N. A. Rosenberg, <a href="https://www.cell.com/ajhg/issue?pii=S0002-9297(11)X0002-2">Cover image of the American Journal of Human Genetics</a>, Feb 2011.</div>
+                             
+                                 <div class=sectline>A. Ross, PlanetMath.org, <a href="https://planetmath.org/bellnumber">Bell number</a>.</div>
+                             
+                                 <div class=sectline>G.-C. Rota, <a href="https://www.jstor.org/stable/2312585">The number of partitions of a set</a>, Amer. Math. Monthly 71 1964 498-504.</div>
+                             
+                                 <div class=sectline>Eric Rowland, <a href="https://drops.dagstuhl.de/storage/04dagstuhl-reports/volume04/Issue03/14111/DagRep.4.3.28/DagRep.4.3.28.pdf">Bell numbers modulo 8</a>, in Combinatorics and Algorithmics of Strings, 2014, page 42</div>
+                             
+                                 <div class=sectline>M. Shattuck, <a href="https://arxiv.org/abs/1401.6588">Combinatorial proofs of some Bell number formulas</a>, arXiv preprint arXiv:1401.6588 [math.CO], 2014.</div>
+                             
+                                 <div class=sectline>M. Shattuck, <a href="https://arxiv.org/abs/1412.8721">Generalized r-Lah numbers</a>, arXiv preprint arXiv:1412.8721 [math.CO], 2014.</div>
+                             
+                                 <div class=sectline>T. Sillke, <a href="https://www.math.uni-bielefeld.de/~sillke/SEQUENCES/series005">Bell numbers</a></div>
+                             
+                                 <div class=sectline>A. I. Solomon, P. Blasiak, G. Duchamp, A. Horzela and K. A. Penson, <a href="https://arxiv.org/abs/quant-ph/0310174">Combinatorial physics, normal order and model Feynman graphs</a>, arXiv:quant-ph/0310174, 2003.</div>
+                             
+                                 <div class=sectline>A. I. Solomon, P. Blasiak, G. Duchamp, A. Horzela and K. A. Penson, <a href="https://arxiv.org/abs/quant-ph/0409082">Partition functions and graphs: A combinatorial approach</a>, arXiv:quant-ph/0409082, 2004.</div>
+                             
+                                 <div class=sectline>Yüksel Soykan and İnci Okumuş, <a href="https://www.researchgate.net/publication/330507735_On_a_Generalized_Tribonacci_Sequence">On a Generalized Tribonacci Sequence</a>, Journal of Progressive Research in Mathematics (JPRM, 2019) Vol. 14, Issue 3, 2413-2418.</div>
+                             
+                                 <div class=sectline>Michael Z. Spivey, <a href="https://cs.uwaterloo.ca/journals/JIS/VOL11/Spivey/spivey25.html">A generalized recurrence for Bell numbers</a>, J. Integer Sequences, Vol. 11 (2008), Article 08.2.5.</div>
+                             
+                                 <div class=sectline>M. Z. Spivey, <a href="https://cs.uwaterloo.ca/journals/JIS/VOL14/Spivey/spivey31.html">On Solutions to a General Combinatorial Recurrence</a>, J. Int. Seq. 14 (2011) # 11.9.7.</div>
+                             
+                                 <div class=sectline>Z.-W. Sun, <a href="https://web.archive.org/web/20160414065152/http://math.nju.edu.cn/~zwsun/Sequence.pdf">Conjectures involving arithmetical sequences</a>, Number Theory: Arithmetic in Shangrila (eds., S. Kanemitsu, H.-Z. Li and J.-Y. Liu), Proc. the 6th China-Japan Sem. Number Theory (Shanghai, August 15-17, 2011), World Sci., Singapore, 2013, pp. 244-258. - From <a href="/wiki/User:N._J._A._Sloane">N. J. A. Sloane</a>, Dec 28 2012</div>
+                             
+                                 <div class=sectline>Karl Svozil, <a href="https://arxiv.org/abs/1810.10423">Faithful orthogonal representations of graphs from partition logics</a>, arXiv:1810.10423 [quant-ph], 2018.</div>
+                             
+                                 <div class=sectline>Szilárd Szalay, <a href="https://arxiv.org/abs/1806.04392">The classification of multipartite quantum correlation</a>, arXiv:1806.04392 [quant-ph], 2018.</div>
+                             
+                                 <div class=sectline>Paul Tarau, <a href="https://arxiv.org/abs/1608.03912">A Hiking Trip Through the Orders of Magnitude: Deriving Efficient Generators for Closed Simply-Typed Lambda Terms and Normal Forms</a>, arXiv preprint arXiv:1608.03912 [cs.PL], 2016.</div>
+                             
+                                 <div class=sectline>E. A. Thompson, <a href="https://www.jstor.org/stable/2529231">Gene identities and multiple relationships</a>, Biometrics 30 (1974), 667-680.</div>
+                             
+                                 <div class=sectline>Michael Torpey, <a href="https://doi.org/10.17630/10023-17350">Semigroup congruences: computational techniques and theoretical applications</a>, Ph.D. Thesis, University of St. Andrews (Scotland, 2019).</div>
+                             
+                                 <div class=sectline>J. Touchard, <a href="https://doi.org/10.4153/CJM-1956-034-1">Nombres exponentiels et nombres de Bernoulli</a>, Canad. J. Math., 8 (1956), 305-320.</div>
+                             
+                                 <div class=sectline>C. G. Wagner, <a href="/A001405/a001405.pdf">Letter to N. J. A. Sloane, Sep 30 1974</a></div>
+                             
+                                 <div class=sectline>D. P. Walsh, <a href="http://frank.mtsu.edu/~dwalsh/STIRFORT.pdf">Counting forests with Stirling and Bell numbers</a></div>
+                             
+                                 <div class=sectline>Yi Wang and Bao-Xuan Zhu, <a href="https://arxiv.org/abs/1303.5595">Proofs of some conjectures on monotonicity of number-theoretic and combinatorial sequences</a>, arXiv preprint arXiv:1303.5595 [math.CO], 2013.</div>
+                             
+                                 <div class=sectline>F. V. Weinstein, <a href="https://arxiv.org/abs/math/0307150">Notes on Fibonacci partitions</a>, arXiv:math/0307150 [math.NT], 2003-2015 (see page 16).</div>
+                             
+                                 <div class=sectline>Eric Weisstein's World of Mathematics, <a href="https://mathworld.wolfram.com/BellNumber.html">Bell Number</a></div>
+                             
+                                 <div class=sectline>Eric Weisstein's World of Mathematics, <a href="https://mathworld.wolfram.com/BellTriangle.html">Bell Triangle</a></div>
+                             
+                                 <div class=sectline>Eric Weisstein's World of Mathematics, <a href="https://mathworld.wolfram.com/BinomialTransform.html">Binomial Transform</a></div>
+                             
+                                 <div class=sectline>Eric Weisstein's World of Mathematics, <a href="https://mathworld.wolfram.com/IndependentVertexSet.html">Independent Vertex Set</a></div>
+                             
+                                 <div class=sectline>Eric Weisstein's World of Mathematics, <a href="https://mathworld.wolfram.com/StirlingTransform.html">Stirling Transform</a></div>
+                             
+                                 <div class=sectline>Eric Weisstein's World of Mathematics, <a href="https://mathworld.wolfram.com/Subfactorial.html">Subfactorial</a></div>
+                             
+                                 <div class=sectline>Eric Weisstein's World of Mathematics, <a href="https://mathworld.wolfram.com/VertexCover.html">Vertex Cover</a></div>
+                             
+                                 <div class=sectline>Wikipedia, <a href="https://en.wikipedia.org/wiki/Bell_number">Bell number</a></div>
+                             
+                                 <div class=sectline>H. S. Wilf, <a href="https://www2.math.upenn.edu/~wilf/DownldGF.html">Generatingfunctionology</a>, 2nd edn., Academic Press, NY, 1994, pp. 21ff.</div>
+                             
+                                 <div class=sectline>Roman Witula, Damian Slota and Edyta Hetmaniok, <a href="https://publikacio.uni-eszterhazy.hu/2734/">Bridges between different known integer sequences</a>, Annales Mathematicae et Informaticae, 41 (2013) pp. 255-263.</div>
+                             
+                                 <div class=sectline>The Wolfram Functions Site, <a href="https://functions.wolfram.com/GammaBetaErf/Gamma3/">Generalized Incomplete Gamma Function</a>.</div>
+                             
+                                 <div class=sectline>Dekai Wu, K. Addanki and M. Saers, <a href="http://www.mtsummit2013.info/files/proceedings/main/mt-summit-2013-addanki-et-al.pdf">Modeling Hip Hop Challenge Response Lyrics as Machine Translation</a>, in Sima'an, K., Forcada, M.L., Grasmick, D., Depraetere, H., Way, A. (eds.) Proceedings of the XIV Machine Translation Summit (Nice, September 2-6, 2013), p. 109-116.</div>
+                             
+                                 <div class=sectline>D. Wuilquin, <a href="/A000587/a000587_1.pdf">Letters to N. J. A. Sloane, August 1984</a></div>
+                             
+                                 <div class=sectline>Chunyan Yan and Zhicong Lin, <a href="https://arxiv.org/abs/1912.03674">Inversion sequences avoiding pairs of patterns</a>, arXiv:1912.03674 [math.CO], 2019.</div>
+                             
+                                 <div class=sectline>Winston Yang, <a href="https://doi.org/10.1016/0012-365X(96)00034-9">Bell numbers and k-trees</a>, Disc. Math. 156 (1996) 247-252. MR1405023 (97c:05004)</div>
+                             
+                                 <div class=sectline>Karen Yeats, <a href="https://arxiv.org/abs/1805.11735">A study on prefixes of c_2 invariants</a>, arXiv:1805.11735 [math.CO], 2018.</div>
+                             
+                                 <div class=sectline>Alexander Yong, <a href="https://arxiv.org/abs/1309.5883">The Joseph Greenberg problem: combinatorics and comparative linguistics</a>, arXiv preprint arXiv:1309.5883 [math.CO], 2013.</div>
+                             
+                                 <div class=sectline>Abdelmoumène Zekiri, Farid Bencherif, and Rachid Boumahdi, <a href="https://cs.uwaterloo.ca/journals/JIS/VOL21/Zekiri/zekiri4.html">Generalization of an Identity of Apostol</a>, J. Int. Seq., Vol. 21 (2018), Article 18.5.1.</div>
+                             
+                                 <div class=sectline>Xiqiang Zhao, Shuangshuang Ding, Tingming Wang, <a href="https://doi.org/10.1016/j.disc.2003.08.007">Some summation rules related to the Riordan arrays</a>, Disc. Math. 281 (2004) 295-307</div>
+                             
+                                 <div class=sectline><a href="/index/Cor#core">Index entries for &quot;core&quot; sequences</a></div>
+                             
+                                 <div class=sectline><a href="/index/J#Juggling">Index entries for sequences related to juggling</a></div>
+                             
+                                 <div class=sectline><a href="/index/Par#part">Index entries for sequences related to partitions</a></div>
+                             
+                                 <div class=sectline><a href="/index/Ro#rooted">Index entries for sequences related to rooted trees</a></div>
+                             
+                                 <div class=sectline><a href="/index/Be#Benford">Index entries for sequences related to Benford's law</a></div>
+                             
+                         </div>
+                     </div>
+                 
+            
+        
+            
+                 
+                 
+                 
+                 
+                     <div class=section>
+                         <div class=sectname>FORMULA</div>
+                         <div class=sectbody>
+                             
+                                 <div class=sectline>E.g.f.: exp(exp(x) - 1).</div>
+                             
+                                 <div class=sectline>Recurrence: a(n+1) = Sum_{k=0..n} a(k)*binomial(n, k).</div>
+                             
+                                 <div class=sectline>a(n) = Sum_{k=0..n} Stirling2(n, k).</div>
+                             
+                                 <div class=sectline>a(n) = Sum_{j=0..n-1} (1/(n-1)!)*<a href="/A000166" title="Subfactorial or rencontres numbers, or derangements: number of permutations of n elements with no fixed points.">A000166</a>(j)*binomial(n-1, j)*(n-j)^(n-1) for n &gt;= 1. - <a href="/wiki/User:André_F._Labossière">André F. Labossière</a>, Dec 01 2004</div>
+                             
+                                 <div class=sectline>G.f.: (Sum_{k&gt;=0} 1/((1-k*x)*k!))/exp(1) = hypergeom([-1/x], [(x-1)/x], 1)/exp(1) = ((1-2*x)+LaguerreL(1/x, (x-1)/x, 1)+x*LaguerreL(1/x, (2*x-1)/x, 1))*Pi/(x^2*sin(Pi*(2*x-1)/x)), where LaguerreL(mu, nu, z) = (gamma(mu+nu+1)/(gamma(mu+1)*gamma(nu+1)))* hypergeom([-mu], [nu+1], z) is the Laguerre function, the analytic extension of the Laguerre polynomials, for mu not equal to a nonnegative integer. This generating function has an infinite number of poles accumulating in the neighborhood of x=0. - <a href="/wiki/User:Karol_A._Penson">Karol A. Penson</a>, Mar 25 2002</div>
+                             
+                                 <div class=sectline>a(n) = exp(-1)*Sum_{k &gt;= 0} k^n/k! [Dobinski]. - <a href="/wiki/User:Benoit_Cloitre">Benoit Cloitre</a>, May 19 2002</div>
+                             
+                                 <div class=sectline>a(n) is asymptotic to n!*(2 Pi r^2 exp(r))^(-1/2) exp(exp(r)-1) / r^n, where r is the positive root of r exp(r) = n. See, e.g., the Odlyzko reference.</div>
+                             
+                                 <div class=sectline>a(n) is asymptotic to b^n*exp(b-n-1/2)*sqrt(b/(b+n)) where b satisfies b*log(b) = n - 1/2 (see Graham, Knuth and Patashnik, Concrete Mathematics, 2nd ed., p. 493). - <a href="/wiki/User:Benoit_Cloitre">Benoit Cloitre</a>, Oct 23 2002, corrected by <a href="/wiki/User:Vaclav_Kotesovec">Vaclav Kotesovec</a>, Jan 06 2013</div>
+                             
+                                 <div class=sectline>Lovasz (Combinatorial Problems and Exercises, North-Holland, 1993, Section 1.14, Problem 9) gives another asymptotic formula, quoted by Mezo and Baricz. - <a href="/wiki/User:N._J._A._Sloane">N. J. A. Sloane</a>, Mar 26 2015</div>
+                             
+                                 <div class=sectline>G.f.: Sum_{k&gt;=0} x^k/(Product_{j=1..k} (1-j*x)) (see Klazar for a proof). - <a href="/wiki/User:Ralf_Stephan">Ralf Stephan</a>, Apr 18 2004</div>
+                             
+                                 <div class=sectline>a(n+1) = exp(-1)*Sum_{k&gt;=0} (k+1)^(n)/k!. - <a href="/wiki/User:Gerald_McGarvey">Gerald McGarvey</a>, Jun 03 2004</div>
+                             
+                                 <div class=sectline>For n&gt;0, a(n) = Aitken(n-1, n-1) [i.e., a(n-1, n-1) of Aitken's array (<a href="/A011971" title="Aitken's array: triangle of numbers {a(n,k), n &gt;= 0, 0 &lt;= k &lt;= n} read by rows, defined by a(0,0)=1, a(n,0) = a(n-1,n-1), a(...">A011971</a>)]. - <a href="/wiki/User:Gerald_McGarvey">Gerald McGarvey</a>, Jun 26 2004</div>
+                             
+                                 <div class=sectline>a(n) = Sum_{k=1..n} (1/k!)*(Sum_{i=1..k} (-1)^(k-i)*binomial(k, i)*i^n) for n &gt;= 1. - <a href="/wiki/User:Paul_Barry">Paul Barry</a>, Apr 18 2005</div>
+                             
+                                 <div class=sectline>a(n) = <a href="/A032347" title="Inverse binomial transform of A032346.">A032347</a>(n) + <a href="/A040027" title="The Gould numbers.">A040027</a>(n-1) for n &gt;= 1. - <a href="/wiki/User:Jon_Perry">Jon Perry</a>, Apr 26 2005 [corrected by <a href="/wiki/User:Falk_Hüffner">Falk Hüffner</a>, Jun 14 2026]</div>
+                             
+                                 <div class=sectline>a(n) = (2*n!/(Pi*e))*Im( Integral_{x=0..Pi} e^(e^(e^(ix))) sin(nx) dx ) where Im denotes imaginary part [Cesaro]. - <a href="/wiki/User:David_Callan">David Callan</a>, Sep 03 2005</div>
+                             
+                                 <div class=sectline>O.g.f.: 1/(1-x-x^2/(1-2*x-2*x^2/(1-3*x-3*x^2/(.../(1-n*x-n*x^2/(...)))))) (continued fraction due to Ph. Flajolet). - <a href="/wiki/User:Paul_D._Hanna">Paul D. Hanna</a>, Jan 17 2006</div>
+                             
+                                 <div class=sectline>From <a href="/wiki/User:Karol_A._Penson">Karol A. Penson</a>, Jan 14 2007: (Start)</div>
+                             
+                                 <div class=sectline>Representation of Bell numbers B(n), n=1,2,..., as special values of hypergeometric function of type (n-1)F(n-1), in Maple notation: B(n)=exp(-1)*hypergeom([2,2,...,2],[1,1,...,1],1), n=1,2,..., i.e., having n-1 parameters all equal to 2 in the numerator, having n-1 parameters all equal to 1 in the denominator and the value of the argument equal to 1.</div>
+                             
+                                 <div class=sectline>Examples:</div>
+                             
+                                 <div class=sectline>B(1)=exp(-1)*hypergeom([],[],1)=1</div>
+                             
+                                 <div class=sectline>B(2)=exp(-1)*hypergeom([2],[1],1)=2</div>
+                             
+                                 <div class=sectline>B(3)=exp(-1)*hypergeom([2,2],[1,1],1)=5</div>
+                             
+                                 <div class=sectline>B(4)=exp(-1)*hypergeom([2,2,2],[1,1,1],1)=15</div>
+                             
+                                 <div class=sectline>B(5)=exp(-1)*hypergeom([2,2,2,2],[1,1,1,1],1)=52</div>
+                             
+                                 <div class=sectline>(Warning: this formula is correct but its application by a computer may not yield exact results, especially with a large number of parameters.)</div>
+                             
+                                 <div class=sectline>(End)</div>
+                             
+                                 <div class=sectline>a(n+1) = 1 + Sum_{k=0..n-1} Sum_{i=0..k} binomial(k,i)*(2^(k-i))*a(i). - <a href="/wiki/User:Yalcin_Aktar">Yalcin Aktar</a>, Feb 27 2007</div>
+                             
+                                 <div class=sectline>a(n) = [1,0,0,...,0] T^(n-1) [1,1,1,...,1]', where T is the n X n matrix with main diagonal {1,2,3,...,n}, 1's on the diagonal immediately above and 0's elsewhere. [Meier]</div>
+                             
+                                 <div class=sectline>a(n) = ((2*n!)/(Pi * e)) * ImaginaryPart(Integral[from 0 to Pi](e^e^e^(i*theta))*sin(n*theta) dtheta). - <a href="/wiki/User:Jonathan_Vos_Post">Jonathan Vos Post</a>, Aug 27 2007</div>
+                             
+                                 <div class=sectline>From <a href="/wiki/User:Tom_Copeland">Tom Copeland</a>, Oct 10 2007: (Start)</div>
+                             
+                                 <div class=sectline>a(n) = T(n,1) = Sum_{j=0..n} S2(n,j) = Sum_{j=0..n} E(n,j) * Lag(n,-1,j-n) = Sum_{j=0..n} [ E(n,j)/n! ] * [ n!*Lag(n,-1, j-n) ] where T(n,x) are the Bell / Touchard / exponential polynomials; S2(n,j), the Stirling numbers of the second kind; E(n,j), the Eulerian numbers; and Lag(n,x,m), the associated Laguerre polynomials of order m. Note that E(n,j)/n! = E(n,j) / (Sum_{k=0..n} E(n,k)).</div>
+                             
+                                 <div class=sectline>The Eulerian numbers count the permutation ascents and the expression [n!*Lag(n,-1, j-n)] is <a href="/A086885" title="Lower triangular matrix, read by rows: T(i,j) = number of ways i seats can be occupied by any number k (0&lt;=k&lt;=j&lt;=i) of persons.">A086885</a> with a simple combinatorial interpretation in terms of seating arrangements, giving a combinatorial interpretation to n!*a(n) = Sum_{j=0..n} E(n,j) * [n!*Lag(n,-1, j-n)].</div>
+                             
+                                 <div class=sectline>(End)</div>
+                             
+                                 <div class=sectline>Define f_1(x), f_2(x), ... such that f_1(x)=e^x and for n=2,3,... f_{n+1}(x) = (d/dx)(x*f_n(x)). Then for Bell numbers B_n we have B_n=1/e*f_n(1). - <a href="/wiki/User:Milan_Janjic">Milan Janjic</a>, May 30 2008</div>
+                             
+                                 <div class=sectline>a(n) = (n-1)! Sum_{k=1..n} a(n-k)/((n-k)! (k-1)!) where a(0)=1. - <a href="/wiki/User:Thomas_Wieder">Thomas Wieder</a>, Sep 09 2008</div>
+                             
+                                 <div class=sectline>a(n+k) = Sum_{m=0..n} Stirling2(n,m) Sum_{r=0..k} binomial(k,r) m^r a(k-r). - David Pasino (davepasino(AT)yahoo.com), Jan 25 2009. (Umbrally, this may be written as a(n+k) = Sum_{m=0..n} Stirling2(n,m) (a+m)^k. - <a href="/wiki/User:N._J._A._Sloane">N. J. A. Sloane</a>, Feb 07 2009)</div>
+                             
+                                 <div class=sectline>Sum_{k=1..n-1} a(k)*binomial(n,k) = Sum_{j=1..n}(j+1)*Stirling2(n,j+1). - [Zhao] - <a href="/wiki/User:R._J._Mathar">R. J. Mathar</a>, Jun 24 2024 [Corrected by <a href="/wiki/User:Eric_W._Weisstein">Eric W. Weisstein</a>, Oct 13 2026]</div>
+                             
+                                 <div class=sectline>From <a href="/wiki/User:Thomas_Wieder">Thomas Wieder</a>, Feb 25 2009: (Start)</div>
+                             
+                                 <div class=sectline>a(n) = Sum_{k_1=0..n+1} Sum_{k_2=0..n}...Sum_{k_i=0..n-i}...Sum_{k_n=0..1}</div>
+                             
+                                 <div class=sectline>delta(k_1,k_2,...,k_i,...,k_n)</div>
+                             
+                                 <div class=sectline>where delta(k_1,k_2,...,k_i,...,k_n) = 0 if any k_i &gt; k_(i+1) and k_(i+1) &lt;&gt; 0</div>
+                             
+                                 <div class=sectline>and delta(k_1,k_2,...,k_i,...,k_n) = 1 otherwise.</div>
+                             
+                                 <div class=sectline>(End)</div>
+                             
+                                 <div class=sectline>Let A be the upper Hessenberg matrix of order n defined by: A[i,i-1]=-1, A[i,j]:=binomial(j-1,i-1), (i&lt;=j), and A[i,j]=0 otherwise. Then, for n&gt;=1, a(n)=det(A). - <a href="/wiki/User:Milan_Janjic">Milan Janjic</a>, Jul 08 2010</div>
+                             
+                                 <div class=sectline>G.f. satisfies A(x) = (x/(1-x))*A(x/(1-x)) + 1. - <a href="/wiki/User:Vladimir_Kruchinin">Vladimir Kruchinin</a>, Nov 28 2011</div>
+                             
+                                 <div class=sectline>G.f.: 1 / (1 - x / (1 - 1*x / (1 - x / (1 - 2*x / (1 - x / (1 - 3*x / ... )))))). - <a href="/wiki/User:Michael_Somos">Michael Somos</a>, May 12 2012</div>
+                             
+                                 <div class=sectline>a(n+1) = Sum_{m=0..n} Stirling2(n, m)*(m+1), n &gt;= 0. Compare with the third formula for a(n) above. Here Stirling2 = <a href="/A048993" title="Triangle of Stirling numbers of 2nd kind, S(n,k), n &gt;= 0, 0 &lt;= k &lt;= n.">A048993</a>. - <a href="/wiki/User:Wolfdieter_Lang">Wolfdieter Lang</a>, Feb 03 2015</div>
+                             
+                                 <div class=sectline>G.f.: (-1)^(1/x)*((-1/x)!/e + (!(-1-1/x))/x) where z! and !z are factorial and subfactorial generalized to complex arguments. - <a href="/wiki/User:Vladimir_Reshetnikov">Vladimir Reshetnikov</a>, Apr 24 2013</div>
+                             
+                                 <div class=sectline>The following formulas were proposed during the period Dec 2011 - Oct 2013 by <a href="/wiki/User:Sergei_N._Gladkovskii">Sergei N. Gladkovskii</a>: (Start)</div>
+                             
+                                 <div class=sectline>E.g.f.: exp(exp(x)-1) = 1 + x/(G(0)-x); G(k) = (k+1)*Bell(k) + x*Bell(k+1) - x*(k+1)*Bell(k)*Bell(k+2)/G(k+1) (continued fraction).</div>
+                             
+                                 <div class=sectline>G.f.: W(x) = (1-1/(G(0)+1))/exp(1); G(k) = x*k^2 + (3*x-1)*k - 2 + x - (k+1)*(x*k+x-1)^2/G(k+1); (continued fraction Euler's kind, 1-step).</div>
+                             
+                                 <div class=sectline>G.f.: W(x) = (1 + G(0)/(x^2-3*x+2))/exp(1); G(k) = 1 - (x*k+x-1)/( ((k+1)!) - (((k+1)!)^2)*(1-x-k*x+(k+1)!)/( ((k+1)!)*(1-x-k*x+(k+1)!) - (x*k+2*x-1)*(1-2*x-k*x+(k+2)!)/G(k+1))); (continued fraction).</div>
+                             
+                                 <div class=sectline>G.f.: A(x) = 1/(1 - x/(1-x/(1 + x/G(0)))); G(k) = x - 1 + x*k + x*(x-1+x*k)/G(k+1); (continued fraction, 1-step).</div>
+                             
+                                 <div class=sectline>G.f.: -1/U(0) where U(k) = x*k - 1 + x - x^2*(k+1)/U(k+1); (continued fraction, 1-step).</div>
+                             
+                                 <div class=sectline>G.f.: 1 + x/U(0) where U(k) = 1 - x*(k+2) - x^2*(k+1)/U(k+1); (continued fraction, 1-step).</div>
+                             
+                                 <div class=sectline>G.f.: 1 + 1/(U(0) - x) where U(k) = 1 + x - x*(k+1)/(1 - x/U(k+1)); (continued fraction, 2-step).</div>
+                             
+                                 <div class=sectline>G.f.: 1 + x/(U(0)-x) where U(k) = 1 - x*(k+1)/(1 - x/U(k+1)); (continued fraction, 2-step).</div>
+                             
+                                 <div class=sectline>G.f.: 1/G(0) where G(k) = 1 - x/(1 - x*(2*k+1)/(1 - x/(1 - x*(2*k+2)/G(k+1) ))); (continued fraction).</div>
+                             
+                                 <div class=sectline>G.f.: G(0)/(1+x) where G(k) = 1 - 2*x*(k+1)/((2*k+1)*(2*x*k-1) - x*(2*k+1)*(2*k+3)*(2*x*k-1)/(x*(2*k+3) - 2*(k+1)*(2*x*k+x-1)/G(k+1) )); (continued fraction).</div>
+                             
+                                 <div class=sectline>G.f.: -(1+2*x) * Sum_{k &gt;= 0} x^(2*k)*(4*x*k^2-2*k-2*x-1) / ((2*k+1) * (2*x*k-1)) * A(k) / B(k) where A(k) = Product_{p=0..k} (2*p+1), B(k) = Product_{p=0..k} (2*p-1) * (2*x*p-x-1) * (2*x*p-2*x-1).</div>
+                             
+                                 <div class=sectline>G.f.: (G(0) - 1)/(x-1) where G(k) = 1 - 1/(1-k*x)/(1-x/(x-1/G(k+1) )); (continued fraction).</div>
+                             
+                                 <div class=sectline>G.f.: 1 + x*(S-1) where S = Sum_{k&gt;=0} ( 1 + (1-x)/(1-x-x*k) )*(x/(1-x))^k/Product_{i=0..k-1} (1-x-x*i)/(1-x).</div>
+                             
+                                 <div class=sectline>G.f.: (G(0) - 2)/(2*x-1) where G(k) = 2 - 1/(1-k*x)/(1-x/(x-1/G(k+1) )); (continued fraction).</div>
+                             
+                                 <div class=sectline>G.f.: -G(0) where G(k) = 1 - (x*k - 2)/(x*k - 1 - x*(x*k - 1)/(x + (x*k - 2)/G(k+1) )); (continued fraction).</div>
+                             
+                                 <div class=sectline>G.f.: G(0) where G(k) = 2 - (2*x*k - 1)/(x*k - 1 - x*(x*k - 1)/(x + (2*x*k - 1)/G(k+1) )); (continued fraction).</div>
+                             
+                                 <div class=sectline>G.f.: (G(0) - 1)/(1+x) where G(k) = 1 + 1/(1-k*x)/(1-x/(x+1/G(k+1) )); (continued fraction).</div>
+                             
+                                 <div class=sectline>G.f.: 1/(x*(1-x)*G(0)) - 1/x where G(k) = 1 - x/(x - 1/(1 + 1/(x*k-1)/G(k+1) )); (continued fraction).</div>
+                             
+                                 <div class=sectline>G.f.: 1 + x/( Q(0) - x ) where Q(k) = 1 + x/( x*k - 1 )/Q(k+1); (continued fraction).</div>
+                             
+                                 <div class=sectline>G.f.: 1+x/Q(0), where Q(k) = 1 - x - x/(1 - x*(k+1)/Q(k+1)); (continued fraction).</div>
+                             
+                                 <div class=sectline>G.f.: 1/(1-x*Q(0)), where Q(k) = 1 + x/(1 - x + x*(k+1)/(x - 1/Q(k+1))); (continued fraction).</div>
+                             
+                                 <div class=sectline>G.f.: Q(0)/(1-x), where Q(k) = 1 - x^2*(k+1)/( x^2*(k+1) - (1-x*(k+1))*(1-x*(k+2))/Q(k+1) ); (continued fraction).</div>
+                             
+                                 <div class=sectline>(End)</div>
+                             
+                                 <div class=sectline>a(n) ~ exp(exp(W(n))-n-1)*n^n/W(n)^(n+1/2), where W(x) is the Lambert W-function. - <a href="/wiki/User:Vladimir_Reshetnikov">Vladimir Reshetnikov</a>, Nov 01 2015</div>
+                             
+                                 <div class=sectline>a(n) ~ n^n * exp(n/W(n)-1-n) / (sqrt(1+W(n)) * W(n)^n). - <a href="/wiki/User:Vaclav_Kotesovec">Vaclav Kotesovec</a>, Nov 13 2015</div>
+                             
+                                 <div class=sectline>From <a href="/wiki/User:Natalia_L._Skirrow">Natalia L. Skirrow</a>, Apr 13 2025: (Start)</div>
+                             
+                                 <div class=sectline>By taking logarithmic derivatives of the equivalent to Kotesovec's asymptotic for Bell polynomials at x=1, we obtain properties of the nth row of <a href="/A008277" title="Triangle of Stirling numbers of the second kind, S2(n,k), n &gt;= 1, 1 &lt;= k &lt;= n.">A008277</a> as a statistical distribution (where W=W(n),X=W(n)+1)</div>
+                             
+                                 <div class=sectline>a(n+1)/a(n) ~ n/W + W/(2*(W+1)^2) is 1 more than the expectation.</div>
+                             
+                                 <div class=sectline>(2*a(n+1)+a(n+2))/a(n) - (a(n+1)/a(n))^2 - a(n+2)/a(n+1) ~ n/(W*X)+1/(2*X^2)-3/(2*X^3)+1/X^4 is 1 more than the variance.</div>
+                             
+                                 <div class=sectline>(This is a complete asymptotic characterisation, since they converge to normal distributions; see Harper, 1967)</div>
+                             
+                                 <div class=sectline>(End)</div>
+                             
+                                 <div class=sectline>a(n) are the coefficients in the asymptotic expansion of -exp(-1)*(-1)^x*x*Gamma(-x,0,-1), where Gamma(a,z0,z1) is the generalized incomplete Gamma function. - <a href="/wiki/User:Vladimir_Reshetnikov">Vladimir Reshetnikov</a>, Nov 12 2015</div>
+                             
+                                 <div class=sectline>a(n) = 1 + floor(exp(-1) * Sum_{k=1..2*n} k^n/k!). - <a href="/wiki/User:Vladimir_Reshetnikov">Vladimir Reshetnikov</a>, Nov 13 2015</div>
+                             
+                                 <div class=sectline>a(p^m) == m+1 (mod p) when p is prime and m &gt;= 1 (see Lemma 3.1 in the Hurst/Schultz reference). - <a href="/wiki/User:Seiichi_Manyama">Seiichi Manyama</a>, Jun 01 2016</div>
+                             
+                                 <div class=sectline>a(n) = Sum_{k=0..n} hypergeom([1, -k], [], 1)*Stirling2(n+1, k+1) = Sum_{k=0..n} <a href="/A182386" title="a(0) = 1, a(n) = 1 - n * a(n-1).">A182386</a>(k)*Stirling2(n+1, k+1). - <a href="/wiki/User:Mélika_Tebni">Mélika Tebni</a>, Jul 02 2022</div>
+                             
+                                 <div class=sectline>For n &gt;= 1, a(n) = Sum_{i=0..n-1} a(i)*<a href="/A074664" title="Number of algebraically independent elements of degree n in the algebra of symmetric polynomials in noncommuting variables.">A074664</a>(n-i). - <a href="/wiki/User:Davide_Rotondo">Davide Rotondo</a>, Apr 21 2024</div>
+                             
+                                 <div class=sectline>a(n) is the n-th derivative of e^e^x divided by e at point x=0. - <a href="/wiki/User:Joan_Ludevid">Joan Ludevid</a>, Nov 05 2024</div>
+                             
+                                 <div class=sectline>a(n) = <a href="/A001055" title="The multiplicative partition function: number of ways of factoring n with all factors greater than 1 (a(1) = 1 by convention).">A001055</a>(<a href="/A002110" title="Primorial numbers (first definition): product of first n primes. Sometimes written prime(n)#.">A002110</a>(n)). - <a href="/wiki/User:Daniel_Suteu">Daniel Suteu</a>, May 14 2026</div>
+                             
+                         </div>
+                     </div>
+                 
+            
+        
+            
+                 
+                 
+                 
+                 
+                     <div class=section>
+                         <div class=sectname>EXAMPLE</div>
+                         <div class=sectbody>
+                             
+                                 <div class=sectline>G.f. = 1 + x + 2*x^2 + 5*x^3 + 15*x^4 + 52*x^5 + 203*x^6 + 877*x^7 + 4140*x^8 + ...</div>
+                             
+                                 <div class=sectline>From Neven Juric, Oct 19 2009: (Start)</div>
+                             
+                                 <div class=sectline>The a(4)=15 rhyme schemes for n=4 are</div>
+                             
+                                 <div class=sectline>  aaaa, aaab, aaba, aabb, aabc, abaa, abab, abac, abba, abbb, abbc, abca, abcb, abcc, abcd</div>
+                             
+                                 <div class=sectline>The a(5)=52 rhyme schemes for n=5 are</div>
+                             
+                                 <div class=sectline>  aaaaa, aaaab, aaaba, aaabb, aaabc, aabaa, aabab, aabac, aabba, aabbb, aabbc, aabca, aabcb, aabcc, aabcd, abaaa, abaab, abaac, ababa, ababb, ababc, abaca, abacb, abacc, abacd, abbaa, abbab, abbac, abbba, abbbb, abbbc, abbca, abbcb, abbcc, abbcd, abcaa, abcab, abcac, abcad, abcba, abcbb, abcbc, abcbd, abcca, abccb, abccc, abccd, abcda, abcdb, abcdc, abcdd, abcde</div>
+                             
+                                 <div class=sectline>(End)</div>
+                             
+                                 <div class=sectline>From <a href="/wiki/User:Joerg_Arndt">Joerg Arndt</a>, Apr 30 2011: (Start)</div>
+                             
+                                 <div class=sectline>Restricted growth strings (RGS):</div>
+                             
+                                 <div class=sectline>For n=0 there is one empty string;</div>
+                             
+                                 <div class=sectline>for n=1 there is one string [0];</div>
+                             
+                                 <div class=sectline>for n=2 there are 2 strings [00], [01];</div>
+                             
+                                 <div class=sectline>for n=3 there are a(3)=5 strings [000], [001], [010], [011], and [012];</div>
+                             
+                                 <div class=sectline>for n=4 there are a(4)=15 strings</div>
+                             
+                                 <div class=sectline>1: [0000], 2: [0001], 3: [0010], 4: [0011], 5: [0012], 6: [0100], 7: [0101], 8: [0102], 9: [0110], 10: [0111], 11: [0112], 12: [0120], 13: [0121], 14: [0122], 15: [0123].</div>
+                             
+                                 <div class=sectline>These are one-to-one with the rhyme schemes (identify a=0, b=1, c=2, etc.).</div>
+                             
+                                 <div class=sectline>(End)</div>
+                             
+                                 <div class=sectline>Consider the set S = {1, 2, 3, 4}. The a(4) = 1 + 3 + 6 + 4 + 1 = 15 partitions are: P1 = {{1}, {2}, {3}, {4}}; P21 .. P23 = {{a,4}, S\{a,4}} with a = 1, 2, 3; P24 .. P29 = {{a}, {b}, S\{a,b}} with 1 &lt;= a &lt; b &lt;= 4; P31 .. P34 = {S\{a}, {a}} with a = 1 .. 4; P4 = {S}. See the Bottomley link for a graphical illustration. - <a href="/wiki/User:M._F._Hasler">M. F. Hasler</a>, Oct 26 2017</div>
+                             
+                         </div>
+                     </div>
+                 
+            
+        
+            
+                 
+                 
+                 
+                 
+                     <div class=section>
+                         <div class=sectname>MAPLE</div>
+                         <div class=sectbody>
+                             
+                                 <div class=sectline><a href="/A000110" title="Bell or exponential numbers: number of ways to partition a set of n labeled elements.">A000110</a> := proc(n) option remember; if n &lt;= 1 then 1 else add( binomial(n-1, i)*<a href="/A000110" title="Bell or exponential numbers: number of ways to partition a set of n labeled elements.">A000110</a>(n-1-i), i=0..n-1); fi; end:</div>
+                             
+                                 <div class=sectline># Alternative:</div>
+                             
+                                 <div class=sectline>A := series(exp(exp(x)-1), x, 60): <a href="/A000110" title="Bell or exponential numbers: number of ways to partition a set of n labeled elements.">A000110</a> := n-&gt;n!*coeff(A, x, n):</div>
+                             
+                                 <div class=sectline># Alternative:</div>
+                             
+                                 <div class=sectline><a href="/A000110" title="Bell or exponential numbers: number of ways to partition a set of n labeled elements.">A000110</a>:= n-&gt; add(Stirling2(n, k), k=0..n): seq(<a href="/A000110" title="Bell or exponential numbers: number of ways to partition a set of n labeled elements.">A000110</a>(n), n=0..22); # <a href="/wiki/User:Zerinvary_Lajos">Zerinvary Lajos</a>, Jun 28 2007</div>
+                             
+                                 <div class=sectline># Alternative:</div>
+                             
+                                 <div class=sectline><a href="/A000110" title="Bell or exponential numbers: number of ways to partition a set of n labeled elements.">A000110</a> := n -&gt; combinat[bell](n): # <a href="/wiki/User:Peter_Luschny">Peter Luschny</a>, Mar 30 2011</div>
+                             
+                                 <div class=sectline># Alternative:</div>
+                             
+                                 <div class=sectline>spec:= [S, {S=Set(U, card &gt;= 1), U=Set(Z, card &gt;= 1)}, labeled]: G:={P=Set(Set(Atom, card&gt;0))}: combstruct[gfsolve](G, unlabeled, x): seq(combstruct[count]([P, G, labeled], size=i), i=0..22);  # <a href="/wiki/User:Zerinvary_Lajos">Zerinvary Lajos</a>, Dec 16 2007</div>
+                             
+                                 <div class=sectline># Alternative:</div>
+                             
+                                 <div class=sectline>BellList := proc(m) local A, P, n; A := [1, 1]; P := [1]; for n from 1 to m - 2 do</div>
+                             
+                                 <div class=sectline>P := ListTools:-PartialSums([A[-1], op(P)]); A := [op(A), P[-1]] od; A end: BellList(29); # <a href="/wiki/User:Peter_Luschny">Peter Luschny</a>, Mar 24 2022</div>
+                             
+                         </div>
+                     </div>
+                 
+            
+        
+            
+                 
+                 
+                 
+                 
+                     <div class=section>
+                         <div class=sectname>MATHEMATICA</div>
+                         <div class=sectbody>
+                             
+                                 <div class=sectline>f[n_] := Sum[ StirlingS2[n, k], {k, 0, n}]; Table[ f[n], {n, 0, 40}] (* <a href="/wiki/User:Robert_G._Wilson_v">Robert G. Wilson v</a> *)</div>
+                             
+                                 <div class=sectline>(* Alternative: *)</div>
+                             
+                                 <div class=sectline>Table[BellB[n], {n, 0, 40}] (* <a href="/wiki/User:Harvey_P._Dale">Harvey P. Dale</a>, Mar 01 2011 *)</div>
+                             
+                                 <div class=sectline>(* Alternative: *)</div>
+                             
+                                 <div class=sectline>B[0] = 1; B[n_] := 1/E Sum[k^(n - 1)/(k-1)!, {k, 1, Infinity}] (* <a href="/wiki/User:Dimitri_Papadopoulos">Dimitri Papadopoulos</a>, Mar 10 2015, edited by <a href="/wiki/User:M._F._Hasler">M. F. Hasler</a>, Nov 30 2018 *)</div>
+                             
+                                 <div class=sectline>(* Alternative: *)</div>
+                             
+                                 <div class=sectline>BellB[Range[0, 40]] (* <a href="/wiki/User:Eric_W._Weisstein">Eric W. Weisstein</a>, Aug 10 2017 *)</div>
+                             
+                                 <div class=sectline>(* Alternative: *)</div>
+                             
+                                 <div class=sectline>b[1] = 1; k = 1; Flatten[{1, Table[Do[j = k; k += b[m]; b[m] = j; , {m, 1, n-1}]; b[n] = k, {n, 1, 40}]}] (* <a href="/wiki/User:Vaclav_Kotesovec">Vaclav Kotesovec</a>, Sep 07 2019 *)</div>
+                             
+                                 <div class=sectline>(* Alternative: *)</div>
+                             
+                                 <div class=sectline>Table[j! Coefficient[Series[Exp[Exp[x] - 1], {x, 0, 20}], x, j], {j, 0, 20}] (* <a href="/wiki/User:Nikolaos_Pantelidis">Nikolaos Pantelidis</a>, Feb 01 2023 *)</div>
+                             
+                                 <div class=sectline>(* Alternative: *)</div>
+                             
+                                 <div class=sectline>Table[(D[Exp[Exp[x]], {x, n}] /. x -&gt; 0)/E, {n, 0, 20}] (* <a href="/wiki/User:Joan_Ludevid">Joan Ludevid</a>, Nov 05 2024 *)</div>
+                             
+                         </div>
+                     </div>
+                 
+            
+        
+            
+                 
+                 
+                 
+                 
+                     <div class=section>
+                         <div class=sectname>PROG</div>
+                         <div class=sectbody>
+                             
+                                 <div class=sectline>(PARI) {a(n) = my(m); if( n&lt;0, 0, m = contfracpnqn( matrix(2, n\2, i, k, if( i==1, -k*x^2, 1 - (k+1)*x))); polcoeff(1 / (1 - x + m[2, 1] / m[1, 1]) + x * O(x^n), n))}; /* <a href="/wiki/User:Michael_Somos">Michael Somos</a> */</div>
+                             
+                                 <div class=sectline>(PARI) {a(n) = polcoeff( sum( k=0, n, prod( i=1, k, x / (1 - i*x)), x^n * O(x)), n)}; /* <a href="/wiki/User:Michael_Somos">Michael Somos</a>, Aug 22 2004 */</div>
+                             
+                                 <div class=sectline>(PARI) a(n)=round(exp(-1)*suminf(k=0, 1.0*k^n/k!)) \\ <a href="/wiki/User:Gottfried_Helms">Gottfried Helms</a>, Mar 30 2007 - WARNING! For illustration only: Gives silently a wrong result for n = 42 and an error for n &gt; 42, with standard precision of 38 digits. - <a href="/wiki/User:M._F._Hasler">M. F. Hasler</a>, Nov 30 2018</div>
+                             
+                                 <div class=sectline>(PARI) {a(n) = if( n&lt;0, 0, n! * polcoeff( exp( exp( x + x * O(x^n)) - 1), n))}; /* <a href="/wiki/User:Michael_Somos">Michael Somos</a>, Jun 28 2009 */</div>
+                             
+                                 <div class=sectline>(PARI) Vec(serlaplace(exp(exp('x+O('x^66))-1))) \\ <a href="/wiki/User:Joerg_Arndt">Joerg Arndt</a>, May 26 2012</div>
+                             
+                                 <div class=sectline>(PARI) <a href="/A000110" title="Bell or exponential numbers: number of ways to partition a set of n labeled elements.">A000110</a>(n)=sum(k=0, n, stirling(n, k, 2)) \\ <a href="/wiki/User:M._F._Hasler">M. F. Hasler</a>, Nov 30 2018</div>
+                             
+                                 <div class=sectline>(PARI) lista(n)= my(b=Vec([1, 1], n+1)); for(i=2, n, my(c=binomial(i-1)); b[i+1]= sum(k=1, i, c[k]*b[k])); b; \\ <a href="/wiki/User:Ruud_H.G._van_Tol">Ruud H.G. van Tol</a>, Dec 10 2025</div>
+                             
+                                 <div class=sectline>(SageMath) from sage.combinat.expnums import expnums2; expnums2(30, 1) # <a href="/wiki/User:Zerinvary_Lajos">Zerinvary Lajos</a>, Jun 26 2008</div>
+                             
+                                 <div class=sectline>(SageMath) [bell_number(n) for n in (0..40)] # <a href="/wiki/User:G._C._Greubel">G. C. Greubel</a>, Jun 13 2019</div>
+                             
+                                 <div class=sectline>(Python) # The objective of this implementation is efficiency.</div>
+                             
+                                 <div class=sectline># m -&gt; [a(0), a(1), ..., a(m)] for m &gt; 0.</div>
+                             
+                                 <div class=sectline>def <a href="/A000110" title="Bell or exponential numbers: number of ways to partition a set of n labeled elements.">A000110</a>_list(m):</div>
+                             
+                                 <div class=sectline>    A = [0 for i in range(m)]</div>
+                             
+                                 <div class=sectline>    A[0] = 1</div>
+                             
+                                 <div class=sectline>    R = [1, 1]</div>
+                             
+                                 <div class=sectline>    for n in range(1, m):</div>
+                             
+                                 <div class=sectline>        A[n] = A[0]</div>
+                             
+                                 <div class=sectline>        for k in range(n, 0, -1):</div>
+                             
+                                 <div class=sectline>            A[k-1] += A[k]</div>
+                             
+                                 <div class=sectline>        R.append(A[0])</div>
+                             
+                                 <div class=sectline>    return R</div>
+                             
+                                 <div class=sectline><a href="/A000110" title="Bell or exponential numbers: number of ways to partition a set of n labeled elements.">A000110</a>_list(40) # <a href="/wiki/User:Peter_Luschny">Peter Luschny</a>, Jan 18 2011</div>
+                             
+                                 <div class=sectline>(Python)</div>
+                             
+                                 <div class=sectline># requires python 3.2 or higher. Otherwise use def'n of accumulate in python docs.</div>
+                             
+                                 <div class=sectline>from itertools import accumulate</div>
+                             
+                                 <div class=sectline><a href="/A000110" title="Bell or exponential numbers: number of ways to partition a set of n labeled elements.">A000110</a>, blist, b = [1, 1], [1], 1</div>
+                             
+                                 <div class=sectline>for _ in range(20):</div>
+                             
+                                 <div class=sectline>    blist = list(accumulate([b]+blist))</div>
+                             
+                                 <div class=sectline>    b = blist[-1]</div>
+                             
+                                 <div class=sectline>    <a href="/A000110" title="Bell or exponential numbers: number of ways to partition a set of n labeled elements.">A000110</a>.append(b) # <a href="/wiki/User:Chai_Wah_Wu">Chai Wah Wu</a>, Sep 02 2014, updated <a href="/wiki/User:Chai_Wah_Wu">Chai Wah Wu</a>, Sep 19 2014</div>
+                             
+                                 <div class=sectline>(Python)</div>
+                             
+                                 <div class=sectline>from sympy import bell</div>
+                             
+                                 <div class=sectline>print([bell(n) for n in range(27)]) # <a href="/wiki/User:Michael_S._Branicky">Michael S. Branicky</a>, Dec 15 2021</div>
+                             
+                                 <div class=sectline>(Python)</div>
+                             
+                                 <div class=sectline>from functools import cache</div>
+                             
+                                 <div class=sectline>@cache</div>
+                             
+                                 <div class=sectline>def a(n, k=0): return int(n &lt; 1) or k*a(n-1, k) + a(n-1, k+1)</div>
+                             
+                                 <div class=sectline>print([a(n) for n in range(27)])  # <a href="/wiki/User:Peter_Luschny">Peter Luschny</a>, Jun 14 2022</div>
+                             
+                                 <div class=sectline>(Magma) [Bell(n): n in [0..40]]; // <a href="/wiki/User:Vincenzo_Librandi">Vincenzo Librandi</a>, Feb 07 2011</div>
+                             
+                                 <div class=sectline>(Maxima) makelist(belln(n), n, 0, 40); /* <a href="/wiki/User:Emanuele_Munarini">Emanuele Munarini</a>, Jul 04 2011 */</div>
+                             
+                                 <div class=sectline>(Haskell)</div>
+                             
+                                 <div class=sectline>type N = Integer</div>
+                             
+                                 <div class=sectline>n_partitioned_k :: N -&gt; N -&gt; N</div>
+                             
+                                 <div class=sectline>1 `n_partitioned_k` 1 = 1</div>
+                             
+                                 <div class=sectline>1 `n_partitioned_k` _ = 0</div>
+                             
+                                 <div class=sectline>n `n_partitioned_k` k = k * (pred n `n_partitioned_k` k) + (pred n `n_partitioned_k` pred k)</div>
+                             
+                                 <div class=sectline>n_partitioned :: N -&gt; N</div>
+                             
+                                 <div class=sectline>n_partitioned 0 = 1</div>
+                             
+                                 <div class=sectline>n_partitioned n = sum $ map (\k -&gt; n `n_partitioned_k` k) $ [1 .. n]</div>
+                             
+                                 <div class=sectline>-- <a href="/wiki/User:Felix_Denis">Felix Denis</a>, Oct 16 2012</div>
+                             
+                                 <div class=sectline>(Haskell)</div>
+                             
+                                 <div class=sectline>a000110 = sum . a048993_row -- <a href="/wiki/User:Reinhard_Zumkeller">Reinhard Zumkeller</a>, Jun 30 2013</div>
+                             
+                                 <div class=sectline>(Julia)</div>
+                             
+                                 <div class=sectline>function a(n)</div>
+                             
+                                 <div class=sectline>    t = [zeros(BigInt, n+1) for _ in 1:n+1]</div>
+                             
+                                 <div class=sectline>    t[1][1] = 1</div>
+                             
+                                 <div class=sectline>    for i in 2:n+1</div>
+                             
+                                 <div class=sectline>        t[i][1] = t[i-1][i-1]</div>
+                             
+                                 <div class=sectline>        for j in 2:i</div>
+                             
+                                 <div class=sectline>            t[i][j] = t[i-1][j-1] + t[i][j-1]</div>
+                             
+                                 <div class=sectline>        end</div>
+                             
+                                 <div class=sectline>    end</div>
+                             
+                                 <div class=sectline>    return [t[i][1] for i in 1:n+1]</div>
+                             
+                                 <div class=sectline>end</div>
+                             
+                                 <div class=sectline>print(a(28)) # <a href="/wiki/User:Paul_Muljadi">Paul Muljadi</a>, May 07 2024</div>
+                             
+                                 <div class=sectline>(Perl)</div>
+                             
+                                 <div class=sectline>use bignum; sub a{my($n)=@_; my@t=map{[(0)x($n+1)]}0..$n; $t[0][0]=1; for my$i(1..$n){$t[$i][0]=$t[$i-1][$i-1]; for my$j(1..$i){$t[$i][$j]=$t[$i-1][$j-1]+$t[$i][$j-1]}}return map{$t[$_][0]}0..$n-1}print join(&quot;, &quot;, a(28)), &quot;\n&quot; # <a href="/wiki/User:Paul_Muljadi">Paul Muljadi</a>, May 08 2024</div>
+                             
+                         </div>
+                     </div>
+                 
+            
+        
+            
+                 
+                 
+                     
+                 
+                 
+                 
+                     <div class=section>
+                         <div class=sectname>CROSSREFS</div>
+                         <div class=sectbody>
+                             
+                                 <div class=sectline>Equals row sums of triangle <a href="/A008277" title="Triangle of Stirling numbers of the second kind, S2(n,k), n &gt;= 1, 1 &lt;= k &lt;= n.">A008277</a> (Stirling subset numbers).</div>
+                             
+                                 <div class=sectline>Partial sums give <a href="/A005001" title="a(n) = Sum_{k=0..n-1} Bell(k), where the Bell numbers Bell(k) are given in A000110.">A005001</a>. a(n) = <a href="/A123158" title="Square array related to Bell numbers read by antidiagonals.">A123158</a>(n, 0).</div>
+                             
+                                 <div class=sectline>See <a href="/A061462" title="The exact power of 2 that divides the n-th Bell number (A000110). Has period 12.">A061462</a> for powers of 2 dividing a(n).</div>
+                             
+                                 <div class=sectline>Rightmost diagonal of triangle <a href="/A121207" title="Triangle read by rows. The definition is by diagonals. The r-th diagonal from the right, for r &gt;= 0, is given by b(0) = b(1)...">A121207</a>. <a href="/A144293" title="Largest prime factor of n-th Bell number A000110(n) (or 1 if A000110(n) = 1).">A144293</a> gives largest prime factor.</div>
+                             
+                                 <div class=sectline>Cf. <a href="/A000045" title="Fibonacci numbers: F(n) = F(n-1) + F(n-2) with F(0) = 0 and F(1) = 1.">A000045</a>, <a href="/A000108" title="Catalan numbers: C(n) = binomial(2n,n)/(n+1) = (2n)!/(n!(n+1)!).">A000108</a>, <a href="/A000166" title="Subfactorial or rencontres numbers, or derangements: number of permutations of n elements with no fixed points.">A000166</a>, <a href="/A000204" title="Lucas numbers (beginning with 1): L(n) = L(n-1) + L(n-2) with L(1) = 1, L(2) = 3.">A000204</a>, <a href="/A000255" title="a(n) = n*a(n-1) + (n-1)*a(n-2), a(0) = 1, a(1) = 1.">A000255</a>, <a href="/A000311" title="Schroeder's fourth problem; also series-reduced rooted trees with n labeled leaves; also number of total partitions of n.">A000311</a>, <a href="/A000296" title="Set partitions without singletons: number of partitions of an n-set into blocks of size &gt; 1. Also number of cyclically space...">A000296</a>, <a href="/A003422" title="Left factorials: !n = Sum_{k=0..n-1} k!.">A003422</a>, <a href="/A024716" title="a(n) = Sum_{1 &lt;= j &lt;= i &lt;= n} S(i,j), where S(i,j) are Stirling numbers of the second kind.">A024716</a>, <a href="/A029761" title="Partial sums of A005001.">A029761</a>, <a href="/A049020" title="Triangle of numbers a(n,k), 0 &lt;= k &lt;= n: number of set partitions of {1,2,...,n} in which exactly k of the blocks have been ...">A049020</a>, <a href="/A058692" title="a(n) = B(n) - 1, where B(n) = Bell numbers, A000110.">A058692</a>, <a href="/A060719" title="a(0) = 1; a(n+1) = a(n) + Sum_{i=0..n} binomial(n,i)*(a(i)+1).">A060719</a>, <a href="/A084423" title="Set partitions up to rotations.">A084423</a>, <a href="/A087650" title="a(n) = Sum_{k=0..n} (-1)^(n-k)*Bell(k).">A087650</a>, <a href="/A094262" title="Triangle read by rows: T(n,k) is the number of rooted trees with k nodes which are disjoint sets of labels with union {1..n}...">A094262</a>, <a href="/A103293" title="Number of ways to color n regions arranged in a line such that consecutive regions do not have the same color.">A103293</a>, <a href="/A173110" title="Limit_{n-&gt;oo} M^n as a vector, where M is A173108 as an infinite lower triangular matrix.">A173110</a>, <a href="/A227840" title="3^a(n) is the highest power of 3 dividing A000110(n).">A227840</a>, <a href="/A182386" title="a(0) = 1, a(n) = 1 - n * a(n-1).">A182386</a>.</div>
+                             
+                                 <div class=sectline>Equals row sums of triangle <a href="/A152432" title="Triangle read by rows, inverse binomial transform of A152431.">A152432</a>.</div>
+                             
+                                 <div class=sectline>Row sums, right and left borders of <a href="/A212431" title="Triangle read by rows: row sums, right and left borders are the Bell sequence, or a shifted variant. See Comments for precis...">A212431</a>.</div>
+                             
+                                 <div class=sectline>A diagonal of <a href="/A011971" title="Aitken's array: triangle of numbers {a(n,k), n &gt;= 0, 0 &lt;= k &lt;= n} read by rows, defined by a(0,0)=1, a(n,0) = a(n-1,n-1), a(...">A011971</a>. - <a href="/wiki/User:N._J._A._Sloane">N. J. A. Sloane</a>, Jul 31 2012</div>
+                             
+                                 <div class=sectline>Diagonal of <a href="/A102661" title="Triangle of partial sums of Stirling numbers of 2nd kind (A008277): T(n,k) = Sum_{i=1..k} Stirling2(n,i), 1&lt;=k&lt;=n.">A102661</a>. - <a href="/wiki/User:Manfred_Boergens">Manfred Boergens</a>, Mar 11 2025</div>
+                             
+                                 <div class=sectline>Cf. <a href="/A054767" title="Period of the sequence of Bell numbers A000110 (mod n).">A054767</a> (period of this sequence mod n).</div>
+                             
+                                 <div class=sectline>Row sums are <a href="/A048993" title="Triangle of Stirling numbers of 2nd kind, S(n,k), n &gt;= 0, 0 &lt;= k &lt;= n.">A048993</a>. - <a href="/wiki/User:Wolfdieter_Lang">Wolfdieter Lang</a>, Oct 16 2014</div>
+                             
+                                 <div class=sectline>Sequences in the Erné (1974) paper: <a href="/A000110" title="Bell or exponential numbers: number of ways to partition a set of n labeled elements.">A000110</a>, <a href="/A000798" title="Number of different quasi-orders (or topologies, or transitive digraphs) with n labeled elements.">A000798</a>, <a href="/A001035" title="Number of partially ordered sets (&quot;posets&quot;) with n labeled elements (or labeled acyclic transitive digraphs).">A001035</a>, <a href="/A001927" title="Number of connected partially ordered sets with n labeled points.">A001927</a>, <a href="/A001929" title="Number of connected topologies on n labeled points.">A001929</a>, <a href="/A006056" title="Number of topologies on n labeled points satisfying the T_4 axiom.">A006056</a>, <a href="/A006057" title="Number of topologies on n labeled points satisfying axioms T_0-T_4.">A006057</a>, <a href="/A006058" title="Number of connected labeled T_4-topologies with n points.">A006058</a>, <a href="/A006059" title="Number of connected labeled T_0-T_4-topologies with n points.">A006059</a>.</div>
+                             
+                                 <div class=sectline>Bell polynomials B(n,x): <a href="/A001861" title="Expansion of e.g.f. exp(2*(exp(x) - 1)).">A001861</a> (x=2), <a href="/A027710" title="Number of ways of placing n labeled balls into n unlabeled (but 3-colored) boxes.">A027710</a> (x=3), <a href="/A078944" title="First column of A078939, the fourth power of lower triangular matrix A056857.">A078944</a> (x=4), <a href="/A144180" title="Number of ways of placing n labeled balls into n unlabeled (but 5-colored) boxes.">A144180</a> (x=5), <a href="/A144223" title="Number of ways of placing n labeled balls into n unlabeled (but 6-colored) boxes.">A144223</a> (x=6), <a href="/A144263" title="Number of ways of placing n labeled balls into n unlabeled (but7-colored) boxes.">A144263</a> (x=7), <a href="/A221159" title="a(n) = Sum_{i=0..n} Stirling2(n,i)*2^(3i).">A221159</a> (x=8).</div>
+                             
+                                 <div class=sectline>Cf. <a href="/A243991" title="Decimal expansion of sum of reciprocals of Bell numbers for n&gt;0.">A243991</a> (sum of reciprocals), <a href="/A085686" title="Inverse Euler transform of Bell numbers.">A085686</a> (inv. Euler Transf.).</div>
+                             
+                                 <div class=sectline>Cf. <a href="/A000371" title="a(n) = Sum_{k=0..n} (-1)^(n-k)*binomial(n,k)*2^(2^k).">A000371</a>, <a href="/A003465" title="Number of ways to cover an n-set.">A003465</a>, <a href="/A186021" title="a(n) = Bell(n)*(2 - 0^n).">A186021</a>.</div>
+                             
+                                 <div class=sectline>Sequence in context: <a href="/A203644" title="Number of arrays of n 0..13 integers with new values introduced in order 0..13 but otherwise unconstrained.">A203644</a> <a href="/A203645" title="Number of arrays of n 0..14 integers with new values introduced in order 0..14 but otherwise unconstrained.">A203645</a> <a href="/A203646" title="Number of arrays of n 0..15 integers with new values introduced in order 0..15 but otherwise unconstrained.">A203646</a> * <a href="/A292935" title="Expansion of e.g.f.: exp(exp(-x) - 1).">A292935</a> <a href="/A336022" title="a(0) = ... = a(4) = 1; a(n) = Sum_{k=0..n-5} Stirling2(n-5,k) * a(k).">A336022</a> <a href="/A303924" title="G.f. A(x) satisfies: 1 = Sum_{n&gt;=0} ( 1 + x*A(x)^(n+1) - A(x) )^n.">A303924</a></div>
+                             
+                                 <div class=sectline>Adjacent sequences:  <a href="/A000107" title="Number of rooted trees with n nodes and a single labeled node; pointed rooted trees; vertebrates.">A000107</a> <a href="/A000108" title="Catalan numbers: C(n) = binomial(2n,n)/(n+1) = (2n)!/(n!(n+1)!).">A000108</a> <a href="/A000109" title="Number of simplicial polyhedra with n vertices; simple planar graphs with n vertices and 3n-6 edges; maximal simple planar g...">A000109</a> * <a href="/A000111" title="Euler or up/down numbers: e.g.f. sec(x) + tan(x). Also for n &gt;= 2, half the number of alternating permutations on n letters ...">A000111</a> <a href="/A000112" title="Number of partially ordered sets (&quot;posets&quot;) with n unlabeled elements.">A000112</a> <a href="/A000113" title="Number of transformation groups of order n.">A000113</a></div>
+                             
+                         </div>
+                     </div>
+                 
+            
+        
+            
+                 
+                 
+                 
+                 
+                     <div class=section>
+                         <div class=sectname>KEYWORD</div>
+                         <div class=sectbody>
+                             
+                                 <div class=sectline><span title="an important sequence">core</span>,<span title="a sequence of nonnegative numbers">nonn</span>,<span title="it is very easy to produce terms of sequence">easy</span>,<span title="an exceptionally nice sequence">nice</span>,<span title="edited within the last two weeks">changed</span></div>
+                             
+                         </div>
+                     </div>
+                 
+            
+        
+            
+                 
+                 
+                 
+                 
+                     <div class=section>
+                         <div class=sectname>AUTHOR</div>
+                         <div class=sectbody>
+                             
+                                 <div class=sectline><a href="/wiki/User:N._J._A._Sloane">N. J. A. Sloane</a></div>
+                             
+                         </div>
+                     </div>
+                 
+            
+        
+            
+                 
+                 
+                 
+                 
+                     <div class=section>
+                         <div class=sectname>EXTENSIONS</div>
+                         <div class=sectbody>
+                             
+                                 <div class=sectline>Edited by <a href="/wiki/User:M._F._Hasler">M. F. Hasler</a>, Nov 30 2018</div>
+                             
+                         </div>
+                     </div>
+                 
+            
+        
+            
+                 
+                 
+                 
+                 
+                     <div class=section>
+                         <div class=sectname>STATUS</div>
+                         <div class=sectbody>
+                             
+                                 <div class=sectline>approved</div>
+                             
+                         </div>
+                     </div>
+                 
+            
+        
+
+        
+    </div>
+
+        
+        <div class=space10></div>
+    </div>
+
+    </div></div>
+
+    <p>
+
+    <div class=footerpad></div>
+    <div class=footer>
+    <center>
+    <div class=bottom>
+    <div class=linksbar>
+      <a href="/">Lookup</a>
+      <a href="/wiki/Welcome"><font color="red">Welcome</font></a>
+      <a href="/wiki/Main_Page"><font color="red">Wiki</font></a>
+      <a href="/account">Register</a>
+      
+      <a href="/play.html">Music</a>
+      <a href="/plot2.html">Plot 2</a>
+      <a href="/demo1.html">Demos</a>
+      <a href="/wiki/Index_to_OEIS">Index</a>
+      <a href="/webcam">WebCam</a>
+      <a href="/Submit.html">Contribute</a>
+      <a href="/eishelp2.html">Format</a>
+      <a href="/wiki/Style_Sheet">Style Sheet</a>
+      <a href="/transforms.html">Transforms</a>
+      <a href="/ol.html">Superseeker</a>
+      <a href="/recent">Recents</a>
+    </div>
+    <div class=linksbar>
+      <a href="/community.html">The OEIS Community</a>
+    </div>
+    <div class=linksbar>
+      Maintained by <a href="http://oeisf.org">The OEIS Foundation Inc.</a>
+    </div>
+
+    <div class=dbinfo>Last modified October 31 03:46 EDT 2026.  Contains 400851 sequences.</div>
+    <div class=legal>
+    <a href="/wiki/Legal_Documents">License Agreements, Terms of Use, Privacy Policy</a>
+    </div>
+
+    </div>
+    </center>
+    </div>
+  <script>(function(){function c(){var b=a.contentDocument||(a.contentWindow&&a.contentWindow.document);if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'a5310db68d6e09de',t:'MTc5MzQzMjg2Ng=='};var l=window.parent.location,o;try{o=new URL(l.origin).origin}catch(e){try{o=new URL(new URL(l.href).origin).origin}catch(e){o=''}}var u='/cdn-cgi/challenge-platform/scripts/jsd/main.js?ray=a5310db68d6e09de',a=document.createElement('script');a.src=o?new URL(u,o).href:u;document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script><script type="module" src="https://static.cloudflareinsights.com/beacon.min.js/vce701823e78c4301a35b7e07294d87301792088814092" integrity="sha512-UKNk8GbxkABxKcXYuLkO16EleLGUkcvJWtpSNmExE0Too3ZaFAxTscNWEc1OdAv5/BikHawapSCaiD2XCmp+Bw==" data-cf-beacon='{"version":"2024.11.0","token":"781e3e2683624a28a850394a171c1b83","r":1,"spa":2}' crossorigin="anonymous"></script>
+</body>
+</html>
