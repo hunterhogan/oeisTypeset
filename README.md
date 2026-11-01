@@ -30,8 +30,8 @@ If a formula looks wrong, first check whether the LaTeX is wrong. Fix that. Do n
 Both pieces go in Firefox. Installing from these links also gives you updates.
 
 1. Install [Violentmonkey](https://addons.mozilla.org/firefox/addon/violentmonkey/) and [Stylus](https://addons.mozilla.org/firefox/addon/styl-us/).
-2. Open [oeisTypeset.user.js](https://raw.githubusercontent.com/hunterhogan/oeisTypeset/main/dist/oeisTypeset.user.js). Violentmonkey offers to install it.
-3. Open [oeisTypeset.user.css](https://raw.githubusercontent.com/hunterhogan/oeisTypeset/main/oeisTypeset.user.css). Stylus offers to install it. Its one option, *Fractions inside fractions*, chooses full-size nested fractions (default) or TeX's shrinking.
+2. Open [oeisTypeset.user.js](https://github.com/hunterhogan/oeisTypeset/raw/refs/heads/main/dist/oeisTypeset.user.js). Violentmonkey offers to install it.
+3. Open [oeisTypeset.user.css](https://github.com/hunterhogan/oeisTypeset/raw/refs/heads/main/oeisTypeset.user.css). Stylus offers to install it. Its one option, *Fractions inside fractions*, chooses full-size nested fractions (default) or TeX's shrinking.
 
 Temml is loaded once from jsDelivr, pinned to an exact version, and cached by Violentmonkey.
 
