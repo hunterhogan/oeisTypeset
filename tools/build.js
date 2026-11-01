@@ -12,6 +12,7 @@ const pathRoot = path.resolve(__dirname, '..');
 const read = (relative) => fs.readFileSync(path.join(pathRoot, relative), 'utf8');
 const packageJson = JSON.parse(read('package.json'));
 const versionTemml = packageJson.dependencies.temml;
+const urlInstall = 'https://raw.githubusercontent.com/hunterhogan/oeisTypeset/main/dist/oeisTypeset.user.js';
 
 const metadata = `// ==UserScript==
 // @name         oeisTypeset
@@ -19,7 +20,12 @@ const metadata = `// ==UserScript==
 // @version      ${packageJson.version}
 // @description  Typeset the formulas on OEIS sequence pages (OEIS notation -> LaTeX -> MathML via Temml).
 // @author       Hunter Hogan
-// @include      /^https:\\/\\/oeis\\.org\\/A\\d{6}(?:[?#].*)?$/
+// @license      ${packageJson.license}
+// @homepageURL  ${packageJson.homepage}
+// @supportURL   ${packageJson.bugs.url}
+// @downloadURL  ${urlInstall}
+// @updateURL    ${urlInstall}
+// @include     /^https:\\/\\/oeis\\.org\\/A\\d{6}(?:[?#].*)?$/
 // @require      https://cdn.jsdelivr.net/npm/temml@${versionTemml}/dist/temml.min.js
 // @grant        GM_registerMenuCommand
 // @run-at       document-end
@@ -27,7 +33,7 @@ const metadata = `// ==UserScript==
 // ==/UserScript==
 `;
 
-const scriptBody = `${read('src/oeisToLatex.js')}\n${read('src/main.js')}`;
+const scriptBody = `${read('src/semanticRoles.js')}\n${read('src/oeisToLatex.js')}\n${read('src/main.js')}`;
 fs.mkdirSync(path.join(pathRoot, 'dist'), { recursive: true });
 fs.writeFileSync(path.join(pathRoot, 'dist', 'oeisTypeset.user.js'), `${metadata}\n${scriptBody}`);
 

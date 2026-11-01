@@ -1,6 +1,6 @@
 {
 	"name": "oeistypeset",
-	"version": "0.1.0",
+	"version": "0.2.0",
 	"description": "Typeset the formulas on OEIS sequence pages: a Violentmonkey userscript (OEIS notation -> LaTeX -> MathML via Temml) and a Stylus UserCSS.",
 	"directories": {
 		"test": "test"
@@ -11,6 +11,15 @@
 		"corpus": "node test/runCorpus.js"
 	},
 	"author": "Hunter Hogan",
+	"license": "CC-BY-NC-4.0",
+	"homepage": "https://github.com/hunterhogan/oeisTypeset",
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/hunterhogan/oeisTypeset.git"
+	},
+	"bugs": {
+		"url": "https://github.com/hunterhogan/oeisTypeset/issues"
+	},
 	"dependencies": {
 		"temml": "0.13.5"
 	},

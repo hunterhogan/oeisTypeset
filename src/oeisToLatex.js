@@ -347,9 +347,37 @@ Output of `convertPieces`: a list of segments
 		});
 	}
 
-	/* Lines whose spacing is layout (ASCII diagrams, aligned tables) are never touched. */
+	const patternOperand = "[\\w)\\]}'!]";
+	const patternOperandStart = '[\\w(\\[{|]';
+	const patternOperatorAligned = '(?:<=|>=|==|!=|<>|:=|\\+-|-\\+|[=<>~+\\-*/])';
+	const regexOperandThenOperator = new RegExp(`${patternOperand} *${patternOperatorAligned}$`);
+	const regexOperatorThenOperand = new RegExp(`^${patternOperatorAligned} +${patternOperandStart}`);
+	const regexOperandAhead = new RegExp(`^${patternOperandStart}`);
+	const regexOperandBehind = new RegExp(`${patternOperand}$`);
+	const regexRelationAligned = /<=|>=|==|!=|<>|:=|[=~]/;
+
+	/* A run of spaces that lines up an equation touches an operator with an operand on its far
+	   side: "A076876(n)   = [T(n,3) -     T(n,2)]/2". A run between cells touches two operands
+	   ("a(0)   a(1)") or a sign ("-1   -2"). */
+	function isRunAlignment(text, indexStart, indexEnd) {
+		const before = text.slice(0, indexStart);
+		const after = text.slice(indexEnd);
+		return (regexOperandThenOperator.test(before) && regexOperandAhead.test(after))
+			|| (regexOperandBehind.test(before) && regexOperatorThenOperand.test(after));
+	}
+
+	/* Lines whose spacing is layout (ASCII diagrams, aligned tables) are never touched. Spaces
+	   that only line up an equation are not layout: the parser ignores them and the source view
+	   keeps them. Rows without a relation stay verbatim, so "1   -   2   -   3" is still a diagram. */
 	function isLineVerbatim(text) {
-		return /^ {2,}\S/.test(text) || /\S {3,}\S/.test(text) || /([-_=|+*\\/#])\1{2,}/.test(text);
+		if (/^ {2,}\S/.test(text) || /([-_=|+*\\/#])\1{2,}/.test(text)) {
+			return true;
+		}
+		const listRun = Array.from(text.matchAll(/(?<=\S) {3,}(?=\S)/g));
+		if (listRun.length === 0) {
+			return false;
+		}
+		return !regexRelationAligned.test(text) || !listRun.every((run) => isRunAlignment(text, run.index, run.index + run[0].length));
 	}
 
 	/* ------------------------------------------------------------------ parser */

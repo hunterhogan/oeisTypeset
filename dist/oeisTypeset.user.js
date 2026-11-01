@@ -1,15 +1,112 @@
 // ==UserScript==
 // @name         oeisTypeset
 // @namespace    https://github.com/hunterhogan/oeisTypeset
-// @version      0.1.0
+// @version      0.2.0
 // @description  Typeset the formulas on OEIS sequence pages (OEIS notation -> LaTeX -> MathML via Temml).
 // @author       Hunter Hogan
-// @include      /^https:\/\/oeis\.org\/A\d{6}(?:[?#].*)?$/
+// @license      CC-BY-NC-4.0
+// @homepageURL  https://github.com/hunterhogan/oeisTypeset
+// @supportURL   https://github.com/hunterhogan/oeisTypeset/issues
+// @downloadURL  https://raw.githubusercontent.com/hunterhogan/oeisTypeset/main/dist/oeisTypeset.user.js
+// @updateURL    https://raw.githubusercontent.com/hunterhogan/oeisTypeset/main/dist/oeisTypeset.user.js
+// @include     /^https:\/\/oeis\.org\/A\d{6}(?:[?#].*)?$/
 // @require      https://cdn.jsdelivr.net/npm/temml@0.13.5/dist/temml.min.js
 // @grant        GM_registerMenuCommand
 // @run-at       document-end
 // @noframes
 // ==/UserScript==
+
+/*
+semanticRoles — the table of the OEIS server's containers and what each of them is.
+
+The server's markup names things by how they were built (div.seqdatabox, div.sectline). This
+table gives each of them a name for what it is. The userscript adds `oeisTypeset-<role>` to every
+match, and oeisTypeset.user.css styles those roles only. If the server renames a container, this
+table is where the role gets repaired.
+
+CSS cannot do this alone: it has no way to alias a selector, and it cannot select a section by
+the text of its name, so nothing in a stylesheet can tell FORMULA from LINKS.
+
+test/test.js holds the stylesheet to this table: no server names in rules, no role without a
+block, no block without a role.
+
+Containers that only exist to center or wrap (div.center, div.bottom, div.searchbargreet, ...)
+have no role, because there is nothing to say about them that a parent or child cannot say.
+*/
+(function (rootGlobal) {
+	'use strict';
+
+	/* Parents come before their children. */
+	const listRole = [
+		{ selector: 'body', role: 'page' },
+		{ selector: 'div.space1, div.space4, div.space10, div.footerpad', role: 'spacer' },
+
+		{ selector: 'div.loginbar', role: 'accountBar' },
+		{ selector: 'div.top', role: 'masthead' },
+		{ selector: 'div.donors', role: 'donorNotice' },
+		{ selector: 'div.banner', role: 'banner' },
+		{ selector: 'div.motdbox', role: 'announcement' },
+		{ selector: 'div.blackbar', role: 'memorialNotice' },
+
+		{ selector: 'div.pagebody', role: 'content' },
+		{ selector: 'div.searchbarcenter', role: 'search' },
+		{ selector: 'div.searchgreet', role: 'searchGreeting' },
+
+		{ selector: 'div.sequence', role: 'entry' },
+		{ selector: 'div.line', role: 'entryRule' },
+		{ selector: 'div.seqhead', role: 'entryHeader' },
+		{ selector: 'div.seqnumname', role: 'entryTitle' },
+		{ selector: 'div.seqnum', role: 'entryNumber' },
+		{ selector: 'div.seqname', role: 'entryName' },
+		{ selector: 'div.scorerefs', role: 'entryRefCount' },
+		{ selector: 'div.seqdatabox', role: 'entryData' },
+		{ selector: 'div.seqdata', role: 'entryTerms' },
+		{ selector: 'div.seqdatalinks', role: 'entryViews' },
+		{ selector: 'div.entry', role: 'entrySections' },
+
+		{ selector: 'div.section', role: 'section' },
+		{ selector: 'div.sectname', role: 'sectionLabel' },
+		{ selector: 'div.sectbody', role: 'sectionBody' },
+		{ selector: 'div.sectline', role: 'sectionLine' },
+
+		{ selector: 'div.footer', role: 'footer' },
+		{ selector: 'div.linksbar', role: 'footerLinks' },
+		{ selector: 'div.dbinfo', role: 'databaseInfo' },
+		{ selector: 'div.legal', role: 'legalNotice' },
+	];
+
+	/* The text of a div.sectname -> the two extra roles of its div.section. A family groups the
+	   sections that do the same kind of work, so one rule can reach all of them. */
+	const mapSectionRoles = {
+		COMMENTS: { family: 'familyExposition', role: 'sectionComments' },
+		FORMULA: { family: 'familyExposition', role: 'sectionFormula' },
+		EXAMPLE: { family: 'familyExposition', role: 'sectionExample' },
+
+		MAPLE: { family: 'familyCode', role: 'sectionMaple' },
+		MATHEMATICA: { family: 'familyCode', role: 'sectionMathematica' },
+		PROG: { family: 'familyCode', role: 'sectionProg' },
+
+		REFERENCES: { family: 'familyCitation', role: 'sectionReferences' },
+		LINKS: { family: 'familyCitation', role: 'sectionLinks' },
+		CROSSREFS: { family: 'familyCitation', role: 'sectionCrossrefs' },
+
+		OFFSET: { family: 'familyRecord', role: 'sectionOffset' },
+		KEYWORD: { family: 'familyRecord', role: 'sectionKeyword' },
+		AUTHOR: { family: 'familyRecord', role: 'sectionAuthor' },
+		EXTENSIONS: { family: 'familyRecord', role: 'sectionExtensions' },
+		STATUS: { family: 'familyRecord', role: 'sectionStatus' },
+	};
+
+	/* Roles the typesetter gives to what it produces or decides, rather than to server markup. */
+	const listRoleTypesetter = ['prose', 'verbatim', 'formula', 'rendered', 'chunk', 'source', 'toggleable', 'showSource'];
+
+	const api = { listRole, mapSectionRoles, listRoleTypesetter };
+	if (typeof module === 'object' && module.exports) {
+		module.exports = api;
+	} else {
+		rootGlobal.semanticRoles = api;
+	}
+}(globalThis));
 
 /*
 oeisToLatex — read OEIS plain-text notation, find the math inside mixed prose, emit LaTeX.
@@ -360,9 +457,37 @@ Output of `convertPieces`: a list of segments
 		});
 	}
 
-	/* Lines whose spacing is layout (ASCII diagrams, aligned tables) are never touched. */
+	const patternOperand = "[\\w)\\]}'!]";
+	const patternOperandStart = '[\\w(\\[{|]';
+	const patternOperatorAligned = '(?:<=|>=|==|!=|<>|:=|\\+-|-\\+|[=<>~+\\-*/])';
+	const regexOperandThenOperator = new RegExp(`${patternOperand} *${patternOperatorAligned}$`);
+	const regexOperatorThenOperand = new RegExp(`^${patternOperatorAligned} +${patternOperandStart}`);
+	const regexOperandAhead = new RegExp(`^${patternOperandStart}`);
+	const regexOperandBehind = new RegExp(`${patternOperand}$`);
+	const regexRelationAligned = /<=|>=|==|!=|<>|:=|[=~]/;
+
+	/* A run of spaces that lines up an equation touches an operator with an operand on its far
+	   side: "A076876(n)   = [T(n,3) -     T(n,2)]/2". A run between cells touches two operands
+	   ("a(0)   a(1)") or a sign ("-1   -2"). */
+	function isRunAlignment(text, indexStart, indexEnd) {
+		const before = text.slice(0, indexStart);
+		const after = text.slice(indexEnd);
+		return (regexOperandThenOperator.test(before) && regexOperandAhead.test(after))
+			|| (regexOperandBehind.test(before) && regexOperatorThenOperand.test(after));
+	}
+
+	/* Lines whose spacing is layout (ASCII diagrams, aligned tables) are never touched. Spaces
+	   that only line up an equation are not layout: the parser ignores them and the source view
+	   keeps them. Rows without a relation stay verbatim, so "1   -   2   -   3" is still a diagram. */
 	function isLineVerbatim(text) {
-		return /^ {2,}\S/.test(text) || /\S {3,}\S/.test(text) || /([-_=|+*\\/#])\1{2,}/.test(text);
+		if (/^ {2,}\S/.test(text) || /([-_=|+*\\/#])\1{2,}/.test(text)) {
+			return true;
+		}
+		const listRun = Array.from(text.matchAll(/(?<=\S) {3,}(?=\S)/g));
+		if (listRun.length === 0) {
+			return false;
+		}
+		return !regexRelationAligned.test(text) || !listRun.every((run) => isRunAlignment(text, run.index, run.index + run[0].length));
 	}
 
 	/* ------------------------------------------------------------------ parser */
@@ -1146,9 +1271,10 @@ oeisToLatex for math spans, renders each span with Temml to MathML, and swaps it
 
 Contract with oeisTypeset.user.css (the CSS owns every visual decision; this script only
 adds structure and class names):
+	.oeisTypeset-<role>              every role in semanticRoles.js, on the server's containers
 	html.oeisTypeset-showSource      show original text everywhere instead of rendered math
-	div.section.oeisTypeset-showSource   same, for one section (click its name to toggle)
-	div.section.oeisTypeset-section  a section that was processed
+	.oeisTypeset-section.oeisTypeset-showSource   same, for one section (click its name to toggle)
+	.oeisTypeset-toggleable          a section whose lines were typeset, so it can be toggled
 	.oeisTypeset-prose               a line set in a text face (it has math or is plainly prose)
 	.oeisTypeset-verbatim            a line whose spacing is layout; never altered
 	span.oeisTypeset-formula         one math span, data-source = original text
@@ -1268,13 +1394,31 @@ adds structure and class names):
 		}
 	}
 
+	function addRoles(element, ...listRole) {
+		element.classList.add(...listRole.map((role) => `oeisTypeset-${role}`));
+	}
+
+	/* Name the server's containers before anything else reads or styles them. */
+	function stampRoles() {
+		semanticRoles.listRole.forEach(({ selector, role }) => {
+			document.querySelectorAll(selector).forEach((element) => addRoles(element, role));
+		});
+		document.querySelectorAll('div.section').forEach((section) => {
+			const name = section.querySelector('div.sectname');
+			const roles = name && semanticRoles.mapSectionRoles[name.textContent.trim()];
+			if (roles) {
+				addRoles(section, roles.family, roles.role);
+			}
+		});
+	}
+
 	function typesetPage() {
 		document.querySelectorAll('div.section').forEach((section) => {
 			const name = section.querySelector('div.sectname');
 			if (!name || !setSectionMath.has(name.textContent.trim())) {
 				return;
 			}
-			section.classList.add('oeisTypeset-section');
+			addRoles(section, 'toggleable');
 			name.title = 'Click to toggle between typeset formulas and the original text';
 			name.addEventListener('click', () => section.classList.toggle('oeisTypeset-showSource'));
 			section.querySelectorAll('div.sectline').forEach((line) => safely(() => typesetElement(line, null)));
@@ -1328,6 +1472,7 @@ adds structure and class names):
 		document.documentElement.classList.toggle('oeisTypeset-showSource');
 	}
 
+	stampRoles();
 	typesetPage();
 	document.addEventListener('click', onClick);
 	document.addEventListener('copy', onCopy);

@@ -1,160 +1,289 @@
 /* ==UserStyle==
 @name           oeisTypeset
 @namespace      github.com/hunterhogan/oeisTypeset
-@version        0.1.0
+@version        0.2.0
 @description    Typography for OEIS sequence pages, built around typeset formulas (pair with oeisTypeset.user.js).
 @author         Hunter Hogan
+@license        CC-BY-NC-4.0
+@homepageURL    https://github.com/hunterhogan/oeisTypeset
+@supportURL     https://github.com/hunterhogan/oeisTypeset/issues
+@updateURL      https://raw.githubusercontent.com/hunterhogan/oeisTypeset/main/oeisTypeset.user.css
 @preprocessor   default
 @var select fractionStyle "Fractions inside fractions" ["normal:Full size (easier to read)*", "compact:Shrink (TeX default)"]
 ==/UserStyle== */
 
 @-moz-document regexp("https://oeis\\.org/A\\d{6}(?:[?#].*)?") {
 
-	/* ---------------------------------------------------------------- tokens */
+	/* How to change this stylesheet
+
+	   Style roles, not server containers. The server's markup is named after how it was built
+	   (div.seqdatabox, div.sectline). The script adds a role class to each container, naming what
+	   it is. src/semanticRoles.js is the full table, and the only file that knows the server's names.
+
+	     Yes   :root .oeisTypeset-entryName { ... }
+	     No    div.seqname { ... }
+
+	   Every role has a block below, including the ones with nothing in them yet. An empty block is
+	   not clutter: it is where that change goes. To change something, find its role and write there.
+	   npm test fails on a server name in a rule, or on a role without a block.
+
+	   Say a thing once, at the highest role it is true of, and let it inherit:
+	     page > entry > section > sectionBody > sectionLine
+	   The server sets fonts directly on inner containers, so a role that should inherit a property
+	   the server sets has to ask for it with `inherit`. See sectionBody and sectionLine.
+
+	   Start selectors with :root. The server writes div.name rules, and one class alone loses to them.
+
+	   Leave math layout to the engine. Temml and the browser's MathML engine know how to set a
+	   formula; this file chooses the math font and size, and little else. */
+
+	/* ================================================================ tokens */
 	:root {
-		--oeisTypeset-text: Cambria, "STIX Two Text", Georgia, serif;
-		--oeisTypeset-math: "Cambria Math", "STIX Two Math", "Latin Modern Math", math;
-		--oeisTypeset-mono: Consolas, Menlo, "DejaVu Sans Mono", monospace;
+		--oeisTypeset-fontText: Cambria, "STIX Two Text", Georgia, serif;
+		--oeisTypeset-fontMath: "Cambria Math", "STIX Two Math", "Latin Modern Math", math;
+		--oeisTypeset-fontMono: Consolas, Menlo, "DejaVu Sans Mono", monospace;
+		/* The site's own stack and size. ASCII diagrams were drawn against these metrics. */
+		--oeisTypeset-fontLayout: Menlo, "Droid Sans Mono", "DejaVu Sans Mono", "Lucida Sans Typewriter", Consolas, monospace;
+		--oeisTypeset-sizeLayout: 0.83rem;
 		--oeisTypeset-ink: #1a1a1a;
-		--oeisTypeset-muted: #6b6b76;
-		--oeisTypeset-rule: #d8d8e0;
-		--oeisTypeset-link: #1a4fa0;
+		--oeisTypeset-inkMuted: #6b6b76;
+		--oeisTypeset-inkLink: #1a4fa0;
 		--oeisTypeset-gapSection: 1.1rem;
 		--oeisTypeset-gapEntry: 0.35rem;
 	}
 
-	/* ---------------------------------------------------------------- page */
-	body {
+	/* ================================================================ page */
+	:root .oeisTypeset-page {
 		color: var(--oeisTypeset-ink);
 	}
-
-	/* The site sets every field in a 0.83rem monospace with pre-wrap. Monospace lines keep
-	   the site's font, line-height, and zero gap: each row of an ASCII diagram is its own
-	   div.sectline, and any added spacing would pull the rows apart. */
-	div.seqdata {
-		line-height: 1.5;
+	:root .oeisTypeset-spacer {
 	}
 
-	/* ---------------------------------------------------------------- header block */
-	div.seqhead {
+	/* ================================================================ above the entry */
+	:root .oeisTypeset-accountBar {
+	}
+	:root .oeisTypeset-masthead {
+	}
+	:root .oeisTypeset-donorNotice {
+	}
+	:root .oeisTypeset-banner {
+	}
+	:root .oeisTypeset-announcement {
+	}
+	:root .oeisTypeset-memorialNotice {
+	}
+	:root .oeisTypeset-content {
+	}
+	:root .oeisTypeset-search {
+	}
+	:root .oeisTypeset-searchGreeting {
+	}
+
+	/* ================================================================ entry: header */
+	:root .oeisTypeset-entry {
+	}
+	:root .oeisTypeset-entryRule {
+	}
+	:root .oeisTypeset-entryHeader {
 		padding: 0.4rem 0;
 		align-items: baseline;
 	}
-	div.seqnum {
-		font-family: var(--oeisTypeset-mono);
+	:root .oeisTypeset-entryTitle {
+	}
+	:root .oeisTypeset-entryNumber {
+		font-family: var(--oeisTypeset-fontMono);
 		font-weight: bold;
 		padding-left: 0.5rem;
 	}
-	div.seqname {
-		font-family: var(--oeisTypeset-text);
+	:root .oeisTypeset-entryName {
+		font-family: var(--oeisTypeset-fontText);
 		font-size: 1.08rem;
 		line-height: 1.5;
 	}
-	div.seqdatabox {
-		margin: 0.5rem 0 var(--oeisTypeset-gapSection);
-	}
-	div.seqdatalinks {
-		margin-top: 0.3rem;
-		color: var(--oeisTypeset-muted);
+	:root .oeisTypeset-entryRefCount {
 	}
 
-	/* ---------------------------------------------------------------- sections
-	   One signal for grouping: space. A section is separated from the next by a gap
-	   larger than the gap between its own entries; the label sits in a fixed column. */
-	div.section {
-		margin-top: var(--oeisTypeset-gapSection);
+	/* ================================================================ entry: terms */
+	:root .oeisTypeset-entryData {
+		margin: 0.5rem 0 var(--oeisTypeset-gapSection);
 	}
-	div.sectname {
+	:root .oeisTypeset-entryTerms {
+		line-height: 1.5;
+	}
+	:root .oeisTypeset-entryViews {
+		margin-top: 0.3rem;
+		color: var(--oeisTypeset-inkMuted);
+	}
+
+	/* ================================================================ entry: sections
+	   One signal for grouping: space. A section is separated from the next by a gap larger than
+	   the gap between its own entries; the label sits in a fixed column.
+
+	   Monospace lines keep the site's font, line-height, and zero gap: each row of an ASCII
+	   diagram is its own sectionLine, and any added spacing would pull the rows apart. */
+	:root .oeisTypeset-entrySections {
+	}
+	:root .oeisTypeset-section {
+		margin-top: var(--oeisTypeset-gapSection);
+		font-family: var(--oeisTypeset-fontLayout);
+		font-size: var(--oeisTypeset-sizeLayout);
+	}
+	:root .oeisTypeset-sectionLabel {
 		flex: 0 0 7.5rem;
 		box-sizing: border-box;
 		padding: 0.2rem 1rem 0 0;
 		text-align: right;
-		font-family: var(--oeisTypeset-text);
+		font-family: var(--oeisTypeset-fontText);
 		font-size: 0.72rem;
 		letter-spacing: 0.06em;
-		color: var(--oeisTypeset-muted);
+		color: var(--oeisTypeset-inkMuted);
 	}
-	div.sectbody {
+	:root .oeisTypeset-sectionBody {
 		flex: 1 1 auto;
 		min-width: 0;
 		padding: 0;
+		font-family: inherit;
+		font-size: inherit;
+	}
+	:root .oeisTypeset-sectionLine {
+		font-family: inherit;
+		font-size: inherit;
 	}
 	/* Entries set as prose are separated; monospace runs stay contiguous. */
-	div.sectline.oeisTypeset-prose + div.sectline,
-	div.sectline + div.sectline.oeisTypeset-prose {
+	:root .oeisTypeset-sectionLine.oeisTypeset-prose + .oeisTypeset-sectionLine,
+	:root .oeisTypeset-sectionLine + .oeisTypeset-sectionLine.oeisTypeset-prose {
 		margin-top: var(--oeisTypeset-gapEntry);
 	}
 
-	/* ---------------------------------------------------------------- lines with math
-	   Set in a text face that matches the math face. Lines whose spacing is layout keep
-	   the monospace font; the script marks those .oeisTypeset-verbatim. */
-	div.sectline.oeisTypeset-prose,
-	div.seqname.oeisTypeset-prose {
-		font-family: var(--oeisTypeset-text);
+	/* ---------------------------------------------------------------- section families
+	   A rule here reaches every section of the family. */
+	:root .oeisTypeset-familyExposition {
+	}
+	:root .oeisTypeset-familyCode {
+	}
+	:root .oeisTypeset-familyCitation {
+	}
+	:root .oeisTypeset-familyRecord {
+	}
+
+	/* ---------------------------------------------------------------- single sections
+	   Say it here only when it is not true of the whole family. */
+	:root .oeisTypeset-sectionComments {
+	}
+	:root .oeisTypeset-sectionFormula {
+	}
+	:root .oeisTypeset-sectionExample {
+	}
+	:root .oeisTypeset-sectionMaple {
+	}
+	:root .oeisTypeset-sectionMathematica {
+	}
+	:root .oeisTypeset-sectionProg {
+	}
+	:root .oeisTypeset-sectionReferences {
+	}
+	:root .oeisTypeset-sectionLinks {
+	}
+	:root .oeisTypeset-sectionCrossrefs {
+	}
+	:root .oeisTypeset-sectionOffset {
+	}
+	:root .oeisTypeset-sectionKeyword {
+	}
+	:root .oeisTypeset-sectionAuthor {
+	}
+	:root .oeisTypeset-sectionExtensions {
+	}
+	:root .oeisTypeset-sectionStatus {
+	}
+
+	/* ================================================================ lines the typesetter judged
+	   Set in a text face that matches the math face. Lines whose spacing is layout keep the
+	   monospace font; the script marks those verbatim. */
+	:root .oeisTypeset-prose {
+		font-family: var(--oeisTypeset-fontText);
 		font-size: 1rem;
 		line-height: 1.6;
 		overflow-x: auto;
 		overflow-y: hidden;
 	}
-	/* The site's hanging indent is margin-left + negative text-indent; with overflow-x set,
-	   the outdented first characters would be clipped, so the indent moves into padding. */
-	div.sectline.oeisTypeset-prose {
+	/* The site's hanging indent is margin-left + negative text-indent; with overflow-x set, the
+	   outdented first characters would be clipped, so the indent moves into padding. */
+	:root .oeisTypeset-sectionLine.oeisTypeset-prose {
 		margin-left: 0;
 		padding-left: 1rem;
 		padding-bottom: 0.1rem;
 	}
+	:root .oeisTypeset-verbatim {
+	}
 
-	math {
-		font-family: var(--oeisTypeset-math);
+	/* ================================================================ formulas */
+	:root .oeisTypeset-formula {
+	}
+	:root .oeisTypeset-rendered {
+	}
+	:root math {
+		font-family: var(--oeisTypeset-fontMath);
 		font-size: 1.06em;
 		text-indent: 0;
 		white-space: normal;
 		font-feature-settings: "dtls" off;
 	}
 
-	/* MathML shrinks a fraction inside a fraction one step per level. Full size keeps
-	   nested sums and continued fractions legible at the cost of height. */
-	.oeisTypeset-rendered mfrac > * {
+	/* MathML shrinks a fraction inside a fraction one step per level. Full size keeps nested sums
+	   and continued fractions legible at the cost of height. This is the one place the stylesheet
+	   overrides the engine's layout, and it is the reader's choice. */
+	:root .oeisTypeset-rendered mfrac > * {
 		math-style: /*[[fractionStyle]]*/;
 	}
 
-	.oeisTypeset-chunk {
+	:root .oeisTypeset-chunk {
 		white-space: nowrap;
 	}
 
 	/* A-numbers inside rendered math behave like the site's links. */
-	.oeisTypeset-rendered [data-anumber] {
-		color: var(--oeisTypeset-link);
+	:root .oeisTypeset-rendered [data-anumber] {
+		color: var(--oeisTypeset-inkLink);
 		cursor: pointer;
 		text-decoration: underline;
 		text-decoration-thickness: 1px;
 		text-underline-offset: 2px;
 	}
 
-	/* ---------------------------------------------------------------- source toggle */
-	.oeisTypeset-source {
+	/* ================================================================ source toggle */
+	:root .oeisTypeset-source {
 		display: none;
-		font-family: var(--oeisTypeset-mono);
-		font-size: 0.83rem;
+		font-family: var(--oeisTypeset-fontMono);
+		font-size: var(--oeisTypeset-sizeLayout);
 	}
-	html.oeisTypeset-showSource .oeisTypeset-source,
-	div.section.oeisTypeset-showSource .oeisTypeset-source {
+	:root.oeisTypeset-showSource .oeisTypeset-source,
+	:root .oeisTypeset-section.oeisTypeset-showSource .oeisTypeset-source {
 		display: inline;
 	}
-	html.oeisTypeset-showSource .oeisTypeset-rendered,
-	div.section.oeisTypeset-showSource .oeisTypeset-rendered {
+	:root.oeisTypeset-showSource .oeisTypeset-rendered,
+	:root .oeisTypeset-section.oeisTypeset-showSource .oeisTypeset-rendered {
 		display: none;
 	}
-	div.section.oeisTypeset-section > div.sectname {
+	:root .oeisTypeset-toggleable > .oeisTypeset-sectionLabel {
 		cursor: pointer;
 	}
-	div.section.oeisTypeset-showSource > div.sectname {
+	:root .oeisTypeset-section.oeisTypeset-showSource > .oeisTypeset-sectionLabel {
 		text-decoration: underline dotted;
 	}
 
-	/* ---------------------------------------------------------------- narrow screens */
+	/* ================================================================ below the entry */
+	:root .oeisTypeset-footer {
+	}
+	:root .oeisTypeset-footerLinks {
+	}
+	:root .oeisTypeset-databaseInfo {
+	}
+	:root .oeisTypeset-legalNotice {
+	}
+
+	/* ================================================================ narrow screens */
 	@media (max-width: 666px) {
-		div.sectname {
+		:root .oeisTypeset-sectionLabel {
 			flex: auto;
 			text-align: left;
 			padding: 0;

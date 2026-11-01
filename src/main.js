@@ -4,9 +4,10 @@ oeisToLatex for math spans, renders each span with Temml to MathML, and swaps it
 
 Contract with oeisTypeset.user.css (the CSS owns every visual decision; this script only
 adds structure and class names):
+	.oeisTypeset-<role>              every role in semanticRoles.js, on the server's containers
 	html.oeisTypeset-showSource      show original text everywhere instead of rendered math
-	div.section.oeisTypeset-showSource   same, for one section (click its name to toggle)
-	div.section.oeisTypeset-section  a section that was processed
+	.oeisTypeset-section.oeisTypeset-showSource   same, for one section (click its name to toggle)
+	.oeisTypeset-toggleable          a section whose lines were typeset, so it can be toggled
 	.oeisTypeset-prose               a line set in a text face (it has math or is plainly prose)
 	.oeisTypeset-verbatim            a line whose spacing is layout; never altered
 	span.oeisTypeset-formula         one math span, data-source = original text
@@ -126,13 +127,31 @@ adds structure and class names):
 		}
 	}
 
+	function addRoles(element, ...listRole) {
+		element.classList.add(...listRole.map((role) => `oeisTypeset-${role}`));
+	}
+
+	/* Name the server's containers before anything else reads or styles them. */
+	function stampRoles() {
+		semanticRoles.listRole.forEach(({ selector, role }) => {
+			document.querySelectorAll(selector).forEach((element) => addRoles(element, role));
+		});
+		document.querySelectorAll('div.section').forEach((section) => {
+			const name = section.querySelector('div.sectname');
+			const roles = name && semanticRoles.mapSectionRoles[name.textContent.trim()];
+			if (roles) {
+				addRoles(section, roles.family, roles.role);
+			}
+		});
+	}
+
 	function typesetPage() {
 		document.querySelectorAll('div.section').forEach((section) => {
 			const name = section.querySelector('div.sectname');
 			if (!name || !setSectionMath.has(name.textContent.trim())) {
 				return;
 			}
-			section.classList.add('oeisTypeset-section');
+			addRoles(section, 'toggleable');
 			name.title = 'Click to toggle between typeset formulas and the original text';
 			name.addEventListener('click', () => section.classList.toggle('oeisTypeset-showSource'));
 			section.querySelectorAll('div.sectline').forEach((line) => safely(() => typesetElement(line, null)));
@@ -186,6 +205,7 @@ adds structure and class names):
 		document.documentElement.classList.toggle('oeisTypeset-showSource');
 	}
 
+	stampRoles();
 	typesetPage();
 	document.addEventListener('click', onClick);
 	document.addEventListener('copy', onCopy);
