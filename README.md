@@ -2,32 +2,22 @@
 
 Typeset the formulas on OEIS sequence pages (`https://oeis.org/Annnnnn`) in Firefox.
 
-`a(n) = Sum_{k=0..n} (-1)^k*binomial(n,k)*binomial(k,floor(k/2))` becomes a real summation with limits, binomial coefficients, and a floor, laid out by the browser's MathML engine.
+The OEIS writes formulas in plain text. oeisTypeset redraws them as mathematics, with fractions, sums, binomials, powers and roots, and leaves the prose around them alone.
 
-## Pieces
-
-| File                       | Runs in       | Does                                                                                                                                                          |
-| -------------------------- | ------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `dist/oeisTypeset.user.js` | Violentmonkey | Finds math in NAME, COMMENTS and FORMULA lines, converts OEIS notation to LaTeX, renders it to MathML with [Temml](https://temml.org), swaps it into the page |
-| `oeisTypeset.user.css`     | Stylus        | All visual decisions: section spacing, text face for lines with math, math font, A-number links in formulas, the source toggle                                |
-
-CSS alone cannot typeset a formula. Turning `Sum_{k=0..n}` into a summation needs a parser, and only a script can run one. The script adds structure and class names; the stylesheet decides how everything looks. Install both. If the script does not run, the stylesheet has nothing to attach to and the page stays as the OEIS serves it.
-
-## Let each tool do its job
-
-Formulas look good here because this project does not typeset them. Temml turns LaTeX into MathML. The browser's MathML engine lays it out. A math font supplies the glyphs. Each was built for that job by people who know it better than we would.
-
-So the project stays out of their way:
-
-* The converter's only output is ordinary LaTeX. It makes the choices an author would make when writing LaTeX by hand, such as `\frac` or `\cfrac`, and which parentheses a 2-D layout makes redundant.
-* The stylesheet chooses the math font and size. It does not position, scale, or respace anything inside a formula.
-* There is one exception: *Fractions inside fractions*, a reader option that overrides MathML's shrinking of nested fractions.
-
-If a formula looks wrong, first check whether the LaTeX is wrong. Fix that. Do not compensate with CSS on MathML elements or post-process Temml's output.
+| As the OEIS serves it                                                                 | With oeisTypeset                                                               |
+| ------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------ |
+| ![FORMULA section of A000108 as plain text](.github/screenshots/formula-original.png) | ![FORMULA section of A000108 typeset](.github/screenshots/formula-typeset.png) |
 
 ## Install
 
-Both pieces go in Firefox. Installing from these links also gives you updates.
+oeisTypeset has two pieces, and you need both:
+
+* **The script** (`oeisTypeset.user.js`, runs in Violentmonkey) finds the formulas and typesets them.
+* **The stylesheet** (`oeisTypeset.user.css`, runs in Stylus) decides how the page looks: the math font, the text face for lines with math, spacing between sections, and how A-numbers in formulas look.
+
+The stylesheet styles names that the script adds to the page, so without the script it has nothing to attach to, and the page stays as the OEIS serves it.
+
+Installing from these links also gives you updates.
 
 1. Install [Violentmonkey](https://addons.mozilla.org/firefox/addon/violentmonkey/) and [Stylus](https://addons.mozilla.org/firefox/addon/styl-us/).
 2. Click to open [oeisTypeset.user.js](https://github.com/hunterhogan/oeisTypeset/raw/refs/heads/main/dist/oeisTypeset.user.js). Violentmonkey offers to install it.
@@ -38,7 +28,7 @@ Both pieces go in Firefox. Installing from these links also gives you updates.
 * chromewebstore.google.com/detail/violentmonkey/jinjaccalgkegednnccohejagnlnfdag
 * chromewebstore.google.com/detail/stylus/clngdbkpkpeebahjckkjfobafhncgmne
 
-Temml is loaded once from jsDelivr, pinned to an exact version, and cached by Violentmonkey.
+The script loads the math renderer, [Temml](https://temml.org), once from jsDelivr. The version is pinned, and Violentmonkey caches it.
 
 ### If a link only shows text, or you have a local copy
 
@@ -67,93 +57,65 @@ A style installed this way does not update itself.
 * Copying a selection copies the original OEIS text of every formula in it, so code you paste still runs.
 * A-numbers inside formulas are clickable. Ctrl+click opens a new tab.
 
-## What is never touched
+## What gets typeset
 
-* EXAMPLE, PROG, MAPLE, MATHEMATICA, LINKS, REFERENCES, CROSSREFS: the script does not typeset them.
-* Any line whose spacing is layout: two or more leading spaces, three or more spaces between cells, or a run of `---`, `|||`, `===` and similar. These keep the site's monospace font, line height, and zero gap between rows, so ASCII diagrams stay intact.
-* Any span that does not parse. It stays as the original text. The converter never makes a line worse.
+**Pages:** sequence pages, `https://oeis.org/A` followed by six digits. Search results, history pages and the wiki are left alone.
 
-Spaces that only line up an equation are not layout. In `A076876(n)   = [T(n,3) -     T(n,2)]/2` each run of spaces touches an operator, and the line holds a relation, so it is typeset. The spaces have no effect on the formula, and the original text view and copying keep them. If a run of three or more sits anywhere else on the line, such as between two values, the whole line stays verbatim.
+**Sections:** the name of the sequence, COMMENTS, and FORMULA. EXAMPLE, PROG, MAPLE, MATHEMATICA, LINKS, REFERENCES and CROSSREFS are never typeset.
 
-## How the converter works (`src/oeisToLatex.js`)
+**Inside a line:** only the math. In `a(n) is odd if and only if n=2^k-1`, the words stay text and `a(n)` and `n=2^k-1` are typeset. A stretch of a line counts as math if it holds an operator (`=`, `+`, `*`, `/`, `^`, `<=`, ...), a function call such as `a(n)` or `binomial(n,k)`, or a math word such as `Pi`, `oo`, `phi`, or `mod`. A word of English ends the math. Numbers on their own, dates, and page ranges such as `47-48` stay text.
 
-The notation is specified by the [OEIS Style Sheet](https://oeis.org/wiki/Style_Sheet#Spelling_and_notation). No existing library parses it, so this is the one hand-written translator. Everything downstream is off the shelf.
+### How the notation is drawn
 
-1. **Lex** each line into tokens. A-number links stay atomic. Abbreviations (`G.f.`, `e.g.f.`), ordinals (`n-th`, `2nd`), hyphenated words (`x-axis`), possessives, e-mail addresses and URLs become prose words.
-2. **Find math spans.** A token is math if it is a number, an operator, a single letter, a known math word (`Pi`, `oo`, `phi`, `mod`, Greek), or an identifier with `(`, `_`, `^` glued to it. English words end a span. A bracket group is atomic math unless prose lives at its own level, in which case its brackets are punctuation and its inside is searched separately. A span is typeset only if it holds a real operator, a call, or a math word, so dates and page ranges stay text.
-3. **Parse** with precedence: list (`,`) < relation (`= == <= ~ -> |`) < range (`..`) < additive (`+ - +-`) < multiplicative (`* / mod X`, juxtaposition) < unary < power (`^`, right-assoc) < postfix (`! !! ' _`) < primary. Juxtaposition without a space (`2n`, `a(k)a(n-k)`) binds tighter than `/`. A missing `)` at the end of a span closes implicitly, which is how truncated continued fractions are written.
-4. **Emit LaTeX.** `x^(n-1)` → `x^{n-1}`. `(a+b)/(c+d)` → `\frac{a+b}{c+d}`, or `\cfrac` when the denominator holds another fraction. Fractions inside exponents and subscripts stay inline as `a/b`. `Sum_{k=0..n}` puts `k=0` below and `n` above. Several ranges stack as `0 ≤ i ≤ n`. Also handled: `binomial` / two-argument `C` → `\binom`, `floor` / `ceiling`, `sqrt`, `(mod m)` → `\pmod`, `==` → `≡`, `oo` → `∞`, `Integral_{x=a..b} … dx`, `lim_{n->oo}`, Maple-style `Sum_(body, k, cond)`.
-5. **Chunk** at top-level commas, relations and `+`/`-`, and render each chunk as its own `<math>`, so a long formula can wrap between chunks.
+The notation is the one in the [OEIS Style Sheet](https://oeis.org/wiki/Style_Sheet#Spelling_and_notation).
 
-## Change the stylesheet
+| You see in the OEIS                           | You get                                                                         |
+| --------------------------------------------- | ------------------------------------------------------------------------------- |
+| `x^(n-1)`, `a_n`                              | a superscript or subscript, without the parentheses                             |
+| `(a+b)/(c+d)`                                 | a built-up fraction; a fraction in a denominator becomes a continued fraction   |
+| `x^(1/2)`                                     | the fraction stays inline (`1/2`) inside an exponent or subscript               |
+| `2*n`, `a(k)*a(n-k)`                          | `2n`, `a(k) a(n−k)`: multiplication without a sign, as in print                 |
+| `2*3`                                         | `2·3`: a dot between two numbers, so they do not merge into `23`                |
+| `2*A014140(n)`                                | `2 A014140(n)`: a thin space before an A-number, so it does not read `2A014140` |
+| `2 X 3`                                       | `2×3`                                                                           |
+| `Sum_{k=0..n}`, `Product_{k=1..n}`            | a summation or product sign with its limits above and below                     |
+| `Integral_{x=0..4} f(x) dx`, `lim_{n->oo}`    | an integral with limits; a limit                                                |
+| `binomial(n,k)`, `C(n,k)`                     | a binomial coefficient                                                          |
+| `floor(x)`, `ceiling(x)`, `sqrt(x)`, `abs(x)` | floor and ceiling brackets, a root sign, bars                                   |
+| `==`, `(mod m)`                               | `≡` and `(mod m)`                                                               |
+| `<=`, `>=`, `!=`, `<>`, `~`, `->`, `+-`       | `≤`, `≥`, `≠`, `≠`, `∼`, `→`, `±`                                               |
+| `oo`, `Pi`, `phi`, Greek letter names         | `∞`, `π`, `φ`, Greek letters                                                    |
 
-**Style roles, not server containers.** The OEIS markup is named after how it was built: `div.seqdatabox`, `div.sectline`. The script adds a class to each container naming what it is, and [the stylesheet](oeisTypeset.user.css) uses only those names.
+## When something is not typeset
 
-```css
-:root .oeisTypeset-entryName { ... }   /* yes */
-div.seqname { ... }                    /* no */
-```
+A formula that looks like math to you can stay as plain text. Each case below has a reason, and the toggle shows you which text the script worked from.
 
-CSS cannot alias a selector, and it cannot tell FORMULA from LINKS because it cannot read a section's name. That is why the script does the naming. [`src/semanticRoles.js`](src/semanticRoles.js) is the only file that holds the table of server names, so if the OEIS renames a container, that table is where the role gets repaired.
+**The page or section is out of scope.** See [What gets typeset](#what-gets-typeset). A formula in EXAMPLE, or on a history page, is never typeset.
 
-| Role (prefix `oeisTypeset-`)                              | What it is                                            | Server container                                               |
-| --------------------------------------------------------- | ----------------------------------------------------- | -------------------------------------------------------------- |
-| `page`                                                    | The whole page                                        | `body`                                                         |
-| `spacer`                                                  | Empty vertical space                                  | `div.space1`, `div.space4`, `div.space10`, `div.footerpad`     |
-| `accountBar`                                              | Login link                                            | `div.loginbar`                                                 |
-| `masthead`                                                | Everything above the search box                       | `div.top`                                                      |
-| `donorNotice`, `banner`, `announcement`, `memorialNotice` | Parts of the page top                                 | `div.donors`, `div.banner`, `div.motdbox`, `div.blackbar`      |
-| `content`                                                 | The main column                                       | `div.pagebody`                                                 |
-| `search`, `searchGreeting`                                | Search box and its greeting                           | `div.searchbarcenter`, `div.searchgreet`                       |
-| `entry`                                                   | One sequence                                          | `div.sequence`                                                 |
-| `entryRule`                                               | Line above the header                                 | `div.line`                                                     |
-| `entryHeader`                                             | Band holding the title and reference count            | `div.seqhead`                                                  |
-| `entryTitle`, `entryNumber`, `entryName`                  | A-number and name                                     | `div.seqnumname`, `div.seqnum`, `div.seqname`                  |
-| `entryRefCount`                                           | Number at the right of the header                     | `div.scorerefs`                                                |
-| `entryData`, `entryTerms`, `entryViews`                   | Terms box, the terms, and the list; graph; refs links | `div.seqdatabox`, `div.seqdata`, `div.seqdatalinks`            |
-| `entrySections`                                           | All the sections                                      | `div.entry`                                                    |
-| `section`, `sectionLabel`, `sectionBody`, `sectionLine`   | One section and its parts                             | `div.section`, `div.sectname`, `div.sectbody`, `div.sectline`  |
-| `footer`, `footerLinks`, `databaseInfo`, `legalNotice`    | The bottom of the page                                | `div.footer`, `div.linksbar`, `div.dbinfo`, `div.legal`        |
+**The line is a diagram or a table.** If a line's spaces do layout work, the script does not touch the line, so the columns stay lined up. The line keeps the site's monospace font, and there is no gap between rows. A line counts as layout if it starts with two or more spaces, has three or more spaces between two values, or has a run such as `---`, `|||` or `===`.
 
-Each section also gets a family and a name of its own, read from its label:
+| As the OEIS serves it                                                                  | With oeisTypeset                                                           |
+| -------------------------------------------------------------------------------------- | -------------------------------------------------------------------------- |
+| ![Coefficient table in A000041 as plain text](.github/screenshots/layout-original.png) | ![The same lines with oeisTypeset](.github/screenshots/layout-typeset.png) |
 
-| Family             | Work the sections do    | Sections                                                                                 |
-| ------------------ | ----------------------- | ---------------------------------------------------------------------------------------- |
-| `familyExposition` | Explain the mathematics | `sectionComments`, `sectionFormula`, `sectionExample`                                    |
-| `familyCode`       | Compute the sequence    | `sectionMaple`, `sectionMathematica`, `sectionProg`                                      |
-| `familyCitation`   | Point elsewhere         | `sectionReferences`, `sectionLinks`, `sectionCrossrefs`                                  |
-| `familyRecord`     | Describe the record     | `sectionOffset`, `sectionKeyword`, `sectionAuthor`, `sectionExtensions`, `sectionStatus` |
+Spaces that only line up an equation do not count. In `A076876(n)   = [T(n,3) -     T(n,2)]/2` each run of spaces touches an operator and the line holds a relation, so the line is typeset. The typeset formula ignores those spaces, and the original text view and copying keep them.
 
-The typesetter adds the rest: `prose` and `verbatim` lines, `formula`, `rendered`, `chunk` and `source` spans, `toggleable` sections, and the `showSource` state.
+**The notation does not parse.** If the script cannot read a stretch of math with certainty, it leaves that stretch exactly as the OEIS wrote it. A line is never made worse. These cases stay as text:
 
-Rules for working in the stylesheet:
+* Umbral notation, such as `P(.,x)` and `(a.)^n`.
+* Unbalanced brackets in the middle of a formula, and other typos. A `)` missing at the very end is accepted, because truncated continued fractions are written that way.
+* Mathematica (`Table[...]`, `f[x]`). It is code, not notation.
 
-* **An empty block is where that change goes.** Every role has one, even if nothing styles it yet. Find the role and write there.
-* **Say a thing once, at the highest role it is true of,** and let it inherit: `page` > `entry` > `section` > `sectionBody` > `sectionLine`. Prefer a family rule to three section rules. The server sets fonts directly on inner containers, so a role inherits those only by asking for `inherit`.
-* **Start selectors with `:root`.** The server writes `div.name` rules, and one class alone loses to them.
-* **Need a name that does not exist?** Add a role to `src/semanticRoles.js` and a block to the stylesheet, rather than reaching for a server name.
+**It is not math by the rules above.** A lone number, a lone letter, a date, or a page range stays text. In `the n-th term`, `n-th` is a word.
 
-`npm test` fails on a server name in a stylesheet rule, on a role with no block, and on a block with no role.
+**Nothing on the page is typeset.** Then the script is not running. Check that Violentmonkey is on and the script is enabled, and that the page address is a sequence page. Another cause is that jsDelivr was blocked when the script first loaded Temml.
 
-## Develop
-
-```shell
-npm install
-npm test                       # regression tests
-npm run build                  # writes dist/oeisTypeset.user.js and test/preview/*.html
-python -I tools/extractCorpus.py corpus test/corpus.json
-npm run corpus                 # converts every line in corpus/, writes test/report.html
-```
-
-`corpus/` holds saved sequence pages and the site's `styles.css`. `test/preview/*.html` are those pages with Temml, the script and the stylesheet injected directly, so you can check a change in Firefox without reinstalling anything. `test/shotPage.js` screenshots a preview page with Playwright, which is not a project dependency: `npm install --no-save playwright`.
-
-`dist/oeisTypeset.user.js` is committed because it is what people install. Run `npm run build` before committing. To release, raise the version in `package.json` and in `oeisTypeset.user.css`, because the extensions only offer an update when the version goes up. `npm test` checks that both versions match and that `dist/` is current.
+**Something is typeset, but wrong.** That is a bug. Open an [issue](https://github.com/hunterhogan/oeisTypeset/issues) with the A-number and the line. [How it works](README_HOW_IT_WORKS.md) explains how the script decides each case above, if you want to see where it went wrong.
 
 ## Known limits
 
-* Umbral notation (`P(.,x)`, `(a.)^n`) and some typos do not parse. They stay as text.
 * The OEIS serves pages with an HTML 3.2 doctype, so browsers render in quirks mode. Temml prints a console warning about this. MathML layout is unaffected.
-* `https://oeis.org/history/view?seq=…` pages are not in scope yet.
+* History pages (`https://oeis.org/history?seq=…`, `https://oeis.org/history/view?seq=…`) are not typeset. They mark changes with underlined additions and deletions inside the text, and typesetting would hide those marks.
 
 ## License
 

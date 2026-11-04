@@ -4,5 +4,24 @@
 			"path": ".."
 		}
 	],
-	"settings": {}
+	"settings": {
+		"cSpell.customDictionaries": {
+			"custom": true, // Enable the `custom` dictionary
+			"internal-terms": false, // Disable the `internal-terms` dictionary
+			"project-words": {
+				"addWords": true,
+				"description": "Words used in this workspace.",
+				"name": "project-words",
+				"path": "${workspaceFolder}/.vscode/code-spell-dictionary-workspace.txt"
+			},
+		},
+	},
+	"extensions": {
+		"recommendations": [
+			"streetsidesoftware.code-spell-checker",
+			"yzhang.markdown-all-in-one",
+			"bierner.markdown-preview-github-styles",
+			"davidanson.vscode-markdownlint",
+		]
+	}
 }

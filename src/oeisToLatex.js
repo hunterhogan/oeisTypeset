@@ -878,6 +878,13 @@ Output of `convertPieces`: a list of segments
 		return latexString.replace(/^(\\left|\{|\\displaystyle\s*)+/, '').charAt(0);
 	}
 
+	function isAnumber(node) {
+		if (node.kind === 'power' || node.kind === 'subscript') {
+			return isAnumber(node.base);
+		}
+		return node.kind === 'anumber' || (node.kind === 'call' && typeof node.name === 'string' && /^A\d{6}$/.test(node.name));
+	}
+
 	function separatorProduct(operator, left, right, latexLeft, latexRight) {
 		if (operator === 'times') {
 			return '\\times ';
@@ -898,6 +905,11 @@ Output of `convertPieces`: a list of segments
 		}
 		if (isDigitRight && (isDigitLeft || operator === '*')) {
 			return '\\cdot ';
+		}
+		/* An A-number is a name, like sin: 2*A014140(n) gets the thin space of 2 sin n, not the
+		   no space of 2*a(n), which would read as one word "2A014140". */
+		if (isAnumber(left) || isAnumber(right)) {
+			return '\\, ';
 		}
 		if (operator === 'juxtapose') {
 			return '';
